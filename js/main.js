@@ -11662,6 +11662,147 @@ function first(arr, n=1) {
 //hide the details
 
 //object literal syntax
-
 // const circle = {}
 // the curly braces refer to an object literal >>OBJECT<<
+
+//asynchronously
+//asynchronously is to not happen at the same time
+
+//script is client side code
+
+function olympicRing(a){
+  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+  let twoRings = ['B'];
+  let score = 0;
+
+  a.split('').map(x => rings.includes(x)
+  ? score++
+  : twoRings.includes(x)
+  ? score = score+2
+  : x
+  )
+
+  score = Math.floor(score/2)
+
+  return score <= 1
+  ? 'Not even a medal'
+  : score === 2
+  ? 'Bronze'
+  : score === 3
+  ? 'Silver'
+  : 'Gold'
+}
+
+function move (position, roll) {
+  return position + roll * 2
+}
+
+//example: let charMap = {}
+//how to create and object
+
+//what is MVC
+//model view controller
+
+
+//if you are going to be writing front end code, where does it belong?
+//the view == the client
+
+function jeweling (jewels, stones){
+  const map = {},
+  count = 0
+
+  for(const jewel of jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
+
+function majorityElement(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+  }
+
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+function maxCharacter(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for (const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+function countChars(str){
+  let countObj = {}
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c]=1
+    }
+  }
+  return countObj
+}
+
+//the stanton measure of an array is computed as follows
+
+//count the number of occurences for value 1 in the array
+//let count = n
+//stanton measure is the number of time n appears in the array
+
+function stantonMeasure(arr){
+  const count = n => arr.filter(x => x === n).length
+  return count(count(1))
+}
+
+function alex(n){
+  if (n > 10){
+    return "GReat"
+  }else{
+    return"lmao"
+  }
+}
+
+function stringParam(str){
+  return str.split(' ').map(function(s){
+    return s.split('').reverse().join('')
+  }).join(' ')
+}
+
+let smash = words => words.join(' a bunch of words')
+
+function usdcny(usd){
+  return `${usd*6.75.toFixed(2)} Chinese Yuan`
+}
+
+//asbtraction principle is to hide the details
+
+//the controller is server side code that tells the view what to do
+//the controller gets its information from the model
+
