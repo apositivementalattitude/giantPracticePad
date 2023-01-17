@@ -11806,3 +11806,100 @@ function usdcny(usd){
 //the controller is server side code that tells the view what to do
 //the controller gets its information from the model
 
+function likeOrDislike (buttons){
+  let state = 'Nothing'
+
+  for (let i = 0; i < buttons.length; i++){
+    if (buttons[i] === state){
+      state = 'Nothing'
+    }else{
+      state = buttons[i]
+    }
+  }
+  return state;
+}
+
+function sumOfMultiples(n, m){
+  if (n >= m){
+    return "INVALID"
+  }
+
+  let sum = 0
+  for(let i = n; i < m; i++){
+    let arr = []
+    for(let i = n; i < m; i++){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((a,b) => a + b, 0)
+}
+
+function squareOrSquareRoot(array) {
+  return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n) : n)
+}
+
+//why is it generally a good idea to position CSS links between head /head and JS scripts
+
+//what are data attributes good for?
+//data attributes are good for allowing us to store extra information on HTML elements
+//data-index-number="12345"
+
+//describe the difference between cookie session storage and localStorage
+//cooke is data stored on the server
+//session storage is data stored in the browser to be deleted
+//localstorage is data stored in the browser
+
+function modifyMultiply (str,loc,num) {
+  let arr =[]
+  let word = str.split(' ')
+  let get = word[loc]
+  let count = 0
+
+  for (let i = count; i < num; i++){
+    arr.push(word)
+    count++
+  }
+  return arr.join('-')
+}
+
+function last(x) {
+  return x.split(' ').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+}
+
+function stairsIn20(s){
+  return s.reduce((a,b) => a.concat(b)).reduce((a,b) => a + b) * 20
+}
+
+function multipleOfIndex(array) {
+  return array.filter((a,b) => a % b == 0)
+}
+
+function twoStr(xn, xd){
+  let count = 0
+
+  for(i = 0; i < xn.length; i++){
+    if(xn[i] == xd)
+    count++
+  }
+  return count;
+}
+
+function removeFirstLast(str){
+  return str.slice(1, -1)
+}
+
+function run (jewels, stones){
+  const map = {},
+  count = 0
+
+  for(const jewel of jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
