@@ -11903,3 +11903,160 @@ function run (jewels, stones){
   return count
 }
 
+function majorityElement(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+
+  }
+
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+function maxChar(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const c of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  for(const c in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+function fizzBuzz(num){
+  for(let i = 1; i <= num; i++){
+    if(i % 6 === 0){
+      console.log('fizzBuzz')
+    }else if(i % 2 === 0){
+      console.log('fizz')
+    }else if(i % 3 === 0){
+      console.log('buzz')
+    }else{
+      console.log(i)
+    }
+  }
+}
+
+console.log(fizzBuzz(6), '1','fizz','buzz','fizz','5','fizzBuzz')
+
+//to defer code
+//execute after the download and browser finished the DOM construction and rendering
+//asynchronously
+//to not happen at the same time
+
+//what are the building blocks of HTML5?
+//offline and storage - is how you store your data
+//connectivity - how you connect to that data
+//semantics - how to more accurately describe your code
+
+//how to require a file in server.js
+
+const express = require('express')
+const app = express();
+
+
+function bump(x){
+  if( x > 15){
+    return 'Car Dead'
+  }else{
+    return 'Woohoo!'
+  }
+}
+
+function bump(x){
+  return x => x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!'
+}
+
+function bump(x){
+  if(x.split('n').length > 16){
+    return 'Car Dead'
+  }else{
+    return 'Woohoo!'
+  }
+}
+
+function stuff(arr, fun){
+  return arr.every(fun)
+}
+
+function stuff(arr, fun){
+  let array = []
+  let split = arr.split('')
+  let loc = split[0]
+
+  for(let i = loc; i < fun.length; i++){
+
+  }
+}
+
+console.log(stuff())
+
+function missingVowel(str){
+  let vowels = 'aeiou'
+  for (let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i]) === -1){
+      return i
+    }
+  }
+}
+
+console.log(missingVowel("John Doe hs seven red pples under his bsket"), '0')
+console.log(missingVowel("Bb Smith sent us six neatly arranged range bicycles"), "3")
+
+let apple = 'a couple of words'
+console.log(apple.search('apple'))
+
+//hwo to iterate an array
+//let arr = []
+
+function all( arr, fun ){
+  let array = []
+  for(let i = 0; i < arr.length; i++){
+    if(fun(arr[i])){
+      array.push(arr[i])
+    }
+  }
+  if(arr.length === array.length){
+    return true
+  }else{
+    return false
+  }
+}
+
+//slice(start,end)
+//creates a new array, copies elements from index start til end into it
+
+
+//splice(pos, deleteCount, ...items)
+//creates a new array, copies elements from the position, until the deleteCount, and what items to reinsert
+
+const number = function(array){
+  let arr = []
+  if(array.length == 0){
+    return []
+  }else{
+  for (let i = 0; i < array.length; i++)
+    arr.push(`${i}: ${array[i-1]}`)
+  }
+  return arr;
+}
+
+//destructuring in javascript
+//simplified method od extracting mulitple properties
+//let thing = ["table", "char", "fan"]
+//let [a,b,c] = thing
