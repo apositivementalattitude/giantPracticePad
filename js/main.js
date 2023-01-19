@@ -9393,432 +9393,1245 @@
 
 // //substring()
 // //substring works like map, but for strings
-// //substring starts at a certain point in a string substring(1) starts at s->t<-ring and works from there
+// // //substring starts at a certain point in a string substring(1) starts at s->t<-ring and works from there
 
 
-// const reverseSeq = n => {
-//   let result = [];
-//   for (let i =n; i > 0; i--){
-//     result.push(i);
-//   }
-//   return result;
-// };
+// // const reverseSeq = n => {
+// //   let result = [];
+// //   for (let i =n; i > 0; i--){
+// //     result.push(i);
+// //   }
+// //   return result;
+// // };
 
-// //fizzbuzz (:
-// function fizzedBuzz (n) {
-//   for (let i = 1; i <= n; i++){
-//     if (i % 6 === 0){
-//       console.log('fizzBuzz')
-//     }else if (i % 2 === 0){
-//       console.log('fizz')
-//     }else if (i % 3 === 0){
-//       console.log('buzz')
-//     }else{
-//       console.log(i)
-//     }
-//   }
-// }
+// // //fizzbuzz (:
+// // function fizzedBuzz (n) {
+// //   for (let i = 1; i <= n; i++){
+// //     if (i % 6 === 0){
+// //       console.log('fizzBuzz')
+// //     }else if (i % 2 === 0){
+// //       console.log('fizz')
+// //     }else if (i % 3 === 0){
+// //       console.log('buzz')
+// //     }else{
+// //       console.log(i)
+// //     }
+// //   }
+// // }
 
-// console.log((6), '1,fizz,buzz,fizz,5,fizzBuzz')
-// console.log((8), '1,fizz,buzz,fizz,5,fizzBuzz,7,fizz')
-
-
-// const multiTable = (number) => {
-//   let table = ""
-//   for (let i = 1; i <=10; i++){
-//     table +=`${i} * ${number} = ${i * number} ${i < 10 ? '\n' : ''}`
-//   }
-//   return table;
-// }
-
-// function take(arr, n) {
-//   return arr.slice(0,n)
-// }
-
-// function nameShuffler(str){
-//   //Shuffle It
-//   return str.split(' ').reverse().join(' ');
-// }
-
-// function typo (name) {
-//   return `Hello, ${name[0].toUpperCase()}${name.toLowerCase().slice(1)} ${'!'}` ? "" : "Hello, World!"
-// }
-
-// console.log(('john'), "Hello, John!")
-// console.log(('aliCE'), "Hello, Alice!")
-// console.log((''), "Hello, World!")
-
-// function contamination(text, char){
-//   // Code here ;)
-//   if (text.length === 0 || char.length === 0){
-//     return ""
-//   }else{
-//     return char.repeat(text.length);
-//   }
-// }
-
-// function missingVo (str){
-//   let vowels = 'aeiou'
-//   for (let i = 0; i <=vowels.length; i++){
-//     // -1 indicates that it doesn't exist
-//     if (str.indexOf(vowels[i]) === -1)
-//     return i;
-//   }
-// }
-
-// console.log(missingVo("John Doe hs seven red pples under his bsket"), "0")
-// console.log(missingVo("Bb Smith sent us six neatly arranged range bicycles"), "3")
-
-// const configuration = {
-//   "name" : "your-pack-name",
-//   "description" : "amazing file description here",
-//   "version" : '1.0.1',
-// };
-
-// let thing = 'a really cool looking apple'
-// console.log(thing.search('apple'))
-
-// function convertInput (str){
-//   return str.toUpperCase();
-// }
-
-// function fizzBuzzy (num){
-//   //loop through the num from 1
-//   for (let i = 1; i <= num; i++){
-//     //if its divisible by 2 and 3 -> 'fizzBuzz
-//     if (i % 6 === 0) {
-//       console.log('fizzBuzz')
-//       //if its divisible by 2 -> 'fizz'
-//     }else if(i % 2 === 0){
-//       console.log('fizz')
-//     }else if (i % 3 === 0){
-//       console.log('buzz')
-//     }else{
-//       console.log(i)
-//     }
-//   }
-// }
-
-//console.log(fizzBuzzy(6), '1,fizz,buzz,fizz,5,fizzBuzz')
-//console.log(fizzBuzzy(8), '1,fizz,buzz,fizz,5,fizzBuzz,7,fizz')
-
-// Count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
-
-// What if the string is empty? Then the result should be empty object literal, {}.
-
-// function countChars(str){
-//   //create obj
-//   let countObj = {}
-//   //loop -> check val exist ? val++ : val-1
-//   for (const c of str){
-//     if (countObj[c]){
-//       countObj[c]++
-//     }else{
-//       countObj[c] = 1
-//     }
-//   }
-//   return countObj;
-// }
-// console.log(countChars('aba'), "{'a':2, 'b' : 1}")
-// console.log(countChars('dog'), "{'d':1, 'o':1, 'g':1}")
-// console.log(countChars('abba'), "{'a':2, 'b':2}")
-
-// function switcheroo (x){
-//   x = x.split('')
-//   let arr = [];
-//   for (let i = 0; i < x.length; i++){
-//     if (x[i] === 'a'){
-//       arr.push('b');
-//     }else if (x[i] === 'b'){
-//       arr.push('a')
-//     }else{
-//       arr.push('c')
-//     }
-//   }
-//   return arr.join('');
-// }
-
-// function multipleOfIndex(array) {
-
-//   let arr = [];
-//   for (let i = 0; i < array.length; i++){
-//     if (array[i] % i === 0){
-//       arr.push(array[i])
-//     }
-//   }
-//   return arr
-// }
-
-// function olympicRing(a){
-//   let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
-//   let twoRings = ['B'];
-//   let score = 0;
-
-//   a.split('').map(x => rings.includes(x)
-//   ? score++
-//   :twoRings.includes(x)
-//   ? score += 2
-//   : x
-//   );
-
-//   score = Math.floor(score/2)
-
-//   return score <= 1
-//   ? 'Not even a medal'
-//   : score === 2
-//   ? 'Bronze'
-//   : score === 3
-//   ? 'Silver'
-//   : 'Gold'
-//   ;
-// }
-
-// function modifyMultiply (str,loc,num) {
-//   let arr = [];
-//   let get = str.split(' ')
-//   let word = get[loc]
-//   let count = 0;
-
-//   for (let i = count; i <= num; i++){
-//     arr.push(word)
-//     count++
-//   }
-//   return arr.join('-')
-// }
-
-// function likeOrDislike(buttons) {
-//   let state = 'Nothing'
-
-//   for (let i = 0; i < buttons.length; i++){
-//     if (buttons[i] === state){
-//       state = 'Nothing'
-//     }else{
-//       state = buttons[i]
-//     }
-//   }
-//   return state;
-// }
-
-// function modifyMultiply (str,loc,num) {
-//   let arr = []
-//   let count = 0
-//   let get = str.split(' ')
-//   let word = get[loc]
-
-//   for (let i = count; i <= num; i++){
-//     arr.push(word)
-//     count++
-//   }
-//   return arr.join('-');
-// }
-
-// function position(letter){
-//   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-//   return `Position of alphabet: ${alphabet.indexOf(letter)+1}`
-// }
-
-// function testScores (scores, yourScore){
-//   let avg = scores.reduce((a, b) => a + b, 0)/scores.length;
-//   if(yourScore > avg){
-//     return true;
-//   }else{
-//     return false;
-//   }
-// }
-
-// function findNeedle(haystack) {
-//   return `found the needle at position ${haystack.indexOf('needle')}`
-// }
-
-// function missingVowel (str){
-//   let vowels = 'aeiou'
-//   for (let i = 0; i < str; i++){
-//     if (str.indexOf(vowels[i] === -1)){
-//       return i;
-//     }
-//   }
-// }
-
-// console.log(missingVowel( "John Doe hs seven red pples under his bsket"), "0")
-// console.log(missingVowel("Bb Smith sent us six neatly arranged range bicycles", "3"))
-
-// function ocurringChars (s){
-//   let newObj = {}
-//   for (const c of s){
-//     if (newObj[c]){
-//       newObj[c]++
-//     }else{
-//       newObj[c] = 1
-//     }
-//   }
-//   return newObj;
-// }
-
-// console.log(ocurringChars('aba'), "'a':2, 'b':1")
-// console.log(ocurringChars('baba', "'a':2,'b':2"))
+// // console.log((6), '1,fizz,buzz,fizz,5,fizzBuzz')
+// // console.log((8), '1,fizz,buzz,fizz,5,fizzBuzz,7,fizz')
 
 
+// // const multiTable = (number) => {
+// //   let table = ""
+// //   for (let i = 1; i <=10; i++){
+// //     table +=`${i} * ${number} = ${i * number} ${i < 10 ? '\n' : ''}`
+// //   }
+// //   return table;
+// // }
+
+// // function take(arr, n) {
+// //   return arr.slice(0,n)
+// // }
+
+// // function nameShuffler(str){
+// //   //Shuffle It
+// //   return str.split(' ').reverse().join(' ');
+// // }
+
+// // function typo (name) {
+// //   return `Hello, ${name[0].toUpperCase()}${name.toLowerCase().slice(1)} ${'!'}` ? "" : "Hello, World!"
+// // }
+
+// // console.log(('john'), "Hello, John!")
+// // console.log(('aliCE'), "Hello, Alice!")
+// // console.log((''), "Hello, World!")
+
+// // function contamination(text, char){
+// //   // Code here ;)
+// //   if (text.length === 0 || char.length === 0){
+// //     return ""
+// //   }else{
+// //     return char.repeat(text.length);
+// //   }
+// // }
+
+// // function missingVo (str){
+// //   let vowels = 'aeiou'
+// //   for (let i = 0; i <=vowels.length; i++){
+// //     // -1 indicates that it doesn't exist
+// //     if (str.indexOf(vowels[i]) === -1)
+// //     return i;
+// //   }
+// // }
+
+// // console.log(missingVo("John Doe hs seven red pples under his bsket"), "0")
+// // console.log(missingVo("Bb Smith sent us six neatly arranged range bicycles"), "3")
+
+// // const configuration = {
+// //   "name" : "your-pack-name",
+// //   "description" : "amazing file description here",
+// //   "version" : '1.0.1',
+// // };
+
+// // let thing = 'a really cool looking apple'
+// // console.log(thing.search('apple'))
+
+// // function convertInput (str){
+// //   return str.toUpperCase();
+// // }
+
+// // function fizzBuzzy (num){
+// //   //loop through the num from 1
+// //   for (let i = 1; i <= num; i++){
+// //     //if its divisible by 2 and 3 -> 'fizzBuzz
+// //     if (i % 6 === 0) {
+// //       console.log('fizzBuzz')
+// //       //if its divisible by 2 -> 'fizz'
+// //     }else if(i % 2 === 0){
+// //       console.log('fizz')
+// //     }else if (i % 3 === 0){
+// //       console.log('buzz')
+// //     }else{
+// //       console.log(i)
+// //     }
+// //   }
+// // }
+
+// //console.log(fizzBuzzy(6), '1,fizz,buzz,fizz,5,fizzBuzz')
+// //console.log(fizzBuzzy(8), '1,fizz,buzz,fizz,5,fizzBuzz,7,fizz')
+
+// // Count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+
+// // What if the string is empty? Then the result should be empty object literal, {}.
+
+// // function countChars(str){
+// //   //create obj
+// //   let countObj = {}
+// //   //loop -> check val exist ? val++ : val-1
+// //   for (const c of str){
+// //     if (countObj[c]){
+// //       countObj[c]++
+// //     }else{
+// //       countObj[c] = 1
+// //     }
+// //   }
+// //   return countObj;
+// // }
+// // console.log(countChars('aba'), "{'a':2, 'b' : 1}")
+// // console.log(countChars('dog'), "{'d':1, 'o':1, 'g':1}")
+// // console.log(countChars('abba'), "{'a':2, 'b':2}")
+
+// // function switcheroo (x){
+// //   x = x.split('')
+// //   let arr = [];
+// //   for (let i = 0; i < x.length; i++){
+// //     if (x[i] === 'a'){
+// //       arr.push('b');
+// //     }else if (x[i] === 'b'){
+// //       arr.push('a')
+// //     }else{
+// //       arr.push('c')
+// //     }
+// //   }
+// //   return arr.join('');
+// // }
+
+// // function multipleOfIndex(array) {
+
+// //   let arr = [];
+// //   for (let i = 0; i < array.length; i++){
+// //     if (array[i] % i === 0){
+// //       arr.push(array[i])
+// //     }
+// //   }
+// //   return arr
+// // }
+
+// // function olympicRing(a){
+// //   let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+// //   let twoRings = ['B'];
+// //   let score = 0;
+
+// //   a.split('').map(x => rings.includes(x)
+// //   ? score++
+// //   :twoRings.includes(x)
+// //   ? score += 2
+// //   : x
+// //   );
+
+// //   score = Math.floor(score/2)
+
+// //   return score <= 1
+// //   ? 'Not even a medal'
+// //   : score === 2
+// //   ? 'Bronze'
+// //   : score === 3
+// //   ? 'Silver'
+// //   : 'Gold'
+// //   ;
+// // }
+
+// // function modifyMultiply (str,loc,num) {
+// //   let arr = [];
+// //   let get = str.split(' ')
+// //   let word = get[loc]
+// //   let count = 0;
+
+// //   for (let i = count; i <= num; i++){
+// //     arr.push(word)
+// //     count++
+// //   }
+// //   return arr.join('-')
+// // }
+
+// // function likeOrDislike(buttons) {
+// //   let state = 'Nothing'
+
+// //   for (let i = 0; i < buttons.length; i++){
+// //     if (buttons[i] === state){
+// //       state = 'Nothing'
+// //     }else{
+// //       state = buttons[i]
+// //     }
+// //   }
+// //   return state;
+// // }
+
+// // function modifyMultiply (str,loc,num) {
+// //   let arr = []
+// //   let count = 0
+// //   let get = str.split(' ')
+// //   let word = get[loc]
+
+// //   for (let i = count; i <= num; i++){
+// //     arr.push(word)
+// //     count++
+// //   }
+// //   return arr.join('-');
+// // }
+
+// // function position(letter){
+// //   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+// //   return `Position of alphabet: ${alphabet.indexOf(letter)+1}`
+// // }
+
+// // function testScores (scores, yourScore){
+// //   let avg = scores.reduce((a, b) => a + b, 0)/scores.length;
+// //   if(yourScore > avg){
+// //     return true;
+// //   }else{
+// //     return false;
+// //   }
+// // }
+
+// // function findNeedle(haystack) {
+// //   return `found the needle at position ${haystack.indexOf('needle')}`
+// // }
+
+// // function missingVowel (str){
+// //   let vowels = 'aeiou'
+// //   for (let i = 0; i < str; i++){
+// //     if (str.indexOf(vowels[i] === -1)){
+// //       return i;
+// //     }
+// //   }
+// // }
+
+// // console.log(missingVowel( "John Doe hs seven red pples under his bsket"), "0")
+// // console.log(missingVowel("Bb Smith sent us six neatly arranged range bicycles", "3"))
+
+// // function ocurringChars (s){
+// //   let newObj = {}
+// //   for (const c of s){
+// //     if (newObj[c]){
+// //       newObj[c]++
+// //     }else{
+// //       newObj[c] = 1
+// //     }
+// //   }
+// //   return newObj;
+// // }
+
+// // console.log(ocurringChars('aba'), "'a':2, 'b':1")
+// // console.log(ocurringChars('baba', "'a':2,'b':2"))
 
 
 
-// You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
-// Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
-// Example 1:
+// // You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
-// Input: jewels = "aA", stones = "aAAbbbb"
-// Output: 3
-// Example 2:
+// // Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
-// Input: jewels = "z", stones = "ZZ"
-// Output: 0
+// // Example 1:
+
+// // Input: jewels = "aA", stones = "aAAbbbb"
+// // Output: 3
+// // Example 2:
+
+// // Input: jewels = "z", stones = "ZZ"
+// // Output: 0
  
 
-// Constraints:
+// // Constraints:
 
-// 1 <= jewels.length, stones.length <= 50
-// jewels and stones consist of only English letters.
-// All the characters of jewels are unique.
+// // 1 <= jewels.length, stones.length <= 50
+// // jewels and stones consist of only English letters.
+// // All the characters of jewels are unique.
 
 
-// function runTheJewelz(jewels,stones){
-//   const map = {},
-//     count = 0;
+// // function runTheJewelz(jewels,stones){
+// //   const map = {},
+// //     count = 0;
 
-//   for(const jewel of jewels){
-//     map[jewel] = true
-//   }
-//   for(const stone of stones){
-//     if( map[stone] ){
-//       count++
-//     }
-//   }
-//   return count;
+// //   for(const jewel of jewels){
+// //     map[jewel] = true
+// //   }
+// //   for(const stone of stones){
+// //     if( map[stone] ){
+// //       count++
+// //     }
+// //   }
+// //   return count;
+// // }
+
+// // console.log(runTheJewelz("aA", "aAAbbbb"), "3")
+
+
+// // function occurences (str) {
+// //   const obj = {}
+// //   for (const c of str)
+// //   if(obj[c]){
+// //     obj++
+// //   }else{
+// //     obj[c] = 1
+// //   }
+// //   return obj;
+// // }
+// // console.log(occurences('aba'), "'a':2, 'b':1")
+// // console.log(occurences('baba'), "'a':2, 'b':2")
+
+// // function familyJewels(jewels, stones){
+// //   const map = {}
+// //   count = 0;
+
+// //   for (const jewel of jewels){
+// //     map[jewel] = true
+// //   }
+
+// //   for (const stone of stones){
+// //     if ( map[stone] ){
+// //       count++
+// //     }
+// //   }
+// //   return count;
+// // }
+
+// // function occurence (str) {
+// //   const obj = {}
+// //     for (const c of str)
+// //     if (obj[c]){
+// //       obj++
+// //     }else{
+// //       obj[c] = 1
+// //     }
+// //     return obj;
+// // }
+
+
+// // function famJewels(jewels, stones){
+// //   const map = {}
+// //   count = 0;
+
+// //   for (const jewel of jewels){
+// //     map[jewel] = true;
+// //   }
+// //   for (const stone of stones){
+// //     if (map[stone]){
+// //     count++
+// //     }
+// //   }
+// //   return count;
+// // }
+
+// // function threeInt (a,b,c) {
+// //   return Math.max(a+b+c,
+// //   a*b+c,
+// //   a+b*c,
+// //   (a+b)*c,
+// //   a*(a+c),
+// //   a*b*c)
+// // }
+
+// // function first(arr, n) {
+// //   return arr.slice(0,n);
+// // }
+
+// // function fizzingBuzz(num){
+// //   for (let i = 1; i <= num; i++){
+// //     if (i % 6 === 0) {
+// //       console.log('fizzBuzz')
+// //     }else if (i % 2 === 0){
+// //       console.log('fizz')
+// //     }else if(i % 3 === 0) {
+// //       console.log('buzz')
+// //     }else{
+// //       console.log(i)
+// //     }
+// //   }
+// // } 
+
+// // console.log(fizzingBuzz(6), "1,fizz,buzz,fizz,5,fizzBuzz")
+// // console.log(fizzingBuzz(8), "1,fizz,buzz,fizz,5,fizzBuzz,7,fizz")
+
+// // function jewelz (jewels, stones) {
+// //   const map = {};
+// //   count = 0;
+
+// //   for (const jewel of jewels){
+// //     map[jewel] = true
+// //   }
+// //   for (const stone of stones){
+// //     if( map[stone] ){
+// //       count++
+// //     }
+// //   }
+// //   return count;
+// // }
+
+// // console.log(jewelz("aA", "aAAbbbb"), "3")
+
+// // function countChars(str){
+// //   let countObj = {}
+// //   for (const c of str){
+// //     if(countObj[c]){
+// //       countObj[c]++
+// //     }else{
+// //       countObj[c] = 1
+// //     }
+// //   }
+// // }
+
+// // function modifyMultiply (str,loc,num) {
+// //   let arr = [];
+// //   let count = 0;
+// //   let get = str.split(' ')
+// //   let word = get[loc]
+
+// //   for (let i = count; i < num; i++){
+// //     arr.push(word)
+// //     count++
+// //   }
+// //   return arr.join('-')
+// // }
+
+// // function last(x) {
+// //   return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1 ) - b.charCodeAt(b.length -1 ))
+// // }
+
+// // function twoInt (x, y) {
+// //   return (+x +  +y) + ""
+// // }
+
+// // function twoPet (petals){
+// //   if (petals % 2 === 0){
+// //     return "false"
+// //   }else{
+// //     return "true"
+// //   }
+// // }
+
+
+
+// // Given a string of characters, return the character that appears the most often.
+
+// // describe("Max Character", () => {
+// //  it("Should return max character", () => {
+// //   assert.equal(max("Hello World!"), "l");
+// //  });
+// // });
+
+// // No String or Array Methods (well brute force it first, but then no methods)! 
+
+// // function maxCharacter(str){
+// //   let charMap = {},
+// //     count = 0,
+// //     maxChar = null;
+
+// //     for (const char of str){
+// //       charMap[char] = charMap[char] + 1 || 1
+// //     }
+
+// //     for (const char in charMap){
+// //       if (charMap[char] > count){
+// //         count = charMap[char]
+// //         maxChar = char
+// //       }
+// //     }
+// //     return maxChar
+// // }
+
+// // console.log(maxCharacter('Hello World!'), "l")
+
+// // function containsDupes(arr){
+// //   let numsMap = {}
+// //   for (let i = 0; i < arr.length; i++){
+// //     let num = arr[i]
+// //     if (numsMap[num]){
+// //       return true
+// //     }else{
+// //       numsMap[num] = true
+// //     }
+// //   }
+// //   return false
+// // }
+
+// // console.log(containsDupes([1,2,3,1], 'true'))
+// // console.log(countainsDupes([1,2,3,4], 'false'))
+
+// // //bracket notations add properties to an object
+
+// // //what do bracket notations do?
+// // //bracket notations add properties to objects
+
+
+// // // Given an array nums of size n, return the majority element.
+
+// // // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+// // // Example 1:
+
+// // // Input: nums = [3,2,3]
+// // // Output: 3
+// // // Example 2:
+
+// // // Input: nums = [2,2,1,1,1,2,2]
+// // // Output: 2
+
+// // function majorityElement(arr){
+// //   let elem = {},
+// //     count = 0,
+// //     majElem = arr[0]
+// //   for (const num of arr){
+// //     elem[num] = elem[num] + 1 || 1
+// //   }
+
+// //   for (const n in elem){
+// //     if (elem[n] > count){
+// //       count = elem[n]
+// //       majElem = n
+// //     }
+// //   }
+
+// //   return majElem
+
+// // }
+
+// //what is a test that requires you to understand the text, not just retrieve isolated facts?
+// //inference test
+// //to infer
+// //deduce or conclude(information) from evidence and reasoning rather than from explicit statements.
+
+// //script
+// //script is code to be executed on the client side
+// //script is client side code
+// //script is client side code
+
+// //script async
+// //script async is code that is downloaded asynchronously(separately) and executed after the download
+
+// //script is client side code
+
+// //npm audit fix --force
+// //how to force an update
+
+// //a response object
+// //app.get('/', function(req,res){
+//   //res.send('Hello World)
+// //})
+
+// //how to require a file in server.js
+// //const express = require('express')
+// //const app = express()
+
+// //arr.forEach
+// //method that allows yo uto run a function for every element of an array
+// //arr.forEach(function(item,index,array){
+
+// //})
+
+// // //the stanton measure of an array is computed as follows:
+// // function stantonMeasure(arr){
+// //   //count the number of occurrences for value 1 in array
+// //   //let this count be n
+// //   const count = n => arr.filter(x => x === n).length;
+// //   //the stanton measure is the number of times that n appears in the array
+// //   return count(count(1))
+
+// // }
+
+// // function all( arr, fun ){
+// //   //returns true if the function in the param return true for every element in the seq
+// //   return arr.every(fun)
+// //   //or return false
+
+// //   //empty === true
+// // }
+
+// // //sort(func)
+// // //sorts the array in-place, then returns it
+
+
+
+// // function stairsIn20(s){
+// //   return s.reduce((a,b)=> a.concat(b)).reduce((a,b) => a + b) * 20;
+// // }
+
+// // //includes(value)
+// // //return true if the array has value
+
+// // //slice(start, end)
+// // //creates a new array, copies elements from start to end
+
+// // function take(arr, n) {
+// //   return arr.slice(0,n)
+// // }
+
+// //find/filter(func)
+// //filter elements through the function, return first/all values that make it true
+
+// //map
+// //creates a new array from results of calling func for every element
+
+// //splice
+// //at index pos deleted deleteCount elements and inserts items
+
+// //destructuring in javascript
+// //simplified method of extracting multiple properties
+// //let thing = ["table", "chair", "fan"]
+// //let [a,b,c] = thing
+
+// //reduce
+// //calculate a single value over the array by calling func for each element and passing an intermediate result betwen the calls
+
+// //object is a collection of related data
+
+// // function sumMul(n,m){
+// //   if (n >= m) return "INVALID"
+// //   let arr = []
+// //   for (let i = n; i < m; i++){
+    
+// //       arr.push(i)
+    
+// //   }
+// //   return arr.reduce((a,b)=> a + b, 0);
+// // }
+
+// // function isDivideBy(number, a, b) {
+
+// // }
+
+// // function removes(str){
+// //   return str.split(' ').join('')
+// // }
+
+// // function correct(string){
+
+// // }
+
+// //spread syntax
+// //expands an array into its elements
+
+// // function countChars(str){
+// //   let countObj = {}
+// //   //loop -< check val exist ? vall++ : val - 1
+// //   for (const c  of str){
+// //     if (countObj[c]){
+// //       countObj[c]++
+// //     }else{
+// //       countObj[c] = 1
+// //     }
+// //   }
+// // }
+
+// // function missingIndex(str){
+// //   //make a variable for indexes
+// //   let vowels = 'aeiou'
+// //   //loop through the str
+// //   for (let i = 0; i < str; i++){
+// //     //check if 'i' exists in the str
+// //     if (str.indexOf(vowels[i]) === -1){
+// //       return i;
+// //     }
+// //   }
+// // }
+
+// // console.log(missingIndex("John Doe hs seven red pples under his bsket"), '0')
+// // console.log(missingIndex("Bb Smith sent us six neatly arranged range bicycles"), '3')
+
+// // //fizzbuzz
+// // function fizzBuss (num){
+// //   // % 2 : fizz
+// //   // % 3 : buzz
+// //   // % 2 * 3 : fizzBuzz
+// //   // : 1
+// //   for (let i = 1; i <= num; i++){
+// //     if (i % 6 === 0){
+// //       console.log('fizzBuzz')
+// //     }else if (i % 2 === 0){
+// //       console.log('fizz')
+// //     }else if (i % 3 === 0){
+// //       console.log('buzz')
+// //     }else{
+// //       console.log(i)
+// //     }
+// //   }
+// // }
+
+// // console.log(fizzBuss(6), "1,fizz,buzz,fizz,5,fizzBuzz")
+// // console.log(fizzBuss(8), "1,fizz,buzz,fizz,5,fizzBuzz,7,fizz")
+
+// // Given a magazine of words and a ransom note, determine if it’s possible to “cut out” and create the ransom note from the magazine words.
+
+// // const magazine =
+// //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+
+// // describe("Ransom Note", () => {
+// //  it("Should return true", () => {
+// //   assert.equal(ransomNote("sit ad est sint", magazine), true);
+// //  });
+
+// // it("Should return false", () => {
+// //   assert.equal(ransomNote("sit ad est love", magazine), false);
+// //  });
+
+// // it("Should return true", () => {
+// //   assert.equal(ransomNote("sit ad est sint in in", magazine), true);
+// //  });
+
+// // it("Should return false", () => {
+// //   assert.equal(ransomNote("sit ad est sint in in in in", magazine), false);
+// //  });
+// // });
+
+// // const magazine =
+// //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+
+// // function ransomNote(note, magazine){
+// //   const noteWords = note.split(' ')
+// //   const magazineWords = magazine.split(' ')
+// //   const magazineHas = {}
+// //   let possible = true
+
+// //   for (word of magazineWords){
+// //     magazineHas[word] = magazineHash[word] + 1 || 1
+// //   }
+
+// //   for(const word of noteWords){
+// //     if (magazineHas[word]){
+// //       magazine[word]--
+// //       if (magazineHas[word] < 0) return false
+// //     }else{
+// //       return false
+// //     }
+// //   }
+// //   return possible
+// // }
+
+// // //script
+// // //script is client side code
+
+// // //semantics
+// // //semantics is how you describe your data or code or content
+
+// // //connectivity
+// // //connectivity allows you to communicate with the server in new and innovative ways
+
+// // app.listen('3000',function(){
+// //   console.log('listening on 3000')
+// // })
+
+// // function bmi (weight, height){
+// //   let bodyMass = weight/height**2
+// //   if (bodyMass <= 18.5){
+// //     console.log('underweight')
+// //   }else if (bodyMass <= 25){
+// //     console.log('normal')
+// //   }else if (bodyMass <= 30){
+// //     console.log('overweight')
+// //   }else{
+// //     console.log('obese')
+// //   }
+// // }
+
+// // console.log(bmi(86, 1.7), 'overweight')
+
+// // function invert(array) {
+// //   let newArr = []
+// //   for (let i = 0; i < array.length; i++){
+// //     newArr.push(-array[i])
+// //   }
+// //   return newArr
+// // }
+
+// // class Kata {
+// //   static getVolumeOfCuboid(l,w,h) {
+// //     return l*w*h    
+// //   }
+// // }
+
+// // //the data types in javascript are 
+// // //string,number,boolean,null,undefined,symbol,objects
+
+// // function modifyMultiply (str,loc,num) {
+
+// // }
+
+// // // Given an array of numbers, return all pairs that add up to a given sum. The numbers can be used more than once.
+
+// // // describe("Two Sum", () => {
+// // //  it("Should implement two sum", () => {
+// // //   assert.deepEqual(twoSum([1, 2, 2, 3, 4], 4), [[2, 2], [3, 1]]);
+// // //  });
+// // // });
+
+// // function twoSum(arr, sum){
+// //   const pairs = []
+// //   const nums = {}
+
+// //   for(const num1 of arr){
+// //     const num2 = sum - num1
+// //     if(nums[num2]){
+// //       pairs.push([num1,num2])
+// //     }else{
+// //       nums[num] = 1
+// //     }
+// //   }
+// //   return pairs
+
+// // }
+// // console.log(twoSum([1, 2, 2, 3, 4], 4), '[[2, 2], [3, 1]]')
+
+// // //you are to write a function that takes a string as it's first paramter.
+// // //the string will bea  string of words
+// // //you are expected to then use the second parameter
+// // //which will be an integer
+// // //to find the corresponding word in the given string
+// // //the first word would be represented by 0
+// // //once you have the located string you are finally going to multiply by the third provided paramter,
+// // //which will also be an integer.
+// // //you are additionally required to add a hyphen in between each word
+
+// // function modifyMultiply(str,loc,num){
+// //   let arr = [];
+// //   let get = str.split(' ')
+// //   let word = get[loc]
+// //   let count = 0
+
+// //   for (let i = count; i < num; i++){
+// //     arr.push(word)
+// //     count++
+// //   }
+// //   return arr.join('-')
+// // }
+
+// // function olympicRings (a) {
+// //   let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+// //   let twoRings = ['B'];
+// //   let score = 0;
+
+// //   a.split('').map(x => rings.includes(x)
+// //   ? score++
+// //   : twoRings.includes(x)
+// //   ? score+=2
+// //   : x
+// //   )
+
+// //   score = Math.floor(score/2)
+
+// //   return score <= 1
+// // }
+
+// // function apple(x){
+// //   return (x**2 > 1000)
+// //   ? "It's hotter than the sun!" 
+// //   : "Help"
+// // }
+
+// // //indexOf/lastIndexOf(item, pos)
+// // //look for an item starting from position pos, return the index or -1 if not found
+
+// // function multipleOfIndex(array) {
+// //   return array.filter((a,b) => a % b == 0)
+// // }
+
+// // function highAndLow(numbers){
+// //   numbers = numbers.split(' ')
+// //   return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+// // }
+
+// // var TempleStrings = function(obj, feature) {
+// //   return `${obj} are ${feature}`
+// // }
+
+// // function maxCharacter(str){
+// //   let charMap = {}
+// //   count = 0
+// //   maxChar = null;
+
+// //   for (const char of str){
+// //     charMap[char] = charMap[char] + 1 || 1
+// //   }
+
+// //   for (const char in charMap){
+// //     if(charMap[char] > count){
+// //       count = charMap[char]
+// //       maxChar = char
+// //     }
+// //   }
+// //   return maxChar
+// // }
+
+// // console.log(maxCharacter('Hello World!'), 'l')
+
+// // function majorityElement(arr){
+// //   let elem = {}
+// //   count = 0
+// //   majElem = arr[0]
+// //   for(const num of arr){
+// //     elem[num] = elem[num] + 1 || 1
+// //   }
+
+// //   for(const n in elem){
+// //     if (elem[n] > count){
+// //       count = elem[n]
+// //       majElem = n
+// //     }
+// //   }
+// //   return majElem
+// // }
+
+// // function runTheJewelz(jewels, stones){
+// //   const map = {}
+// //   count = 0
+
+// //   for (const jewel of jewels){
+// //     map[jewel] = true
+// //   }
+
+// //   for (const stone of stones){
+// //     if(map[stone]){
+// //       count++
+// //     }
+// //   }
+// //   return count;
+// // }
+
+// // console.log(runeTheJewelz("aA", 'aAAbbbb'), '3')
+
+// // function maxCharacters(str){
+// //   let charMap = {}
+// //   count = 0
+// //   maxChar = null
+
+// //   for(const char of str){
+// //     if(charMap[char] > count){
+// //       count = charMap[char]
+// //       maxChar = char
+// //     }
+// //   }
+// //   return maxChar
+// // }
+
+// // function majorityElement(arr){
+// //   let elem = {}
+// //   count = 0
+// //   majElem = arr[0]
+// //   for(const num of arr){
+// //     elem[num] = elem[num] + 1 || 1
+// //   }
+
+// //   for (const n in elem){
+// //     if (elem[n] > count){
+// //       count = elem[n]
+// //       majElem = n
+// //     }
+// //   }
+// //   return majElem
+// // }
+
+// // function modifyMultiply (str,loc,num) {
+// //   let arr = []
+// //   let get = str.split(' ')
+// //   let word = get[loc]
+// //   let count = 0
+
+// //   for (let i = count; i < num; i++){
+// //     arr.push(word)
+// //     count++
+// //   }
+// //   return arr.join('-')
+// // }
+
+// // function likeOrDislike(buttons) {
+// //   let state = 'Nothing'
+
+// //   for (i = 0; i < buttons.length; i++){
+// //     if(buttons[i] === state){
+// //       state = 'Nothing'
+// //     }else{
+// //       state = buttons[i]
+// //     }
+// //   }
+// //   return state;
+// // }
+
+// // //methods
+// // //methods are actions that we can perform
+// // //methods are things like split() join()
+// // //actions
+
+// // function castState(thing){
+// //   thing = 'hey'
+// //   switch(thing){
+// //     case 'hi':
+// //       return 'hi'
+// //   }
+// // }
+
+// // function solution(str, ending){
+// //   return str.endsWith(ending);
+// // }
+
+// // function concatThing(int){
+// //   return int.toString().split("").map(function(n){
+// //     for(let i = 0; i < n.length; i++){
+// //       return n**2
+// //     }
+// //   }).join("") * 1;
+// // }
+
+// // function jewelery(jewels, stones){
+// //   const map = {}
+// //   count = 0
+
+// //   for(const jewel of jewels){
+// //     map[jewel] = true
+// //   }
+// //   for(const stone of stones){
+// //     if(map[stone]){
+// //       count++
+// //     }
+// //   }
+// //   return count
+// // }
+
+// // console.log(jewelery("aA", "aAAbbbb"), "3")
+
+// // function countChars(str){
+// // let countObj = {}
+// // for(const c of str){
+// //   if(countObj[c]){
+// //     countObj[c]++
+// //   }else{
+// //     countObj[c] = 1
+// //   }
+// // }
+
+// // }
+
+// // console.log(countChars('aba'), "{ 'a':2, 'b':1 }")
+
+// // function majorityElement(arr){
+// //   let elem = {}
+// //   count = 0
+// //   majElem = arr[0]
+// //   for(const num of arr){
+// //     elem[num] = elem[num] + 1 || 1
+// //   }
+
+// //   for (const n in elem){
+// //     if(elem[n] > count){
+// //       count = elem[n]
+// //       majElem = n
+// //     }
+// //   }
+// //   return majElem
+// // }
+
+
+// // function maxCharacter(str){
+// //   let charMap = {}
+// //   count = 0
+// //   maxChar = null;
+
+// //   for(const char of str){
+// //     charMap[char] = charMap[char] + 1 || 1
+// //   }
+
+// //   for(const char in charMap){
+// //     if(charMap[char] > count){
+// //       count = charMap[char]
+// //       maxChar = char
+// //     }
+// //   }
+// //   return maxChar
+// // }
+
+// // console.log(maxCharacter("Hello World!"), "l")
+
+
+// // let thingy = 10
+// // thingy -= 10
+// // console.log(thingy)
+
+// // let newVar = Number(document.querySelector('input').value)
+// // newVar = newVar + 25
+// // alert(newVar)
+
+// // let h1 = document.querySelector('h1')
+// // h1.addEventListener('click', addTwo)
+// // function addTwo(){
+// //   console.log(thingy+newVar)
+// // }
+
+// // function sumMix(x){
+// //   return x.reduce((a,b) +a + +b, 0)
+// // }
+
+// // //the abstraction principle is to hide the details
+
+// // function squareOrSquareRoot(array) {
+// //   return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n) : n * n)
+// // }
+
+// // //script is client side code
+// // //script async is code that is downloaded asynchronously(separately) and executes as its downloaded
+// // //script defer is when everything downloads, then renders, and then gets constructed to start execution of code
+
+// // //data- attributes are good for storing extra information on HTML elements
+
+// // //to defer code is to wait for everything to download, then render, and then start execution of code after everything is constructed
+
+// // //its a good idea to position CSS links betweeen head and JS scripts just before the body to load the webpage more beautifully
+
+// // //exceptions are to link JS links at the bottom because when the browser encounter JS, it parses and executes it immediately
+
+// // //a cookie is data stored in the server
+// // //sessionStorage is data that will be deleted when the browser closes
+// // //localStorage is data that is stored in the browser
+
+// // //offline and storage refers to allowing webpages to store data on the client side
+
+// // //the building blocks of HTML5 are 
+// // //offline and storage
+// // //semantics
+// // //connectivity
+
+// // //yes, react
+
+
+// // //i would use a srcset attribute in an image tag when i want to serve different images to users depending on their device display width
+
+// // //script is client side code
+
+// //thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking
+// //thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking is diffuse thinking
+
+// //the law of serendipity
+// //the law of serendipity is the notion that good luck comes to those who try
+
+// //[rel~='tag']
+// //attribute spaced selector
+
+// function solution (a,b){
+//   let aLength = a.length
+//   let bLength = b.length
+//   return aLength > bLength ?
+//   +bLength + +aLength + +bLength :
+//   +aLength + +bLength + +aLength  
 // }
 
-// console.log(runTheJewelz("aA", "aAAbbbb"), "3")
-
-
-// function occurences (str) {
-//   const obj = {}
-//   for (const c of str)
-//   if(obj[c]){
-//     obj++
-//   }else{
-//     obj[c] = 1
-//   }
-//   return obj;
-// }
-// console.log(occurences('aba'), "'a':2, 'b':1")
-// console.log(occurences('baba'), "'a':2, 'b':2")
-
-// function familyJewels(jewels, stones){
-//   const map = {}
-//   count = 0;
-
-//   for (const jewel of jewels){
-//     map[jewel] = true
-//   }
-
-//   for (const stone of stones){
-//     if ( map[stone] ){
-//       count++
-//     }
-//   }
-//   return count;
+// function solution (a,b) {
+//   return a.length > b.length ?
+//   b+a+b :
+//   a+b+a
 // }
 
-// function occurence (str) {
-//   const obj = {}
-//     for (const c of str)
-//     if (obj[c]){
-//       obj++
-//     }else{
-//       obj[c] = 1
-//     }
-//     return obj;
-// }
+// console.log(solution(5,4), '13')
+
+// //a simple interface for some complex action 
+// //a simple interface for some complex action is an API
+
+// //a promise syntax
+// //a promise syntax is 
+
+// fetch('#')
+// .then(res => res.json())
+// .then(data =>{
+//   console.log(data)
+// })
+// .catch(error => {
+//   console.log(`error ${error}.`)
+// })
+
+// //what does doctype do?
+// //doctype tells the browser what version of html the text is written in
+
+// //script is client side code
+// //script is client side code
 
 
-// function famJewels(jewels, stones){
-//   const map = {}
-//   count = 0;
+// //how to serve up a file in server.js
+// //app.get('/', (req,res)=>{
+// //  res.sendFile(__dirname + 'index.html')
+// //})
 
-//   for (const jewel of jewels){
-//     map[jewel] = true;
-//   }
-//   for (const stone of stones){
-//     if (map[stone]){
-//     count++
-//     }
-//   }
-//   return count;
-// }
+// //how to handle a get request
 
-// function threeInt (a,b,c) {
-//   return Math.max(a+b+c,
-//   a*b+c,
-//   a+b*c,
-//   (a+b)*c,
-//   a*(a+c),
-//   a*b*c)
-// }
+// //app.get('/endpoint', callBackFunction)
 
-// function first(arr, n) {
-//   return arr.slice(0,n);
-// }
+// //__dirname
+// //driectory you are currently in
+// //has two underscores
 
-// function fizzingBuzz(num){
-//   for (let i = 1; i <= num; i++){
-//     if (i % 6 === 0) {
-//       console.log('fizzBuzz')
-//     }else if (i % 2 === 0){
-//       console.log('fizz')
-//     }else if(i % 3 === 0) {
-//       console.log('buzz')
-//     }else{
-//       console.log(i)
-//     }
-//   }
-// } 
 
-// console.log(fizzingBuzz(6), "1,fizz,buzz,fizz,5,fizzBuzz")
-// console.log(fizzingBuzz(8), "1,fizz,buzz,fizz,5,fizzBuzz,7,fizz")
 
-// function jewelz (jewels, stones) {
-//   const map = {};
-//   count = 0;
+// //app.get('/',function(req,res){
+// // res.send('Hello World') 
+// //})
 
-//   for (const jewel of jewels){
-//     map[jewel] = true
-//   }
-//   for (const stone of stones){
-//     if( map[stone] ){
-//       count++
-//     }
-//   }
-//   return count;
-// }
+// //a response object
 
-// console.log(jewelz("aA", "aAAbbbb"), "3")
+// //how to require a file in server.js
 
-// function countChars(str){
-//   let countObj = {}
-//   for (const c of str){
-//     if(countObj[c]){
-//       countObj[c]++
-//     }else{
-//       countObj[c] = 1
-//     }
-//   }
-// }
+// //const express = require('express')
+// //const app = express()
+
+// //clear:both;
+// //clears both sides of a float
+
+// //<legend>
+// //legend (liek a map legend)
+
+// //<select name ="day"><option value= "friday" selected>
+// //dropdown selection menu in HTML
+
+// //<h1>selectors<h1>
+
+// //also heading level
+
+// //properties used to provide additional information about an element
+// //attributes
+
 
 // function modifyMultiply (str,loc,num) {
 //   let arr = [];
-//   let count = 0;
 //   let get = str.split(' ')
 //   let word = get[loc]
+//   let count = 0
 
 //   for (let i = count; i < num; i++){
 //     arr.push(word)
@@ -9827,75 +10640,114 @@
 //   return arr.join('-')
 // }
 
+// function getAverage(marks){
+//   return Math.floor(marks.reduce((a,b) => a + b, 0)/marks.length)
+// }
+
+// function singleStr(word){
+//   let arr = [];
+//   word = word.split('')
+//   for (let i = 0; i < word.length; i++){
+//     if (word[i] === word[i].toUpperCase()){
+//       arr.push[i]
+//     }
+//   }
+//   return arr;
+// }
+
+// function first(arr, n=1) {
+//   return arr.slice(0,n)
+// }
+
+// function feast(beast, dish) {
+//   return beast.slice(-1) === dish.slice(-1) && beast[0].toLowerCase() === dish[0].toLowerCase()
+// }
+
+// function take(arr, n) {
+//   return arr.slice(0,n)
+// }
+
+// function getDrinkCaseState(paramter){
+//   paramter=paramter.toLowerCase()
+
+//   switch(paramter){
+//     case 1: return '1'
+//     case 2: return '2'
+//     default: 'infinity'
+//   }
+// }
+
 // function last(x) {
-//   return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1 ) - b.charCodeAt(b.length -1 ))
+//   return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
 // }
 
-// function twoInt (x, y) {
-//   return (+x +  +y) + ""
-// }
-
-// function twoPet (petals){
-//   if (petals % 2 === 0){
-//     return "false"
+// function howMuchWater(water, load, clothes){
+//   if (clothes > load*2){
+//     return "Too much clothes"
+//   }else if(clothes < load){
+//     return "Not enough clothes"
 //   }else{
-//     return "true"
+//     return `${water} * 1.1 ** ${clothes - load}`
 //   }
 // }
 
+// function stantonMeasure()
 
+// //core element styles, covering the general defaults are 
+// //core element styles, covering the general defaults are the base
 
-// Given a string of characters, return the character that appears the most often.
+// // what kind of things must you be wary of when designing or developing for multilingual sites?
+// //you must be wary of layout or overflow issues
 
-// describe("Max Character", () => {
-//  it("Should return max character", () => {
-//   assert.equal(max("Hello World!"), "l");
-//  });
-// });
+// //npm audit fix --force
+// //forces updates to npm
 
-// No String or Array Methods (well brute force it first, but then no methods)! 
+// //<select name="day" multiple>
+// //multiple selection in html
 
-// function maxCharacter(str){
-//   let charMap = {},
-//     count = 0,
-//     maxChar = null;
-
-//     for (const char of str){
-//       charMap[char] = charMap[char] + 1 || 1
-//     }
-
-//     for (const char in charMap){
-//       if (charMap[char] > count){
-//         count = charMap[char]
-//         maxChar = char
-//       }
-//     }
-//     return maxChar
+// function moveTen(s){
+//   const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+//   const arr = s.split('').map(x => x = str.indexOf(x)+10)
+//   return arr.map(x => x = str[x]).join('')
 // }
 
-// console.log(maxCharacter('Hello World!'), "l")
+// function modifyMultiply (str,loc,num) {
+//   let arr = []
+//   let get = str.split(' ')
+//   let word = get[loc]
+//   let count = 0
 
-// function containsDupes(arr){
-//   let numsMap = {}
-//   for (let i = 0; i < arr.length; i++){
-//     let num = arr[i]
-//     if (numsMap[num]){
-//       return true
-//     }else{
-//       numsMap[num] = true
-//     }
+//   for (let i  = count; i < num; i++){
+//     arr.push(woprd)
+//     count++
 //   }
-//   return false
+//   return arr.join('-')
 // }
 
-// console.log(containsDupes([1,2,3,1], 'true'))
-// console.log(countainsDupes([1,2,3,4], 'false'))
+// function nearestSq(n){
+//   // your code
+//   return Math.pow(Math.round(Math.sqrt(n)), 2)
+// }
 
-// //bracket notations add properties to an object
+// //concatenate
+// //concatenate is to connect
 
-// //what do bracket notations do?
-// //bracket notations add properties to objects
+// //synchronous
+// //synchronous is code that executes one operation at a time
 
+// //Math.random
+// //picks a random number 
+// //Math.random()*50
+
+// //pop()
+// //pop() removes an element from the end of an array
+// //splice()
+// //splice() removes an element from a specific point in an array
+
+// function nthEven(n){
+//   // your code here
+//   return n*n-2
+// }
 
 // // Given an array nums of size n, return the majority element.
 
@@ -9911,143 +10763,133 @@
 // // Output: 2
 
 // function majorityElement(arr){
-//   let elem = {},
-//     count = 0,
-//     majElem = arr[0]
-//   for (const num of arr){
+//   let elem = {}
+//   count = 0
+//   majElem = arr[0]
+  
+//   for(const num of arr){
 //     elem[num] = elem[num] + 1 || 1
 //   }
 
 //   for (const n in elem){
-//     if (elem[n] > count){
+//     if(elem[n] > count){
 //       count = elem[n]
 //       majElem = n
 //     }
 //   }
 
 //   return majElem
-
 // }
 
-//what is a test that requires you to understand the text, not just retrieve isolated facts?
-//inference test
-//to infer
-//deduce or conclude(information) from evidence and reasoning rather than from explicit statements.
+// // Given a string of characters, return the character that appears the most often.
 
-//script
-//script is code to be executed on the client side
-//script is client side code
-//script is client side code
+// // describe("Max Character", () => {
+// //  it("Should return max character", () => {
+// //   assert.equal(max("Hello World!"), "l");
+// //  });
+// // });
 
-//script async
-//script async is code that is downloaded asynchronously(separately) and executed after the download
+// // No String or Array Methods (well brute force it first, but then no methods)! 
 
-//script is client side code
+// function maxChar(str){
+//   let charMap = {},
+//   count = 0,
+//   maxChar = null
 
-//npm audit fix --force
-//how to force an update
-
-//a response object
-//app.get('/', function(req,res){
-  //res.send('Hello World)
-//})
-
-//how to require a file in server.js
-//const express = require('express')
-//const app = express()
-
-//arr.forEach
-//method that allows yo uto run a function for every element of an array
-//arr.forEach(function(item,index,array){
-
-//})
-
-// //the stanton measure of an array is computed as follows:
-// function stantonMeasure(arr){
-//   //count the number of occurrences for value 1 in array
-//   //let this count be n
-//   const count = n => arr.filter(x => x === n).length;
-//   //the stanton measure is the number of times that n appears in the array
-//   return count(count(1))
-
-// }
-
-// function all( arr, fun ){
-//   //returns true if the function in the param return true for every element in the seq
-//   return arr.every(fun)
-//   //or return false
-
-//   //empty === true
-// }
-
-// //sort(func)
-// //sorts the array in-place, then returns it
-
-
-
-// function stairsIn20(s){
-//   return s.reduce((a,b)=> a.concat(b)).reduce((a,b) => a + b) * 20;
-// }
-
-// //includes(value)
-// //return true if the array has value
-
-// //slice(start, end)
-// //creates a new array, copies elements from start to end
-
-// function take(arr, n) {
-//   return arr.slice(0,n)
-// }
-
-//find/filter(func)
-//filter elements through the function, return first/all values that make it true
-
-//map
-//creates a new array from results of calling func for every element
-
-//splice
-//at index pos deleted deleteCount elements and inserts items
-
-//destructuring in javascript
-//simplified method of extracting multiple properties
-//let thing = ["table", "chair", "fan"]
-//let [a,b,c] = thing
-
-//reduce
-//calculate a single value over the array by calling func for each element and passing an intermediate result betwen the calls
-
-//object is a collection of related data
-
-// function sumMul(n,m){
-//   if (n >= m) return "INVALID"
-//   let arr = []
-//   for (let i = n; i < m; i++){
-    
-//       arr.push(i)
-    
+//   for (const char of str){
+//     charMap[char] = charMap[char] + 1 || 1
 //   }
-//   return arr.reduce((a,b)=> a + b, 0);
+
+//   for (const char in charMap){
+//     if (charMap[char] > count){
+//       count = charMap[char]
+//       maxChar = char
+//     }
+//   }
+//   return maxChar
 // }
 
-// function isDivideBy(number, a, b) {
+// console.log(maxCharacter('Hello World!'), "l")
 
+// // Your job is to figure out the index of which vowel is missing from a given string:
+
+// // A has an index of 0,
+// // E has an index of 1,
+// // I has an index of 2,
+// // O has an index of 3,
+// // U has an index of 4.
+// // Notes: There is no need for string validation and every sentence given will contain all vowles but one. Also, you won't need to worry about capitals.
+
+// // Examples
+// // "John Doe hs seven red pples under his bsket"          =>  0  ; missing: "a"
+// // "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
+
+// function missingVowel(str){
+//   let vowels = 'aeiou'
+//   for(let i = 0; i < vowels.length; i++){
+//     if (str.indexOf(vowels[i]) === -1){
+//       return i
+//     }
+//   }
 // }
 
-// function removes(str){
-//   return str.split(' ').join('')
+// function fizzBuzz(int){
+//   for (let i = 1; i <= int; i++){
+//   if (i % 6 === 0){
+//     console.log('Fizz Buzz')
+//   }else if(i % 2 === 0){
+//     console.log('Fizz')
+//   }else if(i % 3 === 0){
+//     console.log('Buzz')
+//   }else{
+//     console.log(i)
+//   }
+//   }
 // }
 
-// function correct(string){
+// // You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
+// // Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+// // Example 1:
+
+// // Input: jewels = "aA", stones = "aAAbbbb"
+// // Output: 3
+// // Example 2:
+
+// // Input: jewels = "z", stones = "ZZ"
+// // Output: 0
+ 
+
+// // Constraints:
+
+// // 1 <= jewels.length, stones.length <= 50
+// // jewels and stones consist of only English letters.
+// // All the characters of jewels are unique.
+
+
+// function runTheJewelz(jewels, stones){
+//   const map = {},
+//   count = 0
+
+//   for(const jewel of jewels){
+//     map[jewel] = true
+//   }
+//   for (const stone of stones){
+//     if (map[stone]){
+//       count++
+//     }
+//   }
+//   return count
 // }
 
-//spread syntax
-//expands an array into its elements
+// // Count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+
+// // What if the string is empty? Then the result should be empty object literal, {}.
 
 // function countChars(str){
 //   let countObj = {}
-//   //loop -< check val exist ? vall++ : val - 1
-//   for (const c  of str){
+//   for (const c of str){
 //     if (countObj[c]){
 //       countObj[c]++
 //     }else{
@@ -10056,176 +10898,160 @@
 //   }
 // }
 
-// function missingIndex(str){
-//   //make a variable for indexes
-//   let vowels = 'aeiou'
-//   //loop through the str
-//   for (let i = 0; i < str; i++){
-//     //check if 'i' exists in the str
-//     if (str.indexOf(vowels[i]) === -1){
-//       return i;
-//     }
+
+// //script async
+// //script async is code that is executed asynchronously after their download
+
+// //script async is a file that gets downloaded asynchronously(not happening at the same time) and then executed after the download
+
+// //asynchronously
+// //not happening at the same time
+
+
+// //node serer.js
+// //node server.js is how to start your node server
+
+// //node server.js is how to run the server.js file in the terminal
+
+// function highAndLow(numbers){
+//   return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+// }
+// console.log(numbers("1,2,3,4,5"), "5 1")
+// console.log(numbers("-1,-2,-3,-4,-5"), "-1 -5")
+
+// //pop()
+// //pop() removes an element from the end of an array
+
+// //how many times does forEach run?
+// //forEach runs once per elemnt in an array
+
+// //template literal
+// //a template literal is whatever is inside a set of ``
+
+// //\n
+// //new line 
+
+// //asynchronously
+// //asynchronously is things that dont happen at the same time
+
+// //asynchronously
+// //asynchronously is not happening at the same time
+
+// //git ignore
+// //git ignore is a file used to ignore certain files or folders 
+
+// //reduce/reduceRight(func, intital)
+// //reduce method is used to calculate a single value over tyhe array be calling func for each element and passing an intermediate result between the calls
+// //reduce method is used to calculate a single value over the array by calling func for each element and passing an intermediate result betwen the calls
+
+// //step1: declaration
+// //step 2: call
+// //function declaration
+
+// //Create a function that has a loop that prints '21' 21 times to the console and then call that function
+// //Bonus can you make it print '21' 21 times to the dom?
+
+// function twentyOne(savage){
+//   for (let i = 0; i < 21; i++){
+//     console.log('21')
+//   }
+// }
+// twentyOne();
+
+// function savage(){
+//   for(let i = 0; i <= 21; i++){
+//     document.querySelector('#savagery').innerText += '21'
 //   }
 // }
 
-// console.log(missingIndex("John Doe hs seven red pples under his bsket"), '0')
-// console.log(missingIndex("Bb Smith sent us six neatly arranged range bicycles"), '3')
+// savage();
 
-// //fizzbuzz
-// function fizzBuss (num){
-//   // % 2 : fizz
-//   // % 3 : buzz
-//   // % 2 * 3 : fizzBuzz
-//   // : 1
-//   for (let i = 1; i <= num; i++){
-//     if (i % 6 === 0){
-//       console.log('fizzBuzz')
-//     }else if (i % 2 === 0){
-//       console.log('fizz')
-//     }else if (i % 3 === 0){
-//       console.log('buzz')
-//     }else{
-//       console.log(i)
-//     }
-//   }
+// //how do we apply MVC?
+// //we apply MVC by separating our code into the model, the view, and the controller
+
+
+
+// function fib(num){
+//   if(num<2){return num}
+//   return fib(num-1) + fib(num-2)
 // }
 
-// console.log(fizzBuss(6), "1,fizz,buzz,fizz,5,fizzBuzz")
-// console.log(fizzBuss(8), "1,fizz,buzz,fizz,5,fizzBuzz,7,fizz")
+// console.log(fib(2))
 
-// Given a magazine of words and a ransom note, determine if it’s possible to “cut out” and create the ransom note from the magazine words.
+// // Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
 
-// const magazine =
-//  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
-
-// describe("Ransom Note", () => {
-//  it("Should return true", () => {
-//   assert.equal(ransomNote("sit ad est sint", magazine), true);
-//  });
-
-// it("Should return false", () => {
-//   assert.equal(ransomNote("sit ad est love", magazine), false);
-//  });
-
-// it("Should return true", () => {
-//   assert.equal(ransomNote("sit ad est sint in in", magazine), true);
-//  });
-
-// it("Should return false", () => {
-//   assert.equal(ransomNote("sit ad est sint in in in in", magazine), false);
-//  });
-// });
-
-// const magazine =
-//   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
-
-// function ransomNote(note, magazine){
-//   const noteWords = note.split(' ')
-//   const magazineWords = magazine.split(' ')
-//   const magazineHas = {}
-//   let possible = true
-
-//   for (word of magazineWords){
-//     magazineHas[word] = magazineHash[word] + 1 || 1
+// function twoInt (a,b){
+//   //make an array
+//   let array = []
+//   //loop through the integers between b and a where b > a
+//   for (let i = a; i <= b; i++){
+//     //push the number to the array
+//     array.push(i)
 //   }
-
-//   for(const word of noteWords){
-//     if (magazineHas[word]){
-//       magazine[word]--
-//       if (magazineHas[word] < 0) return false
-//     }else{
-//       return false
-//     }
-//   }
-//   return possible
+//   //return the array
+//   return array;
 // }
 
 // //script
 // //script is client side code
 
-// //semantics
-// //semantics is how you describe your data or code or content
-
 // //connectivity
 // //connectivity allows you to communicate with the server in new and innovative ways
 
-// app.listen('3000',function(){
-//   console.log('listening on 3000')
-// })
+// //what is progressive rendering
+// //progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions
 
-// function bmi (weight, height){
-//   let bodyMass = weight/height**2
-//   if (bodyMass <= 18.5){
-//     console.log('underweight')
-//   }else if (bodyMass <= 25){
-//     console.log('normal')
-//   }else if (bodyMass <= 30){
-//     console.log('overweight')
-//   }else{
-//     console.log('obese')
+// //asynchronously
+// //asynchronously is to not happen at the same time
+
+// //--save
+// //saves express as a dependency in package.json
+
+// //(req,res) and what they're used in
+// //(req,res) is a (request, response) and they're used in callbacks
+
+
+// //You are to write a function that takes a string as it's first parameter. This string will be a string of words.
+// //You are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string. The first word would be represented by 0.
+// //Once you have the located string, you are finally going to multiply by the third provided parameter, which will also be an integer. You are additionally required to add a hyphen in between each word.
+// function modifyMultiply (str,loc,num) {
+//   //the string is a string of words, so make an array
+//   let arr = []
+//   //create a variable for the string to split
+//   let get = str.split(' ')
+//   //create a variable for the word in a specific location in the string
+//   let word = get[loc]
+//   //the first word is represented by 0
+//   let count = 0
+
+//   for (let i = count; i < num; i++){
+//     arr.push(word)
+//     count++
 //   }
+//   return arr.join('-')
 // }
-
-// console.log(bmi(86, 1.7), 'overweight')
-
-// function invert(array) {
-//   let newArr = []
-//   for (let i = 0; i < array.length; i++){
-//     newArr.push(-array[i])
-//   }
-//   return newArr
-// }
-
-// class Kata {
-//   static getVolumeOfCuboid(l,w,h) {
-//     return l*w*h    
-//   }
-// }
-
-// //the data types in javascript are 
-// //string,number,boolean,null,undefined,symbol,objects
 
 // function modifyMultiply (str,loc,num) {
 
 // }
 
-// // Given an array of numbers, return all pairs that add up to a given sum. The numbers can be used more than once.
-
-// // describe("Two Sum", () => {
-// //  it("Should implement two sum", () => {
-// //   assert.deepEqual(twoSum([1, 2, 2, 3, 4], 4), [[2, 2], [3, 1]]);
-// //  });
-// // });
-
-// function twoSum(arr, sum){
-//   const pairs = []
-//   const nums = {}
-
-//   for(const num1 of arr){
-//     const num2 = sum - num1
-//     if(nums[num2]){
-//       pairs.push([num1,num2])
-//     }else{
-//       nums[num] = 1
-//     }
+// const memo = {}
+// function fib(n){
+//   if(n <= 1){
+//     return n
+//   }else if( memo[n] ){
+//     return memo[n]
+//   }else{
+//     let result = fib(n-1) + fib(n - 2)
+//     memo[n] = result
+//     return result
 //   }
-//   return pairs
-
 // }
-// console.log(twoSum([1, 2, 2, 3, 4], 4), '[[2, 2], [3, 1]]')
 
-// //you are to write a function that takes a string as it's first paramter.
-// //the string will bea  string of words
-// //you are expected to then use the second parameter
-// //which will be an integer
-// //to find the corresponding word in the given string
-// //the first word would be represented by 0
-// //once you have the located string you are finally going to multiply by the third provided paramter,
-// //which will also be an integer.
-// //you are additionally required to add a hyphen in between each word
+// console.log(fib(5))
 
-// function modifyMultiply(str,loc,num){
-//   let arr = [];
+// function modifyMultiply (str,loc,num) {
+//   let arr = []
 //   let get = str.split(' ')
 //   let word = get[loc]
 //   let count = 0
@@ -10237,51 +11063,141 @@
 //   return arr.join('-')
 // }
 
-// function olympicRings (a) {
-//   let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
-//   let twoRings = ['B'];
-//   let score = 0;
-
-//   a.split('').map(x => rings.includes(x)
-//   ? score++
-//   : twoRings.includes(x)
-//   ? score+=2
-//   : x
-//   )
-
-//   score = Math.floor(score/2)
-
-//   return score <= 1
+// function greet (name, owner) {
+//   if (name === owner){
+//     return 'Hello boss'
+//   }else{
+//     return 'Hello guest'
+//   }
 // }
 
-// function apple(x){
-//   return (x**2 > 1000)
-//   ? "It's hotter than the sun!" 
-//   : "Help"
+// //NaN === Not a Number
+
+// //what is repetition in a loop
+// //repetition in a loop is 
+// //a repetition in loops is an iteration
+
+// //you are going to be given a word. your job is to return the middle character of the word. if the word's length is odd, return the middle character. if the word's length is even, return the middle two characters
+
+// function middleChar(word){
+//   if (word.length % 2 === 0){
+//     return word.substring((word.length/2) +1, (word.length/2))
+//   }else{
+//     return word.substring((word.length/2) - 1, (word.length/2) + 1)
+//   }
 // }
 
-// //indexOf/lastIndexOf(item, pos)
-// //look for an item starting from position pos, return the index or -1 if not found
+// let num = 10
+// num -=10
+// console.log(num)
 
-// function multipleOfIndex(array) {
-//   return array.filter((a,b) => a % b == 0)
+// let val = Number(document.querySelector('input'))
+// val+=25
+// alert(val)
+
+// let h1 = document.querySelector('h1')
+
+// h1.addEventListener('click', addTwo)
+// function addTwo(){
+//   console.log(val+num)
 // }
 
-// function highAndLow(numbers){
-//   numbers = numbers.split(' ')
-//   return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+// function caseState(num){
+//   let param = 25
+//   switch(param){
+//     case 1 : return '30'
+//     case 2 : return '35'
+//     default : return '0'
+//   }
 // }
 
-// var TempleStrings = function(obj, feature) {
-//   return `${obj} are ${feature}`
+// //typeOf will return the type of data the parameter is in
+
+// //typeOf checks the value to its right and returns or passes back, a string of the data type
+
+// // Given an array nums of size n, return the majority element.
+
+// // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+// // Example 1:
+
+// // Input: nums = [3,2,3]
+// // Output: 3
+// // Example 2:
+
+// // Input: nums = [2,2,1,1,1,2,2]
+// // Output: 2
+
+// function majorityElement(arr){
+//   let elem = {}
+//   count = 0
+//   majElem = arr[0]
+//   for(const num of arr){
+//     elem[num] = elem[num] + 1 || 1
+//   }
+//   for (const n in elem){
+//     if (elem[n] > count){
+//       count = elem[n]
+//       majElem = n
+//     }
+//   }
+//   return majElem
 // }
+
+// // You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+
+// // Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+// // Example 1:
+
+// // Input: jewels = "aA", stones = "aAAbbbb"
+// // Output: 3
+// // Example 2:
+
+// // Input: jewels = "z", stones = "ZZ"
+// // Output: 0
+ 
+
+// // Constraints:
+
+// // 1 <= jewels.length, stones.length <= 50
+// // jewels and stones consist of only English letters.
+// // All the characters of jewels are unique.
+
+
+// function runJewlez(jewels, stones){
+//   const map = {}
+//   count = 0
+
+//   for (const jewel of jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// console.log(runJewelz("aA", "aAAbbb"), "3")
+
+// // Given a string of characters, return the character that appears the most often.
+
+// // describe("Max Character", () => {
+// //  it("Should return max character", () => {
+// //   assert.equal(max("Hello World!"), "l");
+// //  });
+// // });
+
+// // No String or Array Methods (well brute force it first, but then no methods)! 
 
 // function maxCharacter(str){
 //   let charMap = {}
 //   count = 0
-//   maxChar = null;
+//   maxChar = null
 
-//   for (const char of str){
+//   for(const char of str){
 //     charMap[char] = charMap[char] + 1 || 1
 //   }
 
@@ -10293,79 +11209,30 @@
 //   }
 //   return maxChar
 // }
+// console.log(maxCharacter('Hello World!'), "l")
 
-// console.log(maxCharacter('Hello World!'), 'l')
+// //semantics
+// //semantics is how to more accurately describe your content
 
-// function majorityElement(arr){
-//   let elem = {}
-//   count = 0
-//   majElem = arr[0]
-//   for(const num of arr){
-//     elem[num] = elem[num] + 1 || 1
-//   }
+// //the listen method in express
+// app.listen(3000, function (){
+//   console.log('listening on 3000')
+// })
 
-//   for(const n in elem){
-//     if (elem[n] > count){
-//       count = elem[n]
-//       majElem = n
-//     }
-//   }
-//   return majElem
-// }
 
-// function runTheJewelz(jewels, stones){
-//   const map = {}
-//   count = 0
+// //write a function that takes a string as its first parameter
+// //this string is a string of words
+// //the second parameter, which will be an integer, to find the corresponding word in the given string. 
+// //the first word would be represented by 0
 
-//   for (const jewel of jewels){
-//     map[jewel] = true
-//   }
+// //once you have the located string you are going to multiply by it the third provided parameter, which will also be an integer
+// //you are additionally required to add a hyphen in between each word
 
-//   for (const stone of stones){
-//     if(map[stone]){
-//       count++
-//     }
-//   }
-//   return count;
-// }
-
-// console.log(runeTheJewelz("aA", 'aAAbbbb'), '3')
-
-// function maxCharacters(str){
-//   let charMap = {}
-//   count = 0
-//   maxChar = null
-
-//   for(const char of str){
-//     if(charMap[char] > count){
-//       count = charMap[char]
-//       maxChar = char
-//     }
-//   }
-//   return maxChar
-// }
-
-// function majorityElement(arr){
-//   let elem = {}
-//   count = 0
-//   majElem = arr[0]
-//   for(const num of arr){
-//     elem[num] = elem[num] + 1 || 1
-//   }
-
-//   for (const n in elem){
-//     if (elem[n] > count){
-//       count = elem[n]
-//       majElem = n
-//     }
-//   }
-//   return majElem
-// }
 
 // function modifyMultiply (str,loc,num) {
 //   let arr = []
-//   let get = str.split(' ')
-//   let word = get[loc]
+//   let word = str.split(' ')
+//   let get = word[loc]
 //   let count = 0
 
 //   for (let i = count; i < num; i++){
@@ -10375,78 +11242,207 @@
 //   return arr.join('-')
 // }
 
-// function likeOrDislike(buttons) {
-//   let state = 'Nothing'
+// //filter method syntax
+// const words = []
+// const result = words.filter(word => word.length > 6)
+// return result
 
-//   for (i = 0; i < buttons.length; i++){
-//     if(buttons[i] === state){
-//       state = 'Nothing'
-//     }else{
-//       state = buttons[i]
-//     }
-//   }
-//   return state;
+// function cockroach(speed){
+//   return Math.floor(speed*27.7778)
 // }
 
-// //methods
-// //methods are actions that we can perform
-// //methods are things like split() join()
-// //actions
+// //how to add an element to an array
+// //push()
 
-// function castState(thing){
-//   thing = 'hey'
-//   switch(thing){
-//     case 'hi':
-//       return 'hi'
+// var min = function(list){
+//   return Math.min(...list)
+// }
+// var max = function(list){
+//   return Math.max(...list)
+// }
+
+// function capitalizeWord(word) {
+//   return word[0].toUpperCase() + word.slice(1)
+// } 
+
+
+// // Count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+
+// // What if the string is empty? Then the result should be empty object literal, {}.
+
+// function occurences(s){
+//   //create an object
+//   let countObj = {}
+//   //loop -> check val exist ? val++ : val-1
+//   for (const c of str){
+//     if(countObj[c]){
+//       countObj[c]++
+//     }else{
+//       countObj[c] = 1
+//     }
+//   }
+// }
+// console.log(occurences("aaabbb"), "'a':3, 'b':3")
+// console.log(occurences("aabb"), "'a':2, 'b':2")
+
+// //#intro
+// //id selector
+
+// //the process of storing function(methods) with their associated data(properties) - in an object
+// //encapsulation
+// //the process of storing function(methods) with their associated data(properties) - in an object
+// //encapsulation
+// //the process of storing functin(methods) with their assocaited data(properties) - in an object
+// //encapsulation
+
+// // a function declaration
+
+// //asynchronously
+// //asynchronously is things not happening at the same time
+
+// function modifyMultiply (str,loc,num) {
+//   //make an array to dump elements into
+//   let arr = []
+//   //split the str
+//   let word = str.split(' ')
+//   //find the location of the specific word in the given string
+//   let get = word[loc]
+//   //start a counter at 0
+//   let count = 0
+
+//   //loop starting at the count -> ending at the number in num
+//   for (let i = count; i <= num.length; i++){
+//     //multiply the string by the in the third provided parameter
+//     arr.push(word)
+//     count++
+//   }
+//   //hyphen between the words
+//   return arr.join('-')
+// }
+
+// //return true for all the names that are exactly 4
+// function friendFilter(name){
+//   return name.filter(word => word.length === 4)
+// }
+
+// //return and alert the sum of the numbers in an array
+// let arr = []
+// let array = arr.reduce((a,b) => a + b, 0)
+// alert(array)
+
+// //function expressions are created as you encounter them in the DOM
+// //function expressions are created when the execution flow reaches them
+
+// //spread syntax(...)
+// //spread syntax expands an array into its elements
+// //spread syntax adds all the numbers in the array
+
+// //case statement to return a specific phrase based on the number of petals left
+// function howMuchILoveYou(nbPetals) {
+//   //switch equation
+//   //if the number in nbPetals - 1
+//   switch((nbPetals - 1) % 6){
+//     case 1 : return 'a lil'
+//     case 2 : return 'a lot'
+//     case 3 : return 'passionately'
+//     case 4 : return 'madly'
+//     case 5 : return 'not even a little'
+//     default : return 'I love you.'
 //   }
 // }
 
 // function solution(str, ending){
-//   return str.endsWith(ending);
+//   return str.endsWith(ending)
 // }
 
-// function concatThing(int){
-//   return int.toString().split("").map(function(n){
-//     for(let i = 0; i < n.length; i++){
-//       return n**2
+// //Given a number as an input, print out every integer from 1 to that number. However, when the integer is divisible by 2, print out “Fizz”; when it’s divisible by 3, print out “Buzz”; when it’s divisible by both 2 and 3, print out “Fizz Buzz”.
+
+// //a bunch of parameters
+// function fizzBuzz(num){
+// //loop through the number
+//   for (let i = 1; i <= num; i++){
+//     //if i is the first number * the second number
+//     if (i % 6 === 0){
+//       //return this
+//       console.log('Fizz Buzz')
+//       //if i is the first number
+//     }else if(i % 2 === 0){
+//       //return this
+//       console.log('fizz')
+//       //if i is the second number
+//     }else if(i % 3 === 0){
+//       //return this
+//       console.log('buzz')
+//     }else{
+//       //or else just return the number
+//       console.log(i)
 //     }
-//   }).join("") * 1;
+//   }
 // }
 
-// function jewelery(jewels, stones){
-//   const map = {}
+// console.log(fizzBuzz(6), "1,fizz,buzz,fizz,5,Fizz Buzz")
+// console.log(fizzBuzz(8), "1,fizz,buzz,fizz,5,Fizz Buzz,7,fizz")
+
+
+// //find the index of the missing vowel in the given string
+// function missingV(str){
+//   //create a variable for the vowels to loop through
+//   let vowels = 'aeiou'
+//   //loop through the vowels
+//   for (let i = 0; i < vowels.length; i++){
+//     //if the index of the given vowel is === -1 or doesn't exist
+//     if (str.indexOf(vowels[i]) === -1){
+//       //return the vowel
+//       return i
+//     }
+//   }
+// }
+
+// console.log(missingV("John Doe hs seven red pples under his bsket"), "a")
+// console.log(missingV("Bb Smith sent us six neatly arranged range bicycles"), "o")
+
+// //how do you serve a page with content in multiple languages?
+// //<html lang="en">
+
+// //create a function that accepts a list/array and a number n, and return a list/array of the first n elements from the list/array
+
+// function take(arr,n){
+//   return arr.slice(0,n)
+// }
+
+// function functionName(parameter1, parameter2, parameter3){
+//   //code to be executed here
+// }
+
+// //a function
+
+// const http=require("http")
+// const fs=require("fs")
+// const url=require("url")
+// const querystring=require("querystring")
+// const figlet=require("figlet")
+
+// //modules in node
+
+// function maxCharacter(str){
+//   let charMap = {}
 //   count = 0
+//   maxChar = null
 
-//   for(const jewel of jewels){
-//     map[jewel] = true
+//   for(const char of str){
+//     charMap[char] = charMap[char] + 1 || 1
 //   }
-//   for(const stone of stones){
-//     if(map[stone]){
-//       count++
+
+//   for(const char in charMap){
+//     if(charMap[char]>count){
+//       count=charMap[char]
 //     }
 //   }
-//   return count
 // }
-
-// console.log(jewelery("aA", "aAAbbbb"), "3")
-
-// function countChars(str){
-// let countObj = {}
-// for(const c of str){
-//   if(countObj[c]){
-//     countObj[c]++
-//   }else{
-//     countObj[c] = 1
-//   }
-// }
-
-// }
-
-// console.log(countChars('aba'), "{ 'a':2, 'b':1 }")
 
 // function majorityElement(arr){
-//   let elem = {}
-//   count = 0
+//   let elem = {},
+//   count = 0,
 //   majElem = arr[0]
 //   for(const num of arr){
 //     elem[num] = elem[num] + 1 || 1
@@ -10461,13 +11457,295 @@
 //   return majElem
 // }
 
+// function runJewel(jewels, stones){
+//   const map = {},
+//   count = 0;
+
+//   for(const jewel of jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
 
 // function maxCharacter(str){
-//   let charMap = {}
-//   count = 0
-//   maxChar = null;
+//   //create an object variable
+//   let charMap = {},
+//   //start a counter
+//   count = 0,
+//   //the maximum character variable
+//   maxChar = null
 
+//   //create a loop where the counter in the object 
+//   //char is a new variable that we are looping through
 //   for(const char of str){
+//     //charMap[char] is the letter in the string
+//     //charMap[char] + 1 || 1 will add 1 if a character exists, and just === 1 if it doesn't exist
+//     charMap[char] = charMap[char] + 1 || 1
+//   }
+
+//   //looking through the characters(properties) >>IN<< my object
+//   for(const char in charMap){
+//     //looking at the character we are currently looking at 
+//     //evaluating if it is greater than the count
+//     if(charMap[char] > count){
+//       //if the property we are looking at is greater than count
+//       //set the count to equal the charMap
+//       count = charMap[char]
+//       //if the count changes, set the new maxChar to be h(char in this scenario)
+//       maxChar = char
+//     }
+//   }
+//   //return the final value
+//   return maxChar
+// }
+// console.log(maxCharacter("Hello World!"), 'l')
+
+// //$ git push <url>
+// //will push the code that is committed into the linked repository
+
+// //example: let charMap = {}
+// //creates the variable charMap which is an object dump
+
+
+// //the function in this is a function keyword
+// const calculateArea = function(width, height){
+
+// }
+
+// //-=
+// //decrease value stored in variable
+
+// function repeatStr(str){
+//   return str.split('').map(function(s){
+//     return s+s
+//   }).join('')
+// }
+
+// function sumMix(x){
+//   return x.reduce((a,b) => +a + +b, 0)
+// }
+
+// //the abstraction principle
+// //the abstraction principle is to hide the details
+
+// //the abstraction principle is to hide the details
+
+// function maxCharacter(str){
+//   //create an object variable
+//   let charMap = {}
+//   //start a counter
+//   let count = 0
+//   //create a variable that the maximum character should equal
+//   maxChar = null
+
+//   //create a loop where the counter going into the object
+//   for(const char of str){
+//   //charMap[char] is the letter in the string
+//   //charMap[char] + 1 || 1 will add 1 if a character exists, and just === 1 if it doesn't exist
+//   charMap[char] = charMap[char] + 1 || 1
+//   }
+//   //create a new loop
+//   for(const char in charMap){
+//     //where is the letter in the string
+//     if(charMap > count){
+//       //make it equal the count
+//       charMap[char] = count
+//       //if the count changes make the maxChar = char
+//       maxChar = char
+//     }
+//   }
+//   //return the most repeated character
+//   return maxChar
+// }
+
+// function maxJewelMaxStone (jewels, stones){
+//   //create a map object
+//   const map = {}
+//   //start a counter
+//   let count = 0
+
+//   //create a loop for jewels
+//   for (const jewel of jewels){
+//     //set the map with an index of jewel to = true
+//     map[jewel] = true
+//   }
+//   //do the same for stone
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count 
+// }
+
+// function majorityElement(arr){
+//   //create an object
+//   let elem = {}
+//   //make a count
+//   let count = 0
+//   //make a variable for the majority element
+//   majElem = arr[0]
+  
+//   //loop through the numbers in the array
+//   for(const num of arr){
+//     //add the index of elem into the object and start counting
+//     //the index of elem will equal 1 or add 1 to an existing element in the object
+//     elem[num] = elem[num] + 1 || 1
+//   }
+//   //make a loop where n is in elem
+//   for(const n in elem){
+//     //if the index of elem is greater than the count
+//     if(elem[n] > count){
+//       //make the count that index
+//       count = elem[n]
+//       //make the majElem that index
+//       majElem = n
+//     }
+//   }
+//   //return the majority element
+//   return majElem
+// }
+
+
+// //providing intelligent variety in your studies
+// //interleaving
+
+// //CRUD
+// //ctrl+c
+// //stops the current server
+
+
+// function modifyMultiply (str,loc,num) {
+//   //set up your variables
+//   //an array
+//   let arr = []
+//   //split the str
+//   let word = str.split(' ')
+//   //create a variable for the index of your string
+//   let get = word[loc]
+//   //make a counter
+//   let count = 0
+
+//   for (let i = count; i < num; i++){
+//     //if the index of the str is less that the number, increase the count by 1
+//     //push the word with the index of loc into the array the amount of times that the count is
+//     arr.push(word)
+//     count++
+//   }
+//   //join it with a -
+//   return arr.join('-')
+// }
+
+// //the default parameter is 1
+// function first(arr, n=1) {
+//   //get the first element in the sequence n times
+//   return arr.slice(0, n);
+// }
+
+// //arrow function =>
+// //what is the variable associated with the loop condition
+// //i
+
+// //call
+// //to use methods by appending an instance with:
+// //a period(the dot operator)
+// //the name of the method(.log())
+// //opening and closing paranthesis
+
+// //abstraction principle
+// //keep it clean
+// //hide the details
+
+// //object literal syntax
+// // const circle = {}
+// // the curly braces refer to an object literal >>OBJECT<<
+
+// //asynchronously
+// //asynchronously is to not happen at the same time
+
+// //script is client side code
+
+// function olympicRing(a){
+//   let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+//   let twoRings = ['B'];
+//   let score = 0;
+
+//   a.split('').map(x => rings.includes(x)
+//   ? score++
+//   : twoRings.includes(x)
+//   ? score = score+2
+//   : x
+//   )
+
+//   score = Math.floor(score/2)
+
+//   return score <= 1
+//   ? 'Not even a medal'
+//   : score === 2
+//   ? 'Bronze'
+//   : score === 3
+//   ? 'Silver'
+//   : 'Gold'
+// }
+
+// function move (position, roll) {
+//   return position + roll * 2
+// }
+
+// //example: let charMap = {}
+// //how to create and object
+
+// //what is MVC
+// //model view controller
+
+
+// //if you are going to be writing front end code, where does it belong?
+// //the view == the client
+
+// function jeweling (jewels, stones){
+//   const map = {},
+//   count = 0
+
+//   for(const jewel of jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+
+// function majorityElement(arr){
+//   let elem = {},
+//   count = 0,
+//   majElem = arr[0]
+//   for(const num of arr){
+//     elem[num] = elem[num] + 1 || 1
+//   }
+
+//   for(const n in elem){
+//     if(elem[n] > count){
+//       count = elem[n]
+//       majElem = n
+//     }
+//   }
+//   return majElem
+// }
+
+// function maxCharacter(str){
+//   let charMap = {},
+//   count = 0,
+//   maxChar = null
+
+//   for (const char of str){
 //     charMap[char] = charMap[char] + 1 || 1
 //   }
 
@@ -10480,1285 +11758,411 @@
 //   return maxChar
 // }
 
-// console.log(maxCharacter("Hello World!"), "l")
-
-
-// let thingy = 10
-// thingy -= 10
-// console.log(thingy)
-
-// let newVar = Number(document.querySelector('input').value)
-// newVar = newVar + 25
-// alert(newVar)
-
-// let h1 = document.querySelector('h1')
-// h1.addEventListener('click', addTwo)
-// function addTwo(){
-//   console.log(thingy+newVar)
+// function countChars(str){
+//   let countObj = {}
+//   for(const c of str){
+//     if(countObj[c]){
+//       countObj[c]++
+//     }else{
+//       countObj[c]=1
+//     }
+//   }
+//   return countObj
 // }
 
-// function sumMix(x){
-//   return x.reduce((a,b) +a + +b, 0)
+// //the stanton measure of an array is computed as follows
+
+// //count the number of occurences for value 1 in the array
+// //let count = n
+// //stanton measure is the number of time n appears in the array
+
+// function stantonMeasure(arr){
+//   const count = n => arr.filter(x => x === n).length
+//   return count(count(1))
 // }
 
-// //the abstraction principle is to hide the details
+// function alex(n){
+//   if (n > 10){
+//     return "GReat"
+//   }else{
+//     return"lmao"
+//   }
+// }
+
+// function stringParam(str){
+//   return str.split(' ').map(function(s){
+//     return s.split('').reverse().join('')
+//   }).join(' ')
+// }
+
+// let smash = words => words.join(' a bunch of words')
+
+// function usdcny(usd){
+//   return `${usd*6.75.toFixed(2)} Chinese Yuan`
+// }
+
+// //asbtraction principle is to hide the details
+
+// //the controller is server side code that tells the view what to do
+// //the controller gets its information from the model
+
+// function likeOrDislike (buttons){
+//   let state = 'Nothing'
+
+//   for (let i = 0; i < buttons.length; i++){
+//     if (buttons[i] === state){
+//       state = 'Nothing'
+//     }else{
+//       state = buttons[i]
+//     }
+//   }
+//   return state;
+// }
+
+// function sumOfMultiples(n, m){
+//   if (n >= m){
+//     return "INVALID"
+//   }
+
+//   let sum = 0
+//   for(let i = n; i < m; i++){
+//     let arr = []
+//     for(let i = n; i < m; i++){
+//       arr.push(i)
+//     }
+//   }
+//   return arr.reduce((a,b) => a + b, 0)
+// }
 
 // function squareOrSquareRoot(array) {
-//   return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n) : n * n)
+//   return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n) : n)
 // }
 
-// //script is client side code
-// //script async is code that is downloaded asynchronously(separately) and executes as its downloaded
-// //script defer is when everything downloads, then renders, and then gets constructed to start execution of code
-
-// //data- attributes are good for storing extra information on HTML elements
-
-// //to defer code is to wait for everything to download, then render, and then start execution of code after everything is constructed
-
-// //its a good idea to position CSS links betweeen head and JS scripts just before the body to load the webpage more beautifully
-
-// //exceptions are to link JS links at the bottom because when the browser encounter JS, it parses and executes it immediately
-
-// //a cookie is data stored in the server
-// //sessionStorage is data that will be deleted when the browser closes
-// //localStorage is data that is stored in the browser
-
-// //offline and storage refers to allowing webpages to store data on the client side
-
-// //the building blocks of HTML5 are 
-// //offline and storage
-// //semantics
-// //connectivity
-
-// //yes, react
-
-
-// //i would use a srcset attribute in an image tag when i want to serve different images to users depending on their device display width
-
-// //script is client side code
-
-//thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking
-//thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking is diffuse thinking
-
-//the law of serendipity
-//the law of serendipity is the notion that good luck comes to those who try
-
-//[rel~='tag']
-//attribute spaced selector
-
-function solution (a,b){
-  let aLength = a.length
-  let bLength = b.length
-  return aLength > bLength ?
-  +bLength + +aLength + +bLength :
-  +aLength + +bLength + +aLength  
-}
-
-function solution (a,b) {
-  return a.length > b.length ?
-  b+a+b :
-  a+b+a
-}
-
-console.log(solution(5,4), '13')
-
-//a simple interface for some complex action 
-//a simple interface for some complex action is an API
-
-//a promise syntax
-//a promise syntax is 
-
-fetch('#')
-.then(res => res.json())
-.then(data =>{
-  console.log(data)
-})
-.catch(error => {
-  console.log(`error ${error}.`)
-})
-
-//what does doctype do?
-//doctype tells the browser what version of html the text is written in
-
-//script is client side code
-//script is client side code
-
-
-//how to serve up a file in server.js
-//app.get('/', (req,res)=>{
-//  res.sendFile(__dirname + 'index.html')
-//})
-
-//how to handle a get request
-
-//app.get('/endpoint', callBackFunction)
-
-//__dirname
-//driectory you are currently in
-//has two underscores
-
-
-
-//app.get('/',function(req,res){
-// res.send('Hello World') 
-//})
-
-//a response object
-
-//how to require a file in server.js
-
-//const express = require('express')
-//const app = express()
-
-//clear:both;
-//clears both sides of a float
-
-//<legend>
-//legend (liek a map legend)
-
-//<select name ="day"><option value= "friday" selected>
-//dropdown selection menu in HTML
-
-//<h1>selectors<h1>
-
-//also heading level
-
-//properties used to provide additional information about an element
-//attributes
-
-
-function modifyMultiply (str,loc,num) {
-  let arr = [];
-  let get = str.split(' ')
-  let word = get[loc]
-  let count = 0
-
-  for (let i = count; i < num; i++){
-    arr.push(word)
-    count++
-  }
-  return arr.join('-')
-}
-
-function getAverage(marks){
-  return Math.floor(marks.reduce((a,b) => a + b, 0)/marks.length)
-}
-
-function singleStr(word){
-  let arr = [];
-  word = word.split('')
-  for (let i = 0; i < word.length; i++){
-    if (word[i] === word[i].toUpperCase()){
-      arr.push[i]
-    }
-  }
-  return arr;
-}
-
-function first(arr, n=1) {
-  return arr.slice(0,n)
-}
-
-function feast(beast, dish) {
-  return beast.slice(-1) === dish.slice(-1) && beast[0].toLowerCase() === dish[0].toLowerCase()
-}
-
-function take(arr, n) {
-  return arr.slice(0,n)
-}
-
-function getDrinkCaseState(paramter){
-  paramter=paramter.toLowerCase()
-
-  switch(paramter){
-    case 1: return '1'
-    case 2: return '2'
-    default: 'infinity'
-  }
-}
-
-function last(x) {
-  return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
-}
-
-function howMuchWater(water, load, clothes){
-  if (clothes > load*2){
-    return "Too much clothes"
-  }else if(clothes < load){
-    return "Not enough clothes"
-  }else{
-    return `${water} * 1.1 ** ${clothes - load}`
-  }
-}
-
-function stantonMeasure()
-
-//core element styles, covering the general defaults are 
-//core element styles, covering the general defaults are the base
-
-// what kind of things must you be wary of when designing or developing for multilingual sites?
-//you must be wary of layout or overflow issues
-
-//npm audit fix --force
-//forces updates to npm
-
-//<select name="day" multiple>
-//multiple selection in html
-
-function moveTen(s){
-  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
-  const arr = s.split('').map(x => x = str.indexOf(x)+10)
-  return arr.map(x => x = str[x]).join('')
-}
-
-function modifyMultiply (str,loc,num) {
-  let arr = []
-  let get = str.split(' ')
-  let word = get[loc]
-  let count = 0
-
-  for (let i  = count; i < num; i++){
-    arr.push(woprd)
-    count++
-  }
-  return arr.join('-')
-}
-
-function nearestSq(n){
-  // your code
-  return Math.pow(Math.round(Math.sqrt(n)), 2)
-}
-
-//concatenate
-//concatenate is to connect
-
-//synchronous
-//synchronous is code that executes one operation at a time
-
-//Math.random
-//picks a random number 
-//Math.random()*50
-
-//pop()
-//pop() removes an element from the end of an array
-//splice()
-//splice() removes an element from a specific point in an array
-
-function nthEven(n){
-  // your code here
-  return n*n-2
-}
-
-// Given an array nums of size n, return the majority element.
-
-// The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
-
-// Example 1:
-
-// Input: nums = [3,2,3]
-// Output: 3
-// Example 2:
-
-// Input: nums = [2,2,1,1,1,2,2]
-// Output: 2
-
-function majorityElement(arr){
-  let elem = {}
-  count = 0
-  majElem = arr[0]
-  
-  for(const num of arr){
-    elem[num] = elem[num] + 1 || 1
-  }
-
-  for (const n in elem){
-    if(elem[n] > count){
-      count = elem[n]
-      majElem = n
-    }
-  }
-
-  return majElem
-}
-
-// Given a string of characters, return the character that appears the most often.
-
-// describe("Max Character", () => {
-//  it("Should return max character", () => {
-//   assert.equal(max("Hello World!"), "l");
-//  });
-// });
-
-// No String or Array Methods (well brute force it first, but then no methods)! 
-
-function maxChar(str){
-  let charMap = {},
-  count = 0,
-  maxChar = null
-
-  for (const char of str){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  for (const char in charMap){
-    if (charMap[char] > count){
-      count = charMap[char]
-      maxChar = char
-    }
-  }
-  return maxChar
-}
-
-console.log(maxCharacter('Hello World!'), "l")
-
-// Your job is to figure out the index of which vowel is missing from a given string:
-
-// A has an index of 0,
-// E has an index of 1,
-// I has an index of 2,
-// O has an index of 3,
-// U has an index of 4.
-// Notes: There is no need for string validation and every sentence given will contain all vowles but one. Also, you won't need to worry about capitals.
-
-// Examples
-// "John Doe hs seven red pples under his bsket"          =>  0  ; missing: "a"
-// "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
-
-function missingVowel(str){
-  let vowels = 'aeiou'
-  for(let i = 0; i < vowels.length; i++){
-    if (str.indexOf(vowels[i]) === -1){
-      return i
-    }
-  }
-}
-
-function fizzBuzz(int){
-  for (let i = 1; i <= int; i++){
-  if (i % 6 === 0){
-    console.log('Fizz Buzz')
-  }else if(i % 2 === 0){
-    console.log('Fizz')
-  }else if(i % 3 === 0){
-    console.log('Buzz')
-  }else{
-    console.log(i)
-  }
-  }
-}
-
-// You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
-
-// Letters are case sensitive, so "a" is considered a different type of stone from "A".
-
-// Example 1:
-
-// Input: jewels = "aA", stones = "aAAbbbb"
-// Output: 3
-// Example 2:
-
-// Input: jewels = "z", stones = "ZZ"
-// Output: 0
- 
-
-// Constraints:
-
-// 1 <= jewels.length, stones.length <= 50
-// jewels and stones consist of only English letters.
-// All the characters of jewels are unique.
-
-
-function runTheJewelz(jewels, stones){
-  const map = {},
-  count = 0
-
-  for(const jewel of jewels){
-    map[jewel] = true
-  }
-  for (const stone of stones){
-    if (map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-// Count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
-
-// What if the string is empty? Then the result should be empty object literal, {}.
-
-function countChars(str){
-  let countObj = {}
-  for (const c of str){
-    if (countObj[c]){
-      countObj[c]++
-    }else{
-      countObj[c] = 1
-    }
-  }
-}
-
-
-//script async
-//script async is code that is executed asynchronously after their download
-
-//script async is a file that gets downloaded asynchronously(not happening at the same time) and then executed after the download
-
-//asynchronously
-//not happening at the same time
-
-
-//node serer.js
-//node server.js is how to start your node server
-
-//node server.js is how to run the server.js file in the terminal
-
-function highAndLow(numbers){
-  return `${Math.max(...numbers)} ${Math.min(...numbers)}`
-}
-console.log(numbers("1,2,3,4,5"), "5 1")
-console.log(numbers("-1,-2,-3,-4,-5"), "-1 -5")
-
-//pop()
-//pop() removes an element from the end of an array
-
-//how many times does forEach run?
-//forEach runs once per elemnt in an array
-
-//template literal
-//a template literal is whatever is inside a set of ``
-
-//\n
-//new line 
-
-//asynchronously
-//asynchronously is things that dont happen at the same time
-
-//asynchronously
-//asynchronously is not happening at the same time
-
-//git ignore
-//git ignore is a file used to ignore certain files or folders 
-
-//reduce/reduceRight(func, intital)
-//reduce method is used to calculate a single value over tyhe array be calling func for each element and passing an intermediate result between the calls
-//reduce method is used to calculate a single value over the array by calling func for each element and passing an intermediate result betwen the calls
-
-//step1: declaration
-//step 2: call
-//function declaration
-
-//Create a function that has a loop that prints '21' 21 times to the console and then call that function
-//Bonus can you make it print '21' 21 times to the dom?
-
-function twentyOne(savage){
-  for (let i = 0; i < 21; i++){
-    console.log('21')
-  }
-}
-twentyOne();
-
-function savage(){
-  for(let i = 0; i <= 21; i++){
-    document.querySelector('#savagery').innerText += '21'
-  }
-}
-
-savage();
-
-//how do we apply MVC?
-//we apply MVC by separating our code into the model, the view, and the controller
-
-
-
-function fib(num){
-  if(num<2){return num}
-  return fib(num-1) + fib(num-2)
-}
-
-console.log(fib(2))
-
-// Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
-
-function twoInt (a,b){
-  //make an array
-  let array = []
-  //loop through the integers between b and a where b > a
-  for (let i = a; i <= b; i++){
-    //push the number to the array
-    array.push(i)
-  }
-  //return the array
-  return array;
-}
-
-//script
-//script is client side code
-
-//connectivity
-//connectivity allows you to communicate with the server in new and innovative ways
-
-//what is progressive rendering
-//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions
-
-//asynchronously
-//asynchronously is to not happen at the same time
-
-//--save
-//saves express as a dependency in package.json
-
-//(req,res) and what they're used in
-//(req,res) is a (request, response) and they're used in callbacks
-
-
-//You are to write a function that takes a string as it's first parameter. This string will be a string of words.
-//You are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string. The first word would be represented by 0.
-//Once you have the located string, you are finally going to multiply by the third provided parameter, which will also be an integer. You are additionally required to add a hyphen in between each word.
-function modifyMultiply (str,loc,num) {
-  //the string is a string of words, so make an array
-  let arr = []
-  //create a variable for the string to split
-  let get = str.split(' ')
-  //create a variable for the word in a specific location in the string
-  let word = get[loc]
-  //the first word is represented by 0
-  let count = 0
-
-  for (let i = count; i < num; i++){
-    arr.push(word)
-    count++
-  }
-  return arr.join('-')
-}
-
-function modifyMultiply (str,loc,num) {
-
-}
-
-const memo = {}
-function fib(n){
-  if(n <= 1){
-    return n
-  }else if( memo[n] ){
-    return memo[n]
-  }else{
-    let result = fib(n-1) + fib(n - 2)
-    memo[n] = result
-    return result
-  }
-}
-
-console.log(fib(5))
-
-function modifyMultiply (str,loc,num) {
-  let arr = []
-  let get = str.split(' ')
-  let word = get[loc]
-  let count = 0
-
-  for (let i = count; i < num; i++){
-    arr.push(word)
-    count++
-  }
-  return arr.join('-')
-}
-
-function greet (name, owner) {
-  if (name === owner){
-    return 'Hello boss'
-  }else{
-    return 'Hello guest'
-  }
-}
-
-//NaN === Not a Number
-
-//what is repetition in a loop
-//repetition in a loop is 
-//a repetition in loops is an iteration
-
-//you are going to be given a word. your job is to return the middle character of the word. if the word's length is odd, return the middle character. if the word's length is even, return the middle two characters
-
-function middleChar(word){
-  if (word.length % 2 === 0){
-    return word.substring((word.length/2) +1, (word.length/2))
-  }else{
-    return word.substring((word.length/2) - 1, (word.length/2) + 1)
-  }
-}
-
-let num = 10
-num -=10
-console.log(num)
-
-let val = Number(document.querySelector('input'))
-val+=25
-alert(val)
-
-let h1 = document.querySelector('h1')
-
-h1.addEventListener('click', addTwo)
-function addTwo(){
-  console.log(val+num)
-}
-
-function caseState(num){
-  let param = 25
-  switch(param){
-    case 1 : return '30'
-    case 2 : return '35'
-    default : return '0'
-  }
-}
-
-//typeOf will return the type of data the parameter is in
-
-//typeOf checks the value to its right and returns or passes back, a string of the data type
-
-// Given an array nums of size n, return the majority element.
-
-// The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
-
-// Example 1:
-
-// Input: nums = [3,2,3]
-// Output: 3
-// Example 2:
-
-// Input: nums = [2,2,1,1,1,2,2]
-// Output: 2
-
-function majorityElement(arr){
-  let elem = {}
-  count = 0
-  majElem = arr[0]
-  for(const num of arr){
-    elem[num] = elem[num] + 1 || 1
-  }
-  for (const n in elem){
-    if (elem[n] > count){
-      count = elem[n]
-      majElem = n
-    }
-  }
-  return majElem
-}
-
-// You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
-
-// Letters are case sensitive, so "a" is considered a different type of stone from "A".
-
-// Example 1:
-
-// Input: jewels = "aA", stones = "aAAbbbb"
-// Output: 3
-// Example 2:
-
-// Input: jewels = "z", stones = "ZZ"
-// Output: 0
- 
-
-// Constraints:
-
-// 1 <= jewels.length, stones.length <= 50
-// jewels and stones consist of only English letters.
-// All the characters of jewels are unique.
-
-
-function runJewlez(jewels, stones){
-  const map = {}
-  count = 0
-
-  for (const jewel of jewels){
-    map[jewel] = true
-  }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-console.log(runJewelz("aA", "aAAbbb"), "3")
-
-// Given a string of characters, return the character that appears the most often.
-
-// describe("Max Character", () => {
-//  it("Should return max character", () => {
-//   assert.equal(max("Hello World!"), "l");
-//  });
-// });
-
-// No String or Array Methods (well brute force it first, but then no methods)! 
-
-function maxCharacter(str){
-  let charMap = {}
-  count = 0
-  maxChar = null
-
-  for(const char of str){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  for (const char in charMap){
-    if(charMap[char] > count){
-      count = charMap[char]
-      maxChar = char
-    }
-  }
-  return maxChar
-}
-console.log(maxCharacter('Hello World!'), "l")
-
-//semantics
-//semantics is how to more accurately describe your content
-
-//the listen method in express
-app.listen(3000, function (){
-  console.log('listening on 3000')
-})
-
-
-//write a function that takes a string as its first parameter
-//this string is a string of words
-//the second parameter, which will be an integer, to find the corresponding word in the given string. 
-//the first word would be represented by 0
-
-//once you have the located string you are going to multiply by it the third provided parameter, which will also be an integer
-//you are additionally required to add a hyphen in between each word
-
-
-function modifyMultiply (str,loc,num) {
-  let arr = []
-  let word = str.split(' ')
-  let get = word[loc]
-  let count = 0
-
-  for (let i = count; i < num; i++){
-    arr.push(word)
-    count++
-  }
-  return arr.join('-')
-}
-
-//filter method syntax
-const words = []
-const result = words.filter(word => word.length > 6)
-return result
-
-function cockroach(speed){
-  return Math.floor(speed*27.7778)
-}
-
-//how to add an element to an array
-//push()
-
-var min = function(list){
-  return Math.min(...list)
-}
-var max = function(list){
-  return Math.max(...list)
-}
-
-function capitalizeWord(word) {
-  return word[0].toUpperCase() + word.slice(1)
-} 
-
-
-// Count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
-
-// What if the string is empty? Then the result should be empty object literal, {}.
-
-function occurences(s){
-  //create an object
-  let countObj = {}
-  //loop -> check val exist ? val++ : val-1
-  for (const c of str){
-    if(countObj[c]){
-      countObj[c]++
-    }else{
-      countObj[c] = 1
-    }
-  }
-}
-console.log(occurences("aaabbb"), "'a':3, 'b':3")
-console.log(occurences("aabb"), "'a':2, 'b':2")
-
-//#intro
-//id selector
-
-//the process of storing function(methods) with their associated data(properties) - in an object
-//encapsulation
-//the process of storing function(methods) with their associated data(properties) - in an object
-//encapsulation
-//the process of storing functin(methods) with their assocaited data(properties) - in an object
-//encapsulation
-
-// a function declaration
-
-//asynchronously
-//asynchronously is things not happening at the same time
-
-function modifyMultiply (str,loc,num) {
-  //make an array to dump elements into
-  let arr = []
-  //split the str
-  let word = str.split(' ')
-  //find the location of the specific word in the given string
-  let get = word[loc]
-  //start a counter at 0
-  let count = 0
-
-  //loop starting at the count -> ending at the number in num
-  for (let i = count; i <= num.length; i++){
-    //multiply the string by the in the third provided parameter
-    arr.push(word)
-    count++
-  }
-  //hyphen between the words
-  return arr.join('-')
-}
-
-//return true for all the names that are exactly 4
-function friendFilter(name){
-  return name.filter(word => word.length === 4)
-}
-
-//return and alert the sum of the numbers in an array
-let arr = []
-let array = arr.reduce((a,b) => a + b, 0)
-alert(array)
-
-//function expressions are created as you encounter them in the DOM
-//function expressions are created when the execution flow reaches them
-
-//spread syntax(...)
-//spread syntax expands an array into its elements
-//spread syntax adds all the numbers in the array
-
-//case statement to return a specific phrase based on the number of petals left
-function howMuchILoveYou(nbPetals) {
-  //switch equation
-  //if the number in nbPetals - 1
-  switch((nbPetals - 1) % 6){
-    case 1 : return 'a lil'
-    case 2 : return 'a lot'
-    case 3 : return 'passionately'
-    case 4 : return 'madly'
-    case 5 : return 'not even a little'
-    default : return 'I love you.'
-  }
-}
-
-function solution(str, ending){
-  return str.endsWith(ending)
-}
-
-//Given a number as an input, print out every integer from 1 to that number. However, when the integer is divisible by 2, print out “Fizz”; when it’s divisible by 3, print out “Buzz”; when it’s divisible by both 2 and 3, print out “Fizz Buzz”.
-
-//a bunch of parameters
-function fizzBuzz(num){
-//loop through the number
-  for (let i = 1; i <= num; i++){
-    //if i is the first number * the second number
-    if (i % 6 === 0){
-      //return this
-      console.log('Fizz Buzz')
-      //if i is the first number
-    }else if(i % 2 === 0){
-      //return this
-      console.log('fizz')
-      //if i is the second number
-    }else if(i % 3 === 0){
-      //return this
-      console.log('buzz')
-    }else{
-      //or else just return the number
-      console.log(i)
-    }
-  }
-}
-
-console.log(fizzBuzz(6), "1,fizz,buzz,fizz,5,Fizz Buzz")
-console.log(fizzBuzz(8), "1,fizz,buzz,fizz,5,Fizz Buzz,7,fizz")
-
-
-//find the index of the missing vowel in the given string
-function missingV(str){
-  //create a variable for the vowels to loop through
-  let vowels = 'aeiou'
-  //loop through the vowels
-  for (let i = 0; i < vowels.length; i++){
-    //if the index of the given vowel is === -1 or doesn't exist
-    if (str.indexOf(vowels[i]) === -1){
-      //return the vowel
-      return i
-    }
-  }
-}
-
-console.log(missingV("John Doe hs seven red pples under his bsket"), "a")
-console.log(missingV("Bb Smith sent us six neatly arranged range bicycles"), "o")
-
-//how do you serve a page with content in multiple languages?
-//<html lang="en">
-
-//create a function that accepts a list/array and a number n, and return a list/array of the first n elements from the list/array
-
-function take(arr,n){
-  return arr.slice(0,n)
-}
-
-function functionName(parameter1, parameter2, parameter3){
-  //code to be executed here
-}
-
-//a function
-
-const http=require("http")
-const fs=require("fs")
-const url=require("url")
-const querystring=require("querystring")
-const figlet=require("figlet")
-
-//modules in node
-
-function maxCharacter(str){
-  let charMap = {}
-  count = 0
-  maxChar = null
-
-  for(const char of str){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  for(const char in charMap){
-    if(charMap[char]>count){
-      count=charMap[char]
-    }
-  }
-}
-
-function majorityElement(arr){
-  let elem = {},
-  count = 0,
-  majElem = arr[0]
-  for(const num of arr){
-    elem[num] = elem[num] + 1 || 1
-  }
-
-  for (const n in elem){
-    if(elem[n] > count){
-      count = elem[n]
-      majElem = n
-    }
-  }
-  return majElem
-}
-
-function runJewel(jewels, stones){
-  const map = {},
-  count = 0;
-
-  for(const jewel of jewels){
-    map[jewel] = true
-  }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-function maxCharacter(str){
-  //create an object variable
-  let charMap = {},
-  //start a counter
-  count = 0,
-  //the maximum character variable
-  maxChar = null
-
-  //create a loop where the counter in the object 
-  //char is a new variable that we are looping through
-  for(const char of str){
-    //charMap[char] is the letter in the string
-    //charMap[char] + 1 || 1 will add 1 if a character exists, and just === 1 if it doesn't exist
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  //looking through the characters(properties) >>IN<< my object
-  for(const char in charMap){
-    //looking at the character we are currently looking at 
-    //evaluating if it is greater than the count
-    if(charMap[char] > count){
-      //if the property we are looking at is greater than count
-      //set the count to equal the charMap
-      count = charMap[char]
-      //if the count changes, set the new maxChar to be h(char in this scenario)
-      maxChar = char
-    }
-  }
-  //return the final value
-  return maxChar
-}
-console.log(maxCharacter("Hello World!"), 'l')
-
-//$ git push <url>
-//will push the code that is committed into the linked repository
-
-//example: let charMap = {}
-//creates the variable charMap which is an object dump
-
-
-//the function in this is a function keyword
-const calculateArea = function(width, height){
-
-}
-
-//-=
-//decrease value stored in variable
-
-function repeatStr(str){
-  return str.split('').map(function(s){
-    return s+s
-  }).join('')
-}
-
-function sumMix(x){
-  return x.reduce((a,b) => +a + +b, 0)
-}
-
-//the abstraction principle
-//the abstraction principle is to hide the details
-
-//the abstraction principle is to hide the details
-
-function maxCharacter(str){
-  //create an object variable
-  let charMap = {}
-  //start a counter
-  let count = 0
-  //create a variable that the maximum character should equal
-  maxChar = null
-
-  //create a loop where the counter going into the object
-  for(const char of str){
-  //charMap[char] is the letter in the string
-  //charMap[char] + 1 || 1 will add 1 if a character exists, and just === 1 if it doesn't exist
-  charMap[char] = charMap[char] + 1 || 1
-  }
-  //create a new loop
-  for(const char in charMap){
-    //where is the letter in the string
-    if(charMap > count){
-      //make it equal the count
-      charMap[char] = count
-      //if the count changes make the maxChar = char
-      maxChar = char
-    }
-  }
-  //return the most repeated character
-  return maxChar
-}
-
-function maxJewelMaxStone (jewels, stones){
-  //create a map object
-  const map = {}
-  //start a counter
-  let count = 0
-
-  //create a loop for jewels
-  for (const jewel of jewels){
-    //set the map with an index of jewel to = true
-    map[jewel] = true
-  }
-  //do the same for stone
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count 
-}
-
-function majorityElement(arr){
-  //create an object
-  let elem = {}
-  //make a count
-  let count = 0
-  //make a variable for the majority element
-  majElem = arr[0]
-  
-  //loop through the numbers in the array
-  for(const num of arr){
-    //add the index of elem into the object and start counting
-    //the index of elem will equal 1 or add 1 to an existing element in the object
-    elem[num] = elem[num] + 1 || 1
-  }
-  //make a loop where n is in elem
-  for(const n in elem){
-    //if the index of elem is greater than the count
-    if(elem[n] > count){
-      //make the count that index
-      count = elem[n]
-      //make the majElem that index
-      majElem = n
-    }
-  }
-  //return the majority element
-  return majElem
-}
-
-
-//providing intelligent variety in your studies
-//interleaving
-
-//CRUD
-//ctrl+c
-//stops the current server
-
-
-function modifyMultiply (str,loc,num) {
-  //set up your variables
-  //an array
-  let arr = []
-  //split the str
-  let word = str.split(' ')
-  //create a variable for the index of your string
-  let get = word[loc]
-  //make a counter
-  let count = 0
-
-  for (let i = count; i < num; i++){
-    //if the index of the str is less that the number, increase the count by 1
-    //push the word with the index of loc into the array the amount of times that the count is
-    arr.push(word)
-    count++
-  }
-  //join it with a -
-  return arr.join('-')
-}
-
-//the default parameter is 1
-function first(arr, n=1) {
-  //get the first element in the sequence n times
-  return arr.slice(0, n);
-}
-
-//arrow function =>
-//what is the variable associated with the loop condition
-//i
-
-//call
-//to use methods by appending an instance with:
-//a period(the dot operator)
-//the name of the method(.log())
-//opening and closing paranthesis
-
-//abstraction principle
-//keep it clean
-//hide the details
-
-//object literal syntax
-// const circle = {}
-// the curly braces refer to an object literal >>OBJECT<<
-
-//asynchronously
-//asynchronously is to not happen at the same time
-
-//script is client side code
-
-function olympicRing(a){
-  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
-  let twoRings = ['B'];
-  let score = 0;
-
-  a.split('').map(x => rings.includes(x)
-  ? score++
-  : twoRings.includes(x)
-  ? score = score+2
-  : x
-  )
-
-  score = Math.floor(score/2)
-
-  return score <= 1
-  ? 'Not even a medal'
-  : score === 2
-  ? 'Bronze'
-  : score === 3
-  ? 'Silver'
-  : 'Gold'
-}
-
-function move (position, roll) {
-  return position + roll * 2
-}
-
-//example: let charMap = {}
-//how to create and object
-
-//what is MVC
-//model view controller
-
-
-//if you are going to be writing front end code, where does it belong?
-//the view == the client
-
-function jeweling (jewels, stones){
-  const map = {},
-  count = 0
-
-  for(const jewel of jewels){
-    map[jewel] = true
-  }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-
-function majorityElement(arr){
-  let elem = {},
-  count = 0,
-  majElem = arr[0]
-  for(const num of arr){
-    elem[num] = elem[num] + 1 || 1
-  }
-
-  for(const n in elem){
-    if(elem[n] > count){
-      count = elem[n]
-      majElem = n
-    }
-  }
-  return majElem
-}
-
-function maxCharacter(str){
-  let charMap = {},
-  count = 0,
-  maxChar = null
-
-  for (const char of str){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  for(const char in charMap){
-    if(charMap[char] > count){
-      count = charMap[char]
-      maxChar = char
-    }
-  }
-  return maxChar
-}
-
-function countChars(str){
+// //why is it generally a good idea to position CSS links between head /head and JS scripts
+
+// //what are data attributes good for?
+// //data attributes are good for allowing us to store extra information on HTML elements
+// //data-index-number="12345"
+
+// //describe the difference between cookie session storage and localStorage
+// //cooke is data stored on the server
+// //session storage is data stored in the browser to be deleted
+// //localstorage is data stored in the browser
+
+// function modifyMultiply (str,loc,num) {
+//   let arr =[]
+//   let word = str.split(' ')
+//   let get = word[loc]
+//   let count = 0
+
+//   for (let i = count; i < num; i++){
+//     arr.push(word)
+//     count++
+//   }
+//   return arr.join('-')
+// }
+
+// function last(x) {
+//   return x.split(' ').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+// }
+
+// function stairsIn20(s){
+//   return s.reduce((a,b) => a.concat(b)).reduce((a,b) => a + b) * 20
+// }
+
+// function multipleOfIndex(array) {
+//   return array.filter((a,b) => a % b == 0)
+// }
+
+// function twoStr(xn, xd){
+//   let count = 0
+
+//   for(i = 0; i < xn.length; i++){
+//     if(xn[i] == xd)
+//     count++
+//   }
+//   return count;
+// }
+
+// function removeFirstLast(str){
+//   return str.slice(1, -1)
+// }
+
+// function run (jewels, stones){
+//   const map = {},
+//   count = 0
+
+//   for(const jewel of jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// function majorityElement(arr){
+//   let elem = {},
+//   count = 0,
+//   majElem = arr[0]
+//   for(const num of arr){
+//     elem[num] = elem[num] + 1 || 1
+
+//   }
+
+//   for(const n in elem){
+//     if(elem[n] > count){
+//       count = elem[n]
+//       majElem = n
+//     }
+//   }
+//   return majElem
+// }
+
+// function maxChar(str){
+//   let charMap = {},
+//   count = 0,
+//   maxChar = null
+
+//   for(const c of str){
+//     charMap[char] = charMap[char] + 1 || 1
+//   }
+//   for(const c in charMap){
+//     if(charMap[char] > count){
+//       count = charMap[char]
+//       maxChar = char
+//     }
+//   }
+//   return maxChar
+// }
+
+// function fizzBuzz(num){
+//   for(let i = 1; i <= num; i++){
+//     if(i % 6 === 0){
+//       console.log('fizzBuzz')
+//     }else if(i % 2 === 0){
+//       console.log('fizz')
+//     }else if(i % 3 === 0){
+//       console.log('buzz')
+//     }else{
+//       console.log(i)
+//     }
+//   }
+// }
+
+// console.log(fizzBuzz(6), '1','fizz','buzz','fizz','5','fizzBuzz')
+
+// //to defer code
+// //execute after the download and browser finished the DOM construction and rendering
+// //asynchronously
+// //to not happen at the same time
+
+// //what are the building blocks of HTML5?
+// //offline and storage - is how you store your data
+// //connectivity - how you connect to that data
+// //semantics - how to more accurately describe your code
+
+// //how to require a file in server.js
+
+// const express = require('express')
+// const app = express();
+
+
+// function bump(x){
+//   if( x > 15){
+//     return 'Car Dead'
+//   }else{
+//     return 'Woohoo!'
+//   }
+// }
+
+// function bump(x){
+//   return x => x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!'
+// }
+
+// function bump(x){
+//   if(x.split('n').length > 16){
+//     return 'Car Dead'
+//   }else{
+//     return 'Woohoo!'
+//   }
+// }
+
+// function stuff(arr, fun){
+//   return arr.every(fun)
+// }
+
+// function stuff(arr, fun){
+//   let array = []
+//   let split = arr.split('')
+//   let loc = split[0]
+
+//   for(let i = loc; i < fun.length; i++){
+
+//   }
+// }
+
+// console.log(stuff())
+
+// function missingVowel(str){
+//   let vowels = 'aeiou'
+//   for (let i = 0; i < vowels.length; i++){
+//     if(str.indexOf(vowels[i]) === -1){
+//       return i
+//     }
+//   }
+// }
+
+// console.log(missingVowel("John Doe hs seven red pples under his bsket"), '0')
+// console.log(missingVowel("Bb Smith sent us six neatly arranged range bicycles"), "3")
+
+// let apple = 'a couple of words'
+// console.log(apple.search('apple'))
+
+// //hwo to iterate an array
+// //let arr = []
+
+// function all( arr, fun ){
+//   let array = []
+//   for(let i = 0; i < arr.length; i++){
+//     if(fun(arr[i])){
+//       array.push(arr[i])
+//     }
+//   }
+//   if(arr.length === array.length){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
+
+// //slice(start,end)
+// //creates a new array, copies elements from index start til end into it
+
+
+// //splice(pos, deleteCount, ...items)
+// //creates a new array, copies elements from the position, until the deleteCount, and what items to reinsert
+
+// const number = function(array){
+//   let arr = []
+//   if(array.length == 0){
+//     return []
+//   }else{
+//   for (let i = 0; i < array.length; i++)
+//     arr.push(`${i}: ${array[i-1]}`)
+//   }
+//   return arr;
+// }
+
+// //destructuring in javascript
+// //simplified method od extracting mulitple properties
+// //let thing = ["table", "char", "fan"]
+// //let [a,b,c] = thing
+
+// //factorial
+// //in mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example,
+
+// //5! = 5 * 4 * 3 * 2 * 1 = 120
+// // The value of 0! is 1.
+// //#Your task
+// //You have to create the function factorial that receives n and returns n!. You have to use recursion
+
+
+// //when you're thinking about recursion
+
+// function factorial(n){
+//   if(n < 2){
+//     return 1
+//   }else{
+//     return factorial(n - 1) * n
+//   }
+// }
+
+// console.log(factorial(5), '120')
+// console.log(factorial(6), '720')
+
+// //identifies the sizing and grid styles of different elements
+// // base-layout--modules-elements
+
+// //layout
+
+// app.get('/',function(req,res){
+//   res.send('Hello World')
+// })
+
+// //the syntax for a request, response object
+
+// //<script></script>
+// //javascript is contained inside the script tags in HTML
+
+// //split/join
+// //split('') object used to split arrays and strings 
+// //join(' ')object used to join arrays and strings
+
+
+// //create a meth all which takes two params:
+// function all( arr, fun ){
+//   //create an array
+//  let array = []
+//  //loop through the arr parameter
+//  for(let i = 0; i < arr.length; i++){
+//   //if the index of arr is in the function(fun)
+//   if(fun(arr[i])){
+//     //add the index of the array to the new array
+//     array.push(arr[i])
+//   }
+//   //check if the arr is true for the new array
+//   if(arr.length === array.length){
+//     return true
+//   }else{
+//     return false
+//   }
+//  }
+// }
+
+// function all(arr,fun){
+//   return arr.every(fun)
+// }
+
+// function arrayPlusArray(arr1, arr2) {
+//   return arr1.concat(arr2).reduce((a,b)=> a + b, 0)
+// }
+
+
+// //find/filter
+// //filter elements through the function, return first/all values that make it return true
+
+// //find
+// //finds elements through the function, returns first/all values that make it return true
+
+// //filter
+// //filter elements through the function, returns first/all values that make it true
+
+// //how can you write single line comments <- literally like this
+
+// function splitStr(str){
+//   return str.split(' ')
+// }
+
+// // \t is how you create a tabbing inside single and double quotes
+
+// //count all the occurring characters in a string
+// //if you have a string like aba
+// //the result should be "{'a':2, 'b':1}"
+
+
+// function recursion(n){
+//   if(n < 2){
+//     return 1
+//   }else{
+//     return n * recursion(n - 1)
+//   }
+// }
+// A
+
+function countChar(str){
   let countObj = {}
   for(const c of str){
     if(countObj[c]){
@@ -11770,148 +12174,14 @@ function countChars(str){
   return countObj
 }
 
-//the stanton measure of an array is computed as follows
-
-//count the number of occurences for value 1 in the array
-//let count = n
-//stanton measure is the number of time n appears in the array
-
-function stantonMeasure(arr){
-  const count = n => arr.filter(x => x === n).length
-  return count(count(1))
-}
-
-function alex(n){
-  if (n > 10){
-    return "GReat"
-  }else{
-    return"lmao"
-  }
-}
-
-function stringParam(str){
-  return str.split(' ').map(function(s){
-    return s.split('').reverse().join('')
-  }).join(' ')
-}
-
-let smash = words => words.join(' a bunch of words')
-
-function usdcny(usd){
-  return `${usd*6.75.toFixed(2)} Chinese Yuan`
-}
-
-//asbtraction principle is to hide the details
-
-//the controller is server side code that tells the view what to do
-//the controller gets its information from the model
-
-function likeOrDislike (buttons){
-  let state = 'Nothing'
-
-  for (let i = 0; i < buttons.length; i++){
-    if (buttons[i] === state){
-      state = 'Nothing'
-    }else{
-      state = buttons[i]
-    }
-  }
-  return state;
-}
-
-function sumOfMultiples(n, m){
-  if (n >= m){
-    return "INVALID"
-  }
-
-  let sum = 0
-  for(let i = n; i < m; i++){
-    let arr = []
-    for(let i = n; i < m; i++){
-      arr.push(i)
-    }
-  }
-  return arr.reduce((a,b) => a + b, 0)
-}
-
-function squareOrSquareRoot(array) {
-  return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n) : n)
-}
-
-//why is it generally a good idea to position CSS links between head /head and JS scripts
-
-//what are data attributes good for?
-//data attributes are good for allowing us to store extra information on HTML elements
-//data-index-number="12345"
-
-//describe the difference between cookie session storage and localStorage
-//cooke is data stored on the server
-//session storage is data stored in the browser to be deleted
-//localstorage is data stored in the browser
-
-function modifyMultiply (str,loc,num) {
-  let arr =[]
-  let word = str.split(' ')
-  let get = word[loc]
-  let count = 0
-
-  for (let i = count; i < num; i++){
-    arr.push(word)
-    count++
-  }
-  return arr.join('-')
-}
-
-function last(x) {
-  return x.split(' ').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
-}
-
-function stairsIn20(s){
-  return s.reduce((a,b) => a.concat(b)).reduce((a,b) => a + b) * 20
-}
-
-function multipleOfIndex(array) {
-  return array.filter((a,b) => a % b == 0)
-}
-
-function twoStr(xn, xd){
-  let count = 0
-
-  for(i = 0; i < xn.length; i++){
-    if(xn[i] == xd)
-    count++
-  }
-  return count;
-}
-
-function removeFirstLast(str){
-  return str.slice(1, -1)
-}
-
-function run (jewels, stones){
-  const map = {},
-  count = 0
-
-  for(const jewel of jewels){
-    map[jewel] = true
-  }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-function majorityElement(arr){
+function majElem(arr){
   let elem = {},
   count = 0,
   majElem = arr[0]
+
   for(const num of arr){
     elem[num] = elem[num] + 1 || 1
-
   }
-
   for(const n in elem){
     if(elem[n] > count){
       count = elem[n]
@@ -11921,142 +12191,102 @@ function majorityElement(arr){
   return majElem
 }
 
-function maxChar(str){
-  let charMap = {},
-  count = 0,
-  maxChar = null
+//<input tyle="file" name="file">
+//field input
 
-  for(const c of str){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-  for(const c in charMap){
-    if(charMap[char] > count){
-      count = charMap[char]
-      maxChar = char
-    }
-  }
-  return maxChar
-}
+//<label>Email Address
+//<input type="email" name="email-address" required>
+//</label>
+//required input
 
-function fizzBuzz(num){
-  for(let i = 1; i <= num; i++){
-    if(i % 6 === 0){
-      console.log('fizzBuzz')
-    }else if(i % 2 === 0){
-      console.log('fizz')
-    }else if(i % 3 === 0){
-      console.log('buzz')
-    }else{
-      console.log(i)
-    }
-  }
-}
-
-console.log(fizzBuzz(6), '1','fizz','buzz','fizz','5','fizzBuzz')
-
-//to defer code
-//execute after the download and browser finished the DOM construction and rendering
-//asynchronously
-//to not happen at the same time
-
-//what are the building blocks of HTML5?
-//offline and storage - is how you store your data
-//connectivity - how you connect to that data
-//semantics - how to more accurately describe your code
-
-//how to require a file in server.js
-
-const express = require('express')
-const app = express();
-
-
-function bump(x){
-  if( x > 15){
-    return 'Car Dead'
-  }else{
-    return 'Woohoo!'
-  }
-}
-
-function bump(x){
-  return x => x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!'
-}
-
-function bump(x){
-  if(x.split('n').length > 16){
-    return 'Car Dead'
-  }else{
-    return 'Woohoo!'
-  }
-}
-
-function stuff(arr, fun){
+function all( arr, fun ){
   return arr.every(fun)
 }
 
-function stuff(arr, fun){
-  let array = []
-  let split = arr.split('')
-  let loc = split[0]
-
-  for(let i = loc; i < fun.length; i++){
-
-  }
-}
-
-console.log(stuff())
-
-function missingVowel(str){
-  let vowels = 'aeiou'
-  for (let i = 0; i < vowels.length; i++){
-    if(str.indexOf(vowels[i]) === -1){
-      return i
-    }
-  }
-}
-
-console.log(missingVowel("John Doe hs seven red pples under his bsket"), '0')
-console.log(missingVowel("Bb Smith sent us six neatly arranged range bicycles"), "3")
-
-let apple = 'a couple of words'
-console.log(apple.search('apple'))
-
-//hwo to iterate an array
-//let arr = []
-
-function all( arr, fun ){
+function all(arr,fun){
   let array = []
   for(let i = 0; i < arr.length; i++){
     if(fun(arr[i])){
       array.push(arr[i])
     }
+    if(arr.length === array.length){
+      return true
+    }else{
+      return false
+    }
   }
-  if(arr.length === array.length){
-    return true
-  }else{
-    return false
-  }
+
 }
 
-//slice(start,end)
-//creates a new array, copies elements from index start til end into it
-
-
-//splice(pos, deleteCount, ...items)
-//creates a new array, copies elements from the position, until the deleteCount, and what items to reinsert
-
-const number = function(array){
+function modifyMultiply (str,loc,num) {
   let arr = []
-  if(array.length == 0){
-    return []
-  }else{
-  for (let i = 0; i < array.length; i++)
-    arr.push(`${i}: ${array[i-1]}`)
+  let word = str.split(' ')
+  let get = word[loc]
+  let count = 0
+
+  for(let i = count; i <= num; i++){
+    arr.push(word)
+    count++
   }
-  return arr;
+  return arr.join('-')
 }
 
-//destructuring in javascript
-//simplified method od extracting mulitple properties
-//let thing = ["table", "char", "fan"]
-//let [a,b,c] = thing
+function names(name){
+  if(name){
+  return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase() + '!'}`
+  }else{
+    return `Hello World!`
+  }
+}
+
+function factorials(n){
+  if(n < 2){
+    return '1'
+  }else{
+    return n * (factorials(n - 1))
+  }
+}
+
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+//find filter method
+//the find method finds the parameters and returns all values that make it return true
+//the filter method find the parameters and returns all values that make it return true
+
+function take(arr, n) {
+  //slice returns a new array from the start, to the end
+  return arr.slice(0, n)
+}
+
+//substring()
+//substring method returns a new array of all the values between the start and the end
+//substring(start, end)
+
+//map object
+//map object return a new array in the original insertion order of the keys
+//substring()
+//substring method returns a new array between the values start and end
+//substring(start, end)
+
+//the abstraction principle 
+//the abstraction principle is to hide the details
+
+//count all the occurring characters in a string
+function maxChar(str){
+  //create an object to dump indexes and the count of indexes into
+  let countObj = {}
+  //create a for of loop the parameter
+  for(const c of str){
+    //if the object of the loop counter exists, add 1
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      //if the object of the loop counter doesnt exist, make it 1
+      countObj[c] = 1
+    }
+  }
+//return the object
+return countObj
+}
