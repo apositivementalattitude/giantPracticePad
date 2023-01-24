@@ -12290,3 +12290,215 @@ function maxChar(str){
 //return the object
 return countObj
 }
+
+
+
+
+for(let i = 1; i <= 99; i++){
+  if (i % 2 !== 0){
+    console.log(i)
+  }
+}
+
+function invert(array) {
+  let arr = []
+
+  for(let i = 0; i < array.length; i++){
+    arr.push(array[i] * array[i])
+  }
+  return arr
+}
+
+function paperwork(n, m){
+  if(n < 0 || m < 0){
+    return 0
+  }else{
+    return n * m
+  }
+}
+
+//substring()
+//substring() returns a new array between the start and finish in substring(start, finish)
+
+//constructors
+//constructors are function used to create or construct the object
+
+function integers (nums, target){
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; j < nums.length; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+// //nested for loop answer
+// var twoSum = function(nums, target){
+//   //loop through the first numbers
+//       for(let i = 0; i < nums.length; i++){
+//   //loop through the second numbers
+//           for(let j = 0; j < nums.length; j++){
+//   //make sure the numbers aren't the same
+//               if(i !== j){
+//   //if the number at the index of i and j = the target
+//                   if(nums[i] + nums[j] === target){
+//   //return the numbers
+//                       return [i, j]
+//                   }
+//               }
+//           }
+//       }
+//   }
+
+function twoSum(nums, target){
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; j < nums.length; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [nums[i], nums[j]]
+        }
+      }
+    }
+  }
+}
+
+function twoSum(nums, target){
+  //make an object
+  let obj = {}
+  //loop through the numbers
+  for(let i = 0; i < nums.length; i++){
+    //if the target - index of nums is in the object already
+    if(target - nums[i] in obj){
+      //return the [object, i]
+      return [obj[target - nums[i]], i]
+    }else{
+      //if the target isn't already in the object
+      //set the obj[nums[i]] to i
+      obj[nums[i]] = i
+    }
+  }
+}
+
+function moveTen(s){
+  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  const arr = s.split('').map(x => x = str.indexOf(x) + 10)
+  return arr.map(x => x = str[x]).join('')
+}
+
+console.log(moveTen('abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'), 'klmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij')
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
+
+function all(arr, fun){
+  let array = []
+  for(let i = 0; i < arr.length; i++){
+    if(fun[arr[i]]){
+      array.push(arr[i])
+    }
+    if(arr.length === array.length){
+      return true
+    }else{
+      return false
+    }
+  }
+}
+
+function getDrinks(param){
+  if(param.toLowerCase() === 'jabroni'){
+    console.log('Patron Tequila')
+  }else if(param.toLowerCase() === 'school counselor'){
+    console.log('Anything with Alcohol')
+  }else if(param.toLowerCase() === 'programmer'){
+    console.log('Hipster Craft Beer')
+  }else if(param.toLowerCase() === 'bike gang member'){
+    console.log('moonshine')
+  }else{
+    console.log('beer')
+  }
+}
+
+console.log(getDrinks('programmer'), 'Hipster Craft Beer')
+
+function getDrinks(param){
+  param = param.toLowerCase()
+
+  switch(param){
+    case 'jabroni' : 'Patron Tequila'
+    case 'school counselor' : 'Anything with Alcohol'
+    case 'programmer' : 'Hipster Craft Beer'
+  }
+}
+
+//findIndex
+//returns the index of what makes it return true
+//synchronous is processing one operation at a time
+
+// function position(letter){
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+//   return `Position of alphabet ${alphabet.indexOf(letter) + 1}`
+// }
+
+// const reverseSeq = n => {
+//   return n.split('').reverse().join('')
+// }
+
+const reverseSeq = n => {
+  let arr = []
+
+  for(let i = n; i > 0; i-=1){
+    arr.push(i)
+  }
+  return arr;
+}
+
+function fizzBuzz(n){
+  for(let i = 1; i <= n.length; i++){
+    if(i % 6 === 0){
+      console.log('Fizz Buzz')
+    }else if(i % 2 === 0){
+      console.log('Fizz')
+    }else if(i % 3 === 0){
+      console.log('Buzz')
+    }else{
+      console.log(i)
+    }
+  }
+}
+
+console.log(fizzBuzz('6'), "1,Fizz,Buzz,Fizz,5,Fizz Buzz")
+
+function factorial(n){
+  if(n < 2){
+    return 1
+  }else{
+    return n * (factorial(n - 1))
+  }
+}
+
+function twoSum(nums, target){
+  for(let i = 0; i <= nums; i++){
+    for(let j = 0; j <= nums; j++){
+      if(nums[i] !== nums[j]){
+        if(nums[i] + nums[j] === target){
+          console.log([i, j])
+        }
+      }
+    }
+  }
+}
+
+function twoSum(nums, target){
+  let obj = {}
+
+  for(let i = 0; i <= nums; i++){
+    if(target - nums[i] in obj){
+      return [obj[target - nums[i]], i]
+    }else{
+      obj[nums[i]] = i
+    }
+  }
+}
