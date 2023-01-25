@@ -12502,3 +12502,45 @@ function twoSum(nums, target){
     }
   }
 }
+
+
+//unshift
+//unshift() is how you add items to the beginning of a string or array or object or method
+
+//concat
+//concat() returns a new array and copies all members of the current one and adds items to it
+
+function switcheroo(x){
+  //split the string
+  x = x.split('')
+  //map it
+  x.map(function(s){
+    if(s === a){
+      return 'b'
+    }else if(s === b){
+      return 'a'
+    }
+  }).join('')
+}
+
+//find/filter
+//find() and filter() returns a new array with the values that make it return true
+
+function buildString(...template){
+  return `I like ${template.join(',')}!`;
+}
+
+const capitals = function(word){
+  let arr = []
+  word = word.split('')
+  for(let i = 0; i < word.length; i++){
+    if(word[i] === word[i].toUpperCase()){
+      arr.push(i)
+    }
+  }
+  return arr
+}
+
+function first(arr, n) {
+  
+}
