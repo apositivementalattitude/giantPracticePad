@@ -12542,5 +12542,305 @@ const capitals = function(word){
 }
 
 function first(arr, n) {
+  return arr.slice(0, n)
+}
+
+//return the first elements of a sequence
+//if n is 0, is should return an emplty sequence
+function first(arr, n=1){
+  //arr is the sequence, n is the amount to return
+  //which method should we use for this?
+  return arr.slice(0, n)
+}
+
+/* Now this is a story all about how
+My life got flipped-turned upside down
+And I'd like to take a minute
+Just sit right there
+I'll tel you how I became the prince of a town called Bel-Air
+
+In West Philadelphia born and raised
+On the playground was where I spent =most of my days
+Chillin' Out maxin', relaxin', all cool
+And all shootin' some bn-ball outside of the school
+When a couple of gguys who were up to no good
+Started making trouble in my neighborhood
+I got in one little fight and my mom got scared
+She said, "You're movin' with your aunite and uncle in Bel-Air"
+
+I whistled for a cab and when it came near
+The license plate said "Fresh" and it had dice in the mirror
+If anything I could say that this cab was rare
+But I though "Nah, forget it, yo, holmes, to BelAir"
+
+I pulled up to the house about seven or eight
+And I telled to the cabbi, "Yo holmes, smell ya later"
+I looked at my kingdom
+I was finally there
+To sit on my thron as the prtince of Bel-Air
+
+Now this is a story all about how
+My life got flipped-turned upside down
+*/
+
+//substring()
+//substring() returns a new string or array from the start to the end e.g., substring(start,end) 
+
+const config = {
+  "name" : "Very-Cool-Package",
+  "description" : "One really cool thing that I just made",
+  "version" : "1.0.0"
+}
+
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf('needle')}`
+}
+
+function findDigit(num){
+  let arr = []
+  for(let i = 0; i < num.length; i++){
+    arr.push(num[i] * num[i])
+  }
+  return arr.join('') * 1
+}
+
+
+function runTheJewels(jewels, stones){
+  const map = {},
+  count = 0
+
+  for(const jewels of jewels){
+    map[jewel] = true
+    }
+    for(const stone of stones){
+      if(map[stone]){
+        count++
+      }
+    }
+    return count;
+}
+
+function majorityElement(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
   
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+  }
+
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+function maxCharacter(char){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+
+function countOccurrences(){
+  let countObj = {}
+
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+}
+
+function maxCharacter(str){
+  //create an map
+  let charMap = {},
+  //start a counter
+  count = 0,
+  //the maximum character available
+  maxChar = null
+  //start a loop
+  //for the char of str
+  for(const char of str){
+    //make the index of char in charMap equal 1 or add 1
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  //for the char in the charMap
+  for(const char in charMap){
+    //if the index of the character in charMap is greater than the count
+    if(charMap[char] > count){
+      //make the count the index of the charMap
+      count = charMap[char]
+      //make the maxChar variable the character that is the most represented
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+//properties in CSS
+//properties in CSS are the values that are used to determine how the element functions
+
+//npm audit fix --force
+//how to force install updates in node.js
+
+//I made an error at work when I needed to order drawstrings for a customer; however I didn't order the correct quantities of sizes. I escalated this to our director, and we were able to correct the order from our supplier overseas. Going forward, we implemented a system with our overseas supplier so that we had to get confirmation emails and check that to the PO. Whenever I join a new team, I like to think to in systems and ways that we can avoid common problems that might come up on the job.
+
+//going back to the time where I had the task of unloading 30 some-odd containers in a two week window. There was a huge time crunch, and the pressure was on. I actually felt like the crunch was a bit of a nice break from the regular day to day, and I think the biggest factor for me was to step back and reformulate the plan to help me get things done more efficiently and effectively. To this day, I still like to make plans, but I like to be flexible to better suit an adaptive environment for those plans.
+
+//I'm a software engineer at 100Devs, where I worked on projects both alone and with colleagues. One project we did as a team was a full stack web application for a partnered Twitch streamer, where we utilized MongoDB, Express, Node.js, React.js. And I was in the fashion industry since I was like four years old; where, I was a child model. Out of highschool, I got a job as a delivery driver at a fabric warehouse, and after two years, I was promoted to the warehouse manager. I eventually transitioned into production manager role, which I did for about 5 years. A few of my friends and colleagues told me that since I'm good with computers and creating things; I should pursue a career in software development, which is how my interest in the field started. I tihnk that with my background in design, I can help a development team with new and more creative, and forward thinking ideas.
+
+// I don't really like the sound that comes out from me hitting my backspace key or enter button.
+
+
+// a get request
+let app = express
+app.get('/endpoint', callbackFunction)
+
+//These are some ASB keycaps
+//They don't feel quite as nice as the PBT caps, but they're serviceable
+//Now this is a story all about how my life got flipped turned iupside down
+//Now let
+
+//how to handle a get request
+
+function getExpress(express){
+  let app = express
+  express = express()
+}
+app.get('/endpoint', callBackFunction)
+
+function first(arr, n=1) {
+  return arr.slice(0, n)
+
+}
+
+function olympicRing(a){
+  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+  let twoRings = ['B'];
+  let score = 0;
+
+  for(let i = 0; i <= a.length; i++){
+    if(rings.includes(a[i])){
+      score++
+    }else if(twoRings.includes(a[i])){
+      score+=2
+    }
+  }
+  score = score/2
+
+  if(score === 2){
+    return 'Bronze!'
+  }else if(score === 3){
+    return 'Silver!'
+  }else if(score > 3){
+    return 'Gold, baby!'
+  }else{
+    return 'Not even a medal!'
+  }
+}
+
+function highAndLow(numbers){
+  numbers = numbers.split(' ')
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+}
+
+//let numberOfApples = 9
+//numberOfApples is the variable name
+//9 is the parameter or assignment
+//the let is what sets the variable
+
+//Math.floor
+//Math floor returns the number rounded down to the nearest whole number unless specified
+
+function concatenateString(num){
+  let arr = []
+
+  for(let i = 0; i < num; i++){
+    arr.push(num[i] * num[i])
+  }
+  return arr.join('')
+}
+
+function twoSum(nums, target){
+  //first for loop for the first number
+  //second for loop for the second number
+  //check if the number is the same
+  //if the numbers arent the same; check to see if the numbers add up to the target
+  //return target here
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; j < nums.length; j++){
+      if(i !== j){
+        if(target === nums[i] + nums[j]){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+
+function twoSum(nums, target){
+  //first create the hash map
+  //loop through the numbers
+  //if nums are >>OF<< num
+  //target - the index of nums
+
+  let map = {}
+  
+  for(let i = 0; i < nums.length; i++){
+    if(target - nums[i] in map){
+      return [obj[target - nums[i]], i]
+    }else{
+      obj[nums[i]] = 1
+    }
+  }
+}
+
+function maxCharacter(str){
+  //create a map
+  let charMap = {},
+  //make the count equal 0 because you need a count of the characters in the map
+  count = 0,
+  //the maxChar variable will be the character that you return
+  maxChar = null
+
+  //the char in this OF loop is a new variable
+  //we are checking all the parameters in the str variable
+  for(const char of str){
+    //if the index of charMap is equal to the index of charMap
+    //you either make it 1 or you add 1 to the character in the map
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  //the char variable is the previous variable
+  //the char variables are already in the charMap 
+  for(const char in charMap){
+    //if the index of charMap is greater than the count
+    if(charMap[char] > count){
+      //make the count equal to the charMap
+      count = charMap[char]
+      //also, make the maxChar into the char
+      maxChar = char
+    }
+  }
+
+  //finally, return the maximum character
+  return maxChar
 }
