@@ -12844,3 +12844,96 @@ function maxCharacter(str){
   //finally, return the maximum character
   return maxChar
 }
+
+//find the missing vowel
+function findVowel(str){
+  //variable for the vowels
+  let vowels = 'aeiou'
+
+  //we need to loop through the string to find the vowel that doesn't exist
+      //loop through the VOWELS not the string
+  for(let i = 0; i < vowels.length; i++){
+    //find if the element is missing from the string
+    //if the index of a certain string doesn't exist( -1 )
+    //we can return the index because that is the index of the missing vowel
+    if(str.indexOf(vowels[i] === -1)){
+      return i;
+    }
+  }
+}
+
+//parseIOnt function parses a string argument and returns an integer of the specified radix
+function binToDec(bin){
+  return parseInt(bin, 2)
+}
+//json
+//json is Javascript Object Notation
+
+//methods are actions that we can perform
+//methods are actions that we can perform
+
+function averages(scores, yourScore){
+  if(yourScore > (scores.reduce((a,b) => a + b, 0)/scores.length)){
+    return 'true'
+  }else{
+    return 'false'
+  }
+}
+
+//how to serve up a file in server.js
+app.get('/', (req, res) =>{
+  res.sendFile(__dirname + 'index.html')
+})
+
+function howMuchWater(water, load, clothes){
+  if(load*2 > clothes){
+  return +((water * 1.1)**(clothes - load)).toFixed(2)
+  }else{
+    return 'Too much clothes'
+  }
+}
+ 
+const multiTable = (number) => {
+  let table = ''
+
+  for(let i = 1; i <= 10; i++){
+    table += ` ${i} * ${number} = ${i * number} ${i < 10 ? '\n' : '' }`
+  }
+  return table
+}
+
+function modifyMultiply (str,loc,num) {
+  let word = str.split(),
+  get = word[loc],
+  count = 0,
+  arr = []
+
+  for(let i = count; i <= num; i++){
+      arr.push(word)
+      count++
+  }
+  return arr.join('-')
+}
+
+function missingIndex (str) {
+  //make a variable for the vowels
+  let vowels = 'aeiou'
+  //loop through the variables to find the missing index
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
+
+//a situation I felt I hadn't communicated well enough was at my previous opportunity; where I didn't write down the correct color code on a PO for a dye house. Thankfully, I caught the mistake, and when I called the dye house to correct the order, I was relieved when the worker at the dye hoouse confirmed that the order wasn't dyed yet. I asked them to change the color code on the P.O.; but, I felt really uneasy about it because my Spanish is pretty poor, and we were just kind of brute forcing the conversation with Spanglish. So, I called my regular contact, and had her confirm the order. It turned out that the color code was still incorrect, and she was able to correct it. Since then, I implemented validation, where we match our P.O.s and our emails, and I really learned the value of written communication and confirmations. 
+
+//I read the learnjavascript subreddit and the learn programming subreddits to get a different perspective on some coding snippets. I like to read hackernews and tildes, which are more tech oriented newsish and discussion sites. I like to read historical fiction like Memoirs of a Geisha and Pachinko, which was recently turned into a kdrama on appletv. I got really into a song of ice and fire around Game of Thrones season 1. I read Fire and Blood before House of the Dragon came out to get into it again.
+
+//What is the interview process like?
+//What is the timeline?
+//What is a typical day in this position?
+//What is the onboarding process after the offer?
+//Are there training programs available?
+
+//progressive rendering is a technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions.
