@@ -12937,3 +12937,202 @@ function missingIndex (str) {
 //Are there training programs available?
 
 //progressive rendering is a technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions.
+
+//What is the interview process like?
+//What is the timeline?
+//What is a typical day in this position?
+//What is the onboarding process after the offer?
+//Are there training programs available?
+
+//What is the interview process like?
+//What is the timeline?
+//What is a typical day in this position?
+//What is the onboarding process after the offer?
+//Are there training programs available?
+
+//What is the interview process like?
+//What is the timeline?
+//What is a typical day in this position?
+
+
+function first(arr, n=1){
+  return arr.slice(0, n)
+}
+
+//indexOf()
+//lastIndexOf(item, pos)
+//finds the index of the aforementioned item and its position
+//returns the index or -1 if not found
+
+//the stanton measure of an array
+
+function stantonMeasure(arr){
+  const count = n => arr.filter(x => x === n).length
+  return count(count(1))
+}
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
+
+function all(arr, fun){
+  let array = []
+
+  for(let i = 0; i < arr.length; i++){
+    if(fun(arr[i])){
+      array.push(arr[i])
+    }
+    if(arr.length === array.length){
+      return true
+    }else{
+      return false
+    }
+  }
+}
+
+function stantonMeasure(arr){
+  const count = n => arr.filter(x => x === n).length
+  return count(count(1))
+}
+
+function doubleInteger(n){
+  return n*2
+}
+
+//subString
+//returns a new string starting from the subString(start, ) to the (, end)
+
+function concatenateString(num){
+  let arr = []
+  let split = num.split('')
+
+  for(let i = 0; i < num.length; i++){
+    arr.push(num[i] * num[i])
+  }
+  return arr.join('')
+}
+
+//do you know recursion
+//yes!
+
+function factorial(n){
+
+}
+
+
+//a promise syntax
+
+fetch('#')
+.then(res => res.json())
+.then(data =>{
+  console.log(data)
+})
+.catch(error =>{
+  console.log(`error ${error}`)
+})
+
+function stantonMeasure(arr){
+  const count = n => arr.filter(x => x === n).length
+  return count(count(1))
+}
+
+function formatMoney(amount){
+  return `$${amount.toFixed(2)}`
+}
+
+//pop()
+//removes items from the end of an array
+
+//shift()
+//extracts items from the front of an array
+//reverse()
+//reverses the parameters inside the parenthesis
+//find/filter(func)
+//finds the elements through the function, return first/all values that make it return true
+//filter the elements through the function, return first/all values that make it return true
+
+let thing = 100
+thing -= 10
+console.log(thing)
+
+let what = Number(document.querySelector('input').value)
+what += 25
+alert(what)
+
+
+
+const h1 = document.querySelector("h1")
+h1.addEventListener('click', addTwo)
+function addTwo(){
+  console.log(thing + what)
+}
+
+function missingVowel(str){
+  let vowels = 'aeiou'
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
+
+function maxChar(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+function factorial(nums){
+  if(nums < 2){
+    return 1
+  }else{
+    return nums * factorial(nums - 1)
+  }
+}
+
+function twoSum(num, target){
+  for(let i = 0; i < num.length; i++){
+    for(let j = 0; j < num.length; j++){
+      if(i !==j ){
+        if(num[i] + num[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+function countChars(str){
+  let countObj = {}
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+
+}
+
+//100devs is an agency with a training program where we work alone or with colleagues to build full stack web applications for clients
+//one of my projects was for a partnered twitch streamer using the MERN stack
+//before I pursued software engineering, i worked in the fashion industry for about my entire life
+//i started as a model when i was a toddler 
+//eventually i got a job as a delivery driver for a fabric warehouse and was eventually promoted to the warehouse manager
+//i then transitioned into a production manager role for about 5 years
+//i was always told by my previous colleagues and friends who are software engineers that I would be a good fit for software engieering because I was always good with computers, my extensive background in design, and how I enjoy building things.
+
+
