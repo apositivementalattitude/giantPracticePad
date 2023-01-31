@@ -13136,3 +13136,185 @@ function countChars(str){
 //i was always told by my previous colleagues and friends who are software engineers that I would be a good fit for software engieering because I was always good with computers, my extensive background in design, and how I enjoy building things.
 
 
+//the listen method in express
+app.listen(3000, function(){
+  console.log('listening on 3000')
+})
+
+//elements are designators that define the structure and content of objects within a page
+
+
+function maps(x){
+  return x.map(n => n*2)
+}
+
+function removeSpaces(str){
+  str = 'a lot of things are big in this world'
+  return str.join('')
+}
+
+function twoInt(a,b){
+  return (+a + +b) + ''
+}
+
+//connectivity allows you to communicate with the server in new and innovative ways
+//connectivity allows you to communicate with the server in new and innovative ways
+
+//given two strings, return a string of the form short+long+short
+//the strings will not be the same length
+//but they may be empty
+
+function solution(a, b){
+  if(a.length > b.length){
+    return b+a+b
+  }else if(b.length > a.length){
+    return a+b+a
+  }
+}
+
+//javascript exists between script tags in html
+
+//write a function to get the first elements of a sequence
+//pass the parametere n(default = 1) will reutrn the first n elements of there sequence
+
+function first(arr, n=1){
+  return arr.slice(0, n)
+}
+
+//The stanton measure of an array is computed as follows
+//Count the number of occurrences for value 1 in array
+//Let this count be n
+//The stanton measure is the number of times that n appears in the array
+//write a function which takes an integer array and returns its stanton measure
+
+function stantonMeasure(n){
+  //set up your variables
+  //an array and a count
+  let arr = [],
+  count = 0
+  //loop from the count to the assignment
+  for(let i = count; i < n; i++){
+    //check to see if the index of n exists
+  }
+}
+ 
+
+function stantonMeasure(arr){
+  const count = n => arr.filter(x => x === n).length
+  return count(count(1))
+}
+
+//make multiple functions that will return the sum, difference, modulus, product, quotient, and the exponent
+
+//sum
+function add(a,b){
+  return a+b
+}
+
+//difference
+function subtract(a,b){
+  return a-b
+}
+
+//modulus
+function remainder(a,b){
+  return a % b
+}
+
+//product
+function multiply(a,b){
+  return a*b
+}
+
+//quotient
+function divide(a,b){
+  return a/b
+}
+
+//exponent
+function exponents(a,b){
+  return a**b
+}
+
+//when you see a function with a capital letter at the beginning, what is it?
+// a constructor
+
+//write a function that returns true only if passed in an argument that evaluates to NaN, and return false otherwise
+
+// const isReallyNaN = (val) => {
+//   //check if its NaN
+//   return val === NaN ? 'true' : 'false'
+// }
+
+// const isReallyNaN = (val) => {
+//   return Number.isNaN(val)
+// }
+
+//you are given strings jewels and stones for the count of each
+//each character in stones is a type of stone you have
+//you want to know how many of the stones you have are also jewels
+//input: jewels = "aA", stones = "aAAbbbb"
+//input: jewels = "z", stones = "ZZ"
+
+function jewelsInStones(jewels, stones){
+  //set up your variables a map and a count
+  let map = {},
+  count = 0
+  
+  //for in loop the jewels
+  for(const jewel in jewels){
+    //set the index of the hash map to true if the index is a jewel
+    map[jewel] = true
+  }
+  //for of loop the stones
+  for(const stone of stones){
+    //check if the index of the hash map is a stone
+    if(map[stone]){
+    //if the index of the map is a stone, count++
+    count++
+    }
+  }
+  return count
+}
+
+//you are to find the index of which vowel is missing from a given string
+function missingVowel(str){
+  //set up your variables - vowels
+  const vowels = 'aeiou'
+  //loop through the vowels
+  for(let i = 0; i < vowels.length; i++){
+    //if the indexOf the string is missing from the vowels return the index
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
+
+function majorityElem(arr){
+  //create a map and a count
+  let elem = {},
+  count = 0,
+  //create a variable majElem and set it equal to the index of arr
+  majElem = arr[0]
+  //for of loop the arr
+  for(const num of arr){
+    //if the index of the hash map elem is the same as the index of the elem that already exists
+    //add one
+    //or else set it to one
+    elem[num] = elem[num] + 1 || 1
+  }
+  //for in loop the elem
+  for(const n in elem){
+    //if the index of elem is greater than the count
+    if(elem[n] > count){
+      //set the count to the index of elem
+      count = elem[n]
+      //set the majElem to the loop counter
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+//connectivity
+//connectivity is how we connect to the server
