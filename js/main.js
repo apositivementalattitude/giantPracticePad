@@ -17621,3 +17621,6 @@ function sumMix(x){
   return x.reduce((a,b) => +a + +b, 0)
 }
 
+//substring()
+//returns a new array from start to end but as a string
+//substring works a lot like slices
