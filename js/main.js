@@ -17614,3 +17614,10 @@ function squareSum(numbers){
 }
 //how to complete the square sum function so that it squares each number passed into it and then sums the results together
 
+//given an array of integers as strings and numbers, return the sum of the arraay values as if all were numbers
+//return your answer as a number
+
+function sumMix(x){
+  return x.reduce((a,b) => +a + +b, 0)
+}
+
