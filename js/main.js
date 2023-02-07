@@ -13175,7 +13175,7 @@ function solution(a, b){
 //javascript exists between script tags in html
 
 //write a function to get the first elements of a sequence
-//pass the parametere n(default = 1) will reutrn the first n elements of there sequence
+//pass the parameter n(default = 1) will return the first n elements of their sequence
 
 function first(arr, n=1){
   return arr.slice(0, n)
@@ -13200,7 +13200,11 @@ function stantonMeasure(n){
  
 
 function stantonMeasure(arr){
+  //create a variable count that is equal to a new variable n
+  //filter through the arr assignment 
+  //create an arrow function x to check if x is equal to n's length
   const count = n => arr.filter(x => x === n).length
+  //return the count
   return count(count(1))
 }
 
@@ -13318,3 +13322,450 @@ function majorityElem(arr){
 
 //connectivity
 //connectivity is how we connect to the server
+
+//[href*="brackets"]
+//contains selector
+
+//state
+//used to augment or override other styles in the event that a module includes an alternate state
+//states are used to augment or override other styles in the event that a module includes an alternate state
+
+//script
+//script is client side scripting or code
+
+//asynchronously
+//asycnchronously is to not happen at the same time
+
+//Hello my name is Eric Lee and I am a software engineer at 100devs
+//Hello my name is Eric Lee and I am a software engineer at
+
+function eufaEuro2016(teams,scores){
+  if(scores[0] > scores[1]){
+    return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`
+  }else if(scores[0] < scores[1]){
+    return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+  }else{
+    return `At match ${teams[0]} - ${teams[1]}, teams played draw`
+  }
+}
+
+//__dirname
+//directory name
+
+// *{
+// box-sizing: border-box;
+// }
+//
+
+//th scope="col" colspan="2">Item</th>
+
+
+//in the .sort() method, what are items sorted as?
+//the items are sorted as strings
+
+
+//create a method all which takes two params
+//a sequence
+//a function
+//return true if the function in the params return true for every element in the sequence
+//otherwise, it should return false
+//if the sequence is empty, it should return true
+
+function all(arr, fun){
+  return arr.every(fun)
+}
+
+function all(arr, fun){
+  //make an array
+  let array = []
+  //loop through the arr parameter
+  for(let i = 0; i < arr.length; i++){
+    //if the index of arr is in the function
+    if(fun(arr[i])){
+      //push the index of the arr to the array
+      array.push(arr[i])
+    }
+    //if the arr.length and the array.length is the same
+    if(arr.length === array.length){
+      //return true
+      return true
+    }else{
+      return false
+    }
+  }
+}
+
+//youtube had a like or dislike button
+//pressing a button, which is already active, will undo your press
+//if you press the like button after pressing the dislik ebutton
+//the like button overwrites the previous "Dislike"
+//the same is true the other way around
+
+//create a function that takes in a list of button inputs and returns the final state
+
+function likeOrDislike(buttons){
+
+  let state = 'Nothing'
+
+  for(let i = 0; i < buttons.length; i++){
+    if(buttons[i] === state){
+      state = 'Nothing'
+    }else{
+      //the logic here is to return the index of the button
+      state = buttons[i]
+    }
+  }
+  return state
+}
+
+//write a function that takes a string as its first parameter
+//use the second parameter to fund the corresponding word in the given string
+//once you have located the string you are finally going to multiply it by the third provided prameter, which will also be an integer
+//you are required to add a hyphen in between each word
+
+function modifyMultiply(str, loc, num){
+  //set up variables
+  //an array
+  //a counter
+  //split the str
+  //index of the split str
+  let arr = [],
+  word = str.split(' '),
+  get = word[loc],
+  count = 0
+
+  //loop through the num starting from the count
+  for(let i = count; i < num; i++){
+    //if the index of the string is less than the number, increase the count by 1
+    //push the word into the arr
+    if( str[i] < num){
+    arr.push(word)
+    count++
+  }
+  }
+  return arr.join('-')
+
+}
+
+//push(...items)
+//push is the add items to the end of an array
+
+function stantonMeasure(arr){
+  const count = n => arr.filter(x => x === n).length
+  return count(count(1))
+}
+
+//return a new array consisting of elements which are multiple of their own index in input array (length > 1)
+
+function multipleOfIndex(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if (array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
+//find/filter(func)
+//returns a all values that make it return true
+//find(x => x.length >= 6)
+
+
+function stairsIn20(s){
+  return s.reduce((a,b) => a.concat(b)).reduce((a,b) => a + b) * 20
+}
+
+//includes(value)
+//return all values that make it return true
+
+function first(arr, n=1){
+  return arr.slice(0, n)
+}
+
+//map(func)
+//the map returns a new array based on the values and remembers exactly where the values are
+//creates a new array from results of calling func for every element
+
+//write a code that gives the total amount for the different days
+//every day you rent is $40
+//if you rent for 7 or more days you get 50 off your total
+//if you rent for 3 or more days you get 20 off your total
+
+function rentMe(days){
+  let total = 40
+  if(days >= 7){
+    return total*days-50
+  }else if(days >= 3){
+    return total*days-20
+  }else{
+    return total*days
+  }
+}
+
+
+//.add
+//to add something
+
+//write a function that accepts two integers
+//returns the remainder of dividing the larger value by the smaller value
+
+function remainder(n,m){
+  if( n === m){
+    return NaN
+  }else if(n > m){
+    return n % m
+  }else{
+    return m % n
+  }
+}
+
+
+//count the number of divisors of a positive integer n
+function getDivisors(n){
+  let count = 0
+  for(let i = 1; i <= n; i++){
+    if(n % i === 0){
+      count++
+    }
+  }
+  return count
+}
+
+//case statement syntax
+function params(param){
+  switch(param){
+    case 1 : return 1
+    case 2 : return 2
+    case 3 : return 3
+    default : return hehe
+  }
+}
+
+//square every digit of a number and concatenate them
+
+function concatenateNums(n){
+  num = n.split('')
+  let arr = []
+
+  for(let i = 0; i < n.length; i++){
+    arr.push(num[i] * num[i])
+  }
+  return arr.join('')
+}
+
+//substring()
+//substring returns a new string from the (start, end)
+
+function contamination(text, char){
+  return char.repeat(text.length)
+}
+
+//complete the soluition so that it returns true if the first argument passed in ends with the 2nd argument
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+//object
+//objects are collections of related data
+
+//transform a number into a string
+function numToStr(num){
+  return num.toString()
+}
+
+//syntax for arrow functions
+// const arrowFunc = () => {}
+
+//another way to iterate an array
+//forEach
+
+//given an array of integers as strings and numbers
+//return the sum of the array values as if all were numbers
+//return your answer as a number
+
+function sumMix(x){
+  let arr = []
+  for(let i = 0; i < x.length; i++){
+    arr.push(Number(x[i]))
+  }
+  return arr.reduce((a,b) => a + b, 0)
+}
+
+//find the nearest square number
+
+function nearestSq(n){
+  return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+//each dragon takes 2 bullets to be defeated
+
+function hero(bullets, dragons){
+  if(bullets/2 >= dragons){
+    return 'true'
+  }else{
+    return 'false'
+  }
+}
+//objects are collections of related data
+
+//if the text or character are empty return and empty string
+function contamination(text, char){
+  return char.repeat(text.length)
+}
+
+//return true if the first argument passed ends with the second argument passed
+function solution(a,b){
+  return a.endsWith(b)
+}
+//the model
+//the model is the database code
+//only talks to the controller
+
+//if you are writing code related to the database, where does it belong?
+//the code related to the database belongs in the model
+
+//value types; Reference Types
+//Reference Types are: Objects, Arrays, Functions
+
+//return the character that appears the most often
+
+function maxCharacter(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+//fizzBuzz
+
+function fizzBuzz(num){
+  if(num % 6 === 0){
+    console.log('fizzBuzz')
+  }else if(num % 2 === 0){
+    console.log('fizz')
+  }else if(num % 3 === 0){
+    console.log('buzz')
+  }else{
+    return num
+  }
+}
+
+//return the indices of the two numbers so they add up to the target
+function twoSum(n, target){
+  for(let i = 0; i < n.length; i++){
+    for(let j = 0; j < n.length; j++){
+      if(i !== j){
+        if(n[i] + n[j] === target){
+          return [n[i], n[j]]
+        }
+      }
+    }
+  }
+}
+
+//count all the occurring characters in a string
+
+function countChars(str){
+  let countObj = {}
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+}
+
+function missingVowel(str){
+  //create a variable for the vowels
+  let vowels = 'aeiou'
+  //loop through the vowels
+  for(let i = 0; i < vowels.length; i++){
+    //if the index of the vowels is missing from the index of the str
+    if(str.indexOf(vowels[i] === -1)){
+      //return the index
+      return i
+    }
+  }
+}
+
+function factorial(n){
+  if(n < 2){
+    return 1
+  }else{
+    return n * (factorial(n - 1))
+  }
+}
+f
+
+//attribute hyphenated selector
+//a[lang|="en"]
+
+//will select every lang with a hyphen in it
+
+
+function contamination(text, char){
+  return char.repeat(text.length)
+}
+function contamination(text, char){
+  let arr = []
+  for(let i = 0; i < char.length; i++){
+    arr.push(text)
+  }
+  return arr
+}
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+//an object is a collection of related data
+//touch server.js
+//creates a server.js file
+
+//how to target classes in css
+//.
+
+//given a string of words
+//return an array of words
+//sorted alphabetically by the final character in each
+//if two words ahve the same last letter; the retuirned array should show them in the order they appeared in the given string
+//all inputs will be valid
+
+function wordsStr(x){
+  return x.split('').sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+}
+
+//create a function that accepts a list/array and a number n
+//returns a list/array of the first n element from the list/array
+
+function take(arr, n){
+  return arr.slice(0, n)
+}
+
+//working on several projects at the same time happens a lot in production. I need to be able to juggle a lot of tasks at once, but what helps me is that I like to take a step back, categorize the tasks according to importance, what can be done the fastest, and what could be done in conjuction with other tasks. Doing this has help me a lot in my career to be more efficient and effective.
+
+//What is the interview process like?
+  //are there technicals or behaviorals
+    //and how long will is the process?
+
+//What are some challenges for the person in this position?
+//what is a typical day in this position?
+//What is the onboarding process after the offer?
+//Are there training programs available?
+
+//connectivity
+//connectivity is how you communicate with the server in new and innovative ways
