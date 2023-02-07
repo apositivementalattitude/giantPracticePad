@@ -13051,7 +13051,7 @@ function formatMoney(amount){
 //finds the elements through the function, return first/all values that make it return true
 //filter the elements through the function, return first/all values that make it return true
 
-let thing = 100
+// let thing = 100
 thing -= 10
 console.log(thing)
 
@@ -13769,3 +13769,106 @@ function take(arr, n){
 
 //connectivity
 //connectivity is how you communicate with the server in new and innovative ways
+
+//core element styles, covering the general defaults is the BASE
+//core element styles, covering the general defaults is the BASE
+//flex-direction: column-reverse;
+//how to sort items into a column in reverse order
+//list-style
+//dots and line styling
+//list-style are dots and the line-styling
+
+//<script></script>
+//is javascript contained in the HTML
+
+
+//implement line numbering
+//write a function that takes a list of strings and returns each line prepended by the correct number
+//the numbering starts at 1
+//the format is n: string
+
+// const number = function(array) {
+//   let arr = []
+//   if(array.length === 0){
+//     return []
+//   }else{
+//     for(let i = 1; i <= array.length; i++){
+//       arr.push(`${i}: ${array[i-1]}`)
+//     }
+//   }
+//   return arr
+// }
+
+//create a function that accepts a list/array and a number n
+//returns a list/array of the first n elements from the list/array
+function take(arr, n){
+  return arr.slice(0, n)
+}
+
+//destructuring in javascript
+//destructuring in javascript is to simplify the method of extracting multiple properties
+
+let thing = ["Table", "Chair", "Fan"]
+let [a,b,c] = thing;
+
+//slice(start,end)
+//returns a new array from the start to the end
+
+//implement line numbering
+//write a function which takes a list of strings and returns each line prepended by the correct number
+//numbering starts at 1
+//the format is n: string
+
+const number = function(array) {
+  let arr = []
+  if(array.length === 0){
+    return []
+  }else{
+    for(let i = 1; i <= array.length; i++){
+      arr.push(`${i}: ${array[i-1]}`)
+    }
+  }
+  return arr
+}
+
+//e.g., +a
+//how to make a string to a number
+//a nested loop is a loop inside of another loop
+
+//return the nth even number
+function nthEven(n){
+  //the first even number is 0
+  return n*2-2
+}
+
+//the things inside a set of curly brackets 
+//objects
+//code blocks
+
+//to elimincate redundant code
+//inheritance
+//abstraction principle is to hide the details
+//having simpler interface, and to reduce the impact of change 
+//having a simpler interface, and to reduce the impact of change is abstraction
+
+//you are given strings jewels
+//jewels represents the types of stones that are jewels
+//stones represents the stones you have
+//each character in stones is a type of stone you have
+//you want to know how many of the stones you have are also jewels
+//letters are case sensitive
+
+function jewelMe(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
