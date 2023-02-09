@@ -13919,3 +13919,82 @@ function contamination(text, char){
   return char.repeat(text.length)
 }
 
+//connectivity
+//connectivity is how you communicate with the server in new and innovative ways
+
+//CRUD
+//how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+//properties used to provide additional information about an element
+//values or attributes
+
+
+//stanton measure
+//count the number of occurrences for value 1 in the array
+//the count is n
+//stanton measure === number of times n is in the array
+
+//accepts a list or array and a number n ()
+//returns a list or array of the first n elements from the list or array
+//slices returns a new list or array from the (start, end)
+function take(arr, n){
+  return arr.slice(0, n)
+}
+
+//\n is spacing inside double and singel quotes
+
+//what does scope refer to?
+//scope refers to where variables can be accessed throughout the program
+
+//takes a boolean value and returns 
+//yes for true
+//no for false
+
+function boolToWord(bool){
+  if(bool === true){
+    return 'Yes'
+  }else if(bool === false){
+    return 'No'
+  }else{
+    return 'undefined'
+  }
+}
+
+//return the majority element of the array (n)
+
+// function majElem(arr){
+//   let elem = {},
+//   count = 0,
+//   majElem = arr[0]
+
+//   for(const num of arr){
+//     elem[num] = elem[num] + 1 || 1
+//   }
+//   for(const n in elem){
+//     if(elem[n] > count){
+//       count = elem[n]
+//       majElem = n
+//     }
+//   }
+//   return majElem
+// }
+
+//given a string of characters return the character that appears the most often
+function maxCharacter(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const c of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
