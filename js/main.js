@@ -13819,17 +13819,17 @@ let [a,b,c] = thing;
 //numbering starts at 1
 //the format is n: string
 
-const number = function(array) {
-  let arr = []
-  if(array.length === 0){
-    return []
-  }else{
-    for(let i = 1; i <= array.length; i++){
-      arr.push(`${i}: ${array[i-1]}`)
-    }
-  }
-  return arr
-}
+// const number = function(array) {
+//   let arr = []
+//   if(array.length === 0){
+//     return []
+//   }else{
+//     for(let i = 1; i <= array.length; i++){
+//       arr.push(`${i}: ${array[i-1]}`)
+//     }
+//   }
+//   return arr
+// }
 
 //e.g., +a
 //how to make a string to a number
@@ -13872,3 +13872,50 @@ function jewelMe(jewels, stones){
   }
   return count
 }
+
+//tell me about yourself
+//I'm a software engineer at 100devs; where I've been building full stack web applications using the MERN stack alone and with colleagues. In the past, I've been involved in the fashion industry since I was a toddler; where I modeled clothes. I worked as a warehouse delivery driver until I was promoted to the warehouse manager in a fabric warehouse. I eventually transitioned into production management role at a trim supplier. Most of my life, I've been told by my teachers, my bosses, my friends, and my family that since I'm good with computers, have an eye for design, and really enjoy building things, software development would be a really good fit for me, and so I eventually learned how to code, which is something I now enjoy doing, and with my background in design, I can help a development team with new and creative ideas.
+
+//how to require a file in server.js
+// const express = require(express)
+// const app = express()
+
+//list-style
+//dots and line styling
+
+//arr.forEach
+//basically a loop
+//method that allows you to run a function for every element of an array
+
+const number = function(array) {
+  let arr = []
+  if(array.length === 0){
+    return []
+  }else{
+  for(let i = 0; i < array.length; i++){
+    arr.push(`${i}: ${array[i]},`)
+    }
+  }
+  return arr
+}
+
+function bump(x){
+  if(n > 15){
+    return "Car Dead"
+  }else{
+    return "Woohoo!"
+  }
+}
+//an object is a collection of related data
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+//let charMap = {}
+//object 
+
+function contamination(text, char){
+  return char.repeat(text.length)
+}
+
