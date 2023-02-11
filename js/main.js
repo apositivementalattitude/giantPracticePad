@@ -13998,3 +13998,174 @@ function maxCharacter(str){
   }
   return maxChar
 }
+
+//why is it generally a good idea to position CSS links between head and JS scripts just before the body
+
+//it is generally a good idea to position CSS links between the head to make the page load more beautifully
+//you want your js scripts to load as the page renders for functionality
+//some exceptions are to have the JS script tags at the bottom of the page to render the page faster
+app.get('/', function(req, res){
+  res.send('Hello World!')
+})
+
+//how to send a get request
+//a response object
+
+//list-style is dots and line markers
+
+//implement line numbering
+//write a function which takes a list of strings and returns each line
+//prepended by the correct number
+//numbering starts at 1
+
+const number2 = function(arr){
+  let array = []
+  if(arr.length === 0){
+    return []
+  }
+  for(let i = 1; i <= arr.length; i++){
+    array.push(`${i}: ${arr[i-1]},`)
+  }
+  return array
+}
+
+function arrayPlusArray(arr1, arr2){
+  let sum = 0
+  for(let i = 0; i <= arr1; i++){
+    for(let j = 0; j <= arr2; j++){
+      sum += j
+    }
+    sum += i
+  }
+  return sum
+}
+
+function arrPlusArr(arr, arry){
+  let ouput = 0
+  return arr.reduce((arry, b) => arry.reduce((a,b) => a + b, 0) + b, 0)
+}
+
+
+function arrPlusArray(arr1, arr2){
+  return arr1.concat(arr2).reduce((a,b) =>  a + b, 0)
+}
+
+function first(arr, n=1){
+  return arr.slice(0, n)
+}
+
+
+// if the animal is an alligator === small
+function mouthSize(animal){
+  if(animal.toLowerCase() === 'alligator'){
+    return 'small'
+  }else{
+    return 'wide'
+  }
+}
+
+//alphabets
+//if 1 rings += 1
+//if 2 rings += 2
+//round the answer down
+
+function olympics(a){
+  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+  let twoRings = ['B'];
+  let score = 0;
+
+  a.split('').map(x => rings.includes(x)
+    ? score++
+    : twoRings.includes(x)
+    ? score += 2
+    : x
+    )
+
+  score = Math.floor(score/2)
+
+  if(score === 2){
+    return 'Bronze'
+  }else if(score === 3){
+    return 'Silver'
+  }else if(score > 3){
+    return "gold"
+  }else{
+    return "not even a medal"
+  }
+}
+
+//Array.isArray(value)
+//is the value an array?
+
+//-- in javasccript
+// -- is decrementing value
+
+//spread syntax adds all the values 
+//spread syntax expands an array into its elements
+function sum(x,y,z){
+  return x + y + z
+
+  
+}
+ const numbers = [1,2,3]
+ console.log(sum(...numbers))
+
+ //expected output: 6
+
+ //square every digit of a number and concatenate them
+
+ function concatenateNums(n){
+
+  n = n.split('')
+  let arr = []
+
+  for(let i = 0; i < n.length; i++){
+    arr.push(n[i]**2)
+ }
+ return arr.join('')
+}
+
+//what is a return statement?
+//a return statement is used to pass back information from the function call
+
+//which functions are those with no parameters?
+//encapsulation is a function with no parameters
+
+
+//figure out the index of which vowel is missing
+
+function missingVowels(str){
+  let vowels = 'aeiou'
+
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
+
+//return the indices of two numbers so they add up to a target
+function twoSum(num, target){
+  for(let i = 0; i < num.length; i++){
+    for(let j = 0; j < num.length; j++){
+      if(i !== j){
+        if(num[i] + num[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+var twoSum = function(nums, target){
+  let obj = {}
+
+  for(let i = 0; i < nums.length; i++){
+    if(target - nums[i] in obj){
+      return [obj[target - nums[i]], i]
+    }else{
+      obj[nums[i]] = i
+    }
+  }
+}
+
