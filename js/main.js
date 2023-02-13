@@ -14169,3 +14169,233 @@ var twoSum = function(nums, target){
   }
 }
 
+
+//mode of thinking that has tight psacing for rubber bumpers that hrlp keep your thoughts concentrated
+
+//focused thinking
+
+//describe a situation when you worked effectively under pressure. How did you feel when working under pressuer?
+//What was going on, and how did you get through it?
+
+//a situation where I was working effectively under pressure was when i had to unload 2 months worth of containers in a 2 week window
+//I felt great under pressure, it really breaks up the monotony of the day to day
+//I feel the best way to deal with high pressure situations is to take a step back a evaluate the situation you're in order to take the best possible approach and then to keep those plans flexible as plans have a way of not working out exactly as you planned them.
+
+//tell me about a situation when you made a mistake at work.
+//what happened exactly and how did you deal with it?
+//What steps did you take to improve the situation?
+
+//a situation where i made a mistake at work was when I was ordering some drawstrings and had gotten the quantities wrong. As it was around the Lunar New Year holiday for our overseas suppliers, I had to escalate the situation to the director, and we were able to correct the order from our overseas supplier. Going forward, we implemented a system of getting confirmation emails and checking them to the POs.
+
+
+//what kind of things must you be wary of when designing or vdeveloping multilingual sites?
+//you have to be wary of layout and overflow issues
+//you have to be wary of the ability to switch languages
+
+
+// how to require a file in server.js
+
+const express = require('express')
+const apply = express()
+
+//values are what determines the behavior of that property
+
+//create a method all which takes two params:
+//a sequence
+//a function
+
+//returns true if the function in the params returns true for every element in the sequence
+//if the sequence is empty, it should return true
+
+function all(arr, fun){
+  return arr.every(fun)
+}
+
+function all(arr, fun){
+  let array = []
+  for(let i = 0; i < arr.length; i++){
+    if(fun(arr[i])){
+      array.push(arr[i])
+    }
+    if(arr.length === array.length){
+      return true
+    }else{
+      return false
+    }
+  }
+}
+
+//substring
+//returns a string form the (start, end)
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+function contamination(text, char){
+  return char.repeat(text)
+}
+//object 
+//an object is a collection of related data
+
+//find function
+//finds all values that make it return true
+//filters all values that make it return true
+
+//create a fuinction that accvepts a list/array and a number n
+//return a list/array of the first n elem,ents from the list/array
+
+function take (arr, n){
+  return arr.slice(0, n)
+}
+
+//\n new line
+
+function evenOrOdd (a){
+  if(a % 2 === 0){
+    return 'even'
+  }else{
+    return 'odd'
+  }
+}
+
+function occurrences(str){
+  let map = {}
+
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+}
+
+
+//recursion only
+//factorial is a number that is the product of all numbers between it and 1
+function factorial(n){
+  if(n < 2){
+    return 1
+  }else{
+    return n * factorial(n - 1)
+  } 
+}
+
+//Do you have any questions?
+
+//What is the interview process like?
+//What is the timeline?
+//What are some of the challenges for the person in this position?
+//What is a typical day in this position?
+//What is the onboarding process after the offer?
+//Are there training programs available?
+
+//a situation i was responsible for project planning was at one of my previous opportunities, where the plans we had put together just went completely awry.
+//we were planning with receiving about 30 containers in the span on two months, but with delays at the port of long beach, the containers arrived 3 months late and in the span of 2 weeks
+//the first thing i did was to actually take a step back and reevaluate our plans and figure out how to best approach this new situation. We started opening multiple containers to load orders directly onto trucks, sectioned off our parking lot to store rolls of fabric and covered them in stretch wrap and placed tarps over everything. And at the end of the two weeks, my team and i were able to unload all the containers on time, and eventually we shipped out enough of our inventory to create enough space to store the rolls in our warehouse.
+
+//tell me about a time you had to work on several projects at once
+//how did you handle this?
+
+//a time i had to work on several projects at once was at my previous opportunity, it happens in production all the time. I need to figure out when certain products go to a dye house and at what time; in order to have enough space to receive an order that ghoes to the cutting house. A third order needs to go to the dye house when I pick up the previously dyed products, and when I return to the office, an order of cut pieces will be waiting for me that needs to be married to the dyed trim, and I oversaw all of those proceses. I need to be able to juggle a lot fo tasks at once, but what helps me is that I like to take a step back , catregorize the tasks according to importance, what can be done the fastest, and what could be done in conjuction with other tasks. Doing this has helped me a lot in my career to be more efficient and effective
+
+//tell me about when you ahd to deal with confilict within your team.
+//How was the conflict solved?
+//How did you handle that?
+//How would you deal with it now?
+
+//At my previous opportunity, I had an order that needed to be assembled in-house; howeever, a particular team member was having trouble assembling the pices in the correct way after some time, which was frustrating some of the other team members.
+//I pulled the team member aside and asked what the issue was. The team member was having trouble placing a glue sheet in the exact spot of the fabirc piece. I suggested that she swtich with another team member, to reduce the fatiugue from the monotonous task. 
+//Now, I would deal with it by having all the team members switch and do different tasks every 25 minutes to tru and curb fatigue from doing a single repetetive task.
+
+//create a function that has a loop that prints '21' 21 times to the console
+function twentyOne(a){
+  for(let i = 1; i <= 21; i++){
+    console.log('21')
+  }
+}
+
+//can you make it print '21' 21 times to the DOM
+function twentyOne(b){
+  for(let i = 1; i <= 21; i++){
+    document.querySelector('.savage').innerText += '21'
+  }
+}
+
+twentyOne();
+
+// an object is a collection of related data
+
+//the dish must start and end with the same leters as the animal's name
+//function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish hto the feast
+//assume that beast and dish are always lowercase strings
+//beast and dish may contain hyphens and spaces
+
+function feast(beast, dish){
+  if(beast[0].toLowerCase() === dish[0].toLowerCase() && beast.slice(-1) === dish.slice(-1)){
+    return 'true'
+  }else{
+    return 'false'
+  }
+}
+
+//the sort function 
+//sorts the array in-place, then returns it
+
+//implement line numbering
+//take a list of strings and return each line prepended by the correct number
+
+const numbero = function(array){
+  let arr = []
+  if(array.length === 0){
+    return []
+  }else{
+  for(let i = 0; i < array.length; i++){
+    arr.push(`${i+1}: ${array[i]}, `)
+    }
+  }
+}
+
+//<article>
+//self contained article
+//$ git init
+//how to initialize a folder in git
+//initialize a local git repository
+
+//list-style
+//dot and line styling in css
+
+//get an integer array as parameter
+//process every number from this array
+//if the number has an integer square root
+//take this
+//otherwise square the number
+
+function squareOrSquareRoot(array){
+  return Math.pow(Math.floor(Math.sqrt(n)), 2)
+}
+
+function squareOrSqrt(array){
+  return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n)
+  : n* n)
+}
+
+
+//tell me about your experience at 100Devs
+
+//100Devs is an agerncyt with a training program. I worked on several project both alone and with colelagues to better flesh out my skills
+//the main tech stack we used was React, Node, Express, and MongoDB
+
+//give me an example of the project or initiative that you started on your own
+//it can be a non-business one.
+//what prompted you to get started?
+//my very first day on the job 
+//at my previous opprtunity, I noticed that we didn't have a good system for keeping track of container contents. The packing slip for a container would come in spreadsheets, and the previous method for taking inventory of the contents of a container was to manually count out the inventory in excel. It didn't take long to google how to ocnvert cells in a spreadsheet into a table
+//once i implemented this system, my team members were thrilled that something that took 30 minutes, now took about 10 seconds, which freed up a lot of my time to get other tasks complete.
+
+//what are data-attributes allow us to store extra information on HTML elements
+//connectivity
+//connectivity allows you to communicate with the server in new and innovative ways
+
