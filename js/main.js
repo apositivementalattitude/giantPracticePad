@@ -14396,6 +14396,88 @@ function squareOrSqrt(array){
 //once i implemented this system, my team members were thrilled that something that took 30 minutes, now took about 10 seconds, which freed up a lot of my time to get other tasks complete.
 
 //what are data-attributes allow us to store extra information on HTML elements
-//connectivity
-//connectivity allows you to communicate with the server in new and innovative ways
+// //connectivity
+// //connectivity allows you to communicate with the server in new and innovative ways
 
+// //how to require a file in server.js
+// const express = require('express')
+// const app = express()
+// //how to require a file in server.js
+// const express = require('express')
+// const app = express()
+// //margin: 0 auto;
+//center a box
+
+//write a function that takes a string as it's first parameter
+//this string will be a string of words
+//use the second parameter, which will be an integer, to find the corresponding word in the given string
+//the first word would be respresented by 0
+//once you have the located string you are finally going to multiply it by the third provided parameter, which will always be an integer.
+//you are additionally required to add a hyphen in between each word
+
+function stringStuff(str, int, num){
+  let word = str.split(' ')
+  let get = word[int]
+  let arr = []
+  let count = 0
+
+  for(let i = count; i < num; i++){
+    if(str[i] < num){
+      arr.push(word)
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+//find if the player has achieved AT LEAST 100 points in his class
+function rankPlayerUp(points){
+  if(points >= 100){
+    return `Well done! You have advanced to the qualifying stage. Win 2 out of oyur next 3 games to rank up.`
+  }else{
+    return false
+  }
+}
+
+//the first century spans from year 1 up to and including the year 100
+//the second century from year 101 up to and including the year 200 etc
+
+//given a year
+//return the century it is in
+
+function century(year){
+  //the first century starts from year 1-100
+  let century = 1
+  for(let i = 1; i < year; i++){
+    if(i % 100 === 0){
+      century++
+    }
+  }
+  return `${century} century`
+}
+
+function evenOrOdd(n){
+  if(n % 2 === 0){
+    return 'Even'
+  }else{
+    return 'Odd'
+  }
+}
+
+function maxChar(n){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
