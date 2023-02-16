@@ -14481,3 +14481,77 @@ function maxChar(n){
   }
   return maxChar
 }
+
+//how to require a file in server.js
+const app = require('node')
+const node = node()
+
+
+function modifyMultiply(str, int, num){
+  //find the location of the first parameter
+  let word = str.split(' ')
+  //a variable for the index of the str of second parameter
+  let get = word[int]
+  let arr = []
+  let count = 0
+
+  for(let i = count; i < num; i++){
+    //if the index of the string is less than the number 
+    //we add 1 to the count variable
+    //we add the word(the index of the str)
+    //until it returns false
+    if(str[i] < num){
+      arr.push(word)
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+function fizzBuzz(n){
+  for(let i = 0; i < n; i++){
+    //when it's divisible by 2 * 3, we log "Fizz Buzz"
+    if(n % 6 === 0){
+      console.log('Fizz Buzz')
+      //when it's divisible by 2, we log "Fizz"
+    }else if(n % 2 === 0){
+      console.log('Fizz')
+      //when it's divisible by 3, we log "Buzz"
+    }else if(n % 3 === 0){
+      console.log('Buzz')
+      //when it's none of the above, print the number
+    }else{
+      console.log(i)
+    }
+  }
+}
+
+console.log(fizzBuzz(6), "1,Fizz,Buzz,Fizz,5,Fizz Buzz")
+
+//how many stones you have are also jewels
+//letters are case sensitive
+function jewelStones(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
+//missing vowel
+function missingVowel(str){
+  let vowels = 'aeiou'
+
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i]) === -1){
+      return i
+    }
+  }
+}
