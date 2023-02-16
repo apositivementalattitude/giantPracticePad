@@ -14555,3 +14555,129 @@ function missingVowel(str){
     }
   }
 }
+
+//selector unit at the end
+//furthest to the right
+//key selector
+
+//what do you read on a regular basis?
+//i like to read hackernews, r/learnjavascript, and r/learnprogramming. I also like to read historical fiction books like "Pachinko", which was made into a korean drama on appletv. I got really into the song of iced and fire series around 
+
+//create a function that accepts a list/array and a num n
+//returns the list/array of the first n elements from the list/array
+
+function listArray(arr, n){
+  return arr.slice(0, n)
+}
+
+//split/join
+//splits the array
+//join the array
+
+//calcualte the averages
+//return the average of the array rounded down to its neareset integer
+
+function getAvg(scores){
+  return Math.floor((scores.reduce((a,b) => a + b, 0))/scores.length)
+}
+
+//given an array of integers num
+//and an integer target
+//return the indices of the the two numbers such that they add up to target
+//you may not use the same element twice
+
+
+function twoSum (num, target){
+  //nest a for loop
+  for(let i = 0; i < num; i++){
+    for(let j = 0; j < num; j++){
+      //check if the first integer is the same as a second integer
+      if(i !== j){
+        //if thats true, check if the sum of the integers is the target
+        if(i + j === target){
+          //return the answer in [x,y] format
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+console.log(twoSum([3, 6], 9) [1,2,3,4,5,6])
+
+function twoSum(num, target){
+  let map = {}
+  for(let i = 0; i < num; i++){
+    if(target - num[i] in obj){
+      return [obj[target - num[i], i]]
+    }else{
+      obj[nums[i]] = i
+    }
+  }
+}
+
+//check whether the provided array contains the value
+//array can contain numbers or strings
+//return true if the array contains the value
+//false if not
+
+
+function checkVal(a,x){
+  return a.includes(x)
+}
+
+//create the function isDivideBy
+//check if an integer is divisible by both integers a and b
+
+function isDivideBy(num, a, b){
+  if(num % a === 0 && num % b === 0){
+    return true
+  }else{
+    return false
+  }
+}
+
+//complete the solution so that it returns true if the first argument passed in ends with the second argument
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+//calculate the volume of a cuboid with three values
+//l, w, h
+
+class kata{
+  static getVolumeOfCuboid(l,w,h){
+    return l*w*h
+  }
+}
+
+//object
+//an object is a collection of related data
+
+//write a function that reverses the words in a given string
+//a word can also fit an empty string
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+//if the text or character are empty
+//return an empty string
+//the text is now mutated to this character
+
+function contamination(text, char){
+  return char.repeat(text.length)
+}
+
+//bmi calc
+
+function bmiCalc(weight, height){
+  let bmi = weight/height**2
+
+  return bmi <= 18.5
+  ? 'Underweight'
+  : bmi <= 25
+  ? 'Normal'
+  : bmi <= 30
+  ? 'Overweight'
+  : "Obese"
+}
