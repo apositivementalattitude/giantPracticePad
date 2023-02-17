@@ -14681,3 +14681,68 @@ function bmiCalc(weight, height){
   ? 'Overweight'
   : "Obese"
 }
+
+//how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+//(req,res) and what they're used in
+//request and response 
+//they're used in gets
+//they're used in thens
+//they're used in callbacks
+
+//pass a parameter n()default =1
+//return the first n elements of a sequence
+
+function seq (arr, n=1){
+  return arr.slice(0, n)
+}
+
+const numberTwo = function(array){
+  let arr = []
+  if(array.length == 0){
+    return []
+  }else{
+  for(let i = 0; i < array.length; i++){
+    arr.push(`${i+1}: ${array[i]}`)
+  }
+  return arr
+}
+}
+
+function modifyMultiply(str, int, num){
+  let arr = [],
+  word = str.split(' '),
+  get = word[int],
+  count = 0
+
+  for(let i = count; i < num; i++){
+    if(str[i] < num){
+      arr.push(get)
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+
+//capitalize a string
+function capitalize(word){
+  word = word.split('')
+  return word[0].toUpperCase().join('')
+}
+
+//square every digit of a number and concatenate them
+
+function concat(n){
+  //split the numbers
+  //loop through the numbers while squaring
+  //push it to an array
+  let arr = []
+  
+  for(let i = 0; i < n.length; i++){
+    arr.push(n[i]**2)
+  }
+  return arr.join('')
+}
