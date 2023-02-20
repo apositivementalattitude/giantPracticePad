@@ -16961,3 +16961,10 @@ function correctedText(text){
 
 //\n
 //new line
+
+//the model
+//mvp
+//minimum viable product
+//the model
+//adds and retrieves items from the database
+//only talks to the controller
