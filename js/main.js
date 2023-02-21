@@ -14746,3 +14746,205 @@ function concat(n){
   }
   return arr.join('')
 }
+
+function countChars(str){
+  let map = {}
+
+  for(const c of str){
+    if(map[c]){
+      map[c]++
+    }else{
+      map[c] = 1
+    }
+  }
+  return map
+}
+
+//return the character that appears the most often
+
+function maxChar(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const c of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+    }
+  }
+  return maxChar
+}
+
+//recursion factorials
+
+//create a function factorial that receives n and returns n!
+//you have to use recursion
+
+function factorial(n){
+  if(n < 2){
+    return 1
+  }else{
+    return n * factorial(n - 1)
+  }
+}
+
+function majorityElement(n){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+  }
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+//abstraction principle
+//the abstraction principle is to hide the details
+
+//filter method syntax
+
+//const result = x.filter(x < 6))
+
+//the process of storing function (methods) with their associated data (properties) in an object
+
+//encapsulation
+//the process of storing function(methods) with their associated data(properties) in an object
+
+//what are blocks
+//blocks exist in curly braces
+
+function midChar(c){
+  if(c.length % 2 === 0){
+    return (c.substring(c.length/2) - 1, (c.length/2) + 1)
+  }else{
+    return (c.substring(c.length/2) + 1, (c.length/2))
+  }
+}
+
+
+class EspressoMachine{
+  constructor(color, make, model, price){
+    this.color = color
+    this.make = make
+    this.model = model
+    this.price = price
+  }
+  turnOn(){
+    console.log('Turned on')
+  }
+  steam(){
+    console.log('steamed')
+  }
+  brew(){
+    console.log('brewed')
+  }
+}
+
+let espressoMachine = new EspressoMachine('black', 'Make', 'Pro', "$15999.99")
+
+//substring
+//substring returns a new string from (start, end)
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+//if it goes past z start again at a
+
+function moveTen(s){
+  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  const arr = s.split('').map(x => x = str.indexOf(x) + 10);
+  return arr.map(x => x=str[x]).join('')
+}
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
+
+function all (arr, fun){
+  let array = []
+  for(let i = 0; i < arr.length; i++){
+    if(fun(arr[i])){
+      array.push(arr[i])
+    }
+  }
+  if(arr.length === array.length){
+    return true
+  }else{
+    return false
+  }
+}
+
+//write a function that takes a string as its first parameter
+//this string with be a string of words
+//use the second parameter to find ther corresponding word in the given string
+//the first word would be respresented by 0
+
+//once you have located the string you are finally goping to multiply by the third provided parameter
+//add a hyphen between the words
+
+
+function modifyMultiply(str, int, num){
+  let arr = [],
+  word = str.split(''),
+  get = word[num],
+  count = 0
+
+  for(let i = count; i < num; i++){
+    if(str[i] < num){
+      arr.push(word[i])
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+console.log(modifyMultiply("This is a string",3,5), "string-string-string-string-string")
+
+//if x squared is more than 1000
+//return "it's hot as heck"
+
+function moreThanThousand (x){
+  if(x**2 > 1000){
+    return "It's hotter than the sun!!"
+  }else{
+    return "Help yourself to a honeycomb Yorkie for the glovebox"
+  }
+}
+
+//reduce
+//will return a single value over the array by calling a function for each element and passing an intermediate result between the calls
+
+//find/filter(func)
+
+//finds or filters the values in the function for each element passing through the call
+
+//findIndex
+//finds the index of the values that make it return true
+
+//<script></script>
+//script inside html
+
+//increases the distance between the element and its borders
+//padding
+
+//screen
+//0
+
+//endpoint
+//the end of the url
+
+//npm audit fix --force
+// //forces updates in node
+
+// //how to require a file in server.js
+// const express = require('express')
+// const app = express()
