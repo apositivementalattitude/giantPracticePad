@@ -14948,3 +14948,72 @@ function moreThanThousand (x){
 // //how to require a file in server.js
 // const express = require('express')
 // const app = express()
+
+//connectivity
+//allows you to communicate with the server in new and innovative ways
+
+//script
+//script
+//code to be executed
+
+//why you would use a srcset attribute in an image tag?
+//explain the process ther browser uses when evaluating the content of this attribute
+//you would use a srcset attribute in an img tag when you want to serve different images to users depending won their device display width
+
+//describe the difference between a cookie, sessionStorage, and localStorage
+//a cookie is server side data
+//sessionStorage is data stored in the server to be deleted when the session is closed
+//localStorage is script stored in the browser
+
+//consider HTML5 as an open web platform.
+//what are the buolding blocks of HTML5
+//the building blocks of HTML5 are 
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(s){
+  let vowels = 'aeiou'
+  for(let i = 0; i < vowels.length; i++){
+    if(s.indexOf(vowels[i]) === -1){
+      return i
+    }
+  }
+}
+//in javascript functions are objects
+//true
+
+//find the sum of all multiples of n below m
+
+function sumMul (n,m){
+  if(n >= m){
+    return "INVALID"
+  }else{
+    let sum = 0
+    for(let i = n; i < m; i +=n){
+      sum += i
+    }
+  }
+  return sum
+}
+
+//complete the solution so that it returns true if the first argument passed in ends with the 2nd argument
+
+function solutions(str, ending){
+  return str.endsWith(ending)
+}
+
+
+//find the sum of all multiples of n below m
+function sumSMul(n, m){
+  if(n >= m){
+    return "INVALID"
+  }else{
+    let arr = []
+
+    for(let i = n; i < m; i++){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((a,b) => a + b, 0)
+}
+
