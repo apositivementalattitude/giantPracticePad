@@ -15017,3 +15017,67 @@ function sumSMul(n, m){
   return arr.reduce((a,b) => a + b, 0)
 }
 
+function take (arr, n){
+  //accepts a list and a number 
+  //returns a list/array of the first n elements from the list/array
+  return arr.slice(0, n)
+}
+
+//return the highest and lowest numbers
+
+function highAndLow(numbers){
+  //sort the array into the highest and lowest number
+  //find the highest number and the lowest number
+  let arr = numbers.split(' ')
+  return `${Math.max(...arr)} ${Math.min(...arr)}`
+
+}
+
+//implement line numbering to an array
+
+const numberz = function (array){
+  //split the array
+  //loop through the array
+  //use `${template literal}`
+  let arr = []
+  if(array.length === 0){
+    return []
+  }
+  for(let i = 0; i < array.length; i++){
+    arr.push(`${i+1}: ${array[i]}, `)
+  }
+  return arr
+}
+
+//src attribute
+//src attribute is for sources of imgs
+//used in links
+//embeddable content
+
+
+//list-style
+//list-style is for dots and lines list
+
+//do you have any questions?
+//yes!
+//What is the interview process like?
+//What is the timeline?
+//What are some challenges for someone in this position?
+//What is a typical day in this position?
+//What is the onboarding process after the offer?
+//Are there training programs available?
+
+//complete the function that takes two integers 
+//(a, b where a < b)
+//return an array of all integers between the input parameters
+//including them
+
+function twoInt(a, b){
+  if(a > b) return "INVALID"
+  
+  let arr = []
+  for(let i = a; i <= b; i++){
+    arr.push(i)
+  }
+  return arr
+}
