@@ -15081,3 +15081,64 @@ function twoInt(a, b){
   }
   return arr
 }
+
+//and logical operator
+
+
+//given an array of integers num and an integer target
+//return the indices of the two numbers such that hey add up to the target
+
+function addTwo(nums, target){
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; j < nums.length; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target)
+        return [i, j]
+      }
+    }
+  }
+}
+
+//find the sum of all multiples of n below m
+
+function sumMul(n, m){
+  if(n > m) return "INVALID"
+  let arr = []
+  for(let i = n; i <= m; i+=n){
+    arr.push(i)
+  }
+  return arr.reduce((a, b) => a + b, 0)
+}
+
+function contamination(text, char){
+  return char.repeat(text.length)
+}
+
+//create an array of numbers
+//sum all the numbers
+//alert the sum
+
+let arr = [1,2,3,4,5]
+let sumArr = arr.reduce((a, b) => a + b, 0)
+alert(sumArr)
+
+let num = 100
+num = num - 10
+console.log(num)
+
+let valFromInput = Number(document.querySelector('input').value)
+valFromInput+=25
+alert(valFromInput)
+
+const h1 = document.querySelector('h1')
+
+h1.addEventListener('click',addTwo)
+function addTwo(){
+  
+  console.log(valFromInput+num)
+}
+//and object is a collection of related data
+
+//offline and storage is how you store your code offline
+//offline and storage allows webpages to store data on the client side
+
