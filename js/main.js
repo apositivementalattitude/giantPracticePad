@@ -15154,58 +15154,262 @@
 
 //the listen method in Express
 
-const express = require(express)
-let app = express()
-app.listen(3000, function (){
-  console.log('listening on 3000')
-})
+// const express = require(express)
+// let app = express()
+// app.listen(3000, function (){
+//   console.log('listening on 3000')
+// })
 
-function stairsin20(s){
-  //s represents stairs logged in a year
-  //sum all the stairs logged in a year
-  //multiply by 20
+// function stairsin20(s){
+//   //s represents stairs logged in a year
+//   //sum all the stairs logged in a year
+//   //multiply by 20
 
-  s = s.split(' ')
-  let averageYearlyTotals = s.reduce((a,b) => a + b, 0)
-  return averageYearlyTotals*20
+//   s = s.split(' ')
+//   let averageYearlyTotals = s.reduce((a,b) => a + b, 0)
+//   return averageYearlyTotals*20
+// }
+
+// function stairsIn20(s){
+//   return s.reduce((a,b) => a.concat(b)).reduce((a, b) => + b, 0) * 20
+// }
+
+// //should variables hold reusable data in a program and associate it with a name?
+// //yes
+
+// //make a program that filters a list of strings and returns a list with only your friends name in it
+// //if a name has 4 letters in it it is a friend
+
+// function friendly(n){
+//   let result = n.filter(n => n.length == 4)
+//   return result;
+// }
+
+// function howMuchILoveYou(nbPetals){
+//   //determine the phrase the girls would say for a flower given number of petals where nbPetals > 0
+//   switch((nbPetals - 1) % 6) {
+//     case 1:
+//       return 'a little'
+//   }
+// }
+
+// //you are given a string of jewels representing the types of stones that are jewels
+
+// function jeweling(jewels, stones){
+//   let map = {},
+//   count = 0
+
+//   for(const jewel in jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+//[href$="Brackets"]
+//attribute ends with selector
+
+//includes stytles based around the skin, or olook and feel, of different modules
+//theme
+
+//tell me about a situation when you made a mistake at work
+//a situation where i made a mistake at work was at my previous opportunity; where i was tasked with ordering drawstrings from overseas. I got the order wrong and unfortunately; because of the Lunar New Year holiday, my regular contact wasn't available to correct my error, so I escalated the issue to the director and we were able to get the order correct. From then on I implemented a system of checking our orders to our POs when ordering.
+
+//progressive rendering is rendering that happens as it encounters the code in the code block
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions.
+
+//describe the difference between script
+//script async
+//script defer
+
+//script is client side code
+//script async is code to be executed asynchronously
+//script defer is code to be executed, then rendered, and finally constructed.
+
+//how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+//how to handle a get request
+app.get(3000)
+console.log('listening of port 3000')
+
+function repeatChar (char){
+  return char.split('').map(function(x){
+    return x + x
+  }).join('')
 }
 
-function stairsIn20(s){
-  return s.reduce((a,b) => a.concat(b)).reduce((a, b) => + b, 0) * 20
+//do you need curly braces for a single-line block?
+//no
+
+//what is a number without quotes
+//literally a number
+
+let stuff = 10
+console.log(stuff)
+
+let stuff2 = 20
+stuff2 += 10
+alert(stuff2)
+
+function subFour(a,b,c,d){
+  alert(a-b-c-d)
 }
 
-//should variables hold reusable data in a program and associate it with a name?
-//yes
-
-//make a program that filters a list of strings and returns a list with only your friends name in it
-//if a name has 4 letters in it it is a friend
-
-function friendly(n){
-  let result = n.filter(n => n.length == 4)
-  return result;
+function divideRemain(m,n){
+  return m % n 
 }
 
-function howMuchILoveYou(nbPetals){
-  //determine the phrase the girls would say for a flower given number of petals where nbPetals > 0
-  switch((nbPetals - 1) % 6) {
-    case 1:
-      return 'a little'
+function addTwo(sum){
+  if(sum > 50){
+    alert('JUMANJI')
   }
 }
 
-//you are given a string of jewels representing the types of stones that are jewels
-
-function jeweling(jewels, stones){
-  let map = {},
-  count = 0
-
-  for(const jewel in jewels){
-    map[jewel] = true
+function multThree(prod){
+  if(prod % 3 === 0){
+    alert('ZEBRA')
   }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
+}
+
+function wordNum(x,y){
+  for(let i = 0; i < x.length; i++){
+    console.log(y)
+  }
+}
+
+//what are the reserved words?
+//const
+//let
+//var
+//return
+//function
+//class
+
+//let charMap = {}
+//an object
+
+//how to add an element to the beginning of an array
+//unshift
+
+//make two function that receive a list of integers as input and return the largest and lowest number in that list
+function min (list){
+  return Math.min(...list)
+}
+function max (list){
+  return Math.max(...list)
+}
+
+function sumMul(n,m){
+  //find the sum of all multiples of n below m
+  if(n > m) return "INVALID"
+  let arr = []
+  for (let i = n; i < m; i+=n){
+    arr.push(i)
+  }
+  return arr.reduce((a,b) => a + b, 0)
+}
+
+//complete the function which converts a binary number to a decimal number
+
+function binToDec(bin){
+  return parseInt(bin, 2)
+}
+
+function fizzBuzz(n){
+  for(let i = 1; i <= n; i++){
+    if(i % 6 === 0){
+      console.log('Fizz Buzz')
+    }else if(i % 2 === 0){
+      console.log('Fizz')
+    }else if(i % 3 === 0){
+      console.log('Buzz')
+    }else{
+      console.log(i)
     }
   }
-  return count
+}
+
+//what are objects copied by?
+//their reference type
+//map(func)
+//creates a new array from results of calling func for every element
+
+function takeStuff(str,loc,num){
+  let word = str.split(' ')
+  let get = word[loc]
+  let arr = []
+  let count = 0
+
+  for(let i = count; i < num; i++){
+    if(str[i] < num){
+    arr.push(word)}
+    count++
+  }
+  return arr.join('-')
+}
+
+//unshift
+//to add to the front of an array
+
+//write a function that tkes a single string as argument
+//the fuinction must return an ordered list containing the indexes of all capital letters in te string
+
+const capitals = function (word){
+  let arr = []
+  let words = word.split('')
+  for(let i = 0; i < word.length; i++){
+    if(words[i] === words[i].toUpperCase()){
+      arr.push(words.indexOf(i))
+    }
+  }
+  return arr
+}
+
+//return a new array consisting of elements which are a multiple of their own index in inut array (length  > 1)
+function multipleOfIndex(array){
+ return array.filter((a,b) => a % b === 0) 
+}
+
+function howMuchWater(water, load, clothes){
+  if(clothes > 2 * load){
+    return "Too much clothes"
+  }else if(clothes < load){
+    return "Not enough clothes"
+  }else{
+    return water * 1.1 ** (clothes - load)
+  }
+}
+
+function first(arr, n=1) {
+  return arr.slice(0, n)
+}
+
+//build a function that returns an array of integers from n to 1 where n > 0
+const reverseSeq = n => {
+  let arr = []
+
+  for(let i = n; i >= 1; i-=1){
+    arr.push(i)
+  }
+  return arr;
+}
+function position(letter){
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  return `Position of alphabet: ${lphabet.indexOf(letter)}`
+}
+
+function sqDigits(n){
+  n = n.split('')
+  let arr = []
+
+  for(let i = 0; i < n.length; i++){
+    arr.push(n[i]**2)
+  }
+  return arr.join('')
 }
