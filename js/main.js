@@ -15413,3 +15413,28 @@ function sqDigits(n){
   }
   return arr.join('')
 }
+
+//have you used different HTML templating languages before?
+//yes I have
+//I've used React
+
+//connectivity
+//connectivity is how you connect to the server in new innovative ways
+
+//complete the function that receives an input as a string
+//produce the outputs according to the following table
+function getDrinkByProfession(param){
+  switch(param){
+    case 'Jabroni': return "Patron Tequila"
+    default: 'Beer'
+  }
+}
+//primitive value types
+//string
+//boolean
+//numbers
+//null
+//0
+//undefined
+//NaN
+//symbol
