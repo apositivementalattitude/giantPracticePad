@@ -15438,3 +15438,31 @@ function getDrinkByProfession(param){
 //undefined
 //NaN
 //symbol
+
+//<th>
+//table header in html
+
+//implement line numbering in javascript
+const number = function (array) {
+  //format is n: string
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    arr.push(`${i+1}: ${array[i]}, `)
+  }
+  return arr
+}
+
+//create a function that takes in a list of buttn inputs and returns the final state
+
+function likeOrDislike(buttons){
+  let state = 'Nothing'
+
+  for(let i = 0; i < buttons.length; i++){
+    if(buttons[i] === state){
+      state = 'Nothing'
+    }else{
+      state = buttons[i]
+    }
+  }
+  return state;
+}
