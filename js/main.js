@@ -16634,3 +16634,27 @@ function first(arr, n=1){
 }
 
 //includes(value)
+//check if the value is included or not
+
+//given a number as an input
+//print out every integer from 1 to that number
+//if the integer is divisible by 2
+//print "FIZZ"
+//if the integer is divisible by 3
+//print "BUZZ"
+//if the integer is divisible by both 2 and 3 
+//print "Fizz Buzz"
+
+function fizzYOurBuzz(n){
+  for(let i = 1; i <= n; i++){
+    if(i % 6){
+      console.log('Fizz Buzz')
+    }else if(i % 2){
+      console.log('Fizz')
+    }else if(i % 3){
+      console.log('Buzz')
+    }else{
+      console.log(i)
+    }
+  }
+}
