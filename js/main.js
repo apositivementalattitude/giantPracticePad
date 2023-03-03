@@ -15466,3 +15466,42 @@ function likeOrDislike(buttons){
   }
   return state;
 }
+
+//count all the occurring characters in a string
+//if you have a asdtring like aba
+//the result should be 'a':2
+
+function occurrences(str){
+  if(str.length === 0) return {}
+
+  let map = {}
+
+  for(const c of str){
+    if(map[c]){
+      map[c]++
+    }else{
+      map[c] = 1
+    }
+  }
+  return map
+}
+
+//given a string of characters
+//return the character that appears the most often
+
+function maxChar(s){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+  for(const char in charMap){
+    if(charMap[char] < count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
