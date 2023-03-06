@@ -15505,3 +15505,349 @@ function maxChar(s){
   }
   return maxChar
 }
+
+//tell me about your experience at 100devs
+//100devs is a training program with an agency, where i worked on projects both alone and with colleagues to build full stack web applications.
+//The primary stack we used was MongoDB, Express, React, and Node
+//tell me about a situation when you were responsible for project planning
+//did everything go accoridng to your plan?
+//if not, then why and what kind of counter-actions did you have to take?
+//there was a time at my previous opportunity, where i was responsible for planning to receive 30 containers in a 2 month period; however, due to a situation at the port of long beach, that 2 month window became a 2 week window.
+//We altered our plans to prepare for the massive influx of containers, and created a strategy. My team and I were able to unload all the containers on time, and eventually, we shipped out enough of our inventory to create enough space to store the rolls in our warehouse.
+
+//describe a situation when you worked effectively under pressure. How did you feel when working under pressure?
+//What was going on, and how did you get through it?
+//a time when I was working effectively under pressure was in that 2 week period to get all the rolls out 
+//I felt great under pressure, it really breaks up the monotony of the day to day
+//i feel the best way to deal with high pressure situations is to take a step back and evaluate thje situation you're in in order to take the best possible approacj and then to keep those plans flexible as plans have a way of not working out exactly as you planned them
+
+//tell me about a time you had to work on several projects at onc
+//how did you handle this
+//this happens all the time in in my previous opportunity
+//ill have to juggle a lot of tasks at once and I find the best way to tackle these situations is when I take a step back and evaluate what exactly i have to do and categorize the tasks according to importance, what can be done the fastest, and what could be done right after the other. Doing this has helped me nin my career a to be more efficient and effecitve.
+
+//give an example of the project or initiative that you started on your own
+//my first day as a warehouse manager, I had learned that the previous way of doing inventory for incoming containers was to physically match the stickers that were printed to a printed copy of the packing lists that came with the container
+//it didn't take me long to figure out in excel how to take the cells and convert them into a pivot table for the team members in the warehouse as a physical copy, and compare the stickers and the packing lists digitally, saving me a ton of time to get other tasks done.
+//do you have any questions?
+//yes
+//what is the interview process like?
+//what is the timeline?
+//are there training programs available?
+//what are some challenges for the person in this positions?
+// what is a typical day in this position?
+
+//tell me about yourself
+//im a software engineer at 100devs; where ive been building full stack web applications using the MERN stack alone and with colleagues. In the past, I've been involved in the fashion industry since I was a toddler; where I modeled clothes. I worked as a warehouse delivery driver out of high school until i was promoted to be the warehouse manager in a fabric warehouse. I eventually transitioned into production management role at a trim supplier. Most of my life, I've been told by my teachers, my boses, my friends, and my family athat since I'm good with computers, have an eye for design, and really enjoy building things, software development would be a really good fit for me. I eventaully learned how to code, which is something I now enjoy doing, and with my background in design, I can help a development team with new and creative ideas.
+
+//tell me aboue when you had to deal with conflict within your team. How was the conflict solved? How did you  handle that? How would you deal with it now?
+//at my previous opportunity, I had an order that needed to be assembled in house; however, a particular team member was having trouble assmelbing the pieces in the correct way after some time, which was frustrating some of the other team members. 
+//i pulled the team members aside and asked waht the issue was. The team member was having rtouble placing a sglue sheet in exact spot of the 
+
+//how do you serve a page with ocntent in multiple languages?
+//<html lang ="en">
+
+// //how to require a file i nserver.js
+// const express = require('express')
+// const app = express()
+
+//how to server up a file in server.js
+// app.get('/', (req, res) =>{
+//   res.sendFile(__dirname + '/index.html')
+// })
+
+//ctrl+c
+//stops the current server
+//what comes below can override what came above
+//the cascade
+
+//promise syntax
+fetch('#')
+.then(res => res.json())
+.then(data => {
+  console.log(data)
+})
+.catch(error => {
+  console.log(`error: ${error}`)
+})
+
+//the controller
+//the controller is server side code that tells the view what to do, and gets its information from the model
+
+
+//given a string of random letters
+//count the rings in each letter
+//divide the total by 2
+//round the answer down
+
+/*
+if score is 1 or less, return 'Not even a medal!';
+if score is 2, return 'Bronze!';
+if score is 3, return 'Silver!';
+if score is more than 3, return 'Gold!';
+Dots over i's and any other letters don't count as rings.
+*/
+
+function olympicRing(a){
+  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+  let twoRings = ['B'];
+  let score = 0;
+
+  for(let i = 0; i < a.length; i++){
+    if(rings.includes(a[i])){
+      score++
+    }else if(twoRings.includes(a[i])){
+      score+=2
+    }
+  }
+
+  score = Math.floor(score/2)
+
+  if(score > 3){
+    return "Gold!"
+  }else if (score === 3){
+    return "Silver!"
+  }else if(score === 2){
+    return "Bronze!"
+  }else{
+    return "You stink, loser"
+  }
+}
+
+//return a multiplication table for number that is always an integer from 1 to 10
+const multiTable = (number) => {
+  let table = ''
+
+  for(let i = 1; i <= 10; i++){
+    table+= `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`
+  }
+  return table;
+}
+
+
+//given a string made up of letters a,b, and or c, switch the position of letters a and b
+//leave any incidence of c untouched
+
+function switcheroo(x){
+  x = x.split('').map(n => {
+    if(n === 'a'){
+      return 'b'
+    }else if(n === 'b'){
+      return 'a'
+    }
+  })
+  return x.join('')
+}
+
+//create a function that accepts a list/array and a number n
+//return a list/array of the first n elements from the list/array
+
+function take (arr, n){
+  return arr.slice(0, n)
+}
+
+//create a method all which takes two params
+//a sequence
+//a function
+
+//returns true if the function in the params returns treue for every element in the sequence
+//if the sequnce is empty, it should return true, since techjnically nothing faile dthe test
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
+
+//write a function that takes a string as its first parameter
+//you are exp[ected to then use the second parameter which will be an integer to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have the located string
+//you are finally going to multiply by it the third provided paramter, which will also be an integer
+//you are additionally required to add a hyphen in between each word
+
+function hyphenTheRepeatedWord(str, int, num){
+  let word = str.split(' ')
+  let get = word[int]
+  let arr = []
+  let count = 0
+
+  for(let i = count; i <= num; i++){
+    if(str[i] < num){
+      arr.push(word)
+      count++
+    }
+    
+  }
+  return arr.join('-')
+}
+
+
+function bobsBus(cap, on, wait){
+  if(cap >= on + wait){
+    return (wait + on) - cap
+  }else{
+    return 0
+  }
+}
+
+//find the sum of all multiples of n below m
+
+function sumMul(n, m){
+  if(n > m) return "INVALID!"
+
+  let arr = []
+  for(let i = n; i < m; i+=n){
+    arr.push(i)
+  }
+  return arr.reduce((a,b) => a + b, 0)
+}
+
+function contamination(text, char){
+  //if the text of the character are empty, return an empty string
+  if(text.length || char.length === 0) return ''
+
+  return char.repeat(text.length)
+}
+
+function sumMix(x){
+  //return the sum of the array 
+  return x.reduce((a, b) => +a + +b, 0)
+}
+
+//function
+//functions are set of instructions
+
+function solution(str,ending){
+  //complete the solution so that it reutnrs true if the first argument string passed in ends with the 2nd argument(also a string)
+  return str.endsWith(ending)
+}
+
+// ``
+//template literal notation
+
+//are function expressions hoisted so they can be called before they are defined?
+//no
+//you must call them so they can be defined
+
+//object
+//objects are collections of related data
+
+//create a fucntion that converts US dollars to CNY
+
+function usdcny(usd){
+  //the conversion rate is 6.75CNY per USD
+  //all numbers should be represented with 2 decimal places
+  return `${(usd*6.75).toFixed(2)} Chinese Yuan`
+}
+
+const isReallyNaN = (val) => {
+  if(val === NaN){
+    return true
+  }else{
+    return false
+  }
+}
+
+function maps(x){
+  //given an array of integers return a new array with each value doubled
+  return x.map(function (n){
+    n*2
+  })
+}
+
+//what is the code block associated with a loop
+//its body
+
+//suibstring will return a new str from (start, end)
+//name the data types in Javascript
+//string
+//number
+//NaN
+//null
+//0
+//boolean
+//symbol
+//undefined
+//object
+
+//figure out the index of which vowel is missing freom a given string
+
+function missingVowel(str){
+  let vowels = 'aeiou'
+
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i]) === -1){
+      return i
+    }
+  }
+}
+
+function factorial(n){
+  //solve using recursion
+  //the factorial of a non-negative number is the product of all positive integers less than or equal to n\
+  if (n < 2) return 1
+
+  return n * factorial(n - 1)
+}
+
+//given an array of integers nums and an integer target
+//return the indices of the two numbers such that they add up to target
+
+function twoSum (nums, target){
+  let arr = []
+
+  for(let i = 0; i < nums; i++){
+    for(let j = 0; j < nums; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+
+function twoSum(nums, target){
+  let map = {}
+
+  for(let i = 0; i < nums; i++){
+    if(target - nums[i] in map){
+      return [obj[target - nums[i]], i]
+    }else{
+      obj[nums[i]] = i
+    }
+  }
+}
+
+//given an array nums of size n return the majority element
+function majorityElement(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+  }
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+function jewelsInStoners(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
