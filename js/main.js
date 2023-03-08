@@ -15851,3 +15851,57 @@ function jewelsInStoners(jewels, stones){
   }
   return count
 }
+
+//tell me about a situation where you made a mistake at work
+//what happened exactly and how did you deal with it?
+//what steps did you take to improve the situation
+
+//i made an error at work when i needed to order drawstrings for a customer
+//however, i didn't order the correct quanitites of sizes. 
+//as this was very close to lunear new year
+//i escalated this to our director and we were able to correct the order from our overseas supplier
+//going forwars, we implemented a system with our overseas supploer so that we had to get confirmation emails and check that to the PO
+//whenever i join a new team, io like to think in systems and ways that we can aboid common problems that might come up on the job
+
+//selectors
+//selectors are what we use to select different html elements
+
+//list-style
+//dot and line styling
+
+
+//givena string showing either flatroad (_) or bumps(n)
+//you are able to reach home safely by encounter bumps 15 for less
+
+function bump (x){
+  x = x.split('')
+  let arr = []
+
+  for(let i = 0; i < x.length; i++){
+    if(x[i] === 'n'){
+      arr.push('n')
+    }
+  }
+  if(arr.length > 15){
+    return "Car Dead"
+  }else{
+    return "Woohoo!"
+  }
+}
+
+function bump(x){
+  return x => x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!'
+}
+
+//write a function which converts the input string to uppercase
+function convertToUppercase(str){
+  return str.toUpperCase()
+}
+
+//given an array of integers your solution must find the smallest integer
+function arrayOfInt(num){
+  return Math.min(num.split(''))
+}
+
+//abstraction principle is to hide the details
+
