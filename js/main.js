@@ -15905,3 +15905,24 @@ function arrayOfInt(num){
 
 //abstraction principle is to hide the details
 
+//~= attribute spaced selector in html
+
+//given threeintegers a, b, c return the largest number obtained after inserting the following operators and brackets +, *, ()
+
+
+function threeInt(a,b,c){
+  return a+b+c,
+  a+b*c,
+  a*b+c,
+  a*b*c,
+  (a+b)*c,
+  a*(b+c)
+}
+
+//write a function which takes its speed in km per hour and returns it in cm per second
+//rounded down to the integer =floored
+
+function cockamouse(s){
+  return Math.floor(s*27.7778)
+}
+
