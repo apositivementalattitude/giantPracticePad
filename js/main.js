@@ -15926,3 +15926,63 @@ function cockamouse(s){
   return Math.floor(s*27.7778)
 }
 
+//what is a test that requires you to understand the text, not just retrieve isolated facts?
+//inference test
+
+//providing intelligent variety in your studies
+//interleaving
+
+//script tags in html
+//script tags in html denote where the script will be located
+
+//list of falst values
+//0
+//empty strings
+//null
+//undefined
+//NaN
+
+//make a function that receives the age
+//return what they drink
+
+function ageOfPeople(age){
+  if(age < 14){
+    return "Toddy"
+  }else if(age < 18){
+    return "Coke"
+  }else if(age < 21){
+    return "Beer"
+  }else{
+    return "Whisky"
+  }
+}
+
+//fat arrow notation
+// () => {}
+
+//complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade
+
+function getGrade(s1, s2, s3){
+  let avg = (s1 + s2 + s3)/3
+
+  if(avg >= 90 && avg <= 100){
+    return "a"
+  }else if(avg <= 80 && avg > 70){
+    return "b"
+  }else if(avg <= 70 && avg > 60){
+    return "c"
+  }else if(avg < 60){
+    return "d"
+  }else{
+    return "fail"
+  }
+}
+
+//write a function that takes an array of words and smashes them together into a sentence
+//return the sentence
+//make sure there are spaces between each word
+
+function wordSmash(str){
+  return str.map(x => x.join(' '))
+}
+
