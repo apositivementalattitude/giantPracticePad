@@ -15986,3 +15986,12 @@ function wordSmash(str){
   return str.map(x => x.join(' '))
 }
 
+//do you have any questions?
+//yes
+//what is the interview process like?
+//what is the timeline?
+//what are some challenges for the person in this position?
+//what is a typical day in this position?
+//what is the onboarding process after the offer?
+//are there training programs available?
+
