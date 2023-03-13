@@ -16071,55 +16071,124 @@
 
 //how do you require a file in server.js
 
-const express = require('express')
-const app = express()
+// const express = require('express')
+// const app = express()
 
-//a get request 
-app.get('/', function(req, res){
-  res.send('Hello World!')
-})
+// //a get request 
+// app.get('/', function(req, res){
+//   res.send('Hello World!')
+// })
 
-//.tagline
+// //.tagline
 
-//the tagline
+// //the tagline
 
-//class selector, which may be reused multiple times per page
+// //class selector, which may be reused multiple times per page
 
-//:wq
-// how to get out of that one thing
+// //:wq
+// // how to get out of that one thing
 
-//write a funciton to get the first elements of a sequence
-//passing the parameter n(default = 1)
+// //write a funciton to get the first elements of a sequence
+// //passing the parameter n(default = 1)
 
-function first (arr, n=1){
-  return arr.slice(0, n)
-}
+// function first (arr, n=1){
+//   return arr.slice(0, n)
+// }
 
-//get the sum of two arrays
-//get the sum of all their elements
+// //get the sum of two arrays
+// //get the sum of all their elements
 
-function arrayPlusArray(arr1, arr2){
-  return arr1.concat(arr2).reduce((a,b) => a + b, 0)
-}
+// function arrayPlusArray(arr1, arr2){
+//   return arr1.concat(arr2).reduce((a,b) => a + b, 0)
+// }
 
 
 
-//fund the sum of all multiples of n below m
-function sumMul(n, m){
-  if (n > m) return 'INVALID'
+// //fund the sum of all multiples of n below m
+// function sumMul(n, m){
+//   if (n > m) return 'INVALID'
 
-  let arr = []
-  for(let i = n; i < m; i+=n){
-    arr.push(i)
-  }
-  return arr.reduce((a,b) => a + b, 0)
-}
+//   let arr = []
+//   for(let i = n; i < m; i+=n){
+//     arr.push(i)
+//   }
+//   return arr.reduce((a,b) => a + b, 0)
+// }
 
-//declare a variable
-let thing = 'a bunch of words'
-console.log(thing.search('apple'))
+// //declare a variable
+// let thing = 'a bunch of words'
+// console.log(thing.search('apple'))
 
 //assign it a string of multiple words
 
 //===
 //
+
+//what do you read on a regular basis?
+//i like to read hackernews to keep up to date on tech news
+//i read the learnjavascript and learn programming subreddits to see how different people approach problems
+//one of my favorite books is "Pachinko" which was recently turned into a korean drama on appleTv
+//i got into the song of ice and fire series during the first game of thrones season and i read fire and blood before houose of the dragon aired
+
+
+//write a function that takes a string as it's first parameter
+//the second parameter is an integer
+//find the corresponding word given the string
+//the first word would be represented by 0
+//multiply it by the third parameter
+//add a hyphen between each word
+
+function hyphenOneWord(str, int, num){
+  let arr = [],
+  word = str.split(' '),
+  get = word[int],
+  count = 0
+
+  for(let i = count; i < num; i++){
+    //locate the string with the loop and then push it to the array
+    if(str[i] < num){
+      arr.push(word)
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+//write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value
+
+//division by zero should return NaN
+
+function remainder(n,m){
+  if(n === m){
+    return NaN
+  }else if(n > m){
+    return n % m
+  }else{
+    return m % n
+  }
+}
+
+//count the number of divisors of a positive integer n
+
+function getDivCnt(n){
+  if (n < 0) return 'NULL'
+
+  let count = 0
+  for(let i = count; i <= n; i++){
+    if(n % i === 0){
+      count++
+    }
+  }
+  return count
+}
+
+//given a set of numbers
+//return the additive inverse of each
+
+function invert(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    arr.push(-array[i])
+  }
+  return arr
+}
