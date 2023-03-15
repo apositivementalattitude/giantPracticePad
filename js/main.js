@@ -16192,3 +16192,33 @@ function invert(array){
   }
   return arr
 }
+
+//are primitives copied by value?
+
+//yes
+
+//given 2 strings a and b
+//return a string of the form short+long+short
+
+function solution(a,b) {
+  if(a.length > b.length){
+    return b+a+b
+  }else if(a.length < b.length){
+    return a+b+a
+  }
+}
+
+//describe a situation in which yhou felt you had not commuinicated well enough
+//what did you do
+//how did you handle the situation?
+//a situation where i felt i hadn't communicated well enough was when i was ordering a dye job and my regular contact wasn't there
+//the person that picked up the phone didn't speak english and so we got through the order
+// i texted my regular contact within that company and i was able to correct the order
+//i felt there was something wrong with the order and i 
+
+//a function created inside an expression
+
+//methods are actions that we can perform
+//how many times shoulda  variable be declared?
+
+//once
