@@ -16222,3 +16222,18 @@ function solution(a,b) {
 //how many times shoulda  variable be declared?
 
 //once
+
+//how to set localStorage
+localStorage.setItem('books', data.title)
+
+let param = parameter
+switch(param){
+  case 1: 1
+  case 2: 2
+  default:
+}
+
+function contamination(text, char){
+  // Code here ;)
+  return char.repeat(text.length)
+}
