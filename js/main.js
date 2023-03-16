@@ -16256,3 +16256,96 @@ function solution(str, ending){
   return str.endsWith(ending)
 }
 
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(str){
+  let vowels = 'aeiou'
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
+
+//given an array of integers nums and an integer target
+
+//return the indices of the two numbers such that they add up to target
+
+function twoSum(nums, target){
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; j < nums.length; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+
+//
+function jewelers(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
+function factorial(n){
+  if(n < 2) return 1
+  return n * factorial(n - 1)
+}
+
+function repeaTChar(n){
+  //create an object variable
+  let charMap = {},
+  //create a counter
+  count = 0,
+  //the maximum character variable
+  maxChar = null
+
+  //create a loop where the counter in the object 
+  //char is a new variable that we are looping through
+  for(const char of str){
+    //charMap[char] is the letter in the string
+    //charMap[char] + 1 || 1 will ad 1 if a characyer ezxists, and just === 1 if it doesn't exist
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+//majority leement
+
+function majElement(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+    }
+    for(const n in elem){
+      if(elem[n] > count){
+        count = elem[n]
+        majElem = n
+      }
+    }
+    return majElem
+}
