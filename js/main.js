@@ -16237,3 +16237,22 @@ function contamination(text, char){
   // Code here ;)
   return char.repeat(text.length)
 }
+
+//tell me about a situation when you were respoinsible for project planning.
+//Did everything go according to your plan?
+//If not, then why and what kind of counter-actions did you have to take?
+
+
+//a situation where i was responsible for project planning was at my previous opportunity, where i had to plan to receive 30 containers in the span of 2 months
+
+//your task is to find the nearest square number of positive integer n
+
+function nearestSq(n){
+  //output is 2**n
+  return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
