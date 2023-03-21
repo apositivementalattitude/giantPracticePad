@@ -16349,3 +16349,121 @@ function majElement(arr){
     }
     return majElem
 }
+
+//specific styles targeting indicidual parts of the page
+//modules
+
+//write a method
+//thatr will get an integer array as parameter
+//and will process every number from this array
+//return a new array with processing every number of the input-array like this
+//if the number has an integer square root
+//take this
+//otherwise square the number
+
+function squareOrSquareRoot(array){
+  let arr = []
+  for(let i = 0; i < array; i++){
+    if(array[i] % Math.sqrt(i) === Math.sqrt(i) % array[i]){
+      arr.push(array[i])
+    }else{
+      arr.push(array[i]**2)
+    }
+  }
+  return arr
+}
+
+console.log(squareOrSquareRoot(4), '2')
+//connectivity
+//connectivity is how you communicate with the server in new and innovative ways
+
+//how to require a file in server.js
+const express = require('express')
+const app = express()
+
+function take(arr, n) {
+  return arr.slice(0, n)
+}
+
+
+//you will receive the follow data structure representing the stairs Suzuki logge din a year
+//you will have all data for the entire year so regardless of how it is logged the problem should be simple to solve
+
+//make sure your solution takes into account all of the nesting within the stairs array
+//each weekday in the staits array is an array
+function stairsIn20(s){
+  let arr = []
+  if (s < 2){
+    arr.push(s)
+  }else{
+    arr.push(s * stairsIn20(s - 1))
+  }
+  return arr.reduce((a, b) => a + b, 0)
+}
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
+
+function timAndSarah(nbPetals){
+  if(nbPetals % 2 === 0){
+    return false
+  }else{
+    return true
+  }
+}
+
+function removeFirstLast(str){
+  return str.splice(0).slice(str.length-1)
+}
+
+function addTwo(bin){
+  return bin.toNum()
+}
+
+//find the sum of all multiples of n below m
+
+function sumMul(n,m){
+  let arr = []
+  for(let i = n; i < m; i+=n){
+    if(n % m === 0){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((a, b) => a + b, 0)
+}
+
+function hello(name){
+  let arr = []
+
+  for(i = 0; i < name.length; i++){
+    if(name[i] === name.indexOf(0)){
+      arr.push(name[i].toUpperCase())
+    }else{
+      arr.push(name[i].toLowerCase())
+    }
+  }
+  return arr.join('')
+}
+
+//create a fucntion that accepts 2 string arguments and 
+//returns an integer of the count of occurrences the 2nd argument is found in the first one
+//if no occurrences can be found, a count of 0 should be returned
+
+
+function twoStr(a, b){
+  let count = 0
+
+  for(let i = 0; i < a.length; i++){
+    if(a[i] == b)
+    count++
+  }
+  return count
+}
+
+
+
+//what is an object?
+
+//an objcet is a collection of related data
+
