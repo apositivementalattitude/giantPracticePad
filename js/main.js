@@ -16467,3 +16467,57 @@ function twoStr(a, b){
 
 //an objcet is a collection of related data
 
+//$ npm init
+//initialize node package manager
+//and creates a package json
+
+//rem
+//in css
+//copies values from the html element
+
+//move every letter in the provided string forward 10 letters through the alphabet
+//if it goes past z
+//star again at a
+//input will be a string with length > 0
+
+function moveTen(s){
+  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+   const arr = s.split('').map(x => x = str.indexOf(x) + 10)
+   return arr.map(x => x = str[x]).join('')
+}
+
+//write a function that takes a string as its first parameter
+//use the second parameter, which will be an integer
+//find the corresponding word in the given string
+//once you have the located string
+//multiply it by the third provided parameter -- which will also be an integer
+//you are additionally required to hyphen in between each word
+
+//the index of str at int is repeat num times with hyphens between them
+function wordRepeat(str, int, num){
+  let arr = []
+  let count = 0
+  let word = str.split(' ')
+  let get = word[int]
+
+  for(let i = count; i < num; i++){
+    if(str[i] < num){
+      arr.push(word)
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+//implement line numbering
+
+const number = function(array){
+  let arr = []
+
+  for(let i = 0; i < array.length; i++){
+    arr.push(`${i+1}: ${array[i]}, `)
+  }
+  return arr
+}
+
+console.log(number("[a, b, c]"), "[1: a, 2: b, 3: c,")
