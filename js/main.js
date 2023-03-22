@@ -16500,8 +16500,12 @@ function wordRepeat(str, int, num){
   let word = str.split(' ')
   let get = word[int]
 
+
+  //loop through the count to the num
   for(let i = count; i < num; i++){
+    //if the num is greater than the str[i]
     if(str[i] < num){
+      //push the word
       arr.push(word)
       count++
     }
@@ -16521,3 +16525,41 @@ const number = function(array){
 }
 
 console.log(number("[a, b, c]"), "[1: a, 2: b, 3: c,")
+
+//count all the occurring characters in a string
+//if you have a string like aba
+//then the result should be {'a': 2, 'b': 1}
+//if the string is empty
+//return an empty object literal
+
+function occurrences(str){
+  let countObj = {}
+
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+}
+
+//pop()
+//splice()
+//pop removes and element from the end of an array
+//splice removes elements from start to the end of an array and returns the rest
+
+//super
+//enables us to go up a level and enables us to grab into (inheritance)
+
+//how to concatenate strings?
+//concat()
+//+
+//you are given a string of space separated numbers
+//you have to return the highest and lowest number
+
+function highAndLow(numbers){
+  let arr = numbers.split(' ')
+  return `${Math.min(...arr)} ${Math.max(...arr)}`
+}
