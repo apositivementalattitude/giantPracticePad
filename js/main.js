@@ -16563,3 +16563,17 @@ function highAndLow(numbers){
   let arr = numbers.split(' ')
   return `${Math.min(...arr)} ${Math.max(...arr)}`
 }
+
+//core element styles
+//covering the general defaults
+
+//base
+
+//:hover
+//pseudo-class hover
+
+//asynchronously
+//the not happen at the same time
+
+//what does doctype do
+//identifies the version of html you're running
