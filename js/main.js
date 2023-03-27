@@ -16577,3 +16577,60 @@ function highAndLow(numbers){
 
 //what does doctype do
 //identifies the version of html you're running
+
+//npm install express --save
+//installs express
+
+//npm audit fix --force
+//updates node
+
+//em remembers the previous selector's value
+
+//list-style
+//used to change list styling in css (dots, numbers)
+
+
+//script in html
+//script indicates where the javascript should go
+
+//if you are writing code related to the database
+// where does it belong?
+//it belongs in the model
+
+//abstraction principle
+//the abstraction principle is to hide the details
+
+var TempleStrings = function(obj, feature) {
+  //return the correct string using the template string
+  return `${obj} are ${feature}`
+}
+
+//map(func)
+//maps the function 
+//takes the function
+//creates a new array from results of calling func for every element
+
+function multipleOfIndex(array){
+  //return a new array consisting of elements which are multiple of their own index in input array(length > 1)
+  return array.filter((a, b) => a % b == 0)
+}
+
+function multipleOfIndex(array){
+  let arr = []
+
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % i == 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
+//write a function to get the first elements of a sequence
+//passing a parameter n will return the first n elements of the sequence if n == 0 return an empty sequence
+
+function first(arr, n=1){
+  return arr.slice(0, n)
+}
+
+//includes(value)
