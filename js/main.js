@@ -16658,3 +16658,7 @@ function fizzYOurBuzz(n){
     }
   }
 }
+
+//substring()
+
+//returns a new string from (start, end)
