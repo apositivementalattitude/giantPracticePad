@@ -16138,138 +16138,536 @@
 //multiply it by the third parameter
 //add a hyphen between each word
 
-function hyphenOneWord(str, int, num){
-  let arr = [],
-  word = str.split(' '),
-  get = word[int],
-  count = 0
+// function hyphenOneWord(str, int, num){
+//   let arr = [],
+//   word = str.split(' '),
+//   get = word[int],
+//   count = 0
 
-  for(let i = count; i < num; i++){
-    //locate the string with the loop and then push it to the array
-    if(str[i] < num){
-      arr.push(word)
-      count++
-    }
-  }
-  return arr.join('-')
-}
+//   for(let i = count; i < num; i++){
+//     //locate the string with the loop and then push it to the array
+//     if(str[i] < num){
+//       arr.push(word)
+//       count++
+//     }
+//   }
+//   return arr.join('-')
+// }
 
-//write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value
+// //write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value
 
-//division by zero should return NaN
+// //division by zero should return NaN
 
-function remainder(n,m){
-  if(n === m){
-    return NaN
-  }else if(n > m){
-    return n % m
-  }else{
-    return m % n
-  }
-}
+// function remainder(n,m){
+//   if(n === m){
+//     return NaN
+//   }else if(n > m){
+//     return n % m
+//   }else{
+//     return m % n
+//   }
+// }
 
-//count the number of divisors of a positive integer n
+// //count the number of divisors of a positive integer n
 
-function getDivCnt(n){
-  if (n < 0) return 'NULL'
+// function getDivCnt(n){
+//   if (n < 0) return 'NULL'
 
-  let count = 0
-  for(let i = count; i <= n; i++){
-    if(n % i === 0){
-      count++
-    }
-  }
-  return count
-}
+//   let count = 0
+//   for(let i = count; i <= n; i++){
+//     if(n % i === 0){
+//       count++
+//     }
+//   }
+//   return count
+// }
 
-//given a set of numbers
-//return the additive inverse of each
+// //given a set of numbers
+// //return the additive inverse of each
 
-function invert(array){
-  let arr = []
-  for(let i = 0; i < array.length; i++){
-    arr.push(-array[i])
-  }
-  return arr
-}
+// function invert(array){
+//   let arr = []
+//   for(let i = 0; i < array.length; i++){
+//     arr.push(-array[i])
+//   }
+//   return arr
+// }
 
-//are primitives copied by value?
+// //are primitives copied by value?
 
-//yes
+// //yes
 
-//given 2 strings a and b
-//return a string of the form short+long+short
+// //given 2 strings a and b
+// //return a string of the form short+long+short
 
-function solution(a,b) {
-  if(a.length > b.length){
-    return b+a+b
-  }else if(a.length < b.length){
-    return a+b+a
-  }
-}
+// function solution(a,b) {
+//   if(a.length > b.length){
+//     return b+a+b
+//   }else if(a.length < b.length){
+//     return a+b+a
+//   }
+// }
 
-//describe a situation in which yhou felt you had not commuinicated well enough
-//what did you do
-//how did you handle the situation?
-//a situation where i felt i hadn't communicated well enough was when i was ordering a dye job and my regular contact wasn't there
-//the person that picked up the phone didn't speak english and so we got through the order
-// i texted my regular contact within that company and i was able to correct the order
-//i felt there was something wrong with the order and i 
+// //describe a situation in which yhou felt you had not commuinicated well enough
+// //what did you do
+// //how did you handle the situation?
+// //a situation where i felt i hadn't communicated well enough was when i was ordering a dye job and my regular contact wasn't there
+// //the person that picked up the phone didn't speak english and so we got through the order
+// // i texted my regular contact within that company and i was able to correct the order
+// //i felt there was something wrong with the order and i 
 
-//a function created inside an expression
+// //a function created inside an expression
 
-//methods are actions that we can perform
-//how many times shoulda  variable be declared?
+// //methods are actions that we can perform
+// //how many times shoulda  variable be declared?
 
-//once
+// //once
 
-//how to set localStorage
-localStorage.setItem('books', data.title)
+// //how to set localStorage
+// localStorage.setItem('books', data.title)
 
-let param = parameter
-switch(param){
-  case 1: 1
-  case 2: 2
-  default:
-}
+// let param = parameter
+// switch(param){
+//   case 1: 1
+//   case 2: 2
+//   default:
+// }
 
-function contamination(text, char){
-  // Code here ;)
-  return char.repeat(text.length)
-}
+// function contamination(text, char){
+//   // Code here ;)
+//   return char.repeat(text.length)
+// }
 
-//tell me about a situation when you were respoinsible for project planning.
-//Did everything go according to your plan?
-//If not, then why and what kind of counter-actions did you have to take?
+// //tell me about a situation when you were respoinsible for project planning.
+// //Did everything go according to your plan?
+// //If not, then why and what kind of counter-actions did you have to take?
 
 
-//a situation where i was responsible for project planning was at my previous opportunity, where i had to plan to receive 30 containers in the span of 2 months
+// //a situation where i was responsible for project planning was at my previous opportunity, where i had to plan to receive 30 containers in the span of 2 months
 
-//your task is to find the nearest square number of positive integer n
+// //your task is to find the nearest square number of positive integer n
 
-function nearestSq(n){
-  //output is 2**n
-  return Math.pow(Math.round(Math.sqrt(n)), 2)
-}
+// function nearestSq(n){
+//   //output is 2**n
+//   return Math.pow(Math.round(Math.sqrt(n)), 2)
+// }
 
-function solution(str, ending){
-  return str.endsWith(ending)
-}
+// function solution(str, ending){
+//   return str.endsWith(ending)
+// }
 
-//figure out the index of which vowel is missing from a given string
+// //figure out the index of which vowel is missing from a given string
 
-function missingVowel(str){
-  let vowels = 'aeiou'
-  for(let i = 0; i < vowels.length; i++){
-    if(str.indexOf(vowels[i] === -1)){
-      return i
-    }
-  }
-}
+// function missingVowel(str){
+//   let vowels = 'aeiou'
+//   for(let i = 0; i < vowels.length; i++){
+//     if(str.indexOf(vowels[i] === -1)){
+//       return i
+//     }
+//   }
+// }
 
-//given an array of integers nums and an integer target
+// //given an array of integers nums and an integer target
 
-//return the indices of the two numbers such that they add up to target
+// //return the indices of the two numbers such that they add up to target
+
+// function twoSum(nums, target){
+//   for(let i = 0; i < nums.length; i++){
+//     for(let j = 0; j < nums.length; j++){
+//       if(i !== j){
+//         if(nums[i] + nums[j] === target){
+//           return [i, j]
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// //
+// function jewelers(jewels, stones){
+//   let map = {},
+//   count = 0
+
+//   for(const jewel in jewels){
+//     map[jewel] = true
+//   }
+
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// function factorial(n){
+//   if(n < 2) return 1
+//   return n * factorial(n - 1)
+// }
+
+// function repeaTChar(n){
+//   //create an object variable
+//   let charMap = {},
+//   //create a counter
+//   count = 0,
+//   //the maximum character variable
+//   maxChar = null
+
+//   //create a loop where the counter in the object 
+//   //char is a new variable that we are looping through
+//   for(const char of str){
+//     //charMap[char] is the letter in the string
+//     //charMap[char] + 1 || 1 will ad 1 if a characyer ezxists, and just === 1 if it doesn't exist
+//     charMap[char] = charMap[char] + 1 || 1
+//   }
+
+//   for(const char in charMap){
+//     if(charMap[char] > count){
+//       count = charMap[char]
+//       maxChar = char
+//     }
+//   }
+//   return maxChar
+// }
+
+// //majority leement
+
+// function majElement(arr){
+//   let elem = {},
+//   count = 0,
+//   majElem = arr[0]
+
+//   for(const num of arr){
+//     elem[num] = elem[num] + 1 || 1
+//     }
+//     for(const n in elem){
+//       if(elem[n] > count){
+//         count = elem[n]
+//         majElem = n
+//       }
+//     }
+//     return majElem
+// }
+
+// //specific styles targeting indicidual parts of the page
+// //modules
+
+// //write a method
+// //thatr will get an integer array as parameter
+// //and will process every number from this array
+// //return a new array with processing every number of the input-array like this
+// //if the number has an integer square root
+// //take this
+// //otherwise square the number
+
+// function squareOrSquareRoot(array){
+//   let arr = []
+//   for(let i = 0; i < array; i++){
+//     if(array[i] % Math.sqrt(i) === Math.sqrt(i) % array[i]){
+//       arr.push(array[i])
+//     }else{
+//       arr.push(array[i]**2)
+//     }
+//   }
+//   return arr
+// }
+
+// console.log(squareOrSquareRoot(4), '2')
+// //connectivity
+// //connectivity is how you communicate with the server in new and innovative ways
+
+// //how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+// function take(arr, n) {
+//   return arr.slice(0, n)
+// }
+
+
+// //you will receive the follow data structure representing the stairs Suzuki logge din a year
+// //you will have all data for the entire year so regardless of how it is logged the problem should be simple to solve
+
+// //make sure your solution takes into account all of the nesting within the stairs array
+// //each weekday in the staits array is an array
+// function stairsIn20(s){
+//   let arr = []
+//   if (s < 2){
+//     arr.push(s)
+//   }else{
+//     arr.push(s * stairsIn20(s - 1))
+//   }
+//   return arr.reduce((a, b) => a + b, 0)
+// }
+
+// function all( arr, fun ){
+//   return arr.every(fun)
+// }
+
+// function timAndSarah(nbPetals){
+//   if(nbPetals % 2 === 0){
+//     return false
+//   }else{
+//     return true
+//   }
+// }
+
+// function removeFirstLast(str){
+//   return str.splice(0).slice(str.length-1)
+// }
+
+// function addTwo(bin){
+//   return bin.toNum()
+// }
+
+// //find the sum of all multiples of n below m
+
+// function sumMul(n,m){
+//   let arr = []
+//   for(let i = n; i < m; i+=n){
+//     if(n % m === 0){
+//       arr.push(i)
+//     }
+//   }
+//   return arr.reduce((a, b) => a + b, 0)
+// }
+
+// function hello(name){
+//   let arr = []
+
+//   for(i = 0; i < name.length; i++){
+//     if(name[i] === name.indexOf(0)){
+//       arr.push(name[i].toUpperCase())
+//     }else{
+//       arr.push(name[i].toLowerCase())
+//     }
+//   }
+//   return arr.join('')
+// }
+
+// //create a fucntion that accepts 2 string arguments and 
+// //returns an integer of the count of occurrences the 2nd argument is found in the first one
+// //if no occurrences can be found, a count of 0 should be returned
+
+
+// function twoStr(a, b){
+//   let count = 0
+
+//   for(let i = 0; i < a.length; i++){
+//     if(a[i] == b)
+//     count++
+//   }
+//   return count
+// }
+
+
+
+// //what is an object?
+
+// //an objcet is a collection of related data
+
+// //$ npm init
+// //initialize node package manager
+// //and creates a package json
+
+// //rem
+// //in css
+// //copies values from the html element
+
+// //move every letter in the provided string forward 10 letters through the alphabet
+// //if it goes past z
+// //star again at a
+// //input will be a string with length > 0
+
+// function moveTen(s){
+//   const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+//    const arr = s.split('').map(x => x = str.indexOf(x) + 10)
+//    return arr.map(x => x = str[x]).join('')
+// }
+
+// //write a function that takes a string as its first parameter
+// //use the second parameter, which will be an integer
+// //find the corresponding word in the given string
+// //once you have the located string
+// //multiply it by the third provided parameter -- which will also be an integer
+// //you are additionally required to hyphen in between each word
+
+// //the index of str at int is repeat num times with hyphens between them
+// function wordRepeat(str, int, num){
+//   let arr = []
+//   let count = 0
+//   let word = str.split(' ')
+//   let get = word[int]
+
+
+//   //loop through the count to the num
+//   for(let i = count; i < num; i++){
+//     //if the num is greater than the str[i]
+//     if(str[i] < num){
+//       //push the word
+//       arr.push(word)
+//       count++
+//     }
+//   }
+//   return arr.join('-')
+// }
+
+// //implement line numbering
+
+// const number = function(array){
+//   let arr = []
+
+//   for(let i = 0; i < array.length; i++){
+//     arr.push(`${i+1}: ${array[i]}, `)
+//   }
+//   return arr
+// }
+
+// console.log(number("[a, b, c]"), "[1: a, 2: b, 3: c,")
+
+// //count all the occurring characters in a string
+// //if you have a string like aba
+// //then the result should be {'a': 2, 'b': 1}
+// //if the string is empty
+// //return an empty object literal
+
+// function occurrences(str){
+//   let countObj = {}
+
+//   for(const c of str){
+//     if(countObj[c]){
+//       countObj[c]++
+//     }else{
+//       countObj[c] = 1
+//     }
+//   }
+//   return countObj
+// }
+
+// //pop()
+// //splice()
+// //pop removes and element from the end of an array
+// //splice removes elements from start to the end of an array and returns the rest
+
+// //super
+// //enables us to go up a level and enables us to grab into (inheritance)
+
+// //how to concatenate strings?
+// //concat()
+// //+
+// //you are given a string of space separated numbers
+// //you have to return the highest and lowest number
+
+// function highAndLow(numbers){
+//   let arr = numbers.split(' ')
+//   return `${Math.min(...arr)} ${Math.max(...arr)}`
+// }
+
+// //core element styles
+// //covering the general defaults
+
+// //base
+
+// //:hover
+// //pseudo-class hover
+
+// //asynchronously
+// //the not happen at the same time
+
+// //what does doctype do
+// //identifies the version of html you're running
+
+// //npm install express --save
+// //installs express
+
+// //npm audit fix --force
+// //updates node
+
+// //em remembers the previous selector's value
+
+// //list-style
+// //used to change list styling in css (dots, numbers)
+
+
+// //script in html
+// //script indicates where the javascript should go
+
+// //if you are writing code related to the database
+// // where does it belong?
+// //it belongs in the model
+
+// //abstraction principle
+// //the abstraction principle is to hide the details
+
+// var TempleStrings = function(obj, feature) {
+//   //return the correct string using the template string
+//   return `${obj} are ${feature}`
+// }
+
+// //map(func)
+// //maps the function 
+// //takes the function
+// //creates a new array from results of calling func for every element
+
+// function multipleOfIndex(array){
+//   //return a new array consisting of elements which are multiple of their own index in input array(length > 1)
+//   return array.filter((a, b) => a % b == 0)
+// }
+
+// function multipleOfIndex(array){
+//   let arr = []
+
+//   for(let i = 0; i < array.length; i++){
+//     if(array[i] % i == 0){
+//       arr.push(array[i])
+//     }
+//   }
+//   return arr
+// }
+
+// //write a function to get the first elements of a sequence
+// //passing a parameter n will return the first n elements of the sequence if n == 0 return an empty sequence
+
+// function first(arr, n=1){
+//   return arr.slice(0, n)
+// }
+
+// //includes(value)
+// //check if the value is included or not
+
+// //given a number as an input
+// //print out every integer from 1 to that number
+// //if the integer is divisible by 2
+// //print "FIZZ"
+// //if the integer is divisible by 3
+// //print "BUZZ"
+// //if the integer is divisible by both 2 and 3 
+// //print "Fizz Buzz"
+
+// function fizzYOurBuzz(n){
+//   for(let i = 1; i <= n; i++){
+//     if(i % 6){
+//       console.log('Fizz Buzz')
+//     }else if(i % 2){
+//       console.log('Fizz')
+//     }else if(i % 3){
+//       console.log('Buzz')
+//     }else{
+//       console.log(i)
+//     }
+//   }
+// }
+
+// //substring()
+
+// //returns a new string from (start, end)
+
+
+//given an array of integers nums and an integer target, return the indices of the two number4s such that they add up to target.
+
+//you may assume that each input would have exactly one solution, and you may not use the same element twice.
+//you can return the answer in any order
 
 function twoSum(nums, target){
   for(let i = 0; i < nums.length; i++){
@@ -16283,382 +16681,26 @@ function twoSum(nums, target){
   }
 }
 
-
-//
-function jewelers(jewels, stones){
-  let map = {},
-  count = 0
-
-  for(const jewel in jewels){
-    map[jewel] = true
-  }
-
-  for(const stone of stones){
-    if(map[stone]){
-      count++
+function twoSum(nums, target){
+  const numMap = new Map();
+  for(let i = 0; i < nums.length; i++){
+    const complement = target - nums[i]
+    if(numMap.has(complement)){
+      return [numMap.get(complement), i]
     }
+  numMap.set(nums[i], i)
   }
-  return count
+return null
 }
 
-function factorial(n){
-  if(n < 2) return 1
-  return n * factorial(n - 1)
-}
+function twoSum(nums, target){
+  let obj = {}
 
-function repeaTChar(n){
-  //create an object variable
-  let charMap = {},
-  //create a counter
-  count = 0,
-  //the maximum character variable
-  maxChar = null
-
-  //create a loop where the counter in the object 
-  //char is a new variable that we are looping through
-  for(const char of str){
-    //charMap[char] is the letter in the string
-    //charMap[char] + 1 || 1 will ad 1 if a characyer ezxists, and just === 1 if it doesn't exist
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  for(const char in charMap){
-    if(charMap[char] > count){
-      count = charMap[char]
-      maxChar = char
-    }
-  }
-  return maxChar
-}
-
-//majority leement
-
-function majElement(arr){
-  let elem = {},
-  count = 0,
-  majElem = arr[0]
-
-  for(const num of arr){
-    elem[num] = elem[num] + 1 || 1
-    }
-    for(const n in elem){
-      if(elem[n] > count){
-        count = elem[n]
-        majElem = n
-      }
-    }
-    return majElem
-}
-
-//specific styles targeting indicidual parts of the page
-//modules
-
-//write a method
-//thatr will get an integer array as parameter
-//and will process every number from this array
-//return a new array with processing every number of the input-array like this
-//if the number has an integer square root
-//take this
-//otherwise square the number
-
-function squareOrSquareRoot(array){
-  let arr = []
-  for(let i = 0; i < array; i++){
-    if(array[i] % Math.sqrt(i) === Math.sqrt(i) % array[i]){
-      arr.push(array[i])
+  for(let i = 0; i < nums.length; i++){
+  if(target - nums[i] in obj){
+      return [obj[target - nums[i]], i]
     }else{
-      arr.push(array[i]**2)
-    }
-  }
-  return arr
-}
-
-console.log(squareOrSquareRoot(4), '2')
-//connectivity
-//connectivity is how you communicate with the server in new and innovative ways
-
-//how to require a file in server.js
-const express = require('express')
-const app = express()
-
-function take(arr, n) {
-  return arr.slice(0, n)
-}
-
-
-//you will receive the follow data structure representing the stairs Suzuki logge din a year
-//you will have all data for the entire year so regardless of how it is logged the problem should be simple to solve
-
-//make sure your solution takes into account all of the nesting within the stairs array
-//each weekday in the staits array is an array
-function stairsIn20(s){
-  let arr = []
-  if (s < 2){
-    arr.push(s)
-  }else{
-    arr.push(s * stairsIn20(s - 1))
-  }
-  return arr.reduce((a, b) => a + b, 0)
-}
-
-function all( arr, fun ){
-  return arr.every(fun)
-}
-
-function timAndSarah(nbPetals){
-  if(nbPetals % 2 === 0){
-    return false
-  }else{
-    return true
-  }
-}
-
-function removeFirstLast(str){
-  return str.splice(0).slice(str.length-1)
-}
-
-function addTwo(bin){
-  return bin.toNum()
-}
-
-//find the sum of all multiples of n below m
-
-function sumMul(n,m){
-  let arr = []
-  for(let i = n; i < m; i+=n){
-    if(n % m === 0){
-      arr.push(i)
-    }
-  }
-  return arr.reduce((a, b) => a + b, 0)
-}
-
-function hello(name){
-  let arr = []
-
-  for(i = 0; i < name.length; i++){
-    if(name[i] === name.indexOf(0)){
-      arr.push(name[i].toUpperCase())
-    }else{
-      arr.push(name[i].toLowerCase())
-    }
-  }
-  return arr.join('')
-}
-
-//create a fucntion that accepts 2 string arguments and 
-//returns an integer of the count of occurrences the 2nd argument is found in the first one
-//if no occurrences can be found, a count of 0 should be returned
-
-
-function twoStr(a, b){
-  let count = 0
-
-  for(let i = 0; i < a.length; i++){
-    if(a[i] == b)
-    count++
-  }
-  return count
-}
-
-
-
-//what is an object?
-
-//an objcet is a collection of related data
-
-//$ npm init
-//initialize node package manager
-//and creates a package json
-
-//rem
-//in css
-//copies values from the html element
-
-//move every letter in the provided string forward 10 letters through the alphabet
-//if it goes past z
-//star again at a
-//input will be a string with length > 0
-
-function moveTen(s){
-  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
-   const arr = s.split('').map(x => x = str.indexOf(x) + 10)
-   return arr.map(x => x = str[x]).join('')
-}
-
-//write a function that takes a string as its first parameter
-//use the second parameter, which will be an integer
-//find the corresponding word in the given string
-//once you have the located string
-//multiply it by the third provided parameter -- which will also be an integer
-//you are additionally required to hyphen in between each word
-
-//the index of str at int is repeat num times with hyphens between them
-function wordRepeat(str, int, num){
-  let arr = []
-  let count = 0
-  let word = str.split(' ')
-  let get = word[int]
-
-
-  //loop through the count to the num
-  for(let i = count; i < num; i++){
-    //if the num is greater than the str[i]
-    if(str[i] < num){
-      //push the word
-      arr.push(word)
-      count++
-    }
-  }
-  return arr.join('-')
-}
-
-//implement line numbering
-
-const number = function(array){
-  let arr = []
-
-  for(let i = 0; i < array.length; i++){
-    arr.push(`${i+1}: ${array[i]}, `)
-  }
-  return arr
-}
-
-console.log(number("[a, b, c]"), "[1: a, 2: b, 3: c,")
-
-//count all the occurring characters in a string
-//if you have a string like aba
-//then the result should be {'a': 2, 'b': 1}
-//if the string is empty
-//return an empty object literal
-
-function occurrences(str){
-  let countObj = {}
-
-  for(const c of str){
-    if(countObj[c]){
-      countObj[c]++
-    }else{
-      countObj[c] = 1
-    }
-  }
-  return countObj
-}
-
-//pop()
-//splice()
-//pop removes and element from the end of an array
-//splice removes elements from start to the end of an array and returns the rest
-
-//super
-//enables us to go up a level and enables us to grab into (inheritance)
-
-//how to concatenate strings?
-//concat()
-//+
-//you are given a string of space separated numbers
-//you have to return the highest and lowest number
-
-function highAndLow(numbers){
-  let arr = numbers.split(' ')
-  return `${Math.min(...arr)} ${Math.max(...arr)}`
-}
-
-//core element styles
-//covering the general defaults
-
-//base
-
-//:hover
-//pseudo-class hover
-
-//asynchronously
-//the not happen at the same time
-
-//what does doctype do
-//identifies the version of html you're running
-
-//npm install express --save
-//installs express
-
-//npm audit fix --force
-//updates node
-
-//em remembers the previous selector's value
-
-//list-style
-//used to change list styling in css (dots, numbers)
-
-
-//script in html
-//script indicates where the javascript should go
-
-//if you are writing code related to the database
-// where does it belong?
-//it belongs in the model
-
-//abstraction principle
-//the abstraction principle is to hide the details
-
-var TempleStrings = function(obj, feature) {
-  //return the correct string using the template string
-  return `${obj} are ${feature}`
-}
-
-//map(func)
-//maps the function 
-//takes the function
-//creates a new array from results of calling func for every element
-
-function multipleOfIndex(array){
-  //return a new array consisting of elements which are multiple of their own index in input array(length > 1)
-  return array.filter((a, b) => a % b == 0)
-}
-
-function multipleOfIndex(array){
-  let arr = []
-
-  for(let i = 0; i < array.length; i++){
-    if(array[i] % i == 0){
-      arr.push(array[i])
-    }
-  }
-  return arr
-}
-
-//write a function to get the first elements of a sequence
-//passing a parameter n will return the first n elements of the sequence if n == 0 return an empty sequence
-
-function first(arr, n=1){
-  return arr.slice(0, n)
-}
-
-//includes(value)
-//check if the value is included or not
-
-//given a number as an input
-//print out every integer from 1 to that number
-//if the integer is divisible by 2
-//print "FIZZ"
-//if the integer is divisible by 3
-//print "BUZZ"
-//if the integer is divisible by both 2 and 3 
-//print "Fizz Buzz"
-
-function fizzYOurBuzz(n){
-  for(let i = 1; i <= n; i++){
-    if(i % 6){
-      console.log('Fizz Buzz')
-    }else if(i % 2){
-      console.log('Fizz')
-    }else if(i % 3){
-      console.log('Buzz')
-    }else{
-      console.log(i)
+      obj[nums[i]] = i
     }
   }
 }
-
-//substring()
-
-//returns a new string from (start, end)
