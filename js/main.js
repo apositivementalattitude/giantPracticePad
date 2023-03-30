@@ -16704,3 +16704,27 @@ function twoSum(nums, target){
     }
   }
 }
+
+function findVowel(str){
+  let vowels = 'aeiou'
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === - 1)){
+      return i;
+    }
+  }
+}
+
+
+//what is a study strategy where you read something once, and then try to recall as much of it as you can?
+//a study strategy where you can read something once, and tehn try to recall as much of it as you can is referred to as active recall
+
+//network of neurons used to fire together
+//chunk
+
+//:link
+//pseudo clas link
+//used for links
+
+//[href^="brackets"]
+//attribute begins with selector
+
