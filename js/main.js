@@ -16728,3 +16728,25 @@ function findVowel(str){
 //[href^="brackets"]
 //attribute begins with selector
 
+//how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+//how to handle a get request
+
+app.get('/endpoint', callBackFunction)
+//the listen method in Express
+app.listen('3000', function(){
+  console.log('listening on 3000')
+})
+
+//endpoint
+//is the end of a URL
+
+//node server.js
+//initializes server.js
+
+//req is a request
+//res is a response
+//used in response objects
+
