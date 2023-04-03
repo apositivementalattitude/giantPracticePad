@@ -16750,3 +16750,21 @@ app.listen('3000', function(){
 //res is a response
 //used in response objects
 
+//flex-direction-column
+//flex direction the columns
+
+//<section
+//<article
+//<p
+//selectors
+
+//font-weight
+//the font's weight
+
+//property
+
+//list-style
+//the list style
+
+//dots and line spacing
+
