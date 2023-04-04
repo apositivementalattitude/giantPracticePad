@@ -16768,3 +16768,81 @@ app.listen('3000', function(){
 
 //dots and line spacing
 
+//$git pull
+//pulls any changes in git
+
+//$ git commit
+//commits something in git
+//commits a message
+//commits amend
+
+//<input type="radio" name="#" value="#">
+//radio input types(the ones with th esmall circles)
+
+//properties used to provide additional information about an element
+
+//attributes
+
+//return an array consisting of elements which are multiple of their own index in input array (length  > 1)
+
+function multipleOfIndex(array){
+  let arr = []
+
+  for(let i = 0; i < array.length; i++){
+    //add the elements which are a multiple of their own index
+    if(array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
+//findIndex
+//finds the index
+
+//given a string of random letters
+//count the rings in each letter and divide the total number by 2
+//round the answer down
+
+function olympicRing(a) {
+  let rings = ['A', 'a', 'b', 'D', 'd', 'e', 'g', 'O', 'o', 'P', 'p', 'Q', 'q'];
+  let twoRings = ['B'];
+  let score = 0;
+
+  // Loop through each character in the input string and count the number of rings
+  a.split('').map(x => {
+    if (rings.includes(x)) { // If the character is a single-ring letter
+      score++;
+    } else if (twoRings.includes(x)) { // If the character is a double-ring letter
+      score += 2;
+    }
+  });
+
+  // Calculate the final score as the total number of rings divided by 2 (since each ring is counted twice)
+  score = Math.floor(score / 2);
+
+  // Return a message based on the score
+  if (score > 3) {
+    return "Gold!";
+  } else if (score > 2) {
+    return "Silver!";
+  } else if (score > 1) {
+    return "Bronze!";
+  } else {
+    return "You stink";
+  }
+}
+
+
+//in this kata
+//you are asked to square every digit of a number and concatenate them
+function concatMe(n){
+  return n.toString.split('').map(x = x => {
+    x**2
+  }).join('')*1
+}
+
+//not logical operator
+//the not logical operator means no
+//negates the query
+
