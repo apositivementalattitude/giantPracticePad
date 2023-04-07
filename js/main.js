@@ -16855,3 +16855,9 @@ for(let i = a; i <= b;i++){
 }
 return arr
 }
+
+//how do you serve up a file in server.js
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html')
+})
+
