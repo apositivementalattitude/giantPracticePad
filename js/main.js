@@ -16868,3 +16868,21 @@ app.get('/', (req, res) => {
 //captions
 //captions selector
 
+//elements in html
+//elements in html are designators that define the structure and content of objects within a page
+
+//given a string made up of letters a, b, and/or c, switch the posiiont of leters a and n(change a to b and vice versa)
+//leave any incidence of c untouched
+
+function switcheroo(x){
+x = s.split('')
+x.map(n = n =>{
+  if(n === 'a'){
+    return 'b'
+  }else if(n === 'b'){
+    return 'a'
+  }else{
+    return 'c'
+  }
+}).join('')
+}
