@@ -16899,3 +16899,31 @@ function uefaEuro2016(teams, scores){
   }
 }
 
+//return a new array consisting of elements which are multiple of their own index in put array 
+
+function multipleOfIndex(array){
+  let arr = []
+
+  for(let i = 0; i < array.length;i++){
+    if (array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
+function multipleOfIndex(array){
+  return array.filter((a,b) => a % b == 0)
+}
+
+
+//shift
+//removes from the beginning of the array
+
+//write a function to ghet the first elements of a sequence passing a paramter n will return the first n elements of the sequence
+//if n == 0 return an empty sequence
+
+function first(arr,n=1){
+  return arr.slice(0, n)
+}
+
