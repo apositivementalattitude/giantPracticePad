@@ -16927,3 +16927,37 @@ function first(arr,n=1){
   return arr.slice(0, n)
 }
 
+
+//correc tthe errors in the digitized text
+//S === 5
+//O === 0
+//I === 1
+
+
+function correctedText(text){
+  let corectedText = ""
+  for(let i = 0; i < text.length; i++){
+    switch(text[i]){
+      case "5":
+        correctedText += "S"
+        break;
+      case "0":
+        correctedText += "O"
+        break;
+      case "1":
+        correctedText += "I"
+        break;
+    }
+  }
+  return correctedText;
+}
+
+//acc
+//accumulator
+
+//what is a repetition in a loop
+//a repetition
+//an iteration
+
+//\n
+//new line
