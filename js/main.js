@@ -16969,4 +16969,8 @@ function correctedText(text){
 //adds and retrieves items from the database
 //only talks to the controller
 
-//
+//What kind of things must you be wary of when designing or developing for multilingual sites?
+
+
+//constructor
+//the function that was used to create or construct the object
