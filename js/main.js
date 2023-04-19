@@ -16974,3 +16974,65 @@ function correctedText(text){
 
 //constructor
 //the function that was used to create or construct the object
+
+//what creates an empty object
+//the new operation
+
+//to eliminate redundant code is
+//inheritance
+
+//yopu are given strings jewels representing the types of stones that are jewels
+//and stones representing the stones you have
+//each character in stones is a type of stone you ahve
+//you want to know how many of the stones you have are also jewels
+
+function jewelsInStones(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
+//write a function to split a string and convert it into an array of words
+
+function splitStr(str){
+  return str.split(' ')
+}
+
+//things inside a set of curly braces {}
+//a code block
+
+//you are going to be given a word
+//your job is to return the middle characters of the word
+//if the word's length is off, return the middle character
+//if the word's length is even, return the middle 2 characters
+
+function returnMid(str){
+  if (str.length % 2 === 0){
+    return str.substring((s.length/2) - 1, (s.length/2) + 1)
+  }else{
+    return str.substring((s.length/2) + 1, (s.length)/2)
+  }
+}
+
+//filter method syntax
+//return str.filter(word => words.length > 6)
+//will return all values that make it return true
+
+//substring()
+//substring returns the part of the string between the start and end
+
+//create a method sayHello that takes as input a name, city, and state to welcome a person.
+//Note that name will be an array consisting of one or more values that should be joined tohether with one space between each, and the length of the name array in test cases will vary.
+
+function sayHello(name, city, state){
+  return `Hello, ${name[0].toUppercase()}${name.slice(1).toLowercase()}, welcome to ${city} in the state of ${state}`
+}
