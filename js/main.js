@@ -17036,3 +17036,32 @@ function returnMid(str){
 function sayHello(name, city, state){
   return `Hello, ${name[0].toUppercase()}${name.slice(1).toLowercase()}, welcome to ${city} in the state of ${state}`
 }
+
+//providing intelligent variety in your studies
+//providing intelligent variety in your studies is interleaving
+
+//thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking
+//diffuse thinking
+
+//what identifies the sizing and grid styles of different elements?
+//the layour identifies the sizing and grid styles of different elements'
+
+//e.g., :disabled
+//pseudoclass disabled
+
+//what is used to augment or overrise ohter styles in the event that a module includes an alternate state
+//state
+//e.g., indeterminate
+//indeterminate
+
+//e.g., a[lang|="en"]
+//attribute hyphenated selector
+//select something when it is hyphen separated
+
+//e.g., :active
+//pseudoclass active
+//selects for things that are activated
+
+
+//includes styles based around the skin, or look and feel, of different modules
+
