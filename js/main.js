@@ -17044,7 +17044,7 @@ function sayHello(name, city, state){
 //diffuse thinking
 
 //what identifies the sizing and grid styles of different elements?
-//the layour identifies the sizing and grid styles of different elements'
+//the layout identifies the sizing and grid styles of different elements'
 
 //e.g., :disabled
 //pseudoclass disabled
@@ -17063,5 +17063,6 @@ function sayHello(name, city, state){
 //selects for things that are activated
 
 
-//includes styles based around the skin, or look and feel, of different modules
+//what includes styles based around the skin, or look and feel, of different modules?
+//the theme includes styles based around the skin, or look and feel, of different modules
 
