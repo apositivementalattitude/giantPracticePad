@@ -17066,3 +17066,28 @@ function sayHello(name, city, state){
 //what includes styles based around the skin, or look and feel, of different modules?
 //the theme includes styles based around the skin, or look and feel, of different modules
 
+//write a method, that will get an integer array as parameter and will procedss every number from this array
+//return a new array with processing every number of the input-array like this:
+
+//if the number has an integer square root, take this, otherwise square the number.
+
+function squaredOrSquareRoot(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if(Math.sqrt(array[i]) === Math.sqrt(array[i].toFixed(0))){
+      arr.push(array[i]**2)
+    }
+  }
+  return arr
+}
+
+//given 2 strings, a and b, return a string of the form short+long+short with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty
+
+function solution(a,b){
+  if(a.length > b.length){
+    return b+a+b
+  }else if(a.length < b.length){
+    return a+b+a
+  }
+}
+
