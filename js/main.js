@@ -17037,6 +17037,8 @@ function sayHello(name, city, state){
   return `Hello, ${name[0].toUppercase()}${name.slice(1).toLowercase()}, welcome to ${city} in the state of ${state}`
 }
 
+//---------------------------------------------------------------------------------------------
+
 //providing intelligent variety in your studies
 //providing intelligent variety in your studies is interleaving
 
@@ -17066,6 +17068,9 @@ function sayHello(name, city, state){
 //what includes styles based around the skin, or look and feel, of different modules?
 //the theme includes styles based around the skin, or look and feel, of different modules
 
+
+//--------------------------------------------------------------------------------------------------
+
 //write a method, that will get an integer array as parameter and will procedss every number from this array
 //return a new array with processing every number of the input-array like this:
 
@@ -17091,3 +17096,19 @@ function solution(a,b){
   }
 }
 
+//-------------------------------------------------------------------------------
+
+//what is the promise syntax?
+fetch('#')
+.then(res => res.json())
+.then(data => {
+  console.log(data)
+})
+.catch(error => {
+  console.log(`error ${error}`)
+})
+
+//a simple interface for some complex action
+//a simple interface for some complex action is an API
+
+//------------------------------------------------------------------------------------------------
