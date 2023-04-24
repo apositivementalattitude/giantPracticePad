@@ -17112,3 +17112,32 @@ fetch('#')
 //a simple interface for some complex action is an API
 
 //------------------------------------------------------------------------------------------------
+
+app.get('/', function(req, res){
+  res.send('Hello World')
+})
+
+//this is a response object
+
+//--------------------------------------------------------------------------------------------------
+
+//what is the mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated
+
+//the mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated is focused thinking
+
+//tell me about a situation when you were responsible for project planning. Did everything go according to your plan?
+//if not, then why and what kind of counter-actions did you have to take?
+
+//projects never go exactly as they're planned. A time when a project didn't go as planned was when we were expecting about 30 containers over the course of 2 months; however, due to a strike at the port of Long Beach, we received those 30 container sin a 2 weeks window instead of 2 months. The tolls of fabric that were already portioned off for orders were immediately pulled from the containers and put in trucks to be delivered. I had to get really creative iwith where we stored rolls, so I bought tarps, stretch wrap, bungee cord, and ordered 40 extra pallets. We sectioned off the parking lotto store the rolls we didn't have space for  and it still wwasn't enough so we stored some rols in the offices, and I retuned u hauls to store the rest because that was significantly cheaper than incuring late fees.
+
+//--------------------------------------------------------------------------------------------------
+
+//What do you read on a regular basis?
+//I like to read hackernews to keep up to date on tech news. I read the learnprogramming, learnjavascript subreddits to see how others would tackle problems people may have. I just read a book called Pachinko, and I highly recommend it. It's a family epic about a woman from occupied Korea and her family's story.
+
+//Tell me about a situation when you made a mistake at work. What happened exactly and how did you deal with it? What steps did you take to improve the situation?
+
+//a situation when I made a mistake at work was when I was ordering some buckles, but I had ordered the wrong quantities. As it was around the Lunar New Year, and my regular contact was on break for 3 weeks. I had to escalted the issue to our director, and we were able to correct the order from our supplier overseas. going forward, we implemented a system with our overseas supplioer so that we had to get confirmation emails and check that to the PO.
+
+//Tell me about yourself
+
