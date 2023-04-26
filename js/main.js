@@ -17145,3 +17145,35 @@ app.get('/', function(req, res){
 //Describe a situation when you worked effectively under pressure. How did you feel when working under pressure? What was going on, and how did you get through it?
 //a situation where I worked effectively under pressure was at a previous opportunity, where I was in charge of the unloading of 30 containers in 2 weeks as opposed to 2 months. The most important thing for me when working under pressure is to have the ability to take a step back and evaluate how to get the job done in the most efficient way possible, so I did exactly that, and we were able to complete the task on time. Working under pressure isn't easy, but it's great to break up the monotony of the day to day.
 
+//tell me about when you had to deal with conflict within your team.
+//how was the conflict solved?
+//how did you handle that?
+//how would you deal with it now?
+
+//a time when i had to deal with a conflict within my team was when there was an order that needed to be assembled in-house
+//however, a particular team member was having trouble assembling the pieces in the correct way after some time, which was frustrating some of the other team members
+//i pulled the team member aside and asked what the issue was. The team member was having trouble placing a glue sheet in the exact spot of the favric peice. I suggestted that she switch with another team membner, to reduce the fatigue from the monotonous task. Now, I would try to get ahead of the problem when I see it and ask for feedback more frequently.
+
+//give me an example of the project or initiative that you started on your own. It can be a non-business one. What prompted you to get started?
+//at my previous opportunity, I noticed that we didn't have a good system for keeping track of container contents. The packing slip for a ocntainer would come in spreadsheets, and the previous method for taking ivnentory of the contents of a container was to manually count out the inventory in excel. It didn't take long to google how to convert cells ina spreadsheet into a tablle
+//once i implemented this system, my team members were thrilled that something that took an hour, now took about 10 seconds.
+
+//describe a situation in which you felt you had not commiunicated well enough
+//what did you do?
+//how did you handle it?
+
+//a time where i felt that i had not communicated well enough was at my previous opportunity, where i didn't write down the correct color code on a PO for a dye house. Thankfully, I caught the mistake and when I called the dye house to correct the order, a worker that I on't normally deal with picked up the phone. This person didn't speak any English so we did our best to get the order changed. I didn't feel right leaving it like that, so I emailed my regular contact to confirm that the order was corrected. It turned out that the color code was still incorrect and she was able to correct it.
+
+//do you have any questions?
+//what does the interview timeline look like?
+//how long is the interview process?
+//what is a typical day in this position?
+//what is the onboarding process after the offer?
+
+//tell me about a time you had to work on several projects at once. How did yhou handle this?
+
+//a situation where i had to work on several projects at once was part of my day to day life as a production manager in garment. I needed to handle orders and where they went. I was in charge of handling the samples, swatches, color books and ordering colors.
+
+//tell me about your experience at 100devs
+//100devs is an agency with a training program. I worked on several projects both alone and with colleagues to better flesh out my skills. The main tech stacks we used was with react, mongoDb, express, and node
+
