@@ -17177,3 +17177,16 @@ app.get('/', function(req, res){
 //tell me about your experience at 100devs
 //100devs is an agency with a training program. I worked on several projects both alone and with colleagues to better flesh out my skills. The main tech stacks we used was with react, mongoDb, express, and node
 
+//core element styles, covering the general defaults
+//base
+//specific styles targeting individual parts of the page
+//module
+
+//---------------------------------------------------------------------------------------------------
+
+//a response object
+app.get('/', function(req, res){
+  res.send('Hello World')
+})
+
+
