@@ -17183,10 +17183,34 @@ app.get('/', function(req, res){
 //module
 
 //---------------------------------------------------------------------------------------------------
+//CRUD APPS
+//---------------------------------------------------------------------------------------------------
 
 //a response object
 app.get('/', function(req, res){
   res.send('Hello World')
 })
 
+
+//--save
+//how to save express as a dependency in package.json
+
+//how to require a file in server.js
+const express = require('express')
+const app = express()
+
+//__dirname
+//the directory name
+
+//ctrl+c
+//stops the current server
+
+//touch server.js
+//creates the file server.js
+
+//npm audit fix --force
+//forces an update to node
+
+//how to handle a GET request
+app.get('./endpoint', callbackFunction)
 
