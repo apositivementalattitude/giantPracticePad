@@ -17214,3 +17214,26 @@ const app = express()
 //how to handle a GET request
 app.get('./endpoint', callbackFunction)
 
+//---------------------------------------------------------------------------------------------------
+//css
+//---------------------------------------------------------------------------------------------------
+
+//*{
+//selects all
+
+//*{
+  //box-sizing: border-box;
+//ignores borders when calculating width
+
+//list-style
+//dots and line styling
+
+//>
+//parent child relationship
+
+//e.g., bold;
+//value
+
+//+
+//sibling relationship
+
