@@ -17237,3 +17237,16 @@ app.get('./endpoint', callbackFunction)
 //+
 //sibling relationship
 
+//values
+//detemines the behaviour of that property
+
+//margin: 0 auto
+//how to center a box
+
+//properties
+//determines the styles that will be applied to that element.
+
+//ex., #intro
+//id intro
+
+//---------------------------------------------------------------------------------------------------
