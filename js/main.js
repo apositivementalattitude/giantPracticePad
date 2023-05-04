@@ -17259,3 +17259,53 @@ app.get('./endpoint', callbackFunction)
 //ignores certain files
 
 //---------------------------------------------------------------------------------------------------
+//html
+//---------------------------------------------------------------------------------------------------
+
+//<script>
+//contained javascript
+
+//<em>
+//emphasis
+
+//<th scope="col" colspan="2">Item</th>
+//the table header for the columns with a span of 2
+
+//<input type="hidden" name="tracking-code" value="#">
+//hidden input type with hte name of tracking-code and a truthy value
+
+//<div>
+//<section>
+//<article>
+//aside
+//header
+//footer
+//containing elements
+
+//<section>
+//section
+
+//<tr>
+//table row
+
+//<label>
+//Email Address
+//<input type="email" name="email-address" required>
+//</label>
+
+//required email input attribute
+
+//<select name="day" multiple>
+//multiple selection dropdown menu
+
+//<div>
+//division
+
+
+//<td>
+//table data
+
+//<b>
+//bold
+
+//---------------------------------------------------------------------------------------------------
