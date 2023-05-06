@@ -17316,3 +17316,23 @@ app.get('./endpoint', callbackFunction)
 //the sort method
 //sorts the array in-place, then returns it
 
+//reverse()
+//the reverse method
+//reverses the array in-place, then returns it
+
+//return a new array consisting of elements which are muiltiple of their own index in input array
+
+function multipleOfIndex(array){
+  return array.filter((a,b) => a % b == 0)
+}
+
+function multipleOfIndex(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
