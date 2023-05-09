@@ -17336,3 +17336,41 @@ function multipleOfIndex(array){
   return arr
 }
 
+//in assignment, you are given a string of space separated numbers, and have to return the highest and lowest number
+
+function highAndLow(numbers){
+  let arr = numbers.split(' ')
+  return `${Math.max(...arr)} ${Math.min(...arr)}`
+}
+
+//you are to write a function that takes a string as its first parameter. This string with be a string of words
+//you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string. The first word would be represented by 0.
+//Once you have the located string you are finally going to multiply by it the third provided parameter, which will also be an integer. You are addittionally required to add a hyphen between each word.
+
+function strRepeater(str, loc, num){
+  let arr = []
+  let word = str.split(' ')
+  let get = word[loc]
+  let count = 0
+
+  for(let i = count; i < num; i++){
+    if(str[i] < num){
+      arr.push(word)
+      count++
+    }
+  }
+  return arr.join('-')
+}
+
+//move every letter in the provided string forward 10 letters through the alphabet. If it goes past 'z', start again at 'a'
+//input will bea  string with length > 0
+
+function moveTen(s){
+  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  const arr = s.split('').map(x => x=str.indexOf(x) + 10)
+  return arr.map(x => x=str[x]).join('');
+}
+
+//push(...items)
+//adds items to the end
+
