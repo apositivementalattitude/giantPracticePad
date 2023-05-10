@@ -17374,3 +17374,14 @@ function moveTen(s){
 //push(...items)
 //adds items to the end
 
+//reduce/reduceRight(func, initial)
+
+//calculate a single value over the array by calling func for each element and passing an intermediate result between the calls
+
+//concat(...items)
+//returns a new array: copies all memebers of the current one and adds items to it
+
+
+//includes(val)
+//return true if the array has value, otherwise false
+
