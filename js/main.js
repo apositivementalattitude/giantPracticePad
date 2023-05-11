@@ -17385,3 +17385,34 @@ function moveTen(s){
 //includes(val)
 //return true if the array has value, otherwise false
 
+//create a function that accpets a list/array and a number n
+//return a list/array of the first n elements from the list/array
+
+function take(arr, n){
+  return arr.slice(0, n)
+}
+
+//in the .sort() method, what are items sorted as>?
+//strings
+
+//map(func)
+//maps the function
+
+//creates a new array from results of calling func for every element
+
+//your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+//write a function which takes a list of strings and returns each line prepended by the correct number
+// the numbering starts at 1.
+
+const number = function(array) {
+  let arr = []
+  if(array.length == 0){
+    return []
+  }else{
+    for(let i = 0; i < array.length; i++){
+      arr.push((i+1) + ';' + array[i])
+    }
+  }
+  return arr;
+}
+
