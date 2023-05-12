@@ -17416,3 +17416,17 @@ const number = function(array) {
   return arr;
 }
 
+//create a method all which takes two params
+//a sequence
+//a function 
+//the function should return true if the function in the params returns true for every element in the sequence.
+//otherwise, it should return false. 
+//if the sequence is empty, it should return true. since technically nothing failed the test
+
+function all(arr, fun){
+  return arr.every(fun)
+}
+
+//find/filter(func)
+//filter elements through the function, return first/all values that make it return true
+
