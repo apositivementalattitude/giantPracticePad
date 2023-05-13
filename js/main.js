@@ -17430,3 +17430,41 @@ function all(arr, fun){
 //find/filter(func)
 //filter elements through the function, return first/all values that make it return true
 
+//given a string of random letters, you need to examine each. Some letters naturally have 'rings' in them. "O" is an obvious exam,ple
+//your job is to count the rings in each letter and divide the total number by 2
+//round the answer down
+
+function olympicRing(a){
+  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+  let twoRings = ['B'];
+  let score = 0;
+
+  a.split('').map(x => {
+    if(rings.includes(x)){
+    score++
+  }else if(twoRings.includes(x)){
+    score+=2
+  }
+})
+
+score = Math.floor(score / 2)
+
+if(score > 3){
+  return "Gold!"
+}else if(score > 2){
+  return "Silver!"
+}else if(score > 1){
+  return "Bronze!"
+}else{
+  return "LMAO"
+}
+
+}
+
+
+//write a fucntion to get the first elements of a sequence. Passing a parameter n wioll return the first n elements of the sdequence
+
+function first(arr, n=1) {
+  return arr.slice(0, n)
+}
+
