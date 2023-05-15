@@ -17468,3 +17468,32 @@ function first(arr, n=1) {
   return arr.slice(0, n)
 }
 
+//your function should return the 20 year estimate of the stairs climbed using the formula above
+
+function stairsIn20(s){
+  return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
+}
+
+
+//Array.isArray(value)
+//is array method
+//returns true if the value is an array
+
+//slice(start, end)
+//slice method
+//creates a new array, copies elements from index start til end into it
+
+//create a function that takes in a list of cutton inputs and returns the final state
+
+function likeOrDislike(buttons){
+  let state = 'Nothing'
+  for(let i = 0; i < buttons.length; i++){
+    if(buttons[i] === state){
+      state = 'Nothing'
+    }else{
+      state = buttons[i]
+    }
+  }
+  return state;
+}
+
