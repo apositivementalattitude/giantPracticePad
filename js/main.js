@@ -17498,3 +17498,6 @@ function likeOrDislike(buttons){
 }
 
 
+//findIndex
+//returns the index instead of value
+
