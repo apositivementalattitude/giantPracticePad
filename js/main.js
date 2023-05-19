@@ -17501,3 +17501,14 @@ function likeOrDislike(buttons){
 //findIndex
 //returns the index instead of value
 
+//get the sum of two arrays and all their elements
+
+function arrayPlusArray(arr1, arr2){
+  return arr1.concat(arr2).reduce((a, b) => a + b, 0)
+}
+
+//destructuring in javascript
+
+let thing = ["table", "chair", "fan"]
+let [a, b, c] = thing
+
