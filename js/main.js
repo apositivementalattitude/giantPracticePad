@@ -17512,3 +17512,14 @@ function arrayPlusArray(arr1, arr2){
 let thing = ["table", "chair", "fan"]
 let [a, b, c] = thing
 
+function howMuchWater(water, load, clothes){
+  return clothes > 2*load? "Too Much clothes":
+  clothes < load ? "Not enough clothes":
+  +(water * 1.1 ** (clothes - load)).toFixed(2)
+}
+//pop()
+//removes elements from the end of an array
+
+function formatMoney(amount){
+  return `$${amount.toFixed(2)}`
+}
