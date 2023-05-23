@@ -17601,3 +17601,9 @@ function findSmallest (int){
 //arr.splice(start[deleteCount, elem1, ..., elemN])
 //splice syntax
 
+
+//complete the function which converts a binary number(given as a string) to a decimal number
+function binToDec(bin){
+  return parseInt(bin, 2)
+}
+
