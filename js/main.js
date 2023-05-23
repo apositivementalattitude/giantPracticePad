@@ -17597,3 +17597,7 @@ function findSmallest (int){
 
 //what is a code block associated with a loop?
 //its body
+
+//arr.splice(start[deleteCount, elem1, ..., elemN])
+//splice syntax
+
