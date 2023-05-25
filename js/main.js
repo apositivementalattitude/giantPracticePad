@@ -17595,3 +17595,5 @@ function findSmallest (int){
 //`I own a pet ${myPet}`
 //the template literal
 
+//what is a code block associated with a loop?
+//its body
