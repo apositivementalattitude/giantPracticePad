@@ -17587,3 +17587,11 @@ function wordReverse(word){
 function findSmallest (int){
   return Math.min(...int)
 }
+
+
+//how many times does forEach run?
+//once for each element
+
+//`I own a pet ${myPet}`
+//the template literal
+
