@@ -17570,9 +17570,16 @@ function addtwo(){
 //otherwide return false
 
 function playerRankUp(points){
-  if(points > 100){
+  if(points >= 100){
     return "Well done"
   }else{
     return "false"
   }
 }
+
+//write a function that reverses the words in a given string
+
+function wordReverse(word){
+  return word.split('').reverse().join('')
+}
+
