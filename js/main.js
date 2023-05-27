@@ -17583,3 +17583,7 @@ function wordReverse(word){
   return word.split('').reverse().join('')
 }
 
+//given an araray of integers your solution must find the smallest integer
+function findSmallest (int){
+  return Math.min(...int)
+}
