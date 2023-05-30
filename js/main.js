@@ -17548,3 +17548,12 @@ stuff = stuff - 10
 console.log(stuff)
 
 //create a variable that holds a value from the input
+let num = Number(document.querySelector('#danceDanceRevolution').value)
+//add 25 to that number
+num = num + 25
+//alert that number
+alert(num)
+
+//create a variable that holds the h1
+let h1 = document.querySelector("h1")
+
