@@ -17564,3 +17564,15 @@ function addtwo(){
   console.log(num +  stuff)
 }
 
+//write a script that will check to see if the player has achieved at least 100 points in his class
+//if so, he enters the qualifying stage.
+//return "well done"
+//otherwide return false
+
+function playerRankUp(points){
+  if(points > 100){
+    return "Well done"
+  }else{
+    return "false"
+  }
+}
