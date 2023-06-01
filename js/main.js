@@ -17557,3 +17557,10 @@ alert(num)
 //create a variable that holds the h1
 let h1 = document.querySelector("h1")
 
+//add an event listener to that element that console logs the sum of the two previous variables
+
+h1.addEventListener('click', 'addTwo')
+function addtwo(){
+  console.log(num +  stuff)
+}
+
