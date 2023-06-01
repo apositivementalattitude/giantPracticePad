@@ -17523,3 +17523,28 @@ function howMuchWater(water, load, clothes){
 function formatMoney(amount){
   return `$${amount.toFixed(2)}`
 }
+
+
+//---------------------------------------------------------------------------------------------------
+//javascript
+//---------------------------------------------------------------------------------------------------
+//what do we do to loop through each element in an array?
+
+//we use the .forEach object or a for loop
+//we use the .length property in its condition
+
+let numberOfApples = 9
+//what are the first two words for?
+//declaration
+
+//what are the data types that have properties with stored information?
+//objects
+
+//create a variable and assign it a number
+let stuff = 10
+//minus 10 from that number
+stuff = stuff - 10
+//print that number to the console
+console.log(stuff)
+
+//create a variable that holds a value from the input
