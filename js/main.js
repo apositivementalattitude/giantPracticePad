@@ -17624,3 +17624,214 @@ function sumMix(x){
 //substring()
 //returns a new array from start to end but as a string
 //substring works a lot like slices
+
+//create these variables and store the appropriate values using the table above
+
+//laLigaGoals - 43
+//championsLeagueGoals - 10
+//copaDelReyGoals - 5
+
+//create a fourth variable named totalGoals that stores the sum of all of Messi's goals for this year
+
+function messiGoals(laLigaGoals, championsLeagueGoals, copaDelReyGoals){
+  let totalsGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+}
+
+//synchronous
+//to happen at the same time
+//#
+//octothorpe
+
+//find the sum of all multiples of n below m
+
+function sumMul(n,m){
+  if(n >= m){
+    return "INVALID!"
+  }else{
+    let sum = 0
+    for(let i = n; i < m; i+=n){
+      sum+= i
+    }
+  }
+  return sum
+}
+
+//create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
+//if no occurrences can be found, a count of 0 should be returned
+
+function twoStrArgs(x, y){
+  let count = 0
+  for (let i = 0; i < x.length; i++){
+    if(x[i] === y)
+    count++
+  }
+  return count
+}
+
+//when provided a letter, return its position in the alphabet
+
+function position(letter){
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`
+}
+
+//calculateArea(10, 6)
+//what is between the parantheses?
+//arguments as values
+
+//completet he solution so that it returns true if the first argument(string) passed in ends the 2nd argument(also a string)
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+//define the method hello that returns "Hello, Name!" to a given name, or says Hello, World!
+//if name is not given(or passed as an empty String)
+
+function giveAName(name){
+  if(name){
+    return `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`
+  }else{
+    return "Hello, World!"
+  }
+}
+
+//builda f ucntion that returns an array of integers from n ot 1 where n > 0 
+
+const reverseSeq = n => {
+  let arr = []
+  for(let i = n; i > 0; i-=1){
+    arr.push(i)
+  }
+  return arr
+}
+
+//create a function that removes the first and last characters in a string
+
+function firstLast(str){
+  return str.slice(1, -1)
+}
+
+//write a function that always returns 5
+
+function returnFive(str){
+  return 'hello'.length
+}
+
+//can you change the contents of a const array
+//yes, but you can't reassign a new array or different value
+
+//e.g., :focus
+//pseudo class focus
+
+//e.g., [rel~="tag"]
+//attribute spaced selector
+
+//e.g., console.log(data.drinks[0])
+//index 0
+
+//tell me about a situation when you were responsible for project planning.
+//did everything go according to your plan
+//if not, then why and what kind of counter-actions did you have to take
+
+//a situation where i was responsible for project planning was at my previous opportunity; where i was responsible for the planning of receiving 30 containers in a 2 month window; however, due to a problem at the port, wher container ships were backlogged and stranded unable to unload. We received those containers 3 monthsa late and in a 2 week window. The shipping companies were unable accomodate us and so we had to get to work and unload 30 containers in 2 weeks instead of 2 months. Throughout the ordeal at the port, I had pre-planned how to receive all the rolls in our inventory, and vacated large empty spaces in our warehouse to take on the rolls. At the end of it all we were able to receive all the containers and get them empty before we incurred any late fees and our orders went out as fast as possible.
+
+//the listen method in Express
+// app.listen(3000, funciton(){
+//   console.log('listening on 3000')
+// })
+
+//endpoint
+//the last part of the URL
+
+//e.g., p{
+  //color: blue
+//}
+//rule
+//<i>
+//italics
+
+//tbody
+//is table body
+
+//given a sdtring showing either flat road or bumps
+//if you are able to reach home safely by encountering 15 bumps or less
+//return Woohoo!
+//otherwise, return Car Dead
+
+function bump(x){
+  if (x.split('n') > 15){
+    return "Car Dead"
+  }else{
+    return "Woohoo!"
+  }
+}
+
+//arr.forEach
+//will run a function for every element of an array
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndex(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
+function multipleOfIndex(array){
+  return array.filter((a, b) => a % b == 0)  
+}
+
+//splice(pos,deleteCount, ...items)
+
+//your goal is to return multiplication table for number that is always an integer from 1 to 10
+const multiTable = (number) => {
+  let table = ''
+  for(let i = 1; i <= 10; i++){
+    table += `${i} * ${i * number}${i < 10 ? '\n' : ''}`
+  }
+  return table
+
+}
+
+//write a function that takes a single string as argument
+//the function must return an ordered list containing the indxes of all capital letters in the string
+
+const capitals = function(word){
+  let arr = []
+  for(let i = 0; i < word.length; i++){
+    if(word[i].toUpperCase() === word[i]){
+      arr.push(i)
+    }
+  }
+  return arr
+}
+
+//complete the function that receives as input a string and produces outputs according to the following table
+
+function getDrinkByProf(param){
+  if(param === 'Jabroni'){
+    return 'Patron'
+  }else if(param === 'School counselor'){
+    return 'Anything'
+  }else{
+    return 'Beer'
+  }
+}
+
+//indexOf/lastIndexOf(item, pos)
+
+//step 1: declaration
+//step 2: call
+//function
+
+//create a function for the terminal game that takes the current position of the hero and the roll(1-6) and return the new position
+
+function move(position, roll){
+  return position + roll * 2
+}
+
