@@ -17835,3 +17835,9 @@ function move(position, roll){
   return position + roll * 2
 }
 
+//what is the only logical operator in CSS?
+//the only operator in CSS only selects things
+
+//e.g., [href$="Brackets"]
+//attribute ends with selector
+
