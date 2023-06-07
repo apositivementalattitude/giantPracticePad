@@ -17841,3 +17841,25 @@ function move(position, roll){
 //e.g., [href$="Brackets"]
 //attribute ends with selector
 
+
+//what is $ npm init
+//initializes node package manager
+//by creating a package.json
+
+//how to serve up a file in server.js
+app.get('/', (req, res)=>{
+  res.sendFile(__dirname + '/index.html')
+})
+
+//node server.js
+//runs a server.js file in node
+
+//how to require a file in server.js
+//const express = require('express)
+//const app = express()
+
+//list-style
+//line and dot styling in css
+
+//touch
+//creates a new file
