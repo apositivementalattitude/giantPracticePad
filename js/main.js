@@ -17863,3 +17863,73 @@ app.get('/', (req, res)=>{
 
 //touch
 //creates a new file
+
+
+//given a string made up of letters a, b, and c, switch the position of letters a and b.
+//leave any incidence of c untouched
+
+function switcheroo(x){
+  return x.split('').map(function (s){
+    return s === 'a'
+    ? 'b'
+    : s === 'b'
+    ? 'a'
+    : 'c'
+  }).join('')
+}
+
+//you are to write a function that takes a string as its first parameter. this string will be a string of words
+//you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the fiven string. The first word would be represented by 0
+//Once you ahve the located string you are finally going to multiple by it the third provided parameter, which will also be an integer. You are additionally required to add a hyphen in between each word.
+
+function returnIndexString(str, loc, num){
+  //in order to return string-string-string-string-string with an input of "This is a string", 3, 5
+  let arr = []
+  //split the sentence into its words
+  let word = str.split(' ')
+  //find the index of the word that you want
+  let get = word[loc]
+  //start a counter
+  let count = 0
+
+  //loop through the words starting the first index, which is 0, until the last number
+  //this will the the total amount of time the string is repeated
+    for(let i = 0; i < num; i++){
+      //if the index of str is less than the num
+    if(str[i] < num){
+      //push the word into the array
+      arr.push(word)
+      //add a number to the counter
+      count++
+    }
+  }
+  //join it all with a hyphen
+  return arr.join('-')
+}
+
+//shift()
+//remove items from the beginning of an array
+
+//create a funciton that accepts a list/array and a number n
+//return a list/array fo the first n elements from the list/array
+
+function take(arr, n){
+  return arr.slice(0, n)
+}
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndex(array){
+  let arr = []
+
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
+//unshift(...items)
+//adds items from the beginning of an element
+
