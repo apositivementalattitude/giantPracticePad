@@ -18046,3 +18046,26 @@ function savage(){
 }
 savage();
 
+//what is MVC?
+
+//Model, View, Controller
+
+//how do we apply MVC?
+//we apply MVC by separating our model, view, and controller in our code
+
+//the controller is server side code that tells the view what to do, and gets its information from the model
+
+//if you are writing code that is processing information to and from the database before it gets to the view, wherre does it belong?
+//the controller
+//the controller is server side code
+
+
+
+//if you are writing code related teo the database, where does it belong?
+//code related to the database belongs in the Model
+//the model is database code
+
+//the view is what is displaying to the user
+//ikf you are writing front end code, where does it belong?
+//the view
+
