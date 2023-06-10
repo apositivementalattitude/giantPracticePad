@@ -18069,3 +18069,36 @@ savage();
 //ikf you are writing front end code, where does it belong?
 //the view
 
+//const http = require('http')
+//const fs = require('fs')
+//const url = require('url')
+//const querystring = require('querystring')
+//const figlet = require('figlet')
+
+
+//these are modules
+
+//the abstraction principle
+//the abstraction principle is to hide the details
+
+//having a simpler interface, and to reduce the impact of change
+//abstraction
+//value types; reference types
+//reference types: Objects, Funcitons, Arrays
+
+//the best functions are those with no parameters. The fewer the number of parameters the easier it is to maintain that funciton., What is this refering to?
+
+//encapsulation
+
+//object literal syntax
+//const circle = {}
+
+//what are objects copied by?
+//their reference type('object, arrays, functions')
+
+//value types; primitives
+//numbers, strings, booleans, NaN, 0, symbols, undefined
+
+//this 
+//how to reference a new object
+
