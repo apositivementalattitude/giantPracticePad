@@ -17920,10 +17920,14 @@ function take(arr, n){
 //return a new array consisting of elements which are multiple of their own index in input array
 
 function multipleOfIndex(array){
+  //create an array
   let arr = []
 
+  //loop through the array's entirety
   for(let i = 0; i < array.length; i++){
+    //if the index of the array mod the index of the counter is zero
     if(array[i] % i === 0){
+      //push the index of the array
       arr.push(array[i])
     }
   }
@@ -17932,4 +17936,113 @@ function multipleOfIndex(array){
 
 //unshift(...items)
 //adds items from the beginning of an element
+
+ //.addEventListener
+ //adds an event listener, e.g., h1.addEventListener('click', addTwo)
+ //this event listener will run the function addTwo on a click of a button
+
+ //what is the variable associated with the loop condition?
+ //i
+
+ //in this kata, you are asked to square every digit of a number and concatenate them
+ 
+
+ function squareDigits(n){
+  return n.split('').map(function(s){
+    for(let i = 0; i < s.length; i++){
+      return s*s
+    }
+  }).join('')
+ }
+
+//write a function isReallyNaN that returns true only if passed in an argument that evaluated to NaN
+//return false otherwise
+
+const isReallyNaN = (val) => {
+  if(val === val.isNumber()){
+    return true
+  }else{
+    return false
+  }
+}
+
+//bob needs a fast way to calculate the volume of a cuboid with three values
+//length, width, and height
+//write a function to help Bob with this calculation
+
+class Kata {
+  static getVolumeOfCuboid(l,w,h){
+    return l*w*h
+  }
+}
+
+//if the text or the character are empty
+//return an empty string
+
+function contamination(text, char){
+  if (text.length === 0 || char.length === 0){
+    return ''
+  }else{
+    return char.repeat(text.length)
+  }
+}
+
+//===
+//the identity operator used to check if something is true
+
+//.then()
+//then object
+
+//.querySelector
+//a way to find elements
+
+//Math.random
+//returns a random number between 0 and 1
+
+//const calculateArea = function(width, height){}
+//function
+
+//the process of storing function with their associated data
+//encapsulation
+
+//when you see a function with a capital letter at the beginning, what is it?
+// a constructor
+
+//\t
+//tabbing isnide singel and double quotes
+
+//syntax for arrow functions
+
+// const arrowFunction = () => {}
+
+//complete the funciton so that it finds the average of the three scores passed to it and returns the letter value associated with that grade
+
+function getGrade (s1, s2, s3){
+  let total = [s1, s2, s3]
+  let avg = total.reduce((a,b) => a + b, 0)/total.length
+
+  if(avg <= 100 || avg >= 90){
+    return 'A'
+  }else if(avg < 90 && avg >= 80){
+    return 'B'
+  }
+}
+
+function greeting(name = 'stranger'){}
+//function declaration
+//default parameter
+
+//create a function that has a loop that printe '21' 21 times to the console and then call that function
+function savage (hey){
+  for(let i = 0; i < 21; i++){
+    console.log('21')
+  }
+}
+
+function savage(){
+  for(let i = 0; i < 21; i++){
+    document.querySelector('#savageSays').innerText += '21'
+  }
+}
+savage();
 
