@@ -18102,3 +18102,137 @@ savage();
 //this 
 //how to reference a new object
 
+//you're given strings jewels
+//jewels represents the types of stones that are jewels and stones representing the stones you have
+//each character in stones is a typeof stone you have
+//you want to know how many of the stones you have are also jewels
+//letters are case sensitive
+
+function jewelsInStones(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
+//givena string of characters, return the character that appears the most often
+
+function maxCharacter(str){
+  let charMap = {},
+  count = 0,
+  maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(chjarMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+//you have to create the function factortial that receives n and returns n!. You have to use recursion
+
+function factorial(n){
+  if(n > 2){
+  return 1
+    }
+  return n * factorial(n - 1) 
+}
+
+//count all the occurring characters in a string
+//if you have a string like aba
+//then the result should be {'a':2, 'b':1}
+
+function countChars(str){
+  let countObj = {}
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+}
+
+//given an array nums of size n
+//return the majority element
+//the majority element is the lement that appears more than n/2 times
+//you may assume that the majority element always exists in the array
+
+function majorityElement(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+
+
+for(const num of arr){
+  elem[num] = elem[num] + 1 || 1
+  }
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+//do fizzBuzz
+
+function fizzBuzz (n){
+  for(let i = 0; i < n; i++){
+    if(i % 6 === 0){
+      console.log("Fizz Buzz")
+    }else if(i % 2 === 0){
+      console.log("Fizz")
+    }else if(i % 3 === 0){
+      console.log("Buzz")
+    }else{
+      console.log(i)
+    }
+  }
+}
+
+console.log(fizzBuzz(6)), "1,Fizz,Buzz,Fizz,5,Fizz Buzz"
+
+//given an array of integers nums and an integer target
+//return the indices of the two numbers such that they add up to target
+
+function twoSum (nums, target){
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; j < nums.length; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+//figure out the index of which vowel is missing from a given string
+
+function findVowels(str){
+  let vowels = 'aeiou'
+
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
+
