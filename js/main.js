@@ -18236,3 +18236,70 @@ function findVowels(str){
   }
 }
 
+//find the sum of all multiples of n below m
+
+function sumMul (n, m){
+  if(n >= m){
+    return "INVALID"
+  }else{
+    let sum = 0
+    for(let i = n; i < m; i+=n){
+      sum+=i
+    }
+    return sum
+  }
+}
+
+//object
+//an object is a collection of related data
+
+//what does scope refer to?
+//scope refers to where variables can be accessed throughout the program
+
+//implement line numbering
+//write a function which takes a list of strings and returns each line prepended by the correct number
+
+// const number = function(array){
+//   let arr = []
+//   if(array.length == 0){
+//     return []
+//   }else{
+//     for(let i = 0; i < array.length; i++){
+//       arr.push(i+1) + ':' + array[i]
+//     }
+//   }
+//   return arr
+// }
+
+//properties used to provide additional information about an element
+//values
+
+//name the data types in javascript
+//the data types in javascript are
+//numbers
+//strings
+//undefined
+//symbols
+//objects
+//null
+//undefined
+
+//complete the method that takes a boolean value and return a "Yes" string fro true or a "No"
+//string for false
+
+function boolToWord(bool){
+  if(bool === true){
+    return 'Yes'
+  }else{
+    return "No"
+  }
+}
+
+//(req, res) and what they're used in
+//request
+//response
+//they are used in response objects in APIs
+
+//<script>
+//is for inline javascript
+
