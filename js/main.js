@@ -18303,3 +18303,26 @@ function boolToWord(bool){
 //<script>
 //is for inline javascript
 
+//<h1><h2>
+//heading level
+
+
+//write a funciton to get the first element of a sequence
+//pass a parameter n ()default=1 will return the first n elements of the sequence
+//if n == 0 
+//return an empty sequence
+
+function first(arr, n){
+  return first.slice(0, n)
+}
+
+//split/join
+//returns a new array after splitting or joining the array
+
+//what are the reserved words
+//the reserved words are 
+//function
+//return
+//let
+//class
+
