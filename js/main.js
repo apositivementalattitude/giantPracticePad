@@ -18326,3 +18326,19 @@ function first(arr, n){
 //let
 //class
 
+//create a method all which takes two params
+//return true if the function in the params returns treu for every element in the sequence
+
+function all(arr, fun){
+  return arr.every(fun)
+}
+
+//do you need curly braces for a single-line block
+//no
+
+//complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument 
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
