@@ -18704,3 +18704,21 @@ function majorityElem(n){
   }
   return majElem
 }
+
+//if the integer if divisible by 2, Fizz
+//if the integer is divisible by 3, Buzz
+//if both, FizzBuzz
+//else print the number
+function fizzBuzz(n){
+  for(let i = 0; i < n; i++){
+    if(i % 6 === 0){
+      console.log("FizzBuzz")
+    }else if(i % 2 === 0){
+      console.log("Fizz")
+    }else if(i % 3 === 0){
+      console.log("Buzz")
+    }else{
+      console.log(i)
+    }
+  }
+}
