@@ -18687,3 +18687,20 @@ function factorial(n){
   }
 }
 
+//given an array nums of size n, return the majority element
+
+function majorityElem(n){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+  }
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
