@@ -18677,3 +18677,13 @@ function countString(str){
   }
   return countObj
 }
+
+//create a function factorial that receives n and return n!
+//you have to use recursion
+
+function factorial(n){
+  if(n < 2){
+  return n * (factorial(n - 1))
+  }
+}
+
