@@ -18663,3 +18663,17 @@ function findMissingIndex(str){
     }
   }
 }
+
+//count all the occurring characters in a string. If you have a string like aba, then the result should be {'a':2, 'b':1}
+
+function countString(str){
+  let countObj = {}
+  for(const c of str){
+    if(countObj[c]){
+      countObj[c]++
+    }else{
+      countObj[c] = 1
+    }
+  }
+  return countObj
+}
