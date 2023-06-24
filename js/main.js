@@ -18653,3 +18653,13 @@ function appearsMost(str){
   return maxChar
 }
 
+//your job is to figure out the index of which vowel is missing from a given string
+
+function findMissingIndex(str){
+  let vowels = 'aeiou'
+  for(let i = 0; i < vowels.length; i++){
+    if(str.indexOf(vowels[i] === -1)){
+      return i
+    }
+  }
+}
