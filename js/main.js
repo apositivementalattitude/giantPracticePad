@@ -18378,3 +18378,15 @@ function squareOrSquareRoot(array){
 function squareOrSquareRoot(array){
   return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0))
 }
+
+//given three integers a, b, c return the largest number obtained after inserting the following operators and brackets
+
+function comboPoints(a,b,c){
+  return a+b+c,
+  (a+b)*c,
+  a*(b+c),
+  a*b*c,
+  a*b+c,
+  a+b*c
+}
+
