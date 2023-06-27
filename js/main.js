@@ -18593,3 +18593,19 @@ function oddOrEven(n){
 //new
 //creates an empty object
 
+//given an array of integers nums
+//an integer target
+//return the indices of the two numbers such that they add up to target
+
+function targetThese(nums, target){
+  for(let i = 0; i < nums; i++){
+    for(let j = 0; j < nums; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
