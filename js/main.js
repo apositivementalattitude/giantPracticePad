@@ -18575,3 +18575,7 @@ function oddOrEven(n){
 //the model is the database code
 //the model only talks to the controller
 
+//e.g., this._name
+//the object this 
+//the method name
+//do NOT mess with things that are undercored
