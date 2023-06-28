@@ -18579,3 +18579,17 @@ function oddOrEven(n){
 //the object this 
 //the method name
 //do NOT mess with things that are undercored
+
+//to eliminate redundant code is 
+//inheritance
+//inheritance removes redundant code by having code inherit things from other lines
+
+//abstraction principle
+//hide the details
+
+//constructor
+//constructor functions used to construct the object
+
+//new
+//creates an empty object
+
