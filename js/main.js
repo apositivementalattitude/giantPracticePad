@@ -18342,3 +18342,9 @@ function solution(str, ending){
   return str.endsWith(ending)
 }
 
+//what is a test that requires you to understand the text, not just retrieve isolated facts?
+//inference test
+
+//selector unit at the end, furthest to the right
+//key selector
+
