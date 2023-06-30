@@ -18348,3 +18348,33 @@ function solution(str, ending){
 //selector unit at the end, furthest to the right
 //key selector
 
+/* ----- ALGORITHMS ------------------ */
+
+//completet the function that takes two integers (a, b, where a < b)
+//return an array of all integers between the input parameters, including them
+
+function takeTwo(a, b){
+  let arr = []
+  for(let i = a; i <= b; i++){
+    arr.push(i)
+  }
+  return arr
+}
+
+//write a method, that will get an integer array as parameter and will process every number from this array
+//return a new array with processing every number of the input-array like this
+//if the number has an integer square root, take this, otherwise square the number
+
+function squareOrSquareRoot(array){
+  for(let i = 0; i < array.length; i++){
+    if(Math.sqrt(array[i]) == Math.sqrt(array[i]).toFixed(0)){
+      return array[i]
+    }else{
+      return array[i]**2
+    }
+  }
+}
+
+function squareOrSquareRoot(array){
+  return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0))
+}
