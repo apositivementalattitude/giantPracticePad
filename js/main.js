@@ -18571,3 +18571,7 @@ function oddOrEven(n){
   }
 }
 
+//the model
+//the model is the database code
+//the model only talks to the controller
+
