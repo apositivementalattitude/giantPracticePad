@@ -16669,1586 +16669,1586 @@
 //you may assume that each input would have exactly one solution, and you may not use the same element twice.
 //you can return the answer in any order
 
-function twoSum(nums, target){
-  for(let i = 0; i < nums.length; i++){
-    for(let j = 0; j < nums.length; j++){
-      if(i !== j){
-        if(nums[i] + nums[j] === target){
-          return [i, j]
-        }
-      }
-    }
-  }
-}
-
-function twoSum(nums, target){
-  const numMap = new Map();
-  for(let i = 0; i < nums.length; i++){
-    const complement = target - nums[i]
-    if(numMap.has(complement)){
-      return [numMap.get(complement), i]
-    }
-  numMap.set(nums[i], i)
-  }
-return null
-}
-
-function twoSum(nums, target){
-  let obj = {}
-
-  for(let i = 0; i < nums.length; i++){
-  if(target - nums[i] in obj){
-      return [obj[target - nums[i]], i]
-    }else{
-      obj[nums[i]] = i
-    }
-  }
-}
-
-function findVowel(str){
-  let vowels = 'aeiou'
-  for(let i = 0; i < vowels.length; i++){
-    if(str.indexOf(vowels[i] === - 1)){
-      return i;
-    }
-  }
-}
-
-
-//what is a study strategy where you read something once, and then try to recall as much of it as you can?
-//a study strategy where you can read something once, and tehn try to recall as much of it as you can is referred to as active recall
-
-//network of neurons used to fire together
-//chunk
-
-//:link
-//pseudo clas link
-//used for links
-
-//[href^="brackets"]
-//attribute begins with selector
-
-//how to require a file in server.js
-// const express = require('express')
-// const app = express()
-
-//how to handle a get request
-
-app.get('/endpoint', callBackFunction)
-//the listen method in Express
-app.listen('3000', function(){
-  console.log('listening on 3000')
-})
-
-//endpoint
-//is the end of a URL
-
-//node server.js
-//initializes server.js
-
-//req is a request
-//res is a response
-//used in response objects
-
-//flex-direction-column
-//flex direction the columns
-
-//<section
-//<article
-//<p
-//selectors
-
-//font-weight
-//the font's weight
-
-//property
-
-//list-style
-//the list style
-
-//dots and line spacing
-
-//$git pull
-//pulls any changes in git
-
-//$ git commit
-//commits something in git
-//commits a message
-//commits amend
-
-//<input type="radio" name="#" value="#">
-//radio input types(the ones with th esmall circles)
-
-//properties used to provide additional information about an element
-
-//attributes
-
-//return an array consisting of elements which are multiple of their own index in input array (length  > 1)
-
-function multipleOfIndex(array){
-  let arr = []
-
-  for(let i = 0; i < array.length; i++){
-    //add the elements which are a multiple of their own index
-    if(array[i] % i === 0){
-      arr.push(array[i])
-    }
-  }
-  return arr
-}
-
-//findIndex
-//finds the index
-
-//given a string of random letters
-//count the rings in each letter and divide the total number by 2
-//round the answer down
-
-function olympicRing(a) {
-  let rings = ['A', 'a', 'b', 'D', 'd', 'e', 'g', 'O', 'o', 'P', 'p', 'Q', 'q'];
-  let twoRings = ['B'];
-  let score = 0;
-
-  // Loop through each character in the input string and count the number of rings
-  a.split('').map(x => {
-    if (rings.includes(x)) { // If the character is a single-ring letter
-      score++;
-    } else if (twoRings.includes(x)) { // If the character is a double-ring letter
-      score += 2;
-    }
-  });
-
-  // Calculate the final score as the total number of rings divided by 2 (since each ring is counted twice)
-  score = Math.floor(score / 2);
-
-  // Return a message based on the score
-  if (score > 3) {
-    return "Gold!";
-  } else if (score > 2) {
-    return "Silver!";
-  } else if (score > 1) {
-    return "Bronze!";
-  } else {
-    return "You stink";
-  }
-}
-
-
-//in this kata
-//you are asked to square every digit of a number and concatenate them
-function concatMe(n){
-  return n.toString.split('').map(x = x => {
-    x**2
-  }).join('')*1
-}
-
-//not logical operator
-//the not logical operator means no
-//negates the query
-
-//complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameteres, including them.
-
-function takeTwo(a,b){
-let arr = []
-for(let i = a; i <= b;i++){
-  arr.push(i)
-}
-return arr
-}
-
-//how do you serve up a file in server.js
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
-})
-
-//e.g., red
-//the value 
-
-//<caption>
-//captions
-//captions selector
-
-//elements in html
-//elements in html are designators that define the structure and content of objects within a page
-
-//given a string made up of letters a, b, and/or c, switch the posiiont of leters a and n(change a to b and vice versa)
-//leave any incidence of c untouched
-
-function switcheroo(x){
-x = s.split('')
-x.map(n = n =>{
-  if(n === 'a'){
-    return 'b'
-  }else if(n === 'b'){
-    return 'a'
-  }else{
-    return 'c'
-  }
-}).join('')
-}
-
-//finish the uefaEuro2016 function so it returns strings just liek in the example below
-
-function uefaEuro2016(teams, scores){
-  if(scores[0] > scores[1]){
-    return  `At match${teams[0]} - ${teams[1]}, ${teams[0]} won!`
-  }else if(scores[1] > scores[0]){
-    return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
-  }else{
-    return `teams drew`
-  }
-}
-
-//return a new array consisting of elements which are multiple of their own index in put array 
-
-function multipleOfIndex(array){
-  let arr = []
-
-  for(let i = 0; i < array.length;i++){
-    if (array[i] % i === 0){
-      arr.push(array[i])
-    }
-  }
-  return arr
-}
-
-function multipleOfIndex(array){
-  return array.filter((a,b) => a % b == 0)
-}
-
-
-//shift
-//removes from the beginning of the array
-
-//write a function to ghet the first elements of a sequence passing a paramter n will return the first n elements of the sequence
-//if n == 0 return an empty sequence
-
-function first(arr,n=1){
-  return arr.slice(0, n)
-}
-
-
-//correc tthe errors in the digitized text
-//S === 5
-//O === 0
-//I === 1
-
-
-function correctedText(text){
-  let corectedText = ""
-  for(let i = 0; i < text.length; i++){
-    switch(text[i]){
-      case "5":
-        correctedText += "S"
-        break;
-      case "0":
-        correctedText += "O"
-        break;
-      case "1":
-        correctedText += "I"
-        break;
-    }
-  }
-  return correctedText;
-}
-
-//acc
-//accumulator
-
-//what is a repetition in a loop
-//a repetition
-//an iteration
-
-//\n
-//new line
-
-//the model
-//mvp
-//minimum viable product
-//the model
-//adds and retrieves items from the database
-//only talks to the controller
-
-//What kind of things must you be wary of when designing or developing for multilingual sites?
-
-
-//constructor
-//the function that was used to create or construct the object
-
-//what creates an empty object
-//the new operation
-
-//to eliminate redundant code is
-//inheritance
-
-//yopu are given strings jewels representing the types of stones that are jewels
-//and stones representing the stones you have
-//each character in stones is a type of stone you ahve
-//you want to know how many of the stones you have are also jewels
-
-function jewelsInStones(jewels, stones){
-  let map = {},
-  count = 0
-
-  for(const jewel in jewels){
-    map[jewel] = true
-  }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-//write a function to split a string and convert it into an array of words
-
-function splitStr(str){
-  return str.split(' ')
-}
-
-//things inside a set of curly braces {}
-//a code block
-
-//you are going to be given a word
-//your job is to return the middle characters of the word
-//if the word's length is off, return the middle character
-//if the word's length is even, return the middle 2 characters
-
-function returnMid(str){
-  if (str.length % 2 === 0){
-    return str.substring((s.length/2) - 1, (s.length/2) + 1)
-  }else{
-    return str.substring((s.length/2) + 1, (s.length)/2)
-  }
-}
-
-//filter method syntax
-//return str.filter(word => words.length > 6)
-//will return all values that make it return true
-
-//substring()
-//substring returns the part of the string between the start and end
-
-//create a method sayHello that takes as input a name, city, and state to welcome a person.
-//Note that name will be an array consisting of one or more values that should be joined tohether with one space between each, and the length of the name array in test cases will vary.
-
-function sayHello(name, city, state){
-  return `Hello, ${name[0].toUppercase()}${name.slice(1).toLowercase()}, welcome to ${city} in the state of ${state}`
-}
-
-//---------------------------------------------------------------------------------------------
-
-//providing intelligent variety in your studies
-//providing intelligent variety in your studies is interleaving
-
-//thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking
-//diffuse thinking
-
-//what identifies the sizing and grid styles of different elements?
-//the layout identifies the sizing and grid styles of different elements'
-
-//e.g., :disabled
-//pseudoclass disabled
-
-//what is used to augment or overrise ohter styles in the event that a module includes an alternate state
-//state
-//e.g., indeterminate
-//indeterminate
-
-//e.g., a[lang|="en"]
-//attribute hyphenated selector
-//select something when it is hyphen separated
-
-//e.g., :active
-//pseudoclass active
-//selects for things that are activated
-
-
-//what includes styles based around the skin, or look and feel, of different modules?
-//the theme includes styles based around the skin, or look and feel, of different modules
-
-
-//--------------------------------------------------------------------------------------------------
-
-//write a method, that will get an integer array as parameter and will procedss every number from this array
-//return a new array with processing every number of the input-array like this:
-
-//if the number has an integer square root, take this, otherwise square the number.
-
-function squaredOrSquareRoot(array){
-  let arr = []
-  for(let i = 0; i < array.length; i++){
-    if(Math.sqrt(array[i]) === Math.sqrt(array[i].toFixed(0))){
-      arr.push(array[i]**2)
-    }
-  }
-  return arr
-}
-
-//given 2 strings, a and b, return a string of the form short+long+short with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty
-
-function solution(a,b){
-  if(a.length > b.length){
-    return b+a+b
-  }else if(a.length < b.length){
-    return a+b+a
-  }
-}
-
-//-------------------------------------------------------------------------------
-
-//what is the promise syntax?
-fetch('#')
-.then(res => res.json())
-.then(data => {
-  console.log(data)
-})
-.catch(error => {
-  console.log(`error ${error}`)
-})
-
-//a simple interface for some complex action
-//a simple interface for some complex action is an API
-
-//------------------------------------------------------------------------------------------------
-
-app.get('/', function(req, res){
-  res.send('Hello World')
-})
-
-//this is a response object
-
-//--------------------------------------------------------------------------------------------------
-
-//what is the mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated
-
-//the mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated is focused thinking
-
-//tell me about a situation when you were responsible for project planning. Did everything go according to your plan?
-//if not, then why and what kind of counter-actions did you have to take?
-
-//projects never go exactly as they're planned. A time when a project didn't go as planned was when we were expecting about 30 containers over the course of 2 months; however, due to a strike at the port of Long Beach, we received those 30 container sin a 2 weeks window instead of 2 months. The tolls of fabric that were already portioned off for orders were immediately pulled from the containers and put in trucks to be delivered. I had to get really creative iwith where we stored rolls, so I bought tarps, stretch wrap, bungee cord, and ordered 40 extra pallets. We sectioned off the parking lotto store the rolls we didn't have space for  and it still wwasn't enough so we stored some rols in the offices, and I retuned u hauls to store the rest because that was significantly cheaper than incuring late fees.
-
-//--------------------------------------------------------------------------------------------------
-
-//What do you read on a regular basis?
-//I like to read hackernews to keep up to date on tech news. I read the learnprogramming, learnjavascript subreddits to see how others would tackle problems people may have. I just read a book called Pachinko, and I highly recommend it. It's a family epic about a woman from occupied Korea and her family's story.
-
-//Tell me about a situation when you made a mistake at work. What happened exactly and how did you deal with it? What steps did you take to improve the situation?
-
-//a situation when I made a mistake at work was when I was ordering some buckles, but I had ordered the wrong quantities. As it was around the Lunar New Year, and my regular contact was on break for 3 weeks. I had to escalted the issue to our director, and we were able to correct the order from our supplier overseas. going forward, we implemented a system with our overseas supplioer so that we had to get confirmation emails and check that to the PO.
-
-//Tell me about yourself
-//I'm a software engineer at 100devs; where I've been building full stack web applications using the MERN stack alone and with colleagues. In the past, I've been involed in the fashion industry working jobs from fit modeling as a kid, to the warehouse, and then warehouse management, and finally production management. Most of my life, I've been told that as I have an eye for design and am good with computers, software development would be a good fit for me. So, I learned how to code, which is something I now enjoy doing, and with my background in design, i can help a development team with new and creative ideas.
-
-//Describe a situation when you worked effectively under pressure. How did you feel when working under pressure? What was going on, and how did you get through it?
-//a situation where I worked effectively under pressure was at a previous opportunity, where I was in charge of the unloading of 30 containers in 2 weeks as opposed to 2 months. The most important thing for me when working under pressure is to have the ability to take a step back and evaluate how to get the job done in the most efficient way possible, so I did exactly that, and we were able to complete the task on time. Working under pressure isn't easy, but it's great to break up the monotony of the day to day.
-
-//tell me about when you had to deal with conflict within your team.
-//how was the conflict solved?
-//how did you handle that?
-//how would you deal with it now?
-
-//a time when i had to deal with a conflict within my team was when there was an order that needed to be assembled in-house
-//however, a particular team member was having trouble assembling the pieces in the correct way after some time, which was frustrating some of the other team members
-//i pulled the team member aside and asked what the issue was. The team member was having trouble placing a glue sheet in the exact spot of the favric peice. I suggestted that she switch with another team membner, to reduce the fatigue from the monotonous task. Now, I would try to get ahead of the problem when I see it and ask for feedback more frequently.
-
-//give me an example of the project or initiative that you started on your own. It can be a non-business one. What prompted you to get started?
-//at my previous opportunity, I noticed that we didn't have a good system for keeping track of container contents. The packing slip for a ocntainer would come in spreadsheets, and the previous method for taking ivnentory of the contents of a container was to manually count out the inventory in excel. It didn't take long to google how to convert cells ina spreadsheet into a tablle
-//once i implemented this system, my team members were thrilled that something that took an hour, now took about 10 seconds.
-
-//describe a situation in which you felt you had not commiunicated well enough
-//what did you do?
-//how did you handle it?
-
-//a time where i felt that i had not communicated well enough was at my previous opportunity, where i didn't write down the correct color code on a PO for a dye house. Thankfully, I caught the mistake and when I called the dye house to correct the order, a worker that I on't normally deal with picked up the phone. This person didn't speak any English so we did our best to get the order changed. I didn't feel right leaving it like that, so I emailed my regular contact to confirm that the order was corrected. It turned out that the color code was still incorrect and she was able to correct it.
-
-//do you have any questions?
-//what does the interview timeline look like?
-//how long is the interview process?
-//what is a typical day in this position?
-//what is the onboarding process after the offer?
-
-//tell me about a time you had to work on several projects at once. How did yhou handle this?
-
-//a situation where i had to work on several projects at once was part of my day to day life as a production manager in garment. I needed to handle orders and where they went. I was in charge of handling the samples, swatches, color books and ordering colors.
-
-//tell me about your experience at 100devs
-//100devs is an agency with a training program. I worked on several projects both alone and with colleagues to better flesh out my skills. The main tech stacks we used was with react, mongoDb, express, and node
-
-//core element styles, covering the general defaults
-//base
-//specific styles targeting individual parts of the page
-//module
-
-//---------------------------------------------------------------------------------------------------
-//CRUD APPS
-//---------------------------------------------------------------------------------------------------
-
-//a response object
-app.get('/', function(req, res){
-  res.send('Hello World')
-})
-
-
-//--save
-//how to save express as a dependency in package.json
-
-//how to require a file in server.js
-const express = require('express')
-const app = express()
-
-//__dirname
-//the directory name
-
-//ctrl+c
-//stops the current server
-
-//touch server.js
-//creates the file server.js
-
-//npm audit fix --force
-//forces an update to node
-
-//how to handle a GET request
-app.get('./endpoint', callbackFunction)
-
-//---------------------------------------------------------------------------------------------------
-//css
-//---------------------------------------------------------------------------------------------------
-
-//*{
-//selects all
-
-//*{
-  //box-sizing: border-box;
-//ignores borders when calculating width
-
-//list-style
-//dots and line styling
-
-//>
-//parent child relationship
-
-//e.g., bold;
-//value
-
-//+
-//sibling relationship
-
-//values
-//detemines the behaviour of that property
-
-//margin: 0 auto
-//how to center a box
-
-//properties
-//determines the styles that will be applied to that element.
-
-//ex., #intro
-//id intro
-
-//---------------------------------------------------------------------------------------------------
-//git
-//---------------------------------------------------------------------------------------------------
-// $ git add <file>
-//adds files to the index
-
-//git ignore
-//ignores certain files
-
-//---------------------------------------------------------------------------------------------------
-//html
-//---------------------------------------------------------------------------------------------------
-
-//<script>
-//contained javascript
-
-//<em>
-//emphasis
-
-//<th scope="col" colspan="2">Item</th>
-//the table header for the columns with a span of 2
-
-//<input type="hidden" name="tracking-code" value="#">
-//hidden input type with hte name of tracking-code and a truthy value
-
-//<div>
-//<section>
-//<article>
-//aside
-//header
-//footer
-//containing elements
-
-//<section>
-//section
-
-//<tr>
-//table row
-
-//<label>
-//Email Address
-//<input type="email" name="email-address" required>
-//</label>
-
-//required email input attribute
-
-//<select name="day" multiple>
-//multiple selection dropdown menu
-
-//<div>
-//division
-
-
-//<td>
-//table data
-
-//<b>
-//bold
-
-//---------------------------------------------------------------------------------------------------
-//interviewing
-//---------------------------------------------------------------------------------------------------
-
-//sort(func)
-//the sort method
-//sorts the array in-place, then returns it
-
-//reverse()
-//the reverse method
-//reverses the array in-place, then returns it
-
-//return a new array consisting of elements which are muiltiple of their own index in input array
-
-function multipleOfIndex(array){
-  return array.filter((a,b) => a % b == 0)
-}
-
-function multipleOfIndex(array){
-  let arr = []
-  for(let i = 0; i < array.length; i++){
-    if(array[i] % i === 0){
-      arr.push(array[i])
-    }
-  }
-  return arr
-}
-
-//in assignment, you are given a string of space separated numbers, and have to return the highest and lowest number
-
-function highAndLow(numbers){
-  let arr = numbers.split(' ')
-  return `${Math.max(...arr)} ${Math.min(...arr)}`
-}
-
-//you are to write a function that takes a string as its first parameter. This string with be a string of words
-//you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string. The first word would be represented by 0.
-//Once you have the located string you are finally going to multiply by it the third provided parameter, which will also be an integer. You are addittionally required to add a hyphen between each word.
-
-function strRepeater(str, loc, num){
-  let arr = []
-  let word = str.split(' ')
-  let get = word[loc]
-  let count = 0
-
-  for(let i = count; i < num; i++){
-    if(str[i] < num){
-      arr.push(word)
-      count++
-    }
-  }
-  return arr.join('-')
-}
-
-//move every letter in the provided string forward 10 letters through the alphabet. If it goes past 'z', start again at 'a'
-//input will bea  string with length > 0
-
-function moveTen(s){
-  const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
-  const arr = s.split('').map(x => x=str.indexOf(x) + 10)
-  return arr.map(x => x=str[x]).join('');
-}
-
-//push(...items)
-//adds items to the end
-
-//reduce/reduceRight(func, initial)
-
-//calculate a single value over the array by calling func for each element and passing an intermediate result between the calls
-
-//concat(...items)
-//returns a new array: copies all memebers of the current one and adds items to it
-
-
-//includes(val)
-//return true if the array has value, otherwise false
-
-//create a function that accpets a list/array and a number n
-//return a list/array of the first n elements from the list/array
-
-function take(arr, n){
-  return arr.slice(0, n)
-}
-
-//in the .sort() method, what are items sorted as>?
-//strings
-
-//map(func)
-//maps the function
-
-//creates a new array from results of calling func for every element
-
-//your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
-//write a function which takes a list of strings and returns each line prepended by the correct number
-// the numbering starts at 1.
-
-const number = function(array) {
-  let arr = []
-  if(array.length == 0){
-    return []
-  }else{
-    for(let i = 0; i < array.length; i++){
-      arr.push((i+1) + ';' + array[i])
-    }
-  }
-  return arr;
-}
-
-//create a method all which takes two params
-//a sequence
-//a function 
-//the function should return true if the function in the params returns true for every element in the sequence.
-//otherwise, it should return false. 
-//if the sequence is empty, it should return true. since technically nothing failed the test
-
-function all(arr, fun){
-  return arr.every(fun)
-}
-
-//find/filter(func)
-//filter elements through the function, return first/all values that make it return true
-
-//given a string of random letters, you need to examine each. Some letters naturally have 'rings' in them. "O" is an obvious exam,ple
-//your job is to count the rings in each letter and divide the total number by 2
-//round the answer down
-
-function olympicRing(a){
-  let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
-  let twoRings = ['B'];
-  let score = 0;
-
-  a.split('').map(x => {
-    if(rings.includes(x)){
-    score++
-  }else if(twoRings.includes(x)){
-    score+=2
-  }
-})
-
-score = Math.floor(score / 2)
-
-if(score > 3){
-  return "Gold!"
-}else if(score > 2){
-  return "Silver!"
-}else if(score > 1){
-  return "Bronze!"
-}else{
-  return "LMAO"
-}
-
-}
-
-
-//write a fucntion to get the first elements of a sequence. Passing a parameter n wioll return the first n elements of the sdequence
-
-function first(arr, n=1) {
-  return arr.slice(0, n)
-}
-
-//your function should return the 20 year estimate of the stairs climbed using the formula above
-
-function stairsIn20(s){
-  return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
-}
-
-
-//Array.isArray(value)
-//is array method
-//returns true if the value is an array
-
-//slice(start, end)
-//slice method
-//creates a new array, copies elements from index start til end into it
-
-//create a function that takes in a list of cutton inputs and returns the final state
-
-function likeOrDislike(buttons){
-  let state = 'Nothing'
-  for(let i = 0; i < buttons.length; i++){
-    if(buttons[i] === state){
-      state = 'Nothing'
-    }else{
-      state = buttons[i]
-    }
-  }
-  return state;
-}
-
-
-//findIndex
-//returns the index instead of value
-
-//get the sum of two arrays and all their elements
-
-function arrayPlusArray(arr1, arr2){
-  return arr1.concat(arr2).reduce((a, b) => a + b, 0)
-}
-
-//destructuring in javascript
-
-let thing = ["table", "chair", "fan"]
-let [a, b, c] = thing
-
-function howMuchWater(water, load, clothes){
-  return clothes > 2*load? "Too Much clothes":
-  clothes < load ? "Not enough clothes":
-  +(water * 1.1 ** (clothes - load)).toFixed(2)
-}
-//pop()
-//removes elements from the end of an array
-
-function formatMoney(amount){
-  return `$${amount.toFixed(2)}`
-}
-
-
-//---------------------------------------------------------------------------------------------------
-//javascript
-//---------------------------------------------------------------------------------------------------
-//what do we do to loop through each element in an array?
-
-//we use the .forEach object or a for loop
-//we use the .length property in its condition
-
-let numberOfApples = 9
-//what are the first two words for?
-//declaration
-
-//what are the data types that have properties with stored information?
-//objects
-
-//create a variable and assign it a number
-let stuff = 10
-//minus 10 from that number
-stuff = stuff - 10
-//print that number to the console
-console.log(stuff)
-
-//create a variable that holds a value from the input
-let num = Number(document.querySelector('#danceDanceRevolution').value)
-//add 25 to that number
-num = num + 25
-//alert that number
-alert(num)
-
-//create a variable that holds the h1
-let h1 = document.querySelector("h1")
-
-//add an event listener to that element that console logs the sum of the two previous variables
-
-h1.addEventListener('click', 'addTwo')
-function addtwo(){
-  console.log(num +  stuff)
-}
-
-//write a script that will check to see if the player has achieved at least 100 points in his class
-//if so, he enters the qualifying stage.
-//return "well done"
-//otherwide return false
-
-function playerRankUp(points){
-  if(points >= 100){
-    return "Well done"
-  }else{
-    return "false"
-  }
-}
-
-//write a function that reverses the words in a given string
-
-function wordReverse(word){
-  return word.split('').reverse().join('')
-}
-
-//given an araray of integers your solution must find the smallest integer
-function findSmallest (int){
-  return Math.min(...int)
-}
-
-
-//how many times does forEach run?
-//once for each element
-
-//`I own a pet ${myPet}`
-//the template literal
-
-//what is a code block associated with a loop?
-//its body
-
-//arr.splice(start[deleteCount, elem1, ..., elemN])
-//splice syntax
-
-
-//complete the function which converts a binary number(given as a string) to a decimal number
-function binToDec(bin){
-  return parseInt(bin, 2)
-}
-
-function squareSum(numbers){
-  return numbers.reduce(function(sum, n){
-    return (n*n) + sum
-  })
-}
-//how to complete the square sum function so that it squares each number passed into it and then sums the results together
-
-//given an array of integers as strings and numbers, return the sum of the arraay values as if all were numbers
-//return your answer as a number
-
-function sumMix(x){
-  return x.reduce((a,b) => +a + +b, 0)
-}
-
-//substring()
-//returns a new array from start to end but as a string
-//substring works a lot like slices
-
-//create these variables and store the appropriate values using the table above
-
-//laLigaGoals - 43
-//championsLeagueGoals - 10
-//copaDelReyGoals - 5
-
-//create a fourth variable named totalGoals that stores the sum of all of Messi's goals for this year
-
-function messiGoals(laLigaGoals, championsLeagueGoals, copaDelReyGoals){
-  let totalsGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
-}
-
-//synchronous
-//to happen at the same time
-//#
-//octothorpe
-
-//find the sum of all multiples of n below m
-
-function sumMul(n,m){
-  if(n >= m){
-    return "INVALID!"
-  }else{
-    let sum = 0
-    for(let i = n; i < m; i+=n){
-      sum+= i
-    }
-  }
-  return sum
-}
-
-//create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
-//if no occurrences can be found, a count of 0 should be returned
-
-function twoStrArgs(x, y){
-  let count = 0
-  for (let i = 0; i < x.length; i++){
-    if(x[i] === y)
-    count++
-  }
-  return count
-}
-
-//when provided a letter, return its position in the alphabet
-
-function position(letter){
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`
-}
-
-//calculateArea(10, 6)
-//what is between the parantheses?
-//arguments as values
-
-//completet he solution so that it returns true if the first argument(string) passed in ends the 2nd argument(also a string)
-
-function solution(str, ending){
-  return str.endsWith(ending)
-}
-
-//define the method hello that returns "Hello, Name!" to a given name, or says Hello, World!
-//if name is not given(or passed as an empty String)
-
-function giveAName(name){
-  if(name){
-    return `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`
-  }else{
-    return "Hello, World!"
-  }
-}
-
-//builda f ucntion that returns an array of integers from n ot 1 where n > 0 
-
-const reverseSeq = n => {
-  let arr = []
-  for(let i = n; i > 0; i-=1){
-    arr.push(i)
-  }
-  return arr
-}
-
-//create a function that removes the first and last characters in a string
-
-function firstLast(str){
-  return str.slice(1, -1)
-}
-
-//write a function that always returns 5
-
-function returnFive(str){
-  return 'hello'.length
-}
-
-//can you change the contents of a const array
-//yes, but you can't reassign a new array or different value
-
-//e.g., :focus
-//pseudo class focus
-
-//e.g., [rel~="tag"]
-//attribute spaced selector
-
-//e.g., console.log(data.drinks[0])
-//index 0
-
-//tell me about a situation when you were responsible for project planning.
-//did everything go according to your plan
-//if not, then why and what kind of counter-actions did you have to take
-
-//a situation where i was responsible for project planning was at my previous opportunity; where i was responsible for the planning of receiving 30 containers in a 2 month window; however, due to a problem at the port, wher container ships were backlogged and stranded unable to unload. We received those containers 3 monthsa late and in a 2 week window. The shipping companies were unable accomodate us and so we had to get to work and unload 30 containers in 2 weeks instead of 2 months. Throughout the ordeal at the port, I had pre-planned how to receive all the rolls in our inventory, and vacated large empty spaces in our warehouse to take on the rolls. At the end of it all we were able to receive all the containers and get them empty before we incurred any late fees and our orders went out as fast as possible.
-
-//the listen method in Express
-// app.listen(3000, funciton(){
+// function twoSum(nums, target){
+//   for(let i = 0; i < nums.length; i++){
+//     for(let j = 0; j < nums.length; j++){
+//       if(i !== j){
+//         if(nums[i] + nums[j] === target){
+//           return [i, j]
+//         }
+//       }
+//     }
+//   }
+// }
+
+// function twoSum(nums, target){
+//   const numMap = new Map();
+//   for(let i = 0; i < nums.length; i++){
+//     const complement = target - nums[i]
+//     if(numMap.has(complement)){
+//       return [numMap.get(complement), i]
+//     }
+//   numMap.set(nums[i], i)
+//   }
+// return null
+// }
+
+// function twoSum(nums, target){
+//   let obj = {}
+
+//   for(let i = 0; i < nums.length; i++){
+//   if(target - nums[i] in obj){
+//       return [obj[target - nums[i]], i]
+//     }else{
+//       obj[nums[i]] = i
+//     }
+//   }
+// }
+
+// function findVowel(str){
+//   let vowels = 'aeiou'
+//   for(let i = 0; i < vowels.length; i++){
+//     if(str.indexOf(vowels[i] === - 1)){
+//       return i;
+//     }
+//   }
+// }
+
+
+// //what is a study strategy where you read something once, and then try to recall as much of it as you can?
+// //a study strategy where you can read something once, and tehn try to recall as much of it as you can is referred to as active recall
+
+// //network of neurons used to fire together
+// //chunk
+
+// //:link
+// //pseudo clas link
+// //used for links
+
+// //[href^="brackets"]
+// //attribute begins with selector
+
+// //how to require a file in server.js
+// // const express = require('express')
+// // const app = express()
+
+// //how to handle a get request
+
+// app.get('/endpoint', callBackFunction)
+// //the listen method in Express
+// app.listen('3000', function(){
 //   console.log('listening on 3000')
 // })
 
-//endpoint
-//the last part of the URL
+// //endpoint
+// //is the end of a URL
 
-//e.g., p{
-  //color: blue
-//}
-//rule
-//<i>
-//italics
+// //node server.js
+// //initializes server.js
 
-//tbody
-//is table body
+// //req is a request
+// //res is a response
+// //used in response objects
 
-//given a sdtring showing either flat road or bumps
-//if you are able to reach home safely by encountering 15 bumps or less
-//return Woohoo!
-//otherwise, return Car Dead
+// //flex-direction-column
+// //flex direction the columns
 
-function bump(x){
-  if (x.split('n') > 15){
-    return "Car Dead"
-  }else{
-    return "Woohoo!"
-  }
-}
+// //<section
+// //<article
+// //<p
+// //selectors
 
-//arr.forEach
-//will run a function for every element of an array
+// //font-weight
+// //the font's weight
 
-//return a new array consisting of elements which are multiple of their own index in input array
+// //property
 
-function multipleOfIndex(array){
-  let arr = []
-  for(let i = 0; i < array.length; i++){
-    if(array[i] % i === 0){
-      arr.push(array[i])
-    }
-  }
-  return arr
-}
+// //list-style
+// //the list style
 
-function multipleOfIndex(array){
-  return array.filter((a, b) => a % b == 0)  
-}
+// //dots and line spacing
 
-//splice(pos,deleteCount, ...items)
+// //$git pull
+// //pulls any changes in git
 
-//your goal is to return multiplication table for number that is always an integer from 1 to 10
-const multiTable = (number) => {
-  let table = ''
-  for(let i = 1; i <= 10; i++){
-    table += `${i} * ${i * number}${i < 10 ? '\n' : ''}`
-  }
-  return table
+// //$ git commit
+// //commits something in git
+// //commits a message
+// //commits amend
 
-}
+// //<input type="radio" name="#" value="#">
+// //radio input types(the ones with th esmall circles)
 
-//write a function that takes a single string as argument
-//the function must return an ordered list containing the indxes of all capital letters in the string
+// //properties used to provide additional information about an element
 
-const capitals = function(word){
-  let arr = []
-  for(let i = 0; i < word.length; i++){
-    if(word[i].toUpperCase() === word[i]){
-      arr.push(i)
-    }
-  }
-  return arr
-}
+// //attributes
 
-//complete the function that receives as input a string and produces outputs according to the following table
+// //return an array consisting of elements which are multiple of their own index in input array (length  > 1)
 
-function getDrinkByProf(param){
-  if(param === 'Jabroni'){
-    return 'Patron'
-  }else if(param === 'School counselor'){
-    return 'Anything'
-  }else{
-    return 'Beer'
-  }
-}
+// function multipleOfIndex(array){
+//   let arr = []
 
-//indexOf/lastIndexOf(item, pos)
+//   for(let i = 0; i < array.length; i++){
+//     //add the elements which are a multiple of their own index
+//     if(array[i] % i === 0){
+//       arr.push(array[i])
+//     }
+//   }
+//   return arr
+// }
 
-//step 1: declaration
-//step 2: call
-//function
+// //findIndex
+// //finds the index
 
-//create a function for the terminal game that takes the current position of the hero and the roll(1-6) and return the new position
+// //given a string of random letters
+// //count the rings in each letter and divide the total number by 2
+// //round the answer down
 
-function move(position, roll){
-  return position + roll * 2
-}
+// function olympicRing(a) {
+//   let rings = ['A', 'a', 'b', 'D', 'd', 'e', 'g', 'O', 'o', 'P', 'p', 'Q', 'q'];
+//   let twoRings = ['B'];
+//   let score = 0;
 
-//what is the only logical operator in CSS?
-//the only operator in CSS only selects things
+//   // Loop through each character in the input string and count the number of rings
+//   a.split('').map(x => {
+//     if (rings.includes(x)) { // If the character is a single-ring letter
+//       score++;
+//     } else if (twoRings.includes(x)) { // If the character is a double-ring letter
+//       score += 2;
+//     }
+//   });
 
-//e.g., [href$="Brackets"]
-//attribute ends with selector
+//   // Calculate the final score as the total number of rings divided by 2 (since each ring is counted twice)
+//   score = Math.floor(score / 2);
+
+//   // Return a message based on the score
+//   if (score > 3) {
+//     return "Gold!";
+//   } else if (score > 2) {
+//     return "Silver!";
+//   } else if (score > 1) {
+//     return "Bronze!";
+//   } else {
+//     return "You stink";
+//   }
+// }
 
 
-//what is $ npm init
-//initializes node package manager
-//by creating a package.json
+// //in this kata
+// //you are asked to square every digit of a number and concatenate them
+// function concatMe(n){
+//   return n.toString.split('').map(x = x => {
+//     x**2
+//   }).join('')*1
+// }
 
-//how to serve up a file in server.js
-app.get('/', (req, res)=>{
-  res.sendFile(__dirname + '/index.html')
-})
+// //not logical operator
+// //the not logical operator means no
+// //negates the query
 
-//node server.js
-//runs a server.js file in node
+// //complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameteres, including them.
 
-//how to require a file in server.js
-//const express = require('express)
-//const app = express()
+// function takeTwo(a,b){
+// let arr = []
+// for(let i = a; i <= b;i++){
+//   arr.push(i)
+// }
+// return arr
+// }
 
-//list-style
-//line and dot styling in css
+// //how do you serve up a file in server.js
+// app.get('/', (req, res) => {
+//   res.sendFile(__dirname + '/index.html')
+// })
 
-//touch
-//creates a new file
+// //e.g., red
+// //the value 
+
+// //<caption>
+// //captions
+// //captions selector
+
+// //elements in html
+// //elements in html are designators that define the structure and content of objects within a page
+
+// //given a string made up of letters a, b, and/or c, switch the posiiont of leters a and n(change a to b and vice versa)
+// //leave any incidence of c untouched
+
+// function switcheroo(x){
+// x = s.split('')
+// x.map(n = n =>{
+//   if(n === 'a'){
+//     return 'b'
+//   }else if(n === 'b'){
+//     return 'a'
+//   }else{
+//     return 'c'
+//   }
+// }).join('')
+// }
+
+// //finish the uefaEuro2016 function so it returns strings just liek in the example below
+
+// function uefaEuro2016(teams, scores){
+//   if(scores[0] > scores[1]){
+//     return  `At match${teams[0]} - ${teams[1]}, ${teams[0]} won!`
+//   }else if(scores[1] > scores[0]){
+//     return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+//   }else{
+//     return `teams drew`
+//   }
+// }
+
+// //return a new array consisting of elements which are multiple of their own index in put array 
+
+// function multipleOfIndex(array){
+//   let arr = []
+
+//   for(let i = 0; i < array.length;i++){
+//     if (array[i] % i === 0){
+//       arr.push(array[i])
+//     }
+//   }
+//   return arr
+// }
+
+// function multipleOfIndex(array){
+//   return array.filter((a,b) => a % b == 0)
+// }
 
 
-//given a string made up of letters a, b, and c, switch the position of letters a and b.
-//leave any incidence of c untouched
+// //shift
+// //removes from the beginning of the array
 
-function switcheroo(x){
-  return x.split('').map(function (s){
-    return s === 'a'
-    ? 'b'
-    : s === 'b'
-    ? 'a'
-    : 'c'
-  }).join('')
-}
+// //write a function to ghet the first elements of a sequence passing a paramter n will return the first n elements of the sequence
+// //if n == 0 return an empty sequence
 
-//you are to write a function that takes a string as its first parameter. this string will be a string of words
-//you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the fiven string. The first word would be represented by 0
-//Once you ahve the located string you are finally going to multiple by it the third provided parameter, which will also be an integer. You are additionally required to add a hyphen in between each word.
+// function first(arr,n=1){
+//   return arr.slice(0, n)
+// }
 
-function returnIndexString(str, loc, num){
-  //in order to return string-string-string-string-string with an input of "This is a string", 3, 5
-  let arr = []
-  //split the sentence into its words
-  let word = str.split(' ')
-  //find the index of the word that you want
-  let get = word[loc]
-  //start a counter
-  let count = 0
 
-  //loop through the words starting the first index, which is 0, until the last number
-  //this will the the total amount of time the string is repeated
-    for(let i = 0; i < num; i++){
-      //if the index of str is less than the num
-    if(str[i] < num){
-      //push the word into the array
-      arr.push(word)
-      //add a number to the counter
-      count++
-    }
-  }
-  //join it all with a hyphen
-  return arr.join('-')
-}
+// //correc tthe errors in the digitized text
+// //S === 5
+// //O === 0
+// //I === 1
 
-//shift()
-//remove items from the beginning of an array
 
-//create a funciton that accepts a list/array and a number n
-//return a list/array fo the first n elements from the list/array
+// function correctedText(text){
+//   let corectedText = ""
+//   for(let i = 0; i < text.length; i++){
+//     switch(text[i]){
+//       case "5":
+//         correctedText += "S"
+//         break;
+//       case "0":
+//         correctedText += "O"
+//         break;
+//       case "1":
+//         correctedText += "I"
+//         break;
+//     }
+//   }
+//   return correctedText;
+// }
 
-function take(arr, n){
-  return arr.slice(0, n)
-}
+// //acc
+// //accumulator
 
-//return a new array consisting of elements which are multiple of their own index in input array
+// //what is a repetition in a loop
+// //a repetition
+// //an iteration
 
-function multipleOfIndex(array){
-  //create an array
-  let arr = []
+// //\n
+// //new line
 
-  //loop through the array's entirety
-  for(let i = 0; i < array.length; i++){
-    //if the index of the array mod the index of the counter is zero
-    if(array[i] % i === 0){
-      //push the index of the array
-      arr.push(array[i])
-    }
-  }
-  return arr
-}
+// //the model
+// //mvp
+// //minimum viable product
+// //the model
+// //adds and retrieves items from the database
+// //only talks to the controller
 
-//unshift(...items)
-//adds items from the beginning of an element
+// //What kind of things must you be wary of when designing or developing for multilingual sites?
 
- //.addEventListener
- //adds an event listener, e.g., h1.addEventListener('click', addTwo)
- //this event listener will run the function addTwo on a click of a button
 
- //what is the variable associated with the loop condition?
- //i
+// //constructor
+// //the function that was used to create or construct the object
 
- //in this kata, you are asked to square every digit of a number and concatenate them
+// //what creates an empty object
+// //the new operation
+
+// //to eliminate redundant code is
+// //inheritance
+
+// //yopu are given strings jewels representing the types of stones that are jewels
+// //and stones representing the stones you have
+// //each character in stones is a type of stone you ahve
+// //you want to know how many of the stones you have are also jewels
+
+// function jewelsInStones(jewels, stones){
+//   let map = {},
+//   count = 0
+
+//   for(const jewel in jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// //write a function to split a string and convert it into an array of words
+
+// function splitStr(str){
+//   return str.split(' ')
+// }
+
+// //things inside a set of curly braces {}
+// //a code block
+
+// //you are going to be given a word
+// //your job is to return the middle characters of the word
+// //if the word's length is off, return the middle character
+// //if the word's length is even, return the middle 2 characters
+
+// function returnMid(str){
+//   if (str.length % 2 === 0){
+//     return str.substring((s.length/2) - 1, (s.length/2) + 1)
+//   }else{
+//     return str.substring((s.length/2) + 1, (s.length)/2)
+//   }
+// }
+
+// //filter method syntax
+// //return str.filter(word => words.length > 6)
+// //will return all values that make it return true
+
+// //substring()
+// //substring returns the part of the string between the start and end
+
+// //create a method sayHello that takes as input a name, city, and state to welcome a person.
+// //Note that name will be an array consisting of one or more values that should be joined tohether with one space between each, and the length of the name array in test cases will vary.
+
+// function sayHello(name, city, state){
+//   return `Hello, ${name[0].toUppercase()}${name.slice(1).toLowercase()}, welcome to ${city} in the state of ${state}`
+// }
+
+// //---------------------------------------------------------------------------------------------
+
+// //providing intelligent variety in your studies
+// //providing intelligent variety in your studies is interleaving
+
+// //thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking
+// //diffuse thinking
+
+// //what identifies the sizing and grid styles of different elements?
+// //the layout identifies the sizing and grid styles of different elements'
+
+// //e.g., :disabled
+// //pseudoclass disabled
+
+// //what is used to augment or overrise ohter styles in the event that a module includes an alternate state
+// //state
+// //e.g., indeterminate
+// //indeterminate
+
+// //e.g., a[lang|="en"]
+// //attribute hyphenated selector
+// //select something when it is hyphen separated
+
+// //e.g., :active
+// //pseudoclass active
+// //selects for things that are activated
+
+
+// //what includes styles based around the skin, or look and feel, of different modules?
+// //the theme includes styles based around the skin, or look and feel, of different modules
+
+
+// //--------------------------------------------------------------------------------------------------
+
+// //write a method, that will get an integer array as parameter and will procedss every number from this array
+// //return a new array with processing every number of the input-array like this:
+
+// //if the number has an integer square root, take this, otherwise square the number.
+
+// function squaredOrSquareRoot(array){
+//   let arr = []
+//   for(let i = 0; i < array.length; i++){
+//     if(Math.sqrt(array[i]) === Math.sqrt(array[i].toFixed(0))){
+//       arr.push(array[i]**2)
+//     }
+//   }
+//   return arr
+// }
+
+// //given 2 strings, a and b, return a string of the form short+long+short with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty
+
+// function solution(a,b){
+//   if(a.length > b.length){
+//     return b+a+b
+//   }else if(a.length < b.length){
+//     return a+b+a
+//   }
+// }
+
+// //-------------------------------------------------------------------------------
+
+// //what is the promise syntax?
+// fetch('#')
+// .then(res => res.json())
+// .then(data => {
+//   console.log(data)
+// })
+// .catch(error => {
+//   console.log(`error ${error}`)
+// })
+
+// //a simple interface for some complex action
+// //a simple interface for some complex action is an API
+
+// //------------------------------------------------------------------------------------------------
+
+// app.get('/', function(req, res){
+//   res.send('Hello World')
+// })
+
+// //this is a response object
+
+// //--------------------------------------------------------------------------------------------------
+
+// //what is the mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated
+
+// //the mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated is focused thinking
+
+// //tell me about a situation when you were responsible for project planning. Did everything go according to your plan?
+// //if not, then why and what kind of counter-actions did you have to take?
+
+// //projects never go exactly as they're planned. A time when a project didn't go as planned was when we were expecting about 30 containers over the course of 2 months; however, due to a strike at the port of Long Beach, we received those 30 container sin a 2 weeks window instead of 2 months. The tolls of fabric that were already portioned off for orders were immediately pulled from the containers and put in trucks to be delivered. I had to get really creative iwith where we stored rolls, so I bought tarps, stretch wrap, bungee cord, and ordered 40 extra pallets. We sectioned off the parking lotto store the rolls we didn't have space for  and it still wwasn't enough so we stored some rols in the offices, and I retuned u hauls to store the rest because that was significantly cheaper than incuring late fees.
+
+// //--------------------------------------------------------------------------------------------------
+
+// //What do you read on a regular basis?
+// //I like to read hackernews to keep up to date on tech news. I read the learnprogramming, learnjavascript subreddits to see how others would tackle problems people may have. I just read a book called Pachinko, and I highly recommend it. It's a family epic about a woman from occupied Korea and her family's story.
+
+// //Tell me about a situation when you made a mistake at work. What happened exactly and how did you deal with it? What steps did you take to improve the situation?
+
+// //a situation when I made a mistake at work was when I was ordering some buckles, but I had ordered the wrong quantities. As it was around the Lunar New Year, and my regular contact was on break for 3 weeks. I had to escalted the issue to our director, and we were able to correct the order from our supplier overseas. going forward, we implemented a system with our overseas supplioer so that we had to get confirmation emails and check that to the PO.
+
+// //Tell me about yourself
+// //I'm a software engineer at 100devs; where I've been building full stack web applications using the MERN stack alone and with colleagues. In the past, I've been involed in the fashion industry working jobs from fit modeling as a kid, to the warehouse, and then warehouse management, and finally production management. Most of my life, I've been told that as I have an eye for design and am good with computers, software development would be a good fit for me. So, I learned how to code, which is something I now enjoy doing, and with my background in design, i can help a development team with new and creative ideas.
+
+// //Describe a situation when you worked effectively under pressure. How did you feel when working under pressure? What was going on, and how did you get through it?
+// //a situation where I worked effectively under pressure was at a previous opportunity, where I was in charge of the unloading of 30 containers in 2 weeks as opposed to 2 months. The most important thing for me when working under pressure is to have the ability to take a step back and evaluate how to get the job done in the most efficient way possible, so I did exactly that, and we were able to complete the task on time. Working under pressure isn't easy, but it's great to break up the monotony of the day to day.
+
+// //tell me about when you had to deal with conflict within your team.
+// //how was the conflict solved?
+// //how did you handle that?
+// //how would you deal with it now?
+
+// //a time when i had to deal with a conflict within my team was when there was an order that needed to be assembled in-house
+// //however, a particular team member was having trouble assembling the pieces in the correct way after some time, which was frustrating some of the other team members
+// //i pulled the team member aside and asked what the issue was. The team member was having trouble placing a glue sheet in the exact spot of the favric peice. I suggestted that she switch with another team membner, to reduce the fatigue from the monotonous task. Now, I would try to get ahead of the problem when I see it and ask for feedback more frequently.
+
+// //give me an example of the project or initiative that you started on your own. It can be a non-business one. What prompted you to get started?
+// //at my previous opportunity, I noticed that we didn't have a good system for keeping track of container contents. The packing slip for a ocntainer would come in spreadsheets, and the previous method for taking ivnentory of the contents of a container was to manually count out the inventory in excel. It didn't take long to google how to convert cells ina spreadsheet into a tablle
+// //once i implemented this system, my team members were thrilled that something that took an hour, now took about 10 seconds.
+
+// //describe a situation in which you felt you had not commiunicated well enough
+// //what did you do?
+// //how did you handle it?
+
+// //a time where i felt that i had not communicated well enough was at my previous opportunity, where i didn't write down the correct color code on a PO for a dye house. Thankfully, I caught the mistake and when I called the dye house to correct the order, a worker that I on't normally deal with picked up the phone. This person didn't speak any English so we did our best to get the order changed. I didn't feel right leaving it like that, so I emailed my regular contact to confirm that the order was corrected. It turned out that the color code was still incorrect and she was able to correct it.
+
+// //do you have any questions?
+// //what does the interview timeline look like?
+// //how long is the interview process?
+// //what is a typical day in this position?
+// //what is the onboarding process after the offer?
+
+// //tell me about a time you had to work on several projects at once. How did yhou handle this?
+
+// //a situation where i had to work on several projects at once was part of my day to day life as a production manager in garment. I needed to handle orders and where they went. I was in charge of handling the samples, swatches, color books and ordering colors.
+
+// //tell me about your experience at 100devs
+// //100devs is an agency with a training program. I worked on several projects both alone and with colleagues to better flesh out my skills. The main tech stacks we used was with react, mongoDb, express, and node
+
+// //core element styles, covering the general defaults
+// //base
+// //specific styles targeting individual parts of the page
+// //module
+
+// //---------------------------------------------------------------------------------------------------
+// //CRUD APPS
+// //---------------------------------------------------------------------------------------------------
+
+// //a response object
+// app.get('/', function(req, res){
+//   res.send('Hello World')
+// })
+
+
+// //--save
+// //how to save express as a dependency in package.json
+
+// //how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+// //__dirname
+// //the directory name
+
+// //ctrl+c
+// //stops the current server
+
+// //touch server.js
+// //creates the file server.js
+
+// //npm audit fix --force
+// //forces an update to node
+
+// //how to handle a GET request
+// app.get('./endpoint', callbackFunction)
+
+// //---------------------------------------------------------------------------------------------------
+// //css
+// //---------------------------------------------------------------------------------------------------
+
+// //*{
+// //selects all
+
+// //*{
+//   //box-sizing: border-box;
+// //ignores borders when calculating width
+
+// //list-style
+// //dots and line styling
+
+// //>
+// //parent child relationship
+
+// //e.g., bold;
+// //value
+
+// //+
+// //sibling relationship
+
+// //values
+// //detemines the behaviour of that property
+
+// //margin: 0 auto
+// //how to center a box
+
+// //properties
+// //determines the styles that will be applied to that element.
+
+// //ex., #intro
+// //id intro
+
+// //---------------------------------------------------------------------------------------------------
+// //git
+// //---------------------------------------------------------------------------------------------------
+// // $ git add <file>
+// //adds files to the index
+
+// //git ignore
+// //ignores certain files
+
+// //---------------------------------------------------------------------------------------------------
+// //html
+// //---------------------------------------------------------------------------------------------------
+
+// //<script>
+// //contained javascript
+
+// //<em>
+// //emphasis
+
+// //<th scope="col" colspan="2">Item</th>
+// //the table header for the columns with a span of 2
+
+// //<input type="hidden" name="tracking-code" value="#">
+// //hidden input type with hte name of tracking-code and a truthy value
+
+// //<div>
+// //<section>
+// //<article>
+// //aside
+// //header
+// //footer
+// //containing elements
+
+// //<section>
+// //section
+
+// //<tr>
+// //table row
+
+// //<label>
+// //Email Address
+// //<input type="email" name="email-address" required>
+// //</label>
+
+// //required email input attribute
+
+// //<select name="day" multiple>
+// //multiple selection dropdown menu
+
+// //<div>
+// //division
+
+
+// //<td>
+// //table data
+
+// //<b>
+// //bold
+
+// //---------------------------------------------------------------------------------------------------
+// //interviewing
+// //---------------------------------------------------------------------------------------------------
+
+// //sort(func)
+// //the sort method
+// //sorts the array in-place, then returns it
+
+// //reverse()
+// //the reverse method
+// //reverses the array in-place, then returns it
+
+// //return a new array consisting of elements which are muiltiple of their own index in input array
+
+// function multipleOfIndex(array){
+//   return array.filter((a,b) => a % b == 0)
+// }
+
+// function multipleOfIndex(array){
+//   let arr = []
+//   for(let i = 0; i < array.length; i++){
+//     if(array[i] % i === 0){
+//       arr.push(array[i])
+//     }
+//   }
+//   return arr
+// }
+
+// //in assignment, you are given a string of space separated numbers, and have to return the highest and lowest number
+
+// function highAndLow(numbers){
+//   let arr = numbers.split(' ')
+//   return `${Math.max(...arr)} ${Math.min(...arr)}`
+// }
+
+// //you are to write a function that takes a string as its first parameter. This string with be a string of words
+// //you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string. The first word would be represented by 0.
+// //Once you have the located string you are finally going to multiply by it the third provided parameter, which will also be an integer. You are addittionally required to add a hyphen between each word.
+
+// function strRepeater(str, loc, num){
+//   let arr = []
+//   let word = str.split(' ')
+//   let get = word[loc]
+//   let count = 0
+
+//   for(let i = count; i < num; i++){
+//     if(str[i] < num){
+//       arr.push(word)
+//       count++
+//     }
+//   }
+//   return arr.join('-')
+// }
+
+// //move every letter in the provided string forward 10 letters through the alphabet. If it goes past 'z', start again at 'a'
+// //input will bea  string with length > 0
+
+// function moveTen(s){
+//   const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+//   const arr = s.split('').map(x => x=str.indexOf(x) + 10)
+//   return arr.map(x => x=str[x]).join('');
+// }
+
+// //push(...items)
+// //adds items to the end
+
+// //reduce/reduceRight(func, initial)
+
+// //calculate a single value over the array by calling func for each element and passing an intermediate result between the calls
+
+// //concat(...items)
+// //returns a new array: copies all memebers of the current one and adds items to it
+
+
+// //includes(val)
+// //return true if the array has value, otherwise false
+
+// //create a function that accpets a list/array and a number n
+// //return a list/array of the first n elements from the list/array
+
+// function take(arr, n){
+//   return arr.slice(0, n)
+// }
+
+// //in the .sort() method, what are items sorted as>?
+// //strings
+
+// //map(func)
+// //maps the function
+
+// //creates a new array from results of calling func for every element
+
+// //your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+// //write a function which takes a list of strings and returns each line prepended by the correct number
+// // the numbering starts at 1.
+
+// const number = function(array) {
+//   let arr = []
+//   if(array.length == 0){
+//     return []
+//   }else{
+//     for(let i = 0; i < array.length; i++){
+//       arr.push((i+1) + ';' + array[i])
+//     }
+//   }
+//   return arr;
+// }
+
+// //create a method all which takes two params
+// //a sequence
+// //a function 
+// //the function should return true if the function in the params returns true for every element in the sequence.
+// //otherwise, it should return false. 
+// //if the sequence is empty, it should return true. since technically nothing failed the test
+
+// function all(arr, fun){
+//   return arr.every(fun)
+// }
+
+// //find/filter(func)
+// //filter elements through the function, return first/all values that make it return true
+
+// //given a string of random letters, you need to examine each. Some letters naturally have 'rings' in them. "O" is an obvious exam,ple
+// //your job is to count the rings in each letter and divide the total number by 2
+// //round the answer down
+
+// function olympicRing(a){
+//   let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+//   let twoRings = ['B'];
+//   let score = 0;
+
+//   a.split('').map(x => {
+//     if(rings.includes(x)){
+//     score++
+//   }else if(twoRings.includes(x)){
+//     score+=2
+//   }
+// })
+
+// score = Math.floor(score / 2)
+
+// if(score > 3){
+//   return "Gold!"
+// }else if(score > 2){
+//   return "Silver!"
+// }else if(score > 1){
+//   return "Bronze!"
+// }else{
+//   return "LMAO"
+// }
+
+// }
+
+
+// //write a fucntion to get the first elements of a sequence. Passing a parameter n wioll return the first n elements of the sdequence
+
+// function first(arr, n=1) {
+//   return arr.slice(0, n)
+// }
+
+// //your function should return the 20 year estimate of the stairs climbed using the formula above
+
+// function stairsIn20(s){
+//   return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
+// }
+
+
+// //Array.isArray(value)
+// //is array method
+// //returns true if the value is an array
+
+// //slice(start, end)
+// //slice method
+// //creates a new array, copies elements from index start til end into it
+
+// //create a function that takes in a list of cutton inputs and returns the final state
+
+// function likeOrDislike(buttons){
+//   let state = 'Nothing'
+//   for(let i = 0; i < buttons.length; i++){
+//     if(buttons[i] === state){
+//       state = 'Nothing'
+//     }else{
+//       state = buttons[i]
+//     }
+//   }
+//   return state;
+// }
+
+
+// //findIndex
+// //returns the index instead of value
+
+// //get the sum of two arrays and all their elements
+
+// function arrayPlusArray(arr1, arr2){
+//   return arr1.concat(arr2).reduce((a, b) => a + b, 0)
+// }
+
+// //destructuring in javascript
+
+// let thing = ["table", "chair", "fan"]
+// let [a, b, c] = thing
+
+// function howMuchWater(water, load, clothes){
+//   return clothes > 2*load? "Too Much clothes":
+//   clothes < load ? "Not enough clothes":
+//   +(water * 1.1 ** (clothes - load)).toFixed(2)
+// }
+// //pop()
+// //removes elements from the end of an array
+
+// function formatMoney(amount){
+//   return `$${amount.toFixed(2)}`
+// }
+
+
+// //---------------------------------------------------------------------------------------------------
+// //javascript
+// //---------------------------------------------------------------------------------------------------
+// //what do we do to loop through each element in an array?
+
+// //we use the .forEach object or a for loop
+// //we use the .length property in its condition
+
+// let numberOfApples = 9
+// //what are the first two words for?
+// //declaration
+
+// //what are the data types that have properties with stored information?
+// //objects
+
+// //create a variable and assign it a number
+// let stuff = 10
+// //minus 10 from that number
+// stuff = stuff - 10
+// //print that number to the console
+// console.log(stuff)
+
+// //create a variable that holds a value from the input
+// let num = Number(document.querySelector('#danceDanceRevolution').value)
+// //add 25 to that number
+// num = num + 25
+// //alert that number
+// alert(num)
+
+// //create a variable that holds the h1
+// let h1 = document.querySelector("h1")
+
+// //add an event listener to that element that console logs the sum of the two previous variables
+
+// h1.addEventListener('click', 'addTwo')
+// function addtwo(){
+//   console.log(num +  stuff)
+// }
+
+// //write a script that will check to see if the player has achieved at least 100 points in his class
+// //if so, he enters the qualifying stage.
+// //return "well done"
+// //otherwide return false
+
+// function playerRankUp(points){
+//   if(points >= 100){
+//     return "Well done"
+//   }else{
+//     return "false"
+//   }
+// }
+
+// //write a function that reverses the words in a given string
+
+// function wordReverse(word){
+//   return word.split('').reverse().join('')
+// }
+
+// //given an araray of integers your solution must find the smallest integer
+// function findSmallest (int){
+//   return Math.min(...int)
+// }
+
+
+// //how many times does forEach run?
+// //once for each element
+
+// //`I own a pet ${myPet}`
+// //the template literal
+
+// //what is a code block associated with a loop?
+// //its body
+
+// //arr.splice(start[deleteCount, elem1, ..., elemN])
+// //splice syntax
+
+
+// //complete the function which converts a binary number(given as a string) to a decimal number
+// function binToDec(bin){
+//   return parseInt(bin, 2)
+// }
+
+// function squareSum(numbers){
+//   return numbers.reduce(function(sum, n){
+//     return (n*n) + sum
+//   })
+// }
+// //how to complete the square sum function so that it squares each number passed into it and then sums the results together
+
+// //given an array of integers as strings and numbers, return the sum of the arraay values as if all were numbers
+// //return your answer as a number
+
+// function sumMix(x){
+//   return x.reduce((a,b) => +a + +b, 0)
+// }
+
+// //substring()
+// //returns a new array from start to end but as a string
+// //substring works a lot like slices
+
+// //create these variables and store the appropriate values using the table above
+
+// //laLigaGoals - 43
+// //championsLeagueGoals - 10
+// //copaDelReyGoals - 5
+
+// //create a fourth variable named totalGoals that stores the sum of all of Messi's goals for this year
+
+// function messiGoals(laLigaGoals, championsLeagueGoals, copaDelReyGoals){
+//   let totalsGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+// }
+
+// //synchronous
+// //to happen at the same time
+// //#
+// //octothorpe
+
+// //find the sum of all multiples of n below m
+
+// function sumMul(n,m){
+//   if(n >= m){
+//     return "INVALID!"
+//   }else{
+//     let sum = 0
+//     for(let i = n; i < m; i+=n){
+//       sum+= i
+//     }
+//   }
+//   return sum
+// }
+
+// //create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
+// //if no occurrences can be found, a count of 0 should be returned
+
+// function twoStrArgs(x, y){
+//   let count = 0
+//   for (let i = 0; i < x.length; i++){
+//     if(x[i] === y)
+//     count++
+//   }
+//   return count
+// }
+
+// //when provided a letter, return its position in the alphabet
+
+// function position(letter){
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+//   return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`
+// }
+
+// //calculateArea(10, 6)
+// //what is between the parantheses?
+// //arguments as values
+
+// //completet he solution so that it returns true if the first argument(string) passed in ends the 2nd argument(also a string)
+
+// function solution(str, ending){
+//   return str.endsWith(ending)
+// }
+
+// //define the method hello that returns "Hello, Name!" to a given name, or says Hello, World!
+// //if name is not given(or passed as an empty String)
+
+// function giveAName(name){
+//   if(name){
+//     return `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`
+//   }else{
+//     return "Hello, World!"
+//   }
+// }
+
+// //builda f ucntion that returns an array of integers from n ot 1 where n > 0 
+
+// const reverseSeq = n => {
+//   let arr = []
+//   for(let i = n; i > 0; i-=1){
+//     arr.push(i)
+//   }
+//   return arr
+// }
+
+// //create a function that removes the first and last characters in a string
+
+// function firstLast(str){
+//   return str.slice(1, -1)
+// }
+
+// //write a function that always returns 5
+
+// function returnFive(str){
+//   return 'hello'.length
+// }
+
+// //can you change the contents of a const array
+// //yes, but you can't reassign a new array or different value
+
+// //e.g., :focus
+// //pseudo class focus
+
+// //e.g., [rel~="tag"]
+// //attribute spaced selector
+
+// //e.g., console.log(data.drinks[0])
+// //index 0
+
+// //tell me about a situation when you were responsible for project planning.
+// //did everything go according to your plan
+// //if not, then why and what kind of counter-actions did you have to take
+
+// //a situation where i was responsible for project planning was at my previous opportunity; where i was responsible for the planning of receiving 30 containers in a 2 month window; however, due to a problem at the port, wher container ships were backlogged and stranded unable to unload. We received those containers 3 monthsa late and in a 2 week window. The shipping companies were unable accomodate us and so we had to get to work and unload 30 containers in 2 weeks instead of 2 months. Throughout the ordeal at the port, I had pre-planned how to receive all the rolls in our inventory, and vacated large empty spaces in our warehouse to take on the rolls. At the end of it all we were able to receive all the containers and get them empty before we incurred any late fees and our orders went out as fast as possible.
+
+// //the listen method in Express
+// // app.listen(3000, funciton(){
+// //   console.log('listening on 3000')
+// // })
+
+// //endpoint
+// //the last part of the URL
+
+// //e.g., p{
+//   //color: blue
+// //}
+// //rule
+// //<i>
+// //italics
+
+// //tbody
+// //is table body
+
+// //given a sdtring showing either flat road or bumps
+// //if you are able to reach home safely by encountering 15 bumps or less
+// //return Woohoo!
+// //otherwise, return Car Dead
+
+// function bump(x){
+//   if (x.split('n') > 15){
+//     return "Car Dead"
+//   }else{
+//     return "Woohoo!"
+//   }
+// }
+
+// //arr.forEach
+// //will run a function for every element of an array
+
+// //return a new array consisting of elements which are multiple of their own index in input array
+
+// function multipleOfIndex(array){
+//   let arr = []
+//   for(let i = 0; i < array.length; i++){
+//     if(array[i] % i === 0){
+//       arr.push(array[i])
+//     }
+//   }
+//   return arr
+// }
+
+// function multipleOfIndex(array){
+//   return array.filter((a, b) => a % b == 0)  
+// }
+
+// //splice(pos,deleteCount, ...items)
+
+// //your goal is to return multiplication table for number that is always an integer from 1 to 10
+// const multiTable = (number) => {
+//   let table = ''
+//   for(let i = 1; i <= 10; i++){
+//     table += `${i} * ${i * number}${i < 10 ? '\n' : ''}`
+//   }
+//   return table
+
+// }
+
+// //write a function that takes a single string as argument
+// //the function must return an ordered list containing the indxes of all capital letters in the string
+
+// const capitals = function(word){
+//   let arr = []
+//   for(let i = 0; i < word.length; i++){
+//     if(word[i].toUpperCase() === word[i]){
+//       arr.push(i)
+//     }
+//   }
+//   return arr
+// }
+
+// //complete the function that receives as input a string and produces outputs according to the following table
+
+// function getDrinkByProf(param){
+//   if(param === 'Jabroni'){
+//     return 'Patron'
+//   }else if(param === 'School counselor'){
+//     return 'Anything'
+//   }else{
+//     return 'Beer'
+//   }
+// }
+
+// //indexOf/lastIndexOf(item, pos)
+
+// //step 1: declaration
+// //step 2: call
+// //function
+
+// //create a function for the terminal game that takes the current position of the hero and the roll(1-6) and return the new position
+
+// function move(position, roll){
+//   return position + roll * 2
+// }
+
+// //what is the only logical operator in CSS?
+// //the only operator in CSS only selects things
+
+// //e.g., [href$="Brackets"]
+// //attribute ends with selector
+
+
+// //what is $ npm init
+// //initializes node package manager
+// //by creating a package.json
+
+// //how to serve up a file in server.js
+// app.get('/', (req, res)=>{
+//   res.sendFile(__dirname + '/index.html')
+// })
+
+// //node server.js
+// //runs a server.js file in node
+
+// //how to require a file in server.js
+// //const express = require('express)
+// //const app = express()
+
+// //list-style
+// //line and dot styling in css
+
+// //touch
+// //creates a new file
+
+
+// //given a string made up of letters a, b, and c, switch the position of letters a and b.
+// //leave any incidence of c untouched
+
+// function switcheroo(x){
+//   return x.split('').map(function (s){
+//     return s === 'a'
+//     ? 'b'
+//     : s === 'b'
+//     ? 'a'
+//     : 'c'
+//   }).join('')
+// }
+
+// //you are to write a function that takes a string as its first parameter. this string will be a string of words
+// //you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the fiven string. The first word would be represented by 0
+// //Once you ahve the located string you are finally going to multiple by it the third provided parameter, which will also be an integer. You are additionally required to add a hyphen in between each word.
+
+// function returnIndexString(str, loc, num){
+//   //in order to return string-string-string-string-string with an input of "This is a string", 3, 5
+//   let arr = []
+//   //split the sentence into its words
+//   let word = str.split(' ')
+//   //find the index of the word that you want
+//   let get = word[loc]
+//   //start a counter
+//   let count = 0
+
+//   //loop through the words starting the first index, which is 0, until the last number
+//   //this will the the total amount of time the string is repeated
+//     for(let i = 0; i < num; i++){
+//       //if the index of str is less than the num
+//     if(str[i] < num){
+//       //push the word into the array
+//       arr.push(word)
+//       //add a number to the counter
+//       count++
+//     }
+//   }
+//   //join it all with a hyphen
+//   return arr.join('-')
+// }
+
+// //shift()
+// //remove items from the beginning of an array
+
+// //create a funciton that accepts a list/array and a number n
+// //return a list/array fo the first n elements from the list/array
+
+// function take(arr, n){
+//   return arr.slice(0, n)
+// }
+
+// //return a new array consisting of elements which are multiple of their own index in input array
+
+// function multipleOfIndex(array){
+//   //create an array
+//   let arr = []
+
+//   //loop through the array's entirety
+//   for(let i = 0; i < array.length; i++){
+//     //if the index of the array mod the index of the counter is zero
+//     if(array[i] % i === 0){
+//       //push the index of the array
+//       arr.push(array[i])
+//     }
+//   }
+//   return arr
+// }
+
+// //unshift(...items)
+// //adds items from the beginning of an element
+
+//  //.addEventListener
+//  //adds an event listener, e.g., h1.addEventListener('click', addTwo)
+//  //this event listener will run the function addTwo on a click of a button
+
+//  //what is the variable associated with the loop condition?
+//  //i
+
+//  //in this kata, you are asked to square every digit of a number and concatenate them
  
 
- function squareDigits(n){
-  return n.split('').map(function(s){
-    for(let i = 0; i < s.length; i++){
-      return s*s
-    }
-  }).join('')
- }
-
-//write a function isReallyNaN that returns true only if passed in an argument that evaluated to NaN
-//return false otherwise
-
-const isReallyNaN = (val) => {
-  if(val === val.isNumber()){
-    return true
-  }else{
-    return false
-  }
-}
+//  function squareDigits(n){
+//   return n.split('').map(function(s){
+//     for(let i = 0; i < s.length; i++){
+//       return s*s
+//     }
+//   }).join('')
+//  }
+
+// //write a function isReallyNaN that returns true only if passed in an argument that evaluated to NaN
+// //return false otherwise
+
+// const isReallyNaN = (val) => {
+//   if(val === val.isNumber()){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
 
-//bob needs a fast way to calculate the volume of a cuboid with three values
-//length, width, and height
-//write a function to help Bob with this calculation
+// //bob needs a fast way to calculate the volume of a cuboid with three values
+// //length, width, and height
+// //write a function to help Bob with this calculation
 
-class Kata {
-  static getVolumeOfCuboid(l,w,h){
-    return l*w*h
-  }
-}
+// class Kata {
+//   static getVolumeOfCuboid(l,w,h){
+//     return l*w*h
+//   }
+// }
 
-//if the text or the character are empty
-//return an empty string
+// //if the text or the character are empty
+// //return an empty string
 
-function contamination(text, char){
-  if (text.length === 0 || char.length === 0){
-    return ''
-  }else{
-    return char.repeat(text.length)
-  }
-}
+// function contamination(text, char){
+//   if (text.length === 0 || char.length === 0){
+//     return ''
+//   }else{
+//     return char.repeat(text.length)
+//   }
+// }
 
-//===
-//the identity operator used to check if something is true
+// //===
+// //the identity operator used to check if something is true
 
-//.then()
-//then object
+// //.then()
+// //then object
 
-//.querySelector
-//a way to find elements
+// //.querySelector
+// //a way to find elements
 
-//Math.random
-//returns a random number between 0 and 1
+// //Math.random
+// //returns a random number between 0 and 1
 
-//const calculateArea = function(width, height){}
-//function
+// //const calculateArea = function(width, height){}
+// //function
 
-//the process of storing function with their associated data
-//encapsulation
+// //the process of storing function with their associated data
+// //encapsulation
 
-//when you see a function with a capital letter at the beginning, what is it?
-// a constructor
+// //when you see a function with a capital letter at the beginning, what is it?
+// // a constructor
 
-//\t
-//tabbing isnide singel and double quotes
+// //\t
+// //tabbing isnide singel and double quotes
 
-//syntax for arrow functions
+// //syntax for arrow functions
 
-// const arrowFunction = () => {}
+// // const arrowFunction = () => {}
 
-//complete the funciton so that it finds the average of the three scores passed to it and returns the letter value associated with that grade
+// //complete the funciton so that it finds the average of the three scores passed to it and returns the letter value associated with that grade
 
-function getGrade (s1, s2, s3){
-  let total = [s1, s2, s3]
-  let avg = total.reduce((a,b) => a + b, 0)/total.length
+// function getGrade (s1, s2, s3){
+//   let total = [s1, s2, s3]
+//   let avg = total.reduce((a,b) => a + b, 0)/total.length
 
-  if(avg <= 100 || avg >= 90){
-    return 'A'
-  }else if(avg < 90 && avg >= 80){
-    return 'B'
-  }
-}
+//   if(avg <= 100 || avg >= 90){
+//     return 'A'
+//   }else if(avg < 90 && avg >= 80){
+//     return 'B'
+//   }
+// }
 
-function greeting(name = 'stranger'){}
-//function declaration
-//default parameter
+// function greeting(name = 'stranger'){}
+// //function declaration
+// //default parameter
 
-//create a function that has a loop that printe '21' 21 times to the console and then call that function
-function savage (hey){
-  for(let i = 0; i < 21; i++){
-    console.log('21')
-  }
-}
+// //create a function that has a loop that printe '21' 21 times to the console and then call that function
+// function savage (hey){
+//   for(let i = 0; i < 21; i++){
+//     console.log('21')
+//   }
+// }
 
-function savage(){
-  for(let i = 0; i < 21; i++){
-    document.querySelector('#savageSays').innerText += '21'
-  }
-}
-savage();
+// function savage(){
+//   for(let i = 0; i < 21; i++){
+//     document.querySelector('#savageSays').innerText += '21'
+//   }
+// }
+// savage();
 
-//what is MVC?
+// //what is MVC?
 
-//Model, View, Controller
+// //Model, View, Controller
 
-//how do we apply MVC?
-//we apply MVC by separating our model, view, and controller in our code
+// //how do we apply MVC?
+// //we apply MVC by separating our model, view, and controller in our code
 
-//the controller is server side code that tells the view what to do, and gets its information from the model
+// //the controller is server side code that tells the view what to do, and gets its information from the model
 
-//if you are writing code that is processing information to and from the database before it gets to the view, wherre does it belong?
-//the controller
-//the controller is server side code
+// //if you are writing code that is processing information to and from the database before it gets to the view, wherre does it belong?
+// //the controller
+// //the controller is server side code
 
 
 
-//if you are writing code related teo the database, where does it belong?
-//code related to the database belongs in the Model
-//the model is database code
+// //if you are writing code related teo the database, where does it belong?
+// //code related to the database belongs in the Model
+// //the model is database code
 
-//the view is what is displaying to the user
-//ikf you are writing front end code, where does it belong?
-//the view
+// //the view is what is displaying to the user
+// //ikf you are writing front end code, where does it belong?
+// //the view
 
-//const http = require('http')
-//const fs = require('fs')
-//const url = require('url')
-//const querystring = require('querystring')
-//const figlet = require('figlet')
+// //const http = require('http')
+// //const fs = require('fs')
+// //const url = require('url')
+// //const querystring = require('querystring')
+// //const figlet = require('figlet')
 
 
-//these are modules
-
-//the abstraction principle
-//the abstraction principle is to hide the details
+// //these are modules
+
+// //the abstraction principle
+// //the abstraction principle is to hide the details
 
-//having a simpler interface, and to reduce the impact of change
-//abstraction
-//value types; reference types
-//reference types: Objects, Funcitons, Arrays
-
-//the best functions are those with no parameters. The fewer the number of parameters the easier it is to maintain that funciton., What is this refering to?
-
-//encapsulation
-
-//object literal syntax
-//const circle = {}
-
-//what are objects copied by?
-//their reference type('object, arrays, functions')
-
-//value types; primitives
-//numbers, strings, booleans, NaN, 0, symbols, undefined
-
-//this 
-//how to reference a new object
-
-//you're given strings jewels
-//jewels represents the types of stones that are jewels and stones representing the stones you have
-//each character in stones is a typeof stone you have
-//you want to know how many of the stones you have are also jewels
-//letters are case sensitive
-
-function jewelsInStones(jewels, stones){
-  let map = {},
-  count = 0
-
-  for(const jewel in jewels){
-    map[jewel] = true
-  }
-  for(const stone of stones){
-    if(map[stone]){
-      count++
-    }
-  }
-  return count
-}
-
-//givena string of characters, return the character that appears the most often
-
-function maxCharacter(str){
-  let charMap = {},
-  count = 0,
-  maxChar = null
-
-  for(const char of str){
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  for(const char in charMap){
-    if(chjarMap[char] > count){
-      count = charMap[char]
-      maxChar = char
-    }
-  }
-  return maxChar
-}
-
-//you have to create the function factortial that receives n and returns n!. You have to use recursion
-
-function factorial(n){
-  if(n > 2){
-  return 1
-    }
-  return n * factorial(n - 1) 
-}
-
-//count all the occurring characters in a string
-//if you have a string like aba
-//then the result should be {'a':2, 'b':1}
-
-function countChars(str){
-  let countObj = {}
-  for(const c of str){
-    if(countObj[c]){
-      countObj[c]++
-    }else{
-      countObj[c] = 1
-    }
-  }
-  return countObj
-}
-
-//given an array nums of size n
-//return the majority element
-//the majority element is the lement that appears more than n/2 times
-//you may assume that the majority element always exists in the array
-
-function majorityElement(arr){
-  let elem = {},
-  count = 0,
-  majElem = arr[0]
-
-
-for(const num of arr){
-  elem[num] = elem[num] + 1 || 1
-  }
-  for(const n in elem){
-    if(elem[n] > count){
-      count = elem[n]
-      majElem = n
-    }
-  }
-  return majElem
-}
-
-//do fizzBuzz
-
-function fizzBuzz (n){
-  for(let i = 0; i < n; i++){
-    if(i % 6 === 0){
-      console.log("Fizz Buzz")
-    }else if(i % 2 === 0){
-      console.log("Fizz")
-    }else if(i % 3 === 0){
-      console.log("Buzz")
-    }else{
-      console.log(i)
-    }
-  }
-}
-
-console.log(fizzBuzz(6)), "1,Fizz,Buzz,Fizz,5,Fizz Buzz"
-
-//given an array of integers nums and an integer target
-//return the indices of the two numbers such that they add up to target
-
-function twoSum (nums, target){
-  for(let i = 0; i < nums.length; i++){
-    for(let j = 0; j < nums.length; j++){
-      if(i !== j){
-        if(nums[i] + nums[j] === target){
-          return [i, j]
-        }
-      }
-    }
-  }
-}
-
-//figure out the index of which vowel is missing from a given string
-
-function findVowels(str){
-  let vowels = 'aeiou'
-
-  for(let i = 0; i < vowels.length; i++){
-    if(str.indexOf(vowels[i] === -1)){
-      return i
-    }
-  }
-}
-
-//find the sum of all multiples of n below m
-
-function sumMul (n, m){
-  if(n >= m){
-    return "INVALID"
-  }else{
-    let sum = 0
-    for(let i = n; i < m; i+=n){
-      sum+=i
-    }
-    return sum
-  }
-}
+// //having a simpler interface, and to reduce the impact of change
+// //abstraction
+// //value types; reference types
+// //reference types: Objects, Funcitons, Arrays
+
+// //the best functions are those with no parameters. The fewer the number of parameters the easier it is to maintain that funciton., What is this refering to?
+
+// //encapsulation
+
+// //object literal syntax
+// //const circle = {}
+
+// //what are objects copied by?
+// //their reference type('object, arrays, functions')
+
+// //value types; primitives
+// //numbers, strings, booleans, NaN, 0, symbols, undefined
+
+// //this 
+// //how to reference a new object
+
+// //you're given strings jewels
+// //jewels represents the types of stones that are jewels and stones representing the stones you have
+// //each character in stones is a typeof stone you have
+// //you want to know how many of the stones you have are also jewels
+// //letters are case sensitive
+
+// function jewelsInStones(jewels, stones){
+//   let map = {},
+//   count = 0
+
+//   for(const jewel in jewels){
+//     map[jewel] = true
+//   }
+//   for(const stone of stones){
+//     if(map[stone]){
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// //givena string of characters, return the character that appears the most often
+
+// function maxCharacter(str){
+//   let charMap = {},
+//   count = 0,
+//   maxChar = null
+
+//   for(const char of str){
+//     charMap[char] = charMap[char] + 1 || 1
+//   }
+
+//   for(const char in charMap){
+//     if(chjarMap[char] > count){
+//       count = charMap[char]
+//       maxChar = char
+//     }
+//   }
+//   return maxChar
+// }
+
+// //you have to create the function factortial that receives n and returns n!. You have to use recursion
+
+// function factorial(n){
+//   if(n > 2){
+//   return 1
+//     }
+//   return n * factorial(n - 1) 
+// }
+
+// //count all the occurring characters in a string
+// //if you have a string like aba
+// //then the result should be {'a':2, 'b':1}
+
+// function countChars(str){
+//   let countObj = {}
+//   for(const c of str){
+//     if(countObj[c]){
+//       countObj[c]++
+//     }else{
+//       countObj[c] = 1
+//     }
+//   }
+//   return countObj
+// }
+
+// //given an array nums of size n
+// //return the majority element
+// //the majority element is the lement that appears more than n/2 times
+// //you may assume that the majority element always exists in the array
+
+// function majorityElement(arr){
+//   let elem = {},
+//   count = 0,
+//   majElem = arr[0]
+
+
+// for(const num of arr){
+//   elem[num] = elem[num] + 1 || 1
+//   }
+//   for(const n in elem){
+//     if(elem[n] > count){
+//       count = elem[n]
+//       majElem = n
+//     }
+//   }
+//   return majElem
+// }
+
+// //do fizzBuzz
+
+// function fizzBuzz (n){
+//   for(let i = 0; i < n; i++){
+//     if(i % 6 === 0){
+//       console.log("Fizz Buzz")
+//     }else if(i % 2 === 0){
+//       console.log("Fizz")
+//     }else if(i % 3 === 0){
+//       console.log("Buzz")
+//     }else{
+//       console.log(i)
+//     }
+//   }
+// }
+
+// console.log(fizzBuzz(6)), "1,Fizz,Buzz,Fizz,5,Fizz Buzz"
+
+// //given an array of integers nums and an integer target
+// //return the indices of the two numbers such that they add up to target
+
+// function twoSum (nums, target){
+//   for(let i = 0; i < nums.length; i++){
+//     for(let j = 0; j < nums.length; j++){
+//       if(i !== j){
+//         if(nums[i] + nums[j] === target){
+//           return [i, j]
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //figure out the index of which vowel is missing from a given string
+
+// function findVowels(str){
+//   let vowels = 'aeiou'
+
+//   for(let i = 0; i < vowels.length; i++){
+//     if(str.indexOf(vowels[i] === -1)){
+//       return i
+//     }
+//   }
+// }
+
+// //find the sum of all multiples of n below m
+
+// function sumMul (n, m){
+//   if(n >= m){
+//     return "INVALID"
+//   }else{
+//     let sum = 0
+//     for(let i = n; i < m; i+=n){
+//       sum+=i
+//     }
+//     return sum
+//   }
+// }
 
 //object
 //an object is a collection of related data
@@ -18287,108 +18287,108 @@ function sumMul (n, m){
 //complete the method that takes a boolean value and return a "Yes" string fro true or a "No"
 //string for false
 
-function boolToWord(bool){
-  if(bool === true){
-    return 'Yes'
-  }else{
-    return "No"
-  }
-}
+// function boolToWord(bool){
+//   if(bool === true){
+//     return 'Yes'
+//   }else{
+//     return "No"
+//   }
+// }
 
-//(req, res) and what they're used in
-//request
-//response
-//they are used in response objects in APIs
+// //(req, res) and what they're used in
+// //request
+// //response
+// //they are used in response objects in APIs
 
-//<script>
-//is for inline javascript
+// //<script>
+// //is for inline javascript
 
-//<h1><h2>
-//heading level
+// //<h1><h2>
+// //heading level
 
 
-//write a funciton to get the first element of a sequence
-//pass a parameter n ()default=1 will return the first n elements of the sequence
-//if n == 0 
-//return an empty sequence
+// //write a funciton to get the first element of a sequence
+// //pass a parameter n ()default=1 will return the first n elements of the sequence
+// //if n == 0 
+// //return an empty sequence
 
-function first(arr, n){
-  return first.slice(0, n)
-}
+// function first(arr, n){
+//   return first.slice(0, n)
+// }
 
-//split/join
-//returns a new array after splitting or joining the array
+// //split/join
+// //returns a new array after splitting or joining the array
 
-//what are the reserved words
-//the reserved words are 
-//function
-//return
-//let
-//class
+// //what are the reserved words
+// //the reserved words are 
+// //function
+// //return
+// //let
+// //class
 
-//create a method all which takes two params
-//return true if the function in the params returns treu for every element in the sequence
+// //create a method all which takes two params
+// //return true if the function in the params returns treu for every element in the sequence
 
-function all(arr, fun){
-  return arr.every(fun)
-}
+// function all(arr, fun){
+//   return arr.every(fun)
+// }
 
 //do you need curly braces for a single-line block
 //no
 
 //complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument 
 
-function solution(str, ending){
-  return str.endsWith(ending)
-}
+// function solution(str, ending){
+//   return str.endsWith(ending)
+// }
 
-//what is a test that requires you to understand the text, not just retrieve isolated facts?
-//inference test
+// //what is a test that requires you to understand the text, not just retrieve isolated facts?
+// //inference test
 
-//selector unit at the end, furthest to the right
-//key selector
+// //selector unit at the end, furthest to the right
+// //key selector
 
-/* ----- ALGORITHMS ------------------ */
+// /* ----- ALGORITHMS ------------------ */
 
-//completet the function that takes two integers (a, b, where a < b)
-//return an array of all integers between the input parameters, including them
+// //completet the function that takes two integers (a, b, where a < b)
+// //return an array of all integers between the input parameters, including them
 
-function takeTwo(a, b){
-  let arr = []
-  for(let i = a; i <= b; i++){
-    arr.push(i)
-  }
-  return arr
-}
+// function takeTwo(a, b){
+//   let arr = []
+//   for(let i = a; i <= b; i++){
+//     arr.push(i)
+//   }
+//   return arr
+// }
 
-//write a method, that will get an integer array as parameter and will process every number from this array
-//return a new array with processing every number of the input-array like this
-//if the number has an integer square root, take this, otherwise square the number
+// //write a method, that will get an integer array as parameter and will process every number from this array
+// //return a new array with processing every number of the input-array like this
+// //if the number has an integer square root, take this, otherwise square the number
 
-function squareOrSquareRoot(array){
-  for(let i = 0; i < array.length; i++){
-    if(Math.sqrt(array[i]) == Math.sqrt(array[i]).toFixed(0)){
-      return array[i]
-    }else{
-      return array[i]**2
-    }
-  }
-}
+// function squareOrSquareRoot(array){
+//   for(let i = 0; i < array.length; i++){
+//     if(Math.sqrt(array[i]) == Math.sqrt(array[i]).toFixed(0)){
+//       return array[i]
+//     }else{
+//       return array[i]**2
+//     }
+//   }
+// }
 
-function squareOrSquareRoot(array){
-  return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0))
-}
+// function squareOrSquareRoot(array){
+//   return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0))
+// }
 
-//given three integers a, b, c return the largest number obtained after inserting the following operators and brackets
+// //given three integers a, b, c return the largest number obtained after inserting the following operators and brackets
 
-function comboPoints(a,b,c){
-  return a+b+c,
-  (a+b)*c,
-  a*(b+c),
-  a*b*c,
-  a*b+c,
-  a+b*c
-}
+// function comboPoints(a,b,c){
+//   return a+b+c,
+//   (a+b)*c,
+//   a*(b+c),
+//   a*b*c,
+//   a*b+c,
+//   a+b*c
+// }
 
 //how to require a file in server.js
 // const express = require('express')
@@ -18500,11 +18500,74 @@ function comboPoints(a,b,c){
 //your car is old and shitty
 //you think your shocks can handle 15 more bumps before it dies
 
-function bump (x){
-  if(bumps > 15){
-    return "dead"
+// function bump (x){
+//   if(x.split('n').length > 15){
+//     return "dead"
+//   }else{
+//     return "woohoo!"
+//   }
+// }
+
+//typeof
+//typeof operator
+//checks the value to its right and returns or passes back a string of the data type
+
+// //create a variable and assign it a number
+// let numero = 100
+// //minus 10 from that number
+// numero -= 10
+// //print that number to the console
+// console.log(numero)
+// //create a variable that holds a value from the input
+// let h2 = Number(document.querySelector("input").value)
+// //add 25 to that number
+// h2+=25
+// //alert that number
+// alert(h2)
+// //create a variable that holds the h1
+// let h1 = Number(document.querySelector("h1"))
+
+// //add an event listener to that element that console logs the sum of the two previous variables
+// h1.addEventListener('click', addTwo)
+// function addTwo(){
+//   console.log(h2+numero)
+// }
+// //list of falsy values
+// //NaN
+// //0
+// //null
+// //""
+// //undefined
+
+//count the number of divisors of a positive integer n
+function getDivisors(n){
+  let arr = []
+  for(let i = 0; i <= n; i++){
+    if(n % i === 0){
+      arr.push(i)
+    }
+  }
+  return arr.length
+}
+//functions
+//functions are a set of instructions
+
+//your task is to find the nearest square number of a positive integer n
+function nearestSq(n){
+  return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+//%
+//modulus
+
+//create a function that takes an integer as an argument and returns "Even"
+//for even numbers or "Odd" for odd numbers
+
+function oddOrEven(n){
+  if(n % 2 === 0){
+    return "Even"
   }else{
-    return "woohoo!"
+    return "Odd"
   }
 }
 
