@@ -18497,3 +18497,14 @@ function comboPoints(a,b,c){
 //strong
 //bold
 
+//your car is old and shitty
+//you think your shocks can handle 15 more bumps before it dies
+
+function bump (x){
+  if(bumps > 15){
+    return "dead"
+  }else{
+    return "woohoo!"
+  }
+}
+
