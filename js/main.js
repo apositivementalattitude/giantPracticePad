@@ -18468,3 +18468,32 @@ function comboPoints(a,b,c){
 //:wq
 //gets you out of that one page
 
+//<fieldset>
+//fieldset
+
+//<aside>
+//the aside
+
+//<script>
+//for inline- javascript
+
+//<a>
+//anchor
+
+//<rowspan>
+//the row span
+
+//<href>
+//hyperlink reference
+
+//<tags>
+//the use of less-than and greater than angle brackets surrounding an element creates what is known as a tag
+
+//href
+//hyperlink reference
+
+//elements
+//the things being styled
+//strong
+//bold
+
