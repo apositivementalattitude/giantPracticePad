@@ -18431,3 +18431,19 @@ function comboPoints(a,b,c){
   //console.log(`error${error}`)
 //})
 
+//how to handle a GET request
+//app.get('/endpoint', callbackFunction)
+
+
+//this is an example of a response object
+
+//app.get('/', function(req, res){
+  //res.send('Hello World')
+//})
+
+//__dirname
+//directory name with 2 underscores
+
+//npm audit fix --force
+//how to force update
+
