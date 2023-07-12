@@ -18447,3 +18447,21 @@ function comboPoints(a,b,c){
 //npm audit fix --force
 //how to force update
 
+//flex-direction:row-reverse;
+//in flexbox reverse the row its on
+
+//list-style
+//dots and line styling
+
+//ex., h1
+//selector
+//specifies what parts of the HTML documents should be styled by the declaration
+//selectors
+//selectors specify which parts of the HTML document that should be styled by the declaration
+
+//selectors
+//designates exactly which element or elements within our HTML to trrget and apply styles to
+
+//.tagline
+//class selector
+
