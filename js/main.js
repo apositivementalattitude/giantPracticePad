@@ -18414,3 +18414,9 @@ function comboPoints(a,b,c){
 
 //tell me about yourself
 //I'm Eric, and I'm from Los Angeles. I'm a software engineer from at 100DEVS which is an agency where we take on clients to build full stack applications both alone and with colleagues; mostly by utilizing the MERN stack. I've been involved in the fashion industry in one form or the other since I was young. A lot of my teachers, bosses, friends, and family would tell me that since I'm good with compueters, and I like to build things, software development would be a good fit for me, and I eventually learned how to code. With my background in design, I can help a development team with new and creative ideas.
+
+//e.g., [href^="brackets"]
+//attribute begings with selector
+
+//e.g., :checked
+//pseudo class checked
