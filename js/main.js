@@ -18390,3 +18390,27 @@ function comboPoints(a,b,c){
   a+b*c
 }
 
+//how to require a file in server.js
+// const express = require('express')
+// const app = express()
+
+//e.g.,
+//color:red;
+//declaration
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+//Do you have any questions?
+//yes
+//What is the interview process like?
+//What are some of the challenges for the person in this position?
+//what is a typical day in this position?
+//what is the onboarding process after the offer?
+//are there training programs available?
+
+//tell me about a situation when you made a mistake at work.
+//what happened exactly and how did you deal with it?
+//a situation where i made a mistake at work was at my previous opportunity where I made an error while ordering. I didn't order the correct quantities of sizes. As it was really close to Lunar New Year, I escalated this to our director, and we were able to correct the order from our supplier overseas. Going forward, we implemented a sustem with our overseas supplier so that we had to get onfirmation emails and check that to the PO. Whenever I join a new team, I like to think in systems and ways that we can avoid common mistakes that might come up on the job.
+
+//tell me about yourself
+//I'm Eric, and I'm from Los Angeles. I'm a software engineer from at 100DEVS which is an agency where we take on clients to build full stack applications both alone and with colleagues; mostly by utilizing the MERN stack. I've been involved in the fashion industry in one form or the other since I was young. A lot of my teachers, bosses, friends, and family would tell me that since I'm good with compueters, and I like to build things, software development would be a good fit for me, and I eventually learned how to code. With my background in design, I can help a development team with new and creative ideas.
