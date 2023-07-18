@@ -18609,3 +18609,26 @@ function targetThese(nums, target){
   }
 }
 
+//you're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have.
+//each character in stones is a type of stone you have
+//youi want to know how many of the stones you have are also jewels
+
+function jewelsInStones(jewels, stones){
+  //set up your variables
+  let map = {},
+  count = 0
+
+  //for in loop the jewels
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+  //for of loop the stones
+  for(const stone of stones){
+    //check if the hash map is a stone
+    if(map[stone]){
+      //if the index of the map is a stone, count++
+      count++
+    }
+  }
+  return count
+}
