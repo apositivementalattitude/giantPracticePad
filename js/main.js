@@ -18762,3 +18762,76 @@ function solution (a, b){
 //localStorage.setItem('books',data.title)
 //set items to local storage
 
+//how to requre a file in server.js
+//const express = require('express')
+//const app = express()
+
+//$ git init
+//git initialize
+
+//arr.forEach
+//the forEach method for the arr
+//this will execute the code for each element in the array
+
+//your job is simple
+//if x squared is more than 1000, return It's hot
+//else return help!
+
+function apple(x){
+  if(x**2 > 1000){
+    return "It's hot!"
+  }else{
+    return 'help!'
+  }
+}
+
+console.log(apple(1002)), "It's hot!"
+console.log(apple(1)), "help!"
+
+//return a new array consisting of elemnts which are muiltiple of their own index in input array(length> 1)
+
+function multipleOfIndex(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % i === 0){
+      arr.push(i)
+    }
+  }
+  return arr
+}
+
+//movies.splice(0, 1)
+//splice syntax
+
+//can you store differnt types of elements within an array?
+//yes
+
+//what do you add to the beginning of a function to make it an async function?
+//async
+
+//write a function which converts the input string to uppercase
+function input(x){
+  return x.toUpperCase()
+}
+
+//make a program that filters a list of strings and returns a list with only your friends name in it
+//your friends have 4 letters in thier name
+
+function returnFour(name){
+  let arr = []
+  for(let i = 0; i < name.length; i++){
+    if(name[i].length === 4){
+      arr.push(name[i])
+    }
+  }
+  return arr
+}
+
+//write a function that retuns a string in which firstname is swapped with last name
+
+function nameShuffle(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+//are primitives copied by value?
+//yes
