@@ -18742,3 +18742,23 @@ function solution (a, b){
     return a + b + a
   }
 }
+
+//semantics
+//how you more accurately describe your code/content
+
+//what kind of things must you be way of when designing or developing for multilingual sites
+//you need to be wary of overflow issues or layout issues
+
+//why would you use a srcset attribute in an image tag?
+//explain the process the browser uses when evaluating the content of this attribute
+//you use the srcset attribute when you want to seve different images to users depending on their device display width
+
+//e.g., [href*="brackets"]
+//attribute contains selector
+
+//e.g., :visited
+//pseudo class visited
+
+//localStorage.setItem('books',data.title)
+//set items to local storage
+
