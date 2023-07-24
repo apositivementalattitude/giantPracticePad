@@ -18835,3 +18835,78 @@ function nameShuffle(str){
 
 //are primitives copied by value?
 //yes
+
+//tell me about when you had to deal with conflict within your team.
+//how was the conflict solved?
+//how did you handle that?
+//how would you deal with that now?
+
+//a time when i had to deal with ocnflict within my team was at my previous opportunity
+//when a team member was having difficulty assembling the pieces and it was effecting other people's work
+//I pulled the team member aside and asked her what the issue was, 
+//the team member was having trouble placing a glue sheet in the exact spot of the fabric piece. 
+// I suggested that she switch with another team member who was also trained in the task she was doing
+//Now, I would deal with the issue by proactively having team members switch those task to reduce fatigue
+
+//tell me about a time you had to work on several projects at once
+//how did you handle this?
+
+//a time when i had to woirk on several projects at once was at my previous opportunity happens a lot in production
+//I need to be able to juggle a lot of tasks at once, 
+//I always have to keep track of which team is doing which order and where that order is doing next; whether its to be dyed, or sewed onto something else, or even shipped directly to the customer. What helps me to juggle all these tasks is to take a step back and look at things in the macro and plan accordingly; however, things don't always go according to plan, so it's important to be mindful and adaptable.
+
+// give me an example of the project or initiative that you started on your own
+//it can be a non-business one
+//what prompted you to get started?
+
+//find the sum of all multiples of n below m
+
+function sumMul(n,m){
+    let arr = []
+  for(let i = n; i < m; i+=n){
+    if(n % i === 0){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((a, b) => a + b, 0)
+}
+
+
+
+//splice syntax
+
+//given a string
+//you have to return a string in which each character is repeated once
+
+function strRep(string){
+  return string.split('').map(function(s) {
+    return s+s
+  }).join('')
+}
+
+//when provided with a letter, return its position in the alphabet
+
+function position(letter){
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  return alphabet.indexOf(letter + 1)
+}
+
+//build a function that returns an array of integers from n to 1 where n > 0
+
+const reverseSeq = n => {
+  let arr = []
+  for(let i = n; i > 0; i-=1){
+    arr.push(i)
+  }
+  return arr
+}
+
+//complete the function which converts a binary number to a decimal number
+
+function binToDec(bin){
+  return parseInt(bin, 2)
+}
+
+//clear:both
+//clears everything in floats
+
