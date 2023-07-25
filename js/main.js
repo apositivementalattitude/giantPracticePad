@@ -18910,3 +18910,24 @@ function binToDec(bin){
 //clear:both
 //clears everything in floats
 
+//core element styles, covering the general defaults
+//the core elements that cover the general defaults is the base
+//the base is the core element styles that cover the general defaults
+
+//how can you write multi line comments in javascript?
+// /* */
+
+//declare a variable, assign it a string of multiple words, and check to see if one of the words is "apple"
+
+function findWord(s){
+  let words = "I have an amazing looking apple"
+  return words.search("apple")
+}
+
+// given an array of integers as strings and numbers, return the sum of the array values as if all were numbers
+//return your answer as a number
+
+function sumMix(x){
+  return x.reduce((a,b) => +a + +b, 0)
+}
+
