@@ -18931,3 +18931,90 @@ function sumMix(x){
   return x.reduce((a,b) => +a + +b, 0)
 }
 
+//write a function that takes a single string as argument
+//the function must return an ordered list containing the indexes of all capital letters in the string
+
+const capitals = function(word){
+  let arr = [] 
+  word = word.split('')
+  for(let i = 0; i < word.length; i++){
+    if(word[i] === word[i].toUpperCase()){
+      arr.push(i)
+    }
+  }
+  return arr
+}
+
+//complete the solution so that it revereses all of the words within the string passed in
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+
+}
+//synchronous
+//to happen at the same time
+//processes one operation at a time
+
+//what is progressive rendering?
+//progressive rendering is to render parts of the webpage on the server side and sending it to the client in portions
+
+//script
+//client side script
+
+//connectivity
+//allowing youi to communicate with the server in new and innovative ways
+
+//describe the difference between a cookie, sessionStorage, and localStorage
+//a cookie is cod ethat stored on the server
+//sessionStorage is code that is on the browser to be deleted
+//localStorage is code that is stored locally on the browser
+
+//to defer code
+//is to execute code after the download and browser finished the DOM construction and rendering
+
+//offline and storage
+//offlien and storage allows webpages to store data on the client side
+
+//descirbe the difference between script
+//script async
+//and script defer
+//script is client side script
+//script async is code that executes asynchronosly(not at the same time)
+//script defer is code that executes after the download nd the DOM construction and rendering
+
+//have you used different HTML templating languages before?
+//yes
+//react
+
+//why is it generally a good idea to position CSS links between head and jS scripts before body
+
+//css files are linked iun the head because they get applied regardless of DOM already rendered or not
+//js files are linked at the bottom because hwen the browser encounters HS, it parses and executes it immediately
+
+//script async
+
+//file gets downloaded asynchronously and then executed after the download
+
+//what are data-attributes good for?
+
+//data-attributes allow us to store extra information on HTML elements
+
+//how do you serve a page with content in m,ultiple languages?
+//<html lang="en">
+
+//asynchronously
+//to not happen at the same time
+
+//what does doctype do
+//tells the broswer what version of html the file is written in
+
+
+//tell me about a situation when you were responsible for project planning
+//did everything go accoridng to your plan
+//if not, then why
+
+//i was tasked with planning a project of unloading 30 containers within 2 months; however, due to a strike at the port of long beach, we received those containers in 2 weeks. During the strike, I had to be proactive and clear room and come up with a way to efficiently and quickly get the rolls of fabric out of the containers. In the end, my team and I were able to unload all the containers without incurring any late fees.
+
+//describe a situation in which you felt you had not communnicated well enough
+//what did you do
+//how di you handle it
+
