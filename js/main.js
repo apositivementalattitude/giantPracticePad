@@ -19018,3 +19018,18 @@ function reverseWords(str){
 //what did you do
 //how di you handle it
 
+//a situation i felt i hadn't communicated enough was at my previous opportunity; where i didn't write down the correct color code on a PO.
+//i had called
+
+
+//localStorage.clear
+//how to clear local storage
+
+//you are asked to square every digit of  a number and concatenate them
+
+function concatMe(n){
+  return n.split('').map(function(x){
+    x*x
+  }).join('')
+}
+
