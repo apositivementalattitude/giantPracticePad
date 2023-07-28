@@ -19033,3 +19033,22 @@ function concatMe(n){
   }).join('')
 }
 
+//your goal is to return multiplication table for number that is always an integer from 1 to 10
+const multiTable = (number) => {
+  //you can use \n in string to jump to the next line
+  let table = ''
+  for(let i = 1; i <= 10; i++){
+    table+=`${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`
+  }
+  return table
+}
+
+//json
+//javascript object notation
+
+//function calculateArea(width, height){}
+//parameters
+
+//what is global scope
+//global scope is variables that are accessible to the entire program
+
