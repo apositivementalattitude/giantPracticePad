@@ -19052,3 +19052,50 @@ const multiTable = (number) => {
 //what is global scope
 //global scope is variables that are accessible to the entire program
 
+//we need a function that can transform a number into a string
+
+function numToString(num){
+  return num.toString()
+}
+
+//when are function expressions created?
+//function expressions are created when the execution of code reached them
+
+//given a set of numbers
+//return the additive inverse of each
+//each positive becomes negatives
+//negatives become positives
+
+function invert(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    arr.push(array[i] * -1)
+  }
+  return arr
+}
+
+//things inside a set of curly brackets{}
+//hash maps
+//a code block
+
+
+//create an array of numbers
+//sum all of the numbers
+//alert the sum
+
+//let array = []
+//array.reduce((a,b) => a + b, 0)
+//alert(array)
+
+
+//complete the function that accepts a string parameter
+//reverses the letters in each word in the string
+
+function revStr(str){
+  return str.split(' ').map(function (s){
+    return s.split('').reverse().join('')
+  }).join(' ')
+}
+
+//indexOf
+//will find the index of the item, and position
