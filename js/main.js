@@ -19099,3 +19099,127 @@ function revStr(str){
 
 //indexOf
 //will find the index of the item, and position
+
+//do you have any questions?
+//yes
+//what is the interview process like?
+//what is the timeline?
+//what is the challenges for the person in this position?
+//what is a typical day in this position?
+//what is the onboarding process after the offer?
+//are there training programs available?
+
+//tell me about a situation when you made a mistake at work
+//what happened exactly and how did you deal with it?
+//what steps did you take to improve the situation?
+
+//i had a client 
+
+//create an espresso machine constructor that makes machines with 4 properties and 3 methods
+
+class Espresso { 
+  constructor(color, make, model, price){
+    this.color = color
+    this.make = make
+    this.model = model
+    this.price = price
+  }
+  turnOn(){
+    console.log('Turned on')
+  }
+  steam(){
+    console.log('Steaming')
+  }
+  brew(){
+    console.log('Brewing')
+  }
+}
+
+let espressoMachine = new Espresso('black', 'Make', 'Pro', '15,999.99')
+
+//ternary operator syntax
+// firstCondition ? console.log('some kind of value') :
+//console.log('another kind of value')
+
+//arrow functions
+//the alternative to writing out function (s){}
+
+//how to remove an element from an array
+//shift() for removing things from the beginning
+//pop() for removing things from the end
+
+//given an array of integers nums and an integer target
+//return the indices of the two numbers such that they add up to target
+//you may assume that each input would have exactly one solution
+//you may not use the same element twice
+
+function sumOfTwo(nums, target){
+  for(let i = 0; i < nums.length; i++){
+    for(let j = 0; k < nums.length; j++){
+      if(i !== j){
+        if(nums[i] + nums[j] === target){
+          return [i, j]
+        }
+      }
+    }
+  }
+}
+
+console.log(sumOfTwo([2,7,11,15], 9), [0, 1])
+
+//completet the function that receives as input a string
+//produce outputs according to the following table
+
+function getDrinkByProf(param){
+  if('Jabroni'){
+    return 'Patron'
+  }
+}
+
+//write a function that tkaes a string as its first parameter
+//use the second parameter, which will be an integer, to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have located the string; multiply by it the third provided parameter
+//hyphen in between each word
+
+
+function stringRepeat(str, int, num) {
+  // Initialize an empty array to store the words that will be repeated.
+  let arr = [];
+
+  // Initialize a variable to keep track of the current position in the string.
+  let count = 0;
+
+  // Split the input string into an array of words using space as the separator.
+  let word = str.split(' ');
+
+  // Get the word at the specified index 'int' from the 'word' array.
+  let get = word[int];
+
+  // Loop from 'count' to 'num - 1'.
+  for (let i = count; i < num; i++) {
+    // Check if the character at the current position 'i' in the input 'str' is less than 'num'.
+    if (i < num) {
+      // If the condition is true, add the entire 'word' array to the 'arr' array.
+      // This means the entire 'word' array will be repeated 'num - count' times.
+      arr.push(word);
+      count++; // Increment 'count' (this will cause an infinite loop, as 'count' is not updated properly).
+    }
+  }
+
+  // Join the 'arr' array elements with '-' separator and return the result as a string.
+  return arr.join('-');
+}
+
+//return a new array consisting of elements which are multiple of their own indfex in input array
+
+function multipleOfIndex(array){
+  let arr = []
+  for(let i = 0; i < array.length; i++){
+    if(array[i] % i === 0){
+      arr.push(array[i])
+    }
+  }
+  return arr
+}
+
