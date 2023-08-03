@@ -19223,3 +19223,12 @@ function multipleOfIndex(array){
   return arr
 }
 
+//create a function that accepts a list/array and a number n
+//return a list/array of the first n elements from the list/array\
+
+function take (arr, n){
+  return arr.slice(0, n)
+}
+
+//"named" storage for data
+//variables
