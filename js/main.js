@@ -19232,3 +19232,79 @@ function take (arr, n){
 
 //"named" storage for data
 //variables
+
+//--save
+//saves express as a dependency in package.json
+
+//write a function setAlarm which receives two parameters
+//the first parameter employed
+//is true whenever you are employed and the 
+// second parameter vacation
+//is true whenever you are on vacation
+//the function should return true if you are employed and not on vacation
+//it should return false otherwise
+
+function setAlarm(employed, vacation){
+  if(employed === true && vacation === false){
+    return true
+  }else{
+    false
+  }
+}
+
+//what is a number without quotes
+//a number
+
+//create a function that converts USD to CNY
+//conversion rate is 6.75 CNY for 1 USD
+//use 2 decimal places
+
+function usdcny(usd){
+  return `${(usd*6.75).toFixed(2)} Chinese Yuan`
+}
+
+//given a string of characters
+//return the character that appears the most often
+
+function maxChar(str){
+  let map = {}
+  let count = 0
+  let maxChar = null
+
+  for(const char of str){
+    charMap[char] = charMap[char] + 1 || 1
+  }
+
+  for(const char in charMap){
+    if(charMap[char] > count){
+      count = charMap[char]
+      maxChar = char
+    }
+  }
+  return maxChar
+}
+
+//count all the occurring characters in a string
+//if you have a string like aba
+//the restult should be {'a':2, 'b':1}
+//if the string is empty the result should be an empty object literal
+
+// This function takes a string as input and returns an object that contains the count of each character in the input string.
+function countChar(str) {
+  // Create an empty object to store the character counts.
+  let countObj = {};
+
+  // Iterate through each character (c) in the input string (str).
+  for (const c of str) {
+    // If the character (c) already exists as a key in the countObj, increment its count by 1.
+    if (countObj[c]) {
+      countObj[c]++;
+    } else {
+      // If the character (c) is encountered for the first time, set its count to 1.
+      countObj[c] = 1;
+    }
+  }
+
+  // Return the countObj containing the character counts.
+  return countObj;
+}
