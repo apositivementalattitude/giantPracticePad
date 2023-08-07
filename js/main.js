@@ -19351,3 +19351,28 @@ let max = function(list){
 //what can we use to access properties and methods?
 //the dot operator
 
+//count all the occurring characters in a string
+//if you have a string like aba
+//the result should be {'a':2, 'b':1}
+//if the string is empty
+//the result should be an empty object literal {}
+
+function countChars(str){
+  //create an empty object literal to store the character count
+  let map = {}
+
+  //iterate through each character in the input string
+  for(const c of str){
+    //check if the characyer already exists as a key in the map
+    if(map[c]){
+      //if it exists, increment the count for that character
+      map[c]++
+    }else{
+      //if it doesn't exist, add the character to the map and set its count to 1
+      map[c] = 1
+    }
+  }
+  //return the final character count map
+  return map
+}
+
