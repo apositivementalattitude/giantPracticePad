@@ -19444,3 +19444,23 @@ function factorial(n){
     return n * factorial(n - 1)
   }
 }
+
+//given a number as an input, print out every integer from 1 to that number
+//2 -> Fizz
+//3 -> Buzz
+//2*3 -> Fizz Buzz
+
+function fizzBuzz(n){
+  for(i = 1; i <= n; i++){
+    if(i % 6 === 0){
+      console.log('Fizz Buzz')
+    }else if(i % 2 === 0){
+      console.log('Fizz')
+    }else if(i % 3 === 0){
+      console.log('Buzz')
+    }else{
+      console.log(i)
+    }
+  }
+}
+
