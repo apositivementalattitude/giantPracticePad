@@ -19308,3 +19308,34 @@ function countChar(str) {
   // Return the countObj containing the character counts.
   return countObj;
 }
+
+//write a function that takes an array of words and smashes them together into a sentenc
+
+function wordSmash(word){
+  return word.join(' ')
+}
+
+//the preferred way to declare a variable that won't be reassigned
+//const
+
+//how do you concatenate strings
+//+
+
+//what must the condition of a while loop become?
+//the condition of a while loop must become false
+
+//complete the solution that it returns true if the first argument passed in ends with the 2nd arg
+
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+
+//your task is to make two function max and min receive a list of integers as inpuit and return the largest and lowest number in that list
+
+let min = function(list){
+  return Math.min(...list)
+}
+let max = function(list){
+  return Math.max(...list)
+}
+
