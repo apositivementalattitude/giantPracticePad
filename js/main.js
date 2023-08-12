@@ -19339,3 +19339,15 @@ let max = function(list){
   return Math.max(...list)
 }
 
+//concatenate
+//+
+
+//.add
+//add something
+
+//substring()
+//starts a new string from (start, end)
+
+//what can we use to access properties and methods?
+//the dot operator
+
