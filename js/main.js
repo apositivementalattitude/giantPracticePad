@@ -19351,6 +19351,8 @@ let max = function(list){
 //what can we use to access properties and methods?
 //the dot operator
 
+
+/*--------------------------------------------------------------------------------------------*/
 //count all the occurring characters in a string
 //if you have a string like aba
 //the result should be {'a':2, 'b':1}
@@ -19376,3 +19378,69 @@ function countChars(str){
   return map
 }
 
+//you're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have
+//each character in stones is a type of stone you have
+//you want to know how many of the stones you have are also jewels
+
+function jewelsInStones(jewels, stones){
+  let map = {},
+  count = 0
+
+  for(const jewel in jewels){
+    map[jewel] = true
+  }
+
+  for(const stone of stones){
+    if(map[stone]){
+      count++
+    }
+  }
+  return count
+}
+
+//your job is to figure out the index of which voewl is missing from a given string
+
+function findVowel(s){
+  let vowels = 'aeiou'
+
+  for(let i = 0; i < vowels.length; i++){
+    if(s.indexOf(vowels[i]) === -1){
+      return i
+    }
+  }
+}
+
+//given an array nums of size n, return the majority element
+
+//the majority element is the elemnt that appears more than [n/2] times
+//you may assume that the majority element always exists in the array
+
+function majElem(arr){
+  let elem = {},
+  count = 0,
+  majElem = arr[0]
+
+  for(const num of arr){
+    elem[num] = elem[num] + 1 || 1
+  }
+  for(const n in elem){
+    if(elem[n] > count){
+      count = elem[n]
+      majElem = n
+    }
+  }
+  return majElem
+}
+
+//do you know recursion
+//solve the problem using recursion
+//create the function factorial thatr receives n and return n!
+//you must use recursion
+
+function factorial(n){
+  if(n < 2){
+    return 1
+  }else{
+    return n * factorial(n - 1)
+  }
+}
