@@ -19543,3 +19543,30 @@ const isReallyNaN = (val) => {
 
 //abstraction principle is to hide the details
 
+//write a function bmi that calculates body mass index
+//bmi = weight/height^2
+
+function bmiCalculator (weight, height){
+  const bmi = weight/height**2
+  
+  if(bmi <= 18.5){
+    return "Underweight"
+  }else if(bmi <= 25){
+    return "Normal"
+  }else if(bmi <= 30){
+    return "Overweight"
+  }else{
+    return "Obese"
+  }
+}
+
+//tour task is to create the function isDivideBy to check if an integer number is divisbile by both integers a and b
+
+function isDividBy(number, a, b){
+  if(number % a === 0 && number % b === 0){
+    return true
+  }else{
+    return false
+  }
+}
+
