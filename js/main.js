@@ -19570,3 +19570,5 @@ function isDividBy(number, a, b){
   }
 }
 
+//syntax for arrow functions
+//hey.forEach((x, i) => console.log(x))
