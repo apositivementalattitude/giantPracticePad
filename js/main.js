@@ -19572,3 +19572,38 @@ function isDividBy(number, a, b){
 
 //syntax for arrow functions
 //hey.forEach((x, i) => console.log(x))
+
+//find the sum of all multiples of n below m
+
+function sumMul(n, m){
+    if(n >= m){
+        return "INVALID!"
+    }else{
+        let arr = []
+        for(let i = n; i <= m; i+=n){
+            arr.push(i)
+        }
+    }
+    return arr.reduce((a, b) => a + b, 0)
+}
+//how to require a file in server.js
+//const express = require("express")
+//const app = express()
+
+//write a function to get the first elements of a sequence
+function first(arr, n=1){
+    return arr.slice(0, n)
+}
+
+//count all the occurring characyers in a string
+function countChars(str){
+    let countObj = {}
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
