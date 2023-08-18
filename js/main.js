@@ -19607,3 +19607,65 @@ function countChars(str){
     }
     return countObj
 }
+
+//tell me about a situation when you made a mistake at work
+//what happened exactly
+//i made an error at work when i needed to order drawstrings for a customer; however, i didn't order th4e correct quantities of sizes
+//as this was very close to the lunar new year, i escalated this to our directore, and we were able to correct the order from our supplier overseas
+//going forward, we implemeneted a syustem with our overseas supplioer so that we had to get confirmation emails and check that to the PO
+
+//tell me about yourself
+//im a software engineer at 100devs; wheere ive been building full stack wqeb applications using the MERN stack alone and with colleagues
+//in the past ive been involved the fashion industry since i was young; where i went from fit modeling the clothes, to tyhe warehouse out of highh school; where i went from delivery driver to warehouse manager. eventually, i transitioned into a production management role at a trim supplier
+
+//tell me abobut when you had to deal with a conflict within your team
+//at my previous oppportunity, i had an order that needed to be assembled in house
+//however, a parrticular team member was having trouble assembling the pieces in the correct way after some time
+//which was frustrating some of the other team members
+//i pulled that team member aside and asked when the issue was
+//the team member was having trouble placing a glue sheet in the exact spot of the fabric piece
+//i suggestetd that she switch with another team member to reduce the fatigue from the monotonous task
+//now i would deal with it by having all the team members switch and do difffernt tasks every 25 mintues tot ry to curb fatigue from doing a siungle repetitive task
+
+//tell me about a time you had to workj oin several proejcts at once
+//how did you handle this?
+
+//working on several projects at once was pretty much my day to day as a production manager
+//i would have to keep track of multiple orders at once, the stage they were in. 
+//what helps me the most when working on sefveral projects at once would be to take a step back and evaluate what the best order to do things in and see where you can save time
+
+//describe a situation when you worked effectively under presssure
+//a time when i worked effectively under pressure was when i had to unload 30 containers in a two week window
+//i think again, the biggest factor for me was to take a step back and see what could be done in the best way and for plans to be flexibble
+
+
+//given a string of letters a, b, and c
+//switch the position of letters a and b
+
+function switchy(x){
+    let arr = []
+    let x = x.split('')
+
+    for(let i = 0; i < x.length; i++){
+        if(x[i] === a){
+            arr.push(b)
+        }else if(x[i] === b){
+            arr.push(a)
+        }else{
+            arr.push(x[i])
+        }
+    }
+    return arr.join('')
+}
+
+function switchy(x){
+    return x.split('').map(function(s){
+        if(s === a){
+            return 'b'
+        }else if(s === b){
+            return 'a'
+        }else{
+            return 'c'
+        }
+    }).join('')
+}
