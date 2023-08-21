@@ -19669,3 +19669,136 @@ function switchy(x){
         }
     }).join('')
 }
+
+//unshift(...items)
+//how to add items to the beginning of an array
+
+//you are to write a function that takes a string as its first paramtere
+//this string will be a string of words
+//you are expected to then use the second parameter
+//which iwll be an integer
+//find the corresponding word in a given string
+//the first word will be represented by 0
+//once you have located the string you are going to multiply by it the third parameter provided, which will also be an integer
+
+//ad a hyphen between each word
+function hyphenBetween(str, loc, num){
+    let arr = [],
+    word = str.split(' '),
+    get = word[loc]
+    count = 0
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+
+//when is a function expression used?
+//when the execution reached it and is usable only from that moment
+
+//create a varaible and console log the value
+let amazingVariable = 150
+console.log(amazingVariable)
+
+//create a variable add 10 to it, alert the value
+amazingVariable += 10
+alert(amazingVariable)
+
+//create a function that subtracts 4 numbers and alerts the difference
+function subFour (a,b,c,d){
+    return a-b-c-d
+}
+alert(subFour)
+
+function divide (x,y){
+    return x % y
+}
+
+function addTwo(n,n1){
+    if (n + n1 > 50){
+        alert('JUMANJI')
+    }
+}
+
+function multThre(q,w,e){
+    if(q*w*e % 3 === 0){
+        alert("ZEBRA")
+    }
+}
+
+function wordNum(word, num){
+    for(let i = 0; i < num; i++){
+    console.log(word)
+    }
+}
+
+//dragon takes 2 bullets to be defeated
+//the hero grabs a specific number of bullets to move forward
+//will be survive t/f?
+
+function hero(bullets, dragon){
+    if(bullets/2 >= dragon){
+        return true
+    }else{
+        return false
+    }
+}
+
+//write a fucniton to split a string and convert it into an array of words
+
+function splitStr(str){
+    return str.split(' ')
+}
+
+//object
+//an object is a collection of related data
+
+//if you are writing code related to the database
+//where does it belong?
+
+//database code belongs in the model
+
+//given an array of integers nums and target
+//return indices of the two numbers such that they add up to target
+
+function addNums(nums, target){
+
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; j++){
+            if(i !== j){
+                if(nums[i] + nums[j] === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+}
+
+function twoSum(nums,target){
+    let obj = {}
+    for(let i= 0; i < nums.length; i++){
+        if(target - nums[i] in obj){
+            return [obj[target - nums[i]], i]
+        }else{
+            obj[nums[i]] = i
+        }
+    }
+}
+
+//count all occurring characters in a string
+function countChars(str){
+    let countObj = {}
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
