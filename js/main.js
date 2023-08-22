@@ -19802,3 +19802,56 @@ function countChars(str){
     }
     return countObj
 }
+
+//given a string of random letters
+//count the rings in each letter and divide the total nuimber by 2
+//round the answer down
+//if <= 1 'not even a medal
+//if 2 'bronze
+//if 3 'silver
+//if >3 'gold
+
+function olympicRing(a){
+    let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+    let twoRings = ['B'];
+    let score = 0;
+    a.split('').map(x => {
+        if(rings.includes(x)){
+            score++
+        }else if(twoRings.includes(x)){
+            score+=2
+        }
+    })
+    score = Math.floor(score / 2)
+
+    if(score > 3){
+        return "Gold!"
+    }else if(score > 2){
+        return "Silver!"
+    }else if(score > 1){
+        return "Bronze!"
+    }else{
+        return "You stink, loser."
+    }
+}
+
+//create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
+//if no occurrences return 0
+
+function twoStr(str, word){
+    let count = 0
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === word){
+            count++
+        }
+    }
+    return count
+}
+
+//what is repetition in a loop
+//an iteration
+
+//the process of storing function methods with their associated data in an object
+
+//encapsulation
+
