@@ -19855,3 +19855,6 @@ function twoStr(str, word){
 
 //encapsulation
 
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
