@@ -19858,3 +19858,45 @@ function twoStr(str, word){
 function removeFirstLast(str){
     return str.slice(1, -1)
 }
+
+//define a method hello that returns "Hello, Name!" to a given name
+//says Hello, World! if name is not given or empty
+//asume that name is a string and it checks for user typos
+//return the name with first letter capital
+
+function hello(name){
+    if(name.length > 0){
+        return `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`
+    }else{
+        return "Hello, World!"
+    }
+}
+
+//create a function that has a loop that prints '21' 21 times to the console
+
+function loopMe(twoOne){
+    for(let i = 0; i <=21; i++){
+        document.querySelector('#').innerText +='21'
+    }
+}
+
+//your goal is to create a function that removes the first and last characters of a string
+
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
+
+//what does scope refer to?
+
+//scope refers to where variables can be access throughout the program
+
+//square every diogit of a number and concatenate them
+
+function concatStuff(n){
+    return n.split('').map(function(x){
+        for(let i = 0; i < n.length; i++){
+        return x*x
+        }
+    }).join('') * 1
+}
+
