@@ -12,5 +12,10 @@ specific styles targeting individual parts of the page are modules
 what includes styles based around the skin, or look and feel, of different modules?
 the theme includes styles based around the skin, or look and feel, of different modules
 
+flex-direction: row
+deteministic style for rows in css
+
+what is used to augment or override other styles in the event that a module includes an alternate state
+state
 */
 

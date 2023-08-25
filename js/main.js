@@ -19900,3 +19900,50 @@ function concatStuff(n){
     }).join('') * 1
 }
 
+//write a method that will get an integer array as parameter and will process every number from this array
+//return a new array with processing every number of the input array like this
+//if the number has an integer square root
+//take this
+//otherwise square the number
+
+function squareOrSquareRoot(array){
+    let arr = []
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % Math.sqrt(array[i]) === 0){
+            arr.push(i)
+        }else{
+            arr.push(array[i]**2)
+        }
+    }
+    return arr
+}
+
+function squareOrSquareRoot(array){
+    return array.map(n => Math.sqrt(n) == Math.sqrt(n).toFixed(0) ? Math.sqrt(n) : n * n)
+}
+
+//create a function that accepts a list/array ana number n
+//returns a list/array of tyhe first n lements from the list/array
+
+function take(arr, n){
+    return arr.slice(0, n)
+}
+
+function stairsIn20(s){
+    return s.reduce((a,b) => a.concat(b)).reduce((a,b) => a+ b)*20
+}
+
+//count all occurring character sin a string
+
+function countChars(str){
+    let countObj = {}
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
