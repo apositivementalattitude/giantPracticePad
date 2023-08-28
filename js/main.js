@@ -19947,3 +19947,18 @@ function countChars(str){
     return countObj
 }
 
+//complete t he method that takes a bboolean value and return a "Yes" string for true or a "No" string for false
+
+function boolToWord(bool){
+    if(bool === true){
+        return "Yes"
+    }else{
+        return "No"
+    }
+}
+
+//your goal is to create a function that removes the first and last characters of a string
+
+function removeFirstLast(s){
+    return s.slice(1, -1)
+}
