@@ -19962,3 +19962,32 @@ function boolToWord(bool){
 function removeFirstLast(s){
     return s.slice(1, -1)
 }
+
+
+//return the highest and lowest numbber in an array
+
+function highAndLow(numbers){
+    return Math.max(...numbers)
+}
+
+function highAndLow(numbers){
+    return Math.min(...numbers)
+}
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndex(array){
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i])
+        }
+    }
+    return arr
+}
+
+
+function howMuchWater(water, load, clothes){
+    return Math.floor(water * 1.1 ** (clothes - water))
+}
