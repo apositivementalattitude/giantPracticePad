@@ -19991,3 +19991,7 @@ function multipleOfIndex(array){
 function howMuchWater(water, load, clothes){
     return Math.floor(water * 1.1 ** (clothes - water))
 }
+
+
+//what do arrow functions do?
+//they just replace the word function in functions
