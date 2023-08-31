@@ -19995,3 +19995,60 @@ function howMuchWater(water, load, clothes){
 
 //what do arrow functions do?
 //they just replace the word function in functions
+
+
+//count all the occurring characters in a string
+//if you have a string like aba, then the result should be {'a': 2, 'b': 1}
+
+//what if the string is empty, then the restult should be an empty object
+
+function countChar(str){
+    let countObj = {}
+
+    for(const c of str){
+        if(countObj[c]){
+            countObj++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
+function countCHar(str){
+    let countObj = {}
+
+    for(const c of str){
+        if(countObj[c]){
+            countObj++
+        }
+    }
+    return countObj
+}
+
+//count all the occurring characters in a string
+
+function countChars(str){
+    //create obj
+    let countObj = {}
+    //loop => check val exist ? val++ || val = 1
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
+console.log(countChars('aba'), "{'a':2, 'b': 1}")
+console.log(countChars('dog'), "{'d':1,'o':1,'g' 1}")
+console.log(countChars('abba'), "{'a': 2, 'b': 2}")
+
+
+//create a funciton that removes the first and last characters of a string
+
+function removeFirstLast(s){
+    return s.slice(1, -1)
+}
