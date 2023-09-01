@@ -20052,3 +20052,35 @@ console.log(countChars('abba'), "{'a': 2, 'b': 2}")
 function removeFirstLast(s){
     return s.slice(1, -1)
 }
+
+function jewelsInStones(jewels, stones){
+    let map = {},
+    count = 0
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+
+    for(const stone of stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count
+}
+
+//count all the occurring charcyers in a string
+
+function countChar(str){
+    let countObj = {}
+
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+            }else{
+                countObj[c] = 1
+            }
+    }
+    return countObj
+}
+
