@@ -20084,3 +20084,53 @@ function countChar(str){
     return countObj
 }
 
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+    const arr = s.split('').map(x => x = str.indexOf(x) + 10)
+
+    return arr.map(x => x = str[x]).join('')
+}
+
+//create a variable and assign it a number
+let spicy = 20
+//minus 10 from that number
+spicy -= 10
+//print that number to the console
+console.log(spicy)
+
+//create a variable that holds a value from the input
+let available = Number(document.querySelector('input'))
+
+//add 25 to that number
+available = available + 25
+
+//alert that number
+alert(available)
+
+//create a varialbe that holds the h1
+// const h1 = document.querySelector(h1)
+
+//add an event listener to that element that console logs the sum of the two previous variables
+
+h1.addEventListener('click', addTwo)
+function addTwo(){
+    console.log(available + spicy)
+}
+
+//count all the occurring characters in a string
+//if you have a string like aba, then the result should be {'a': 2, 'b': 1}
+
+function countChars(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
