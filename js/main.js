@@ -20134,3 +20134,24 @@ function countChars(str){
     }
     return map
 }
+
+
+//move every letter in the provided string forward 10 letters
+
+function moveTen(s){
+    //define a constant string
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    //split the input string 's' into an array of characters, then map each charcter to a new value
+    const arr = s.split('').map(x => x = (str.indexOf(x) + 10))
+    
+    return arr.map(x => x = str[x]).join('')
+}
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
