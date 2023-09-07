@@ -20155,3 +20155,7 @@ function moveTen(s){
     })
     return arr.join('')
 }
+
+//the best functions are those with no parameters. The fewer the number of parameters the easier it is to maintain that function. What is this referring to?
+
+//encapsulation
