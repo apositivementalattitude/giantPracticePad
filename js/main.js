@@ -20159,3 +20159,58 @@ function moveTen(s){
 //the best functions are those with no parameters. The fewer the number of parameters the easier it is to maintain that function. What is this referring to?
 
 //encapsulation
+
+//tell me about a situation when you were responsible for project planning. Did everything go according to your plan?
+//If not, then why and what kind of counter-actions did you have to take?
+
+//The situation that sticks out most me when i was responsible for project planning would be at my previous opportunity, where I was a warehouse manager. We had a really busy summer planned for us, but problems at the port made it so that we wouldn't receive a lot of our product for an indefinite period of time. So, I had to alter my plans to fit a project that didn't have much clarity. So I had to make plans that were clear but flexible and able to be changed on the fly without disruption. We cleared extra space in the warehouse by stacking lots in the racks, which is something we normally wouldn't do. I organized the container documents so I knew exactly which order was coming off which container, and preplanned where the inventory from those containers would go. When the time finally arrived to receive the entire summer project in a two week window; there was a crunch, but we were able to accomplish our goals.
+
+function arrayPlusArray(arr1, arr2){
+    return arr1.concat(arr2).reduce((a,b) => a + b, 0)
+}
+
+function bump (x) {
+    let bumpCount = 0
+
+    x.split(' ').map(b => {
+        if(n){
+            bumpCount++
+        }
+    })
+    if(bumpCount > 15){
+        return "Car Dead"
+    }else{
+        return "Woohoo!"
+    }
+}
+
+function solution (str, ending){
+    return str.endsWith(ending)
+}
+
+//count all occurring characyters in a string
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map[c]
+}
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(str){
+
+    let vowels = 'aeiou'
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i
+        }
+    }
+}
