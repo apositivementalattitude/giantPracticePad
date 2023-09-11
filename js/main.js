@@ -20214,3 +20214,146 @@ function missingVowel(str){
         }
     }
 }
+
+//given an array of integers nums and an integer target
+//return the indices of the two numbers such that they add up to target
+
+function numsTarg(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(j = 0; j < nums.length; j++){
+            if(i !== j){
+                if(nums[i] + nums[j] === target){
+                    [i, j]
+                }
+            }
+        }
+    }
+}
+
+function numsTarg(nums, target){
+    let map = {}
+    for(let i = 0; i < nums.length; i++){
+        if(target - nums[i] in obj){
+            return [obj][target - nums[i]]
+        }else{
+            obj[nums[i]]= i
+        }
+    }
+
+}
+
+//tell me about a situation when you made a mistake at work
+//what happened exactly and how did you deal with it?
+//what steps did you take to improve the situation?
+
+//i made an error at work when i needed to order drawstrings for a customer
+//however, i didn't order the correct quanitities of sizes
+//as this was very close to the Lunar New Year, i scalated this to our director, and we were able to correct the order from our supplier overseas
+//going forward, we implemented a system with our overseas supplier so that we had to get confirmation emails and check that to the PO
+//whenever i join a new team i like to think in systems and ways that we can avoid common problems that might come up on the job
+
+//give me an example of the project or initiataive that you started on your own
+//it can be a non-business one
+//what prompted you to get started
+
+//at my previous opportunity, i saw that the way we handled receiving containers was a big waste of time
+//the previous method was to hand count the stickers that would be printed. I pretty quickly figured out how to convert the packing lists that we received in excel into pivot tables and generally shaved off an hour in my day to day to accomplish other tasks.
+
+//describe a situation when you worked effectively under pressure
+//how did you feel when working under pressure?
+//what was going on, and how idd you get through it?
+
+//a situation when i worked effectively under pressure was when i had to deliver a huge project in two weeks. I felt great under pressure, as it really breaks up the monotony of the day to day
+//i feel the best way to deal with hhigh pressure is to take a step back and evaluate the situation that you're in oder to make the best plans
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+//you are to write a function that tkes a string as it's first parameter
+//this string will be a string of words
+//you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have the located string you are finally going to mulitply by it the third provided parameter, which will also be an integer
+//you are additionally required to add a hyphen in between each word
+
+function hyphenSomeWord(str, num, loc){
+    let arr = []
+    let word = str.split(' ')
+    let get = word[loc]
+    let count = 0
+
+    for(let i = count; i < num; i++){
+        if (i < num) {
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join(' ')
+}
+
+//find the sum of all multiples of n below m 
+
+function sumMul(n,m){
+    let arr = []
+
+    for(let i = n; i < m; i+=n){
+        arr.push(i)
+    }
+    return arr.reduce((a,b) => a + b, 0)
+}
+
+//create a funciton that takes an integer as an argument and returns even for even, odd for odd
+
+function args(n){
+    if(n % 2 === 0){
+        return 'even'
+    }else{
+        return 'odd'
+    }
+}
+
+//recursion
+
+//factorial n
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+//return the charcter that appears the most often
+
+function maxChar(str){
+    let charMap = {}
+    let count = 0
+    let maxChar = null
+
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
+        }
+    }
+    return maxChar
+}
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
