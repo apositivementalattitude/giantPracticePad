@@ -20357,3 +20357,65 @@ function factorial(n){
     }
 }
 
+//create a function that takes in a list of button inpuits and returns the final state
+
+function likeOrDislike(buttons){
+ let state = 'Nothing'   
+
+ for(let i = 0; i < buttons.length; i++){
+    if(buttons[i] === state){
+        state = "Nothing"
+    }else{
+        state = buttons[i]
+    }
+ }
+ return state
+}
+
+//you are to write a function that takes a string as it's first parameter
+//this string wil be a string of words
+
+//second parameter
+//integer to find the corresponding word in the given string
+
+//you are going to multiply by it the third provided parameter
+
+function wordLoc(str, num, loc){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//count all the orccurring characters in a string
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
