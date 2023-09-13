@@ -20419,3 +20419,16 @@ function countChar(str){
     return map
 }
 
+//do you have any questions?
+
+//yes
+//what is the interview timeline like?
+//what is a typical day in this position?
+//what is the onboarding process after the offer?
+//do you have training programs available?
+
+//app.get('/', function(req, res){
+    //res.send('Hello World')
+//})
+//the above code is part of a response object
+
