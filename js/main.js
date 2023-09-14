@@ -20432,3 +20432,46 @@ function countChar(str){
 //})
 //the above code is part of a response object
 
+//what kind of things must you be wary of when design or developing for multilingual sites?
+//you must bbe wary of layout or overflow issues
+
+//script async
+//script async is a file that gets downloaded asynchronously and then executed after the download
+
+//offline and storage
+//offline and storage allows webpages to store data on the client side
+
+//app.get('/', function(req, res){
+    //res.send('Hello World)
+//})
+//this is an example of a response object
+
+//write a function that takes a string as it's first parameter
+//the second parameter is an integer
+//multiply it by the third parameter
+//hyphen between each word
+
+function locater(str, num, loc){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+//recursion question
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
