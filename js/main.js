@@ -20475,3 +20475,55 @@ function factorial(n){
         return n * factorial(n - 1)
     }
 }
+
+//create a function that removes the first and last characters of a string
+
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
+
+function contamination(text, char){
+    return char.repeat(text.length)
+}
+
+//write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value
+
+function remainder(n,m){
+    if(n > m){
+        return n % m
+    }else{
+        return m % n
+    }
+}
+
+//create a method all which takes two params 
+//return true if the function returns true for everyelement
+
+function all(arr, fun){
+    return arr.every(fun)
+}
+
+//move every letter inthe provided string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    s = s.split('').map(function (x) {
+        str.indexOf(x) + 10
+    })
+    return s.map()
+}
+
+function multipleIndex(array){
+    let arr = []
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(i)
+        }
+    }
+    return arr
+}
+
+function multipleOf(array){
+    return array.filter((a, b) => a % b == 0)
+}
+
