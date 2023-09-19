@@ -20657,3 +20657,40 @@ function factorial(n){
     }
 }
 
+//describe the difference between a cookie, sessionStorage, and localStorage
+//a cookie is information stored in the server
+//sessionStorage is information stored in the server to be deleted
+//localStorage is information stored in the browser
+
+
+//to defer code 
+//to defer code is to execute code after the download and browser finished the DOM construction and rendering
+
+//case statement syntax
+
+// let groceryItem = 'papaya'
+
+// switch(groceryItem){
+//     case: 'tomato'
+// }
+
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+
+    for(let i = 0; i < x.length; i++){
+        arr.push(x[i] + x[i])
+    }
+}
+
+function maps(x){
+    return x.map(n => n + n)
+}
+
+//you will be given an array a and a value x
+//check whether the provided array contains  the value
+
+function check(a, x){
+    return a.includes(x)
+}
