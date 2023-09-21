@@ -20694,3 +20694,45 @@ function maps(x){
 function check(a, x){
     return a.includes(x)
 }
+
+//promise syntax
+//fetch("#")
+//.then(res => res.json())
+//.then(data => {
+    //console.log(data)
+//})
+//.catch(error => {
+    //console.log(`error ${error}`)
+//})
+
+//what is connectivity?
+//connectivity allows you to communicate with the server in new and innovative ways
+
+//asynchronously
+//asynchronously is to happen at the same time
+
+//move every letter in the provided string forwars 10 letters
+
+
+//=== the identiy operator used to check if something is true
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+    for(let i = 0; i < x.length; i++){
+        arr.push(x[i] + x[i])
+    }
+}
+
+
+//count the number of divisors of a positive integer n
+
+function getDiv(n){
+    let count = 0
+    for(let i = 0; i <= n; i++){
+        if(n % i === 0){
+            count++
+        }
+    }
+    return count
+}
