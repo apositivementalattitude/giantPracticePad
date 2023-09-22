@@ -20736,3 +20736,49 @@ function getDiv(n){
     }
     return count
 }
+
+//what is the listen method in express
+//app.listen(3000, function() {
+    //console.log('listening on 3000')
+//})
+
+//you are to writre a function that takes a string as it's first parameter
+//str first param
+//find the corresponding word in a given string with the second parameter
+//loc send param
+//multiply the located string by the third param
+//num third param
+//hyphen between each word-word-word-word
+
+function modifyMultiply(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    //loop until the number given
+    for(let i = count; i < num; i++){
+        //if the number given is greater than the loop counter
+        if(i < num){
+            //push the word into the array
+            arr.push(word)
+            //add one to the counter
+            count++
+        }
+    }
+    //join it all with a dash
+    return arr.join('-')
+}
+
+//map object
+//a map object holds key value paris and remembers the orginal insertion order of the keys
+
+//recursion
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
