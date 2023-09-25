@@ -20539,246 +20539,367 @@
 //the format is n: string
 // \n  for new line
 
-const number = function (array) {
-    let arr = []
-    for(let i = 0; i < array.length; i++){
-        arr.push(`${i+1}: ${array[i]}, `)
-    }
-    return arr
-}
-
-//first param is a str
-//second param is an num
-//third param is a loc
-//locate the string
-//multiply by num
-//dashes between words
-
-function strIntLoc(str, loc, num){
-    let arr = []
-    let count = 0
-    let word = str.split(' ')
-    let get = word[loc]
-
-    for(let i = count; i < str.length; i++){
-        if(i < num){
-            arr.push(word)
-            count++
-        }
-    }
-    return arr.join('-')
-}
-
-//create a method SayHello that returns Hello name, welcome to city, state
-
-function sayHello(name, city, state){
-    return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}, welcome to ${city[0].toUpperCase() + city.slice(1).toLowerCase()}, ${state[0].toUpperCase() + state.slice(1).toLowerCase()}`
-}
-
-
-//fix this
-
-function capitalizeWord(word) {
-    return word[0].toUpperCase() + word.slice(1); 
-}
-
-//given an array of integers, return a new array with each value doubled
-
-function maps(x){
-    let arr = []
-    for(let i = 0; i < x.length; i++){
-        arr.push(x[i] + x[i])
-    }
-    return arr
-}
-
-function maps(x){
-    return x.map( n => n+n)
-}
-
-//given an arraay nums of size n
-//return the majority element
-
-function returnMaj(n){
-    let elem = {}
-    let count = 0
-    let majElem = arr[0]
-
-    for(const num of arr){
-        elem[num] = elem[num] + 1 || 1
-    }
-
-    for(const n in elem){
-        if(elem[n] > count){
-            count = elem[n]
-            majElem = n
-        }
-    }
-    return majElem
-}
-
-//fizzbuss
-
-function fizzBussin(n){
-    for(let i = 1; i <= n; i++){
-        if(i % 6 === 0){
-            console.log("Fizz Buzz")
-        }else if (i % 2 === 0){
-            console.log("Fizz")
-        }else if(i % 3 === 0){
-            console.log("Buzz")
-        }else{
-            console.log(i)
-        }
-    }
-}
-
-//count all occurring chars in a string
-
-function countChar(str){
-    let countObj = {}
-    for(const c of str){
-        if(countObj[c]){
-            countObj[c]++
-        }else{
-            countObj[c] = 1
-        }
-    }
-    return countObj
-}
-
-//recursion
-
-function factorial(n){
-    if( n < 2){
-        return 1
-    }else{
-        return n * factorial(n - 1)
-    }
-}
-
-//describe the difference between a cookie, sessionStorage, and localStorage
-//a cookie is information stored in the server
-//sessionStorage is information stored in the server to be deleted
-//localStorage is information stored in the browser
-
-
-//to defer code 
-//to defer code is to execute code after the download and browser finished the DOM construction and rendering
-
-//case statement syntax
-
-// let groceryItem = 'papaya'
-
-// switch(groceryItem){
-//     case: 'tomato'
+// const number = function (array) {
+//     let arr = []
+//     for(let i = 0; i < array.length; i++){
+//         arr.push(`${i+1}: ${array[i]}, `)
+//     }
+//     return arr
 // }
 
-//given an array of integers, return a new array with each value doubled
+// //first param is a str
+// //second param is an num
+// //third param is a loc
+// //locate the string
+// //multiply by num
+// //dashes between words
 
-function maps(x){
-    let arr = []
+// function strIntLoc(str, loc, num){
+//     let arr = []
+//     let count = 0
+//     let word = str.split(' ')
+//     let get = word[loc]
 
-    for(let i = 0; i < x.length; i++){
-        arr.push(x[i] + x[i])
-    }
-}
+//     for(let i = count; i < str.length; i++){
+//         if(i < num){
+//             arr.push(word)
+//             count++
+//         }
+//     }
+//     return arr.join('-')
+// }
 
-function maps(x){
-    return x.map(n => n + n)
-}
+// //create a method SayHello that returns Hello name, welcome to city, state
 
-//you will be given an array a and a value x
-//check whether the provided array contains  the value
-
-function check(a, x){
-    return a.includes(x)
-}
-
-//promise syntax
-//fetch("#")
-//.then(res => res.json())
-//.then(data => {
-    //console.log(data)
-//})
-//.catch(error => {
-    //console.log(`error ${error}`)
-//})
-
-//what is connectivity?
-//connectivity allows you to communicate with the server in new and innovative ways
-
-//asynchronously
-//asynchronously is to happen at the same time
-
-//move every letter in the provided string forwars 10 letters
+// function sayHello(name, city, state){
+//     return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}, welcome to ${city[0].toUpperCase() + city.slice(1).toLowerCase()}, ${state[0].toUpperCase() + state.slice(1).toLowerCase()}`
+// }
 
 
-//=== the identiy operator used to check if something is true
-//given an array of integers, return a new array with each value doubled
+// //fix this
 
-function maps(x){
-    let arr = []
-    for(let i = 0; i < x.length; i++){
-        arr.push(x[i] + x[i])
-    }
-}
+// function capitalizeWord(word) {
+//     return word[0].toUpperCase() + word.slice(1); 
+// }
+
+// //given an array of integers, return a new array with each value doubled
+
+// function maps(x){
+//     let arr = []
+//     for(let i = 0; i < x.length; i++){
+//         arr.push(x[i] + x[i])
+//     }
+//     return arr
+// }
+
+// function maps(x){
+//     return x.map( n => n+n)
+// }
+
+// //given an arraay nums of size n
+// //return the majority element
+
+// function returnMaj(n){
+//     let elem = {}
+//     let count = 0
+//     let majElem = arr[0]
+
+//     for(const num of arr){
+//         elem[num] = elem[num] + 1 || 1
+//     }
+
+//     for(const n in elem){
+//         if(elem[n] > count){
+//             count = elem[n]
+//             majElem = n
+//         }
+//     }
+//     return majElem
+// }
+
+// //fizzbuss
+
+// function fizzBussin(n){
+//     for(let i = 1; i <= n; i++){
+//         if(i % 6 === 0){
+//             console.log("Fizz Buzz")
+//         }else if (i % 2 === 0){
+//             console.log("Fizz")
+//         }else if(i % 3 === 0){
+//             console.log("Buzz")
+//         }else{
+//             console.log(i)
+//         }
+//     }
+// }
+
+// //count all occurring chars in a string
+
+// function countChar(str){
+//     let countObj = {}
+//     for(const c of str){
+//         if(countObj[c]){
+//             countObj[c]++
+//         }else{
+//             countObj[c] = 1
+//         }
+//     }
+//     return countObj
+// }
+
+// //recursion
+
+// function factorial(n){
+//     if( n < 2){
+//         return 1
+//     }else{
+//         return n * factorial(n - 1)
+//     }
+// }
+
+// //describe the difference between a cookie, sessionStorage, and localStorage
+// //a cookie is information stored in the server
+// //sessionStorage is information stored in the server to be deleted
+// //localStorage is information stored in the browser
 
 
-//count the number of divisors of a positive integer n
+// //to defer code 
+// //to defer code is to execute code after the download and browser finished the DOM construction and rendering
 
-function getDiv(n){
-    let count = 0
-    for(let i = 0; i <= n; i++){
-        if(n % i === 0){
-            count++
-        }
-    }
-    return count
-}
+// //case statement syntax
 
-//what is the listen method in express
-//app.listen(3000, function() {
-    //console.log('listening on 3000')
-//})
+// // let groceryItem = 'papaya'
 
-//you are to writre a function that takes a string as it's first parameter
-//str first param
-//find the corresponding word in a given string with the second parameter
-//loc send param
-//multiply the located string by the third param
-//num third param
-//hyphen between each word-word-word-word
+// // switch(groceryItem){
+// //     case: 'tomato'
+// // }
 
-function modifyMultiply(str, loc, num){
-    let arr = []
-    let count = 0
-    let word = str.split(' ')
-    let get = word[loc]
+// //given an array of integers, return a new array with each value doubled
 
-    //loop until the number given
-    for(let i = count; i < num; i++){
-        //if the number given is greater than the loop counter
-        if(i < num){
-            //push the word into the array
-            arr.push(word)
-            //add one to the counter
-            count++
-        }
-    }
-    //join it all with a dash
-    return arr.join('-')
-}
+// function maps(x){
+//     let arr = []
 
-//map object
-//a map object holds key value paris and remembers the orginal insertion order of the keys
+//     for(let i = 0; i < x.length; i++){
+//         arr.push(x[i] + x[i])
+//     }
+// }
 
-//recursion
+// function maps(x){
+//     return x.map(n => n + n)
+// }
 
-function factorial(n){
-    if(n < 2){
-        return 1
-    }else{
-        return n * factorial(n - 1)
-    }
-}
+// //you will be given an array a and a value x
+// //check whether the provided array contains  the value
+
+// function check(a, x){
+//     return a.includes(x)
+// }
+
+// //promise syntax
+// //fetch("#")
+// //.then(res => res.json())
+// //.then(data => {
+//     //console.log(data)
+// //})
+// //.catch(error => {
+//     //console.log(`error ${error}`)
+// //})
+
+// //what is connectivity?
+// //connectivity allows you to communicate with the server in new and innovative ways
+
+// //asynchronously
+// //asynchronously is to happen at the same time
+
+// //move every letter in the provided string forwars 10 letters
+
+
+// //=== the identiy operator used to check if something is true
+// //given an array of integers, return a new array with each value doubled
+
+// function maps(x){
+//     let arr = []
+//     for(let i = 0; i < x.length; i++){
+//         arr.push(x[i] + x[i])
+//     }
+// }
+
+
+// //count the number of divisors of a positive integer n
+
+// function getDiv(n){
+//     let count = 0
+//     for(let i = 0; i <= n; i++){
+//         if(n % i === 0){
+//             count++
+//         }
+//     }
+//     return count
+// }
+
+// //what is the listen method in express
+// //app.listen(3000, function() {
+//     //console.log('listening on 3000')
+// //})
+
+// //you are to writre a function that takes a string as it's first parameter
+// //str first param
+// //find the corresponding word in a given string with the second parameter
+// //loc send param
+// //multiply the located string by the third param
+// //num third param
+// //hyphen between each word-word-word-word
+
+// function modifyMultiply(str, loc, num){
+//     let arr = []
+//     let count = 0
+//     let word = str.split(' ')
+//     let get = word[loc]
+
+//     //loop until the number given
+//     for(let i = count; i < num; i++){
+//         //if the number given is greater than the loop counter
+//         if(i < num){
+//             //push the word into the array
+//             arr.push(word)
+//             //add one to the counter
+//             count++
+//         }
+//     }
+//     //join it all with a dash
+//     return arr.join('-')
+// }
+
+// //map object
+// //a map object holds key value paris and remembers the orginal insertion order of the keys
+
+// //recursion
+
+// function factorial(n){
+//     if(n < 2){
+//         return 1
+//     }else{
+//         return n * factorial(n - 1)
+//     }
+// }
+
+// //your task is to find the nearest square number, nearest_sq(n) of a positive integer n
+
+// function nearestSq(n){
+//     return Math.pow(Math.round(Math.sqrt(n)), 2)
+// }
+
+// //when provided with a letter, return its position in the alphabet
+
+// function position(letter){
+//     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+//     return `Position of alphabet: ${alphabet.indexOf(letter)}`
+// }
+
+// //what is another way to iterate an array
+// //[]
+// //myArray.forEach(myElement => {
+//     //
+// //})
+
+// //\n new line
+
+// //given an array of integers, return a new array with each value doubled
+
+// function maps(x){
+//     let arr = []
+//     for(let i = 0; i < x.length; i++){
+//         arr.push(x[i] + x[i])
+//     }
+//     return arr
+// }
+
+// function maps(x){
+//     return x.map(function(n){
+//         return n+n
+//     })
+// }
+
+// //your goal is to create a function that removes the first and last characters of a string
+
+// function removeFirstLast(str){
+//     return str.slice(1, -1)
+// }
+
+// //write a script that will check to see if the player has achieved at least 100 points in his class
+// //return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.".
+
+// //otherwise return false
+
+// function playerRankUp(points){
+//     if(points >= 100){
+//         return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.".
+//     }else{
+//         return false
+//     }
+// }
+
+// //substring
+// //substrings are like slice but for strings
+
+// //the first century spans from the eyar 1 up to and including the year 100
+
+// //given a year, return the century
+
+// function century(year){
+//     let count = 0
+
+//     for(let i = 0; i <= year; i++){
+//         if(i % 100 == 0){
+//             count++
+//         }
+//     }
+//     return count
+// }
+
+// //return the nth even number
+
+// function nthEven(n){
+//     return n*2-2
+// }
+
+// //build a function that returns an array of integers from n to 1 where n > 0
+
+// const reverseSq = n => {
+//     let arr = []
+//     for(let i = n; i >= 1; i-=1){
+//         arr.push(i)
+//     }
+//     return arr
+// }
+
+// //count all the occurring charcters in a string
+
+// function countChars(str){
+//     let countObj = {}
+
+//     for(const c of str){
+//         if(countObj[c]){
+//             countObj[c]++
+//         }else{
+//             countObj[c] = 1
+//         }
+//     }
+//     return countObj
+// }
+
+// function jewelsInStones(jewwls, stones){
+//     let map = {}
+//     let count = 0
+
+//     for(const jewel in jewels){
+//         map[jewel] = true
+//     }
+//     for(const stone of stones){
+//         if(map[stone]){
+//             count++
+//         }
+//     }
+//     return count
+// }
