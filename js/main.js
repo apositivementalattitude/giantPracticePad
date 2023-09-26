@@ -20903,3 +20903,36 @@
 //     }
 //     return count
 // }
+
+//write a funciton that reverses the words in a given string
+function revWords(str){
+    return str.split(' ').reverse().join(' ')
+}
+
+function revWords(str){
+    let arr = []
+    for(let i = 0; i < str.length; i++){
+        arr.unshift(str[i])
+    }
+    return arr
+}
+
+//calculate an array average and compare you score
+
+function avgScores(yourScore, classScores){
+    
+    //add all the class scores
+    let avg = classScores.reduce((a,b) => a + b, 0)
+    //find the average
+    avg = avg/classScores.length
+    //compare your scores to the class average
+    if(yourScore > avg){
+        return 'true'
+    }else{
+        return 'you stink, loser'
+    }
+}
+
+//find/filter function
+//filters elements throuhg the function, return first/all values that make it return true
+
