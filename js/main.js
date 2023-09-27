@@ -20936,3 +20936,50 @@ function avgScores(yourScore, classScores){
 //find/filter function
 //filters elements throuhg the function, return first/all values that make it return true
 
+//write a funciton that takes a 
+//string as first arg
+//num as second arg
+//int as third arg
+//the string will be multiplied by the int
+//add a hyphen between each word
+
+function modifyMultiply(str, int, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[int]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word[i])
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+
+//create a funciton that takes 2 integers in form of a string as an input and outpuits the sum
+
+function takeTwo(num1, num2){
+    return (+num1 + +num2) + ""
+}
+
+//remove the spaces from the string
+//return the result
+
+function spaceRemover(str){
+    return str.split(' ').join('')
+}
+
+//recursion factorial
+//n!
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
