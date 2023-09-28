@@ -20983,3 +20983,34 @@ function factorial(n){
     }
 }
 
+function first(arr, n=1) {
+    return arr.slice(0, n)
+}
+
+//complete the mouth_size method 
+//if animal === alligator
+//return small
+//otherwise return wide
+
+function mouthSize(animal){
+    if(animal === 'alligator'){
+        return small
+    }else{
+        return wide
+    }
+}
+
+//move every letter in the provided string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    return str.map(function (x){
+        return x.indexOf(s) + 10
+    })
+}
+//find the needle in the haystack
+
+function findNeedle(haystack) {
+    return `found the needle at position ${haystack.indexOf('needle')}`
+}
+
