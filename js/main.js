@@ -21014,3 +21014,20 @@ function findNeedle(haystack) {
     return `found the needle at position ${haystack.indexOf('needle')}`
 }
 
+//IN JAVASCRIPT, FUNCTIONS ARE OBJECTS
+
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+    for(let i = 0; i < x.length; i++){
+        arr.push(x[i] + x[i])
+    }
+    return arr
+}
+
+function maps(x){
+    return x.map(function (s) {
+        s+s
+    })
+}
