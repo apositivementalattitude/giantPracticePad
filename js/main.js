@@ -21031,3 +21031,105 @@ function maps(x){
         s+s
     })
 }
+
+//tell me about when you had to deal with conflict within your team.
+//how was the conflict solved?
+//how did you handle that?
+//how would you deal with it now
+
+//at ym previous opportunity, I had an order that needed to be assembled in-house; however, a particular team member was having trouble assembling the pieces in the correct way wafter some time, which was frustrating some of the other team members.
+//I pulled the team member aside and asked what the issue was. The team member was having trouble placing a glue sheet in the exact spot of the fabric piece. I suggested that she switch with another team member, to reduce the fatigue from the monotnous task.
+//Now, I would deal wit hit by having al lthe team members switch and do different tasks every so often to try to curb fatigue from repetitive tasks.
+
+//animal potluck
+//write function feast
+//take the animals dish name and return t/f
+//assume beast and dish are always lowercase strings
+//beast and dish must start and end with the same letters
+
+function feast(beast, dish){
+    if(beast.slice(-1) === dish.slice(-1) && beast[0] === dish[0]){
+        return true;
+    }else{
+        return false;
+    }
+};
+
+//complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade
+
+function getGrade(s1, s2, s3){
+    let score = (s1+s2+s3)/3
+
+    if(score > 100){
+        return 'nerd.'
+    }else if(score => 90 && score <= 100){
+        return 'A'
+    }else if(score => 80 && score > 90){
+        return 'B'
+    }else if(score => 70 && score > 80){
+        return 'C'
+    }else if(score => 60 && score > 70){
+        return 'D'
+    }else{
+        return 'you stink, loser'
+    }
+}
+
+//every day you rent the car costs $40
+//if you rent the car for 7 or more days, you get $50 off your total
+//3 or more days you get $20 off the total
+
+function carRental(days){
+    if(days >= 7){
+        return 40 * days - 50
+    }else if(days >= 3){
+        return 40 * days - 20
+    }else{
+        return 40 * days
+    }
+}
+
+//given an array of integers as strings and numbers, return the sum of the array values as if all were numbers
+//return your answer as a number
+
+function sumMix(x){
+    return x.reduce((a,b) => +a + +b, 0)
+}
+
+//messi goals
+
+function messiGoals(laLiga, copa, champions){
+    return laLiga + copa + champions
+}
+
+//squire every digit of a number and concatenate them
+
+function concatNums(n){
+    let arr = []
+    for(let i = 0; i < num.length; i++){
+        arr.push(num[i] * num[i])
+    }
+    return arr.join('')
+}
+
+//filter method syntax
+
+// arr.filter( a => a > 1)
+
+//value types; primitives
+
+//given an array of integers nums and an integer target
+
+//return the indicies of the two numbers such that they add up to target
+
+function indices(nums, target){
+    for(let i = 0; i < nums; i++){
+        for(let j = 0; j < nums; j++){
+            if(i !== j){
+                if(i + j === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+}
