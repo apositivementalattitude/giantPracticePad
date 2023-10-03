@@ -21133,3 +21133,85 @@ function indices(nums, target){
         }
     }
 }
+
+//count all the occurring characters in a string
+
+function countChar(s){
+    let map = {}
+    for(const c of s){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//given a string of characters, return the character that appears the most often
+
+function maxChar(str){
+    let charMap = {}
+    let count = 0
+    let maxChar = null
+    
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
+        }
+    }
+    return maxChar
+}
+
+//factorial recursion
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//methods are actions that we can perform e.g., log() length
+
+//sanitize the argument so that you always show 2 decimals
+
+function formatMoney(amount){
+    return `$${amount.toFixed(2)}`
+}
+
+//write a functio nthat takes a string as its first parameter
+//first param = string
+//second param is an integer to find the fiven word in a string
+//second param = location
+//third param is a number to multiply
+//third param = number
+//hyphen between each word
+
+function modifyMultiply(str, loc, num){
+    let count = 0
+    let arr = []
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+//calculate the average
+
+function getAverage(marks){
+    return Math.floor(marks.reduce((a, b) => a + b, 0)/marks.length)
+}
+
