@@ -21215,3 +21215,46 @@ function getAverage(marks){
     return Math.floor(marks.reduce((a, b) => a + b, 0)/marks.length)
 }
 
+//complete the function that takes two integers (a, b, where a  < b) and return an array of all integers between the input parameters includin them
+
+function takeTwo(a, b){
+    let arr = []
+
+    for(let i = a; i <= b; i++){
+        arr.push(i)
+    }
+    return arr
+}
+
+//return a multiplication table
+
+const multiTable = (number) => {
+    let table = ''
+    for(let i = 1; i <= 10; i++){
+        table+= `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`
+    }
+}
+
+//an object is a collection of related data
+
+//given an array of integers
+//return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+    for(let i = 0; i < x; i++){
+        arr.push(x[i] * x[i])
+    }
+    return arr
+}
+
+function maps(x){
+    return x.split('').map(function (s){
+        s*s
+    })
+}
+
+function maps(x){
+    return x.map(n => n * 2)
+}
+
