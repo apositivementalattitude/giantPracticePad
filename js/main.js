@@ -21258,3 +21258,44 @@ function maps(x){
     return x.map(n => n * 2)
 }
 
+//your goal is to create a function that removes the first and last characters of a string
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
+
+function removeFirstLast(str){
+    let arr = []
+    let letter = str.split('')
+    
+    for(let i = 0; i < str.length; i++){
+        if(letter[i] !== letter[0] || letter[i] !== letter[-1]){
+            arr.push(letter[i])
+        }
+    }
+    return arr.join('')
+}
+
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
+
+//what is a const
+//a const is a variable that will not change
+
+//return a new array consisting of elements which are multiple of their own index in input array (length > 1)
+
+function multipleOfIndex(array){
+    //new array
+    let arr = []
+    //loop through the existing array to find 
+    for(let i = 0; i < array.length; i++){
+    //elements that are multiple of their own index
+        if(array[i] % i === 0){
+            //if its true - add the element to the end of the new array
+            arr.push(array[i])
+        }
+    }
+    //return the new array
+    return arr
+}
+
