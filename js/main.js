@@ -21299,3 +21299,20 @@ function multipleOfIndex(array){
     return arr
 }
 
+//give me an example of the project or initiative that you started on your own
+
+//at my previous opportunity, the day i was promoted to warehouse manager; i noticed that the way that we trackedt he packing lists for our inbound containers was wholly inefficient
+//endpoint
+//the end of a url
+
+//move every letter in the provided string forward 10 letters 
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
