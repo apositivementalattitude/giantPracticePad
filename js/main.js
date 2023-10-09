@@ -21316,3 +21316,122 @@ function moveTen(s){
     return arr.join('')
 }
 
+//properties determine the styles that will be applied to that element
+
+//given a string of random letters
+//count the rings in each letter and divide the total number by 2
+//round the answer down
+
+function olympicRing(a){
+    let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+    let twoRings = ['B'];
+    let score = 0;
+    a = a.split('')
+
+    for(let i = 0; i < a.length; i++){
+        if(a[i].includes(rings)){
+            score++
+        }else if(a[i].includes(twoRings)){
+            score+=2
+        }
+    }
+    score = Math.floor(score/2)
+
+    if(score <= 1){
+        return 'you suck'
+    }else if(score == 2){
+        return 'b'
+    }else if(score == 3){
+        return 's'
+    }else{
+        return 'g'
+    }
+}
+
+//write a function that takes a single string as argument
+//the function must return an ordered list containing the indexes of all capital letters in the string
+
+const capitals = function (word){
+    let arr = []
+    let letter = word.split('')
+
+    for(let i = 0; i < letter.length; i++){
+        if(letter[i] === letter[i].toUpperCase()){
+            arr.push(i)
+        }
+    }
+    return arr
+}
+
+//complete the funciton that receives as input a string and produces outputs according the the following table
+
+// "Jabroni"	"Patron Tequila"
+// "School Counselor"	"Anything with Alcohol"
+// "Programmer"	"Hipster Craft Beer"
+// "Bike Gang Member"	"Moonshine"
+// "Politician"	"Your tax dollars"
+// "Rapper"	"Cristal"
+// anything else	"Beer"
+
+
+//make sure you cover the cases where certain words do not show up with correct capitalization
+
+function getDrinkBy(param){
+    param = param.toLowerCase()
+    switch(param) {
+        case "Jabroni" :
+            return "Patron Tequila";
+            break;
+        case "School Counselour" :
+            return "Anything";
+            break;
+        case "Programmer" :
+            return "Hipster Craft Beer";
+            break;
+        case "Bike Gang Member" :
+            return "Moonshine";
+            break;
+        case "Politician" :
+            return "Your tax dollars";
+            break;
+        case "Rapper" :
+            return "Cristal";
+            break;
+        default :
+            return "Beer";
+    }
+}
+
+//make a program that filters a list of strings and return a list with only your friends name in it 
+//if a name has 4 letters, it's your friend
+
+
+function friends(name){
+    if(name === name.length(4)){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+//find the sum of all multiples of n below m
+
+function sumMul(n, m){
+    let arr = []
+    for(let i = n; i < m; i+= n){
+        arr.push(i)
+    }
+    return arr.reduce((a, b) => a + b, 0)
+}
+
+//figure out the index of which vowel is missing from a given string
+
+function missingStr(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] !== -1)){
+            return i
+        }
+    }
+}
