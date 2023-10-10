@@ -21435,3 +21435,48 @@ function missingStr(str){
         }
     }
 }
+
+//what is the interview process like?
+//what is the timeline?
+
+//what are some of the challenges for the person in this position?
+
+//what is a typical day in this position?
+
+//what is the onboarding process after the offer?
+//are there training programs available?
+
+//you are to write a funciton that takes a string as it's first parameter
+//this string will be a string of words
+//you are expected to then use the second parameter
+//which will be an integer
+//find the corresponding word in the given string
+//the first word would be represented by 0
+//once you ahve the located string ytou are finally going to multiplt by it the third provided parameter
+//which will also be an integer
+//you are additionally required to add a hyphen in between each word
+
+function wordLoc(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+    
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+//name the data types in javascript
+//string
+//number
+//boolean
+//null
+//NaN
+//undefined
+//symbol
+//object
