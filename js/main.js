@@ -21480,3 +21480,52 @@ function wordLoc(str, loc, num){
 //undefined
 //symbol
 //object
+
+//given 2 strings
+//a and b
+//return a string of the form 
+//short+long+short
+//with the shorter string on the outside and the longer string on the inside
+//the strings will not be the same length
+//but they may be empty
+function solution (a, b){
+    if(a.length > b.length){
+        return b+a+b
+    }else{
+        return a+b+a
+    }
+}
+
+//the box model
+//padding
+//element
+//border
+
+//return a new array with each value doubled
+
+function maps(x){
+    return x.map(s => s + s)
+}
+
+//your job is to return the middle character of the word
+
+//if the word's length is odd, return the middle character
+
+
+function midLetter(str){
+    if(str % 2 === 0){
+        return str.substring((s.length/2) - 1, (s.length/2) + 1)
+    }else if(str.length % 2 === 1){
+        return str.substring((str.length/2) + 1, (str.length/2))
+    }
+}
+
+//declare a variable, assign it a string of multiple words
+//check to see if one of the words is 'apple'
+
+function findApple(str){
+    let s = "a bunch of apple computers"
+
+    return s.search('apple')
+}
+
