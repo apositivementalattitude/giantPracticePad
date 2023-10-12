@@ -21529,3 +21529,14 @@ function findApple(str){
     return s.search('apple')
 }
 
+//recursion
+//create the function factorial that receives n and returns n!
+//you mujst use recursion
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
