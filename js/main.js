@@ -21540,3 +21540,32 @@ function factorial(n){
         return n * factorial(n - 1)
     }
 }
+//count the occurring characters in a string
+//if you have a string like aba, then the result should be {'a':2, 'b':1}
+//what if the string is empty
+//then the result should be an empty object literal 
+
+function countOccurrences(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//create a funciton that gives a personalized greeting
+
+function greet(name, owner){
+    if(name === owner){
+        return "Hello Boss"
+    }else{
+        return "Hello guest"
+    }
+}
+
+//semantics is how you more accurately describe your code
