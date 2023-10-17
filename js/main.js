@@ -21620,3 +21620,21 @@ function classPages(n, m){
     }
 }
 
+//+=
+
+
+//you will receive a data structure representing the stairs suzuki logged in a year
+//how many stairs did suzuki climb in 20 year
+//20 year estimate = one year total * 20
+//your solution must take into account all of the nesting within the stairs array
+
+
+function stairsIn20(s){
+    return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
+}
+
+//what is progressive rendering?
+
+//progressive rendering is when you sequentially render parts of the webpage on the server side and send it to the client in portions
+//progressive rendering is when you sequentially render parts of the webpage on the server side and send it to the client in portions
+
