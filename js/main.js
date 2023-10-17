@@ -21569,3 +21569,54 @@ function greet(name, owner){
 }
 
 //semantics is how you more accurately describe your code
+
+//tell me about yourself
+//I'm eric, a software engineer at 100devs. I build web apps both alone and with colleagues. I was in the fashion industry for the majority of my career where I went from being a laborer in the warehouse to the warehouse manager and eventually a production manager. Most of my life, I've been told by my friends family and colleagues that since i like to make things, and im good with computers, i should look at something in software development and i eventually learned how to code. with my background in design and my experience in creative workflows, i can help a development team with new and creative ideas
+
+//tell me about a time yopu had to workj on several projects at once
+//how did you handle this
+//handliong several projects at once is pretty much a daily occurrence in production management.
+//every order is basically its own project and i was in charge of price, quality control, labor, scheduling.
+//i tend to handle these by taking a step back and looking at things in the macro before i look at them in the micro to try to see how everything would flow in the best possible way'
+
+//connectivity
+//connectivity is how you communicate with the server in new and innovative ways
+
+//what is progressive rendering
+//progressive rendering is to sequentially render parts of the webpage on the server side and sending it to the client in portions
+
+
+//move every letter in the provided string forward 10 letters through the alphabet
+function moveTen(s){
+    const str ='abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+
+class Kata{
+    static getVolumeOfCuboid(l,w,h){
+        return l*w*h
+    }
+}
+//create a fucntion that removes the first and last characters of a string
+
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
+
+//calculate how manyu blank pages you need 
+//n = classmates
+//m = pages
+
+function classPages(n, m){
+    if(n < 0 || m < 0){
+        return 0
+    }else{
+        return n * m
+    }
+}
+
