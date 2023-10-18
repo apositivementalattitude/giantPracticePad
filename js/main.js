@@ -21638,3 +21638,46 @@ function stairsIn20(s){
 //progressive rendering is when you sequentially render parts of the webpage on the server side and send it to the client in portions
 //progressive rendering is when you sequentially render parts of the webpage on the server side and send it to the client in portions
 
+//what is a constructor
+
+//a constructor is a function that was used to create or construct the object
+
+//implement a function that adds two numbers together and returns their sum in binary
+
+function numToBin(a, b){
+    return (a+b).toString(2)
+}
+
+//complete the solution so that it returns true if the first argument passed in ends with the 2nd argument
+
+function solution(str, ending){
+    return str.endsWith(ending)
+}
+
+//write a funciotn that takes a string its first parameter
+
+//find the corresponding word in a given string with athe second parameter
+
+//multiply it by the third parameter
+
+//join with -
+
+function stringDash(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(word)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+//scrfipt is client side code
+
+
+//100devs is an agency with a training program where we work alone and with colleagues to build full stack applications 
