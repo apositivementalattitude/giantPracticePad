@@ -21681,3 +21681,49 @@ function stringDash(str, loc, num){
 
 
 //100devs is an agency with a training program where we work alone and with colleagues to build full stack applications 
+
+//why is it generally a good idea tyo position CSS links between head and JS just before bodyt
+//do you know any exceptions?
+
+//it is a good idea to position CSS links between the head tags in order to load your webpage more aesthetically pleasing
+//and it is a good idea to position JS scripts just before the body tags, in order to execute code before the page loads
+
+//what is progressive rendering
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions
+//progressive rendering
+//progressive rendering is when you render parts of the webpage on the server side and send it to the client is progressive portions
+
+//map(func)
+//the map function
+
+//creates a new array from results of calling func for every element
+
+function howMuchWater(water, load, clothes){
+    //formula for max load
+    const maxLoad = water * 1.1 ** (clothes - load)
+        //if clothes * 2 > load - "Too much clothes"
+        if(clothes * 2 > load){
+            return "Too much clothes"
+        }else if(load > clothes){
+            return "Not enough clothes"
+        }else{
+            return maxLoad.toFixed(2)
+        }    
+}
+
+//given an array of integers, return a new array with each valuue doubled
+
+function maps(x){
+    let arr = []
+    let num = x.split('')
+
+    for(let i = 0; i < x.length; i++){
+        arr.push(num[i] + num[i])
+    }
+    return arr
+}
+
+function maps(x){
+    return x.map(n => n*2)
+}
+
