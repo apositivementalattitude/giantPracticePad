@@ -21727,3 +21727,22 @@ function maps(x){
     return x.map(n => n*2)
 }
 
+//you're given strings jewels representing the types of stones that are jewels, an stones representing the stones you have
+//each character in stones is a type of stone you have
+//you want to know how many of the stones yoiu have are also jewels
+//letters are case sensitive, so "a" is considered a different type of stone from "A"
+
+function typeOfStones(jewels, stones){
+    let map = {}
+    let count = 0
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+    for(const stone of stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count
+}
