@@ -21746,3 +21746,57 @@ function typeOfStones(jewels, stones){
     }
     return count
 }
+
+//what is progressive rendering?
+//progressive rendering is to sequentially render parts of the webpage in the server side and then sending it to the client in portions
+//progressive rendering is to sequentially render parts of the webpage in the server side and then send it to the client in portions
+
+//progressive rendering is to sequentially render parts of the webpage in the server side and then send it to the client in portions
+
+//progressive rendering is to sequentially render parts of the webpage in the server side and then send it to the client in portions
+//progressive rendering is to sequentially render parts of the webpage in the server side and then send it to the client in portions
+
+//how to serve up a file in server.js
+//app.get('/', req, res => {
+    //res.sendFile(__dirname + 'index.html')
+//})
+
+//list-style
+//list-style is the dots and line spacing
+
+//includes(value)
+//the includes method to see if a variable, array, or object includes a value
+
+//return as a string like in the examples
+
+/*
+uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germany won!"
+uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
+uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
+*/
+function uefaEuro2016(teams, scores){
+    if(scores[0] > scores[1]){
+        return `At match ${teams[1]} - ${teams[0]}, ${teams[0]} won!`
+    }else if(scores[1] > scores[0]){
+        return `At match ${teams[1]} - ${teams[0]}, ${teams[1]} won!`
+    }else{
+        return `At match ${teams[1]} - ${teams[0]}, teams played draw.`
+    }
+}
+function contamination(text, char){
+    // Code here ;)
+    return char.repeat(text.length)
+}
+
+//the model
+//the model is the database code
+
+//recursion example factorial
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
