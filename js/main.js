@@ -21800,3 +21800,35 @@ function factorial(n){
         return n * factorial(n - 1)
     }
 }
+
+//thinking that has more widely spaced bumpers that allow for more broad ranging ways of thinking
+
+//diffuse thinking
+
+//why would you use a srcset atribute in an image tag?
+//explain the process the browser uses when evaluating the content of this attribute
+
+//you would use a srcset attribute in an image tag when you want to serve different images to users depending on their device display width
+
+//complete the function that accepts a string parameter, and reverses the letters in each word in the string
+//all spaces in the string should be retained
+
+function reverseWords(s){
+    return s.split(' ').map(x => {
+        return x.split('').reverse().join('')
+    }).join(' ')
+}
+
+//given a set of numbers, return the additive inverse of each
+//each positive becomes negatives
+//negatives become positives
+
+function invert(array){
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        arr.push(array[i] * -1)
+    }
+    return arr
+}
+
