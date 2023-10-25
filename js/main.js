@@ -21832,3 +21832,11 @@ function invert(array){
     return arr
 }
 
+//create an array of numbers
+//sum all of the numbers
+//alert the sum
+
+let arr = []
+arr.reduce((a, b) => a + b, 0)
+alert(arr)
+
