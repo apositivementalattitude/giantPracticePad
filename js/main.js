@@ -21840,3 +21840,161 @@ let arr = []
 arr.reduce((a, b) => a + b, 0)
 alert(arr)
 
+
+//\n new line
+
+//tell me about when you had to deal with conflict witihn your team
+//how was the conflict solved
+//how did you handle that
+//how would you deal with it now
+
+//return the highest and lowst numbers
+
+function highAndLow(numbers){
+    return Math.min(...numbers)
+}
+
+function highAndLow(numbers){
+    return Math.max(...numbers)
+}
+
+function highAndLow(numbers){
+    let num = numbers.split('')
+    return Math.min(num)
+}
+
+//consider html5 as an open web platform
+//what are the building blocks of html5?
+//offline and storage - which is how you store code 
+//connectivity 
+//semantics
+
+//what is progressive rendering
+//progressive rendering is when the code is downloaded on the server side and served to the client in portions
+
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side
+//and sending it to the client in portions
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to client in portions
+
+//create a method all which takes two params
+//a sequence
+//a function
+//returns true if the function in the params returns true for every element in the sequence
+//otherwise
+//return false
+
+function all(arr,fun){
+    return arr.every(fun)
+}
+
+function all(arr, fun){
+    let array = []
+
+    for (let i = 0; i < arr.length; i++){
+        if(fun(arr[i])){
+            array.push(arr[i])
+    }
+
+    if(arr.length === array.length){
+        return true
+    }else{
+        return false
+    }
+    }
+}
+
+
+//you are to write a function that takes a string as its first parameter
+
+//the string will be a string of words
+//use the second parameter, which is an integer, to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have located the string you are finally going to multiply by it the third provided parameter
+//hyphen between each word
+
+function modifyMultiply(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i > num){
+            arr.push(get)
+            count++
+        }
+    return arr.join('-')
+    }
+}
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexxOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+
+//write a function isReallyNaN that returns true only if passed in an argument that evaluated to NaN and returns false otherwise
+
+const isReallyNaN = (val) => {
+    if(val === NaN){
+        return true
+    }else{
+        return false
+    }
+}
+
+//in this assignment
+//make anumber negative
+
+function makeNeg(n){
+    if(n === -n){
+        return n
+    }else{
+        return n * -1
+    }
+}
+
+//super
+//inheritance for javascript
+
+//fizzbuzz
+//2 -> fizz
+//3 -> buzz
+//2 and 3  -> fizzbuzz
+
+function fizzBuzz(n){
+
+    for(let i = 1; i <= n; i++){
+        if(i % 6 === 0){
+            console.log('Fizz Buzz')
+        }else if(i % 2 === 0){
+            console.log('Fizz')
+        }else if(i % 3 === 0){
+            console.log('Buzz')
+        }else{
+            console.log(i)
+        }
+    }
+
+}
+
+//count all occurrences
+
+function countChars(str){
+    let map = {}
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
