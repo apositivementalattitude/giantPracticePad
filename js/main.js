@@ -21998,3 +21998,165 @@ function countChars(str){
     }
     return map
 }
+
+//what provides intelligent variety in your studies?
+
+//interleaving provides intelligent variety in my studies
+
+//write a metho, that will get an integer array as parameter and will process every number from this array
+
+//return a new array with processing every number of the input-array like this:
+//if the number has an integer square root, take this, otherwise, square the number
+
+function squareOrSquareRoot(array){
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        if(Math.sqrt(array[i]) % 1 === 0 ){
+            arr.push(array[i])
+        }else{
+            arr.push(Math.pow(2, array[i]))
+        }
+    }
+    return arr
+}
+
+//ctrl + c in CRUD app
+//stops your server
+
+//#intro
+//id intro
+
+//<td>
+//table data
+
+//write a function that takes a list of strings and returns each line prepended by the correct number
+
+const number = function(array) {
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        arr.push(`"${i + 1}: ${array[i]}", `)
+    }
+    return arr
+}
+
+function take(arr, n){
+    return arr.slice(0, n)
+}
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndex(array){
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i])
+        }
+    }
+    return arr
+}
+
+//alex hoops
+
+function hoops(n){
+    if(n >= 10){
+        return `Great, now move on to tricks`
+    }else{
+        return "Keep at it until you get it"
+    }
+}
+
+//are function values?
+//yes
+
+//what are reserved words
+//the reserved words are 
+//return
+//let
+//class
+//function 
+
+//given an arraay of integers, return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+
+    for(let i = 0; i < x.length; i++){
+        arr.push(x[i] * 2)
+    }
+    return arr
+}
+
+function maps(x){
+    return x.split('').map(n => {
+        n*2
+    }).join('')
+}
+
+//create an espresso machine constructor that makes machines with 4 properties and 3 methods
+
+class EspressoMachina {
+    constructor(color, make, model, price){
+        this.color = color
+        this.make = make
+        this.model = model
+        this.price = price
+
+    }
+    turnOn(){
+        console.log('Turned on')
+
+    }
+    steam(){
+        console.log('Steamin')
+    }
+    brew(){
+        console.log('Brewed')
+    }
+
+}
+
+let coolEspressoMachine = new EspressoMachine('black', 'Make', 'Pro', '$3000.99')
+
+//your goal is to create a function that removes the first and last cahracters of a string
+
+function removeFirstLast(s){
+    return s.slice(1, -1)
+}
+
+//count all occurring characters in a string
+
+function countOccurrences(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//given a string of caharcyers return the cahracyter that appears the most often
+
+function maxCharacter(str){
+    let charMap = {}
+    let count = 0
+    let maxChar = null
+
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
+        }
+    }
+    return maxChar
+}
+
