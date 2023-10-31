@@ -22160,3 +22160,107 @@ function maxCharacter(str){
     return maxChar
 }
 
+//findIndex
+//will find the index
+//arr.findIndex('apple')
+
+
+//*=
+//multiply equals
+
+
+//you are given the length and wifth of a 4 sided polygon
+//the polygon can either be a rectangle or square
+
+//if square - return area
+//if rectangle - return perimeter
+
+function fourSided(length, width){
+    if(length === width){
+        return length * width
+    }else{
+        return (2 * length) + (2 * width)
+    }
+}
+
+//typeof
+
+//the typeof operator check the value to its right and return or passes back, a string of the data type
+
+//e.g., const unknown1 = 'foo'
+//console.log(typeof unknown1)
+
+//will console log unkown1 as a string
+
+//create a variable and assign it a number
+let thing = 10
+//minus 10 from that number
+thing = thing - 10
+//print that number to the console
+console.log(thing)
+//create a variable that holds a value from the input
+let input = Number(document.querySelector('input').value)
+
+//add 25 to that number
+input += 25
+
+//alert that number
+alert(input)
+//create a variable that holds the h1
+let h1 = document.querySelector('h1')
+
+//add an event listener to that element that console logs the sum of the two previous variables
+h1.addEventListener('click', addTwo)
+function addTwo(){
+    console.log(input + thing)
+}
+//what creates an empty object?
+//the new operator creates an empty object
+
+//given an array of integers nums and an integer target
+//return the indices of the two numbers such that they add up to target
+
+function twoSum(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; j++){
+            if(i == j){
+                if(i + j === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+}
+
+function twoSum(nums, target){
+    let map = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(target - nums[i] in map){
+            return [map[target - nums[i]], i]
+        }else{
+            map[nums[i]] = i
+        }
+    }
+    return map
+}
+
+//return the majority element
+
+function majorityElem(arr){
+    let elem = {}
+    let count = 0
+    majElem = arr[0]
+    
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+    }
+
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n]
+            majElem = n
+        }
+    }
+    return majElem
+}
