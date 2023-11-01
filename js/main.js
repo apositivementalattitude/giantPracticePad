@@ -22264,3 +22264,10 @@ function majorityElem(arr){
     }
     return majElem
 }
+
+//what is progressive rendering?
+
+//progressive rendering is when things are rendered on the server side and sent to the client in portions
+
+//<scope> identifies what content a table header refers to
+
