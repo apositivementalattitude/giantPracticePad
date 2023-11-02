@@ -22271,3 +22271,17 @@ function majorityElem(arr){
 
 //<scope> identifies what content a table header refers to
 
+//&&
+//and
+
+//what do you read on a regular basis
+
+//i like to read hackernews to keep up to date on technology news
+//i'm on the learnjavascript subreddit pretty often; usually, to see how other people would address certain issues
+//in my freetime i like to read historical fiction like memoirs of a geisha or pachinko. 
+
+//elements designators that define the structure and content of object within a page
+
+//abstraction principle
+//the abstraction principle is to hide the details
+
