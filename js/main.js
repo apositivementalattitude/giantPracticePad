@@ -22285,3 +22285,11 @@ function majorityElem(arr){
 //abstraction principle
 //the abstraction principle is to hide the details
 
+//how to require a file in server.js
+
+//let express = require('express')
+//const app = express();
+
+//have you used different HTML templating languages before
+//yes, react, ejs
+
