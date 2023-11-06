@@ -22293,3 +22293,42 @@ function majorityElem(arr){
 //have you used different HTML templating languages before
 //yes, react, ejs
 
+//[href*="brackets"]
+//this is the attribute contains selector
+
+//what are data-attributes good for?
+//data attributes are good for storing extra information in HTML elements
+
+//you are to write a function that takes a string as its first parameter
+//this string will be a string of words
+//use the second parameter, which will be an integer, to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have located the string you are finally going to multiply by it the third provided parmeter
+//which will also be an integer
+//add a hyphen between each word
+
+function strRepeatHyphen(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+
+//do i know recursion
+
+function factorial(n){
+    if (n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
