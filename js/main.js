@@ -22332,3 +22332,18 @@ function factorial(n){
         return n * factorial(n - 1)
     }
 }
+
+//are function expressions hoisted so they can be called before they are defined?
+
+//no
+//you must call them so they can be defined
+
+//convert USD to CNY 1 USD -> 6.75 CNY
+
+function usdcny(usd) {
+    return `${usd}usd is ${(usd*6.75).toFixed(2)}cny`
+}
+
+//what is progressive rendering?
+//progressive rendering is script that is rendered on the server side and served to the client in portions
+
