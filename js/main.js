@@ -22347,3 +22347,21 @@ function usdcny(usd) {
 //what is progressive rendering?
 //progressive rendering is script that is rendered on the server side and served to the client in portions
 
+//specific styles targeting individual parts of the page
+//modules
+
+//if < 15 return Woohoo!
+//else return Car Dead
+
+function bump(x){
+    if(x.split('n').length <= 15){
+        return 'Woohoo!'
+    }else{
+        return 'Car Dead'
+    }
+}
+
+//if you are writing code related to the database
+//where does it belong?
+
+//code related to the database belongs in the model
