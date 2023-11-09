@@ -22365,3 +22365,37 @@ function bump(x){
 //where does it belong?
 
 //code related to the database belongs in the model
+
+//do you have any questions?
+
+//yes, what is the interview process like?
+//what is the timeline?
+//what are some of the challenges for the person in this position?
+
+//what is a typical day in this position
+//what is the onboarding process after the offer?
+
+//are there training programs available?
+
+//connectivty
+//connectivity allows you to communicate with the server in new and innovative ways
+
+//how to handle a GET request
+//app.get('/endpoint', callbackFunction)
+
+//given a string made up of letters a,b, and or c, switch the position of the letters a and b
+
+
+
+function switchPo(x){
+    return x.split('').map(function (s) {
+        if(s === 'a'){
+            return 'b'
+        }else if(s === 'b'){
+            return 'a'
+        }else{
+            return 'c'
+        }
+    }).join('')
+}
+
