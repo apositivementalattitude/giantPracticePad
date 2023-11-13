@@ -22399,3 +22399,67 @@ function switchPo(x){
     }).join('')
 }
 
+//get the sum of two arrays
+//the sum of all their elements
+
+function arrayPlusArray(arr1, arr2){
+    arr1 = arr1.split(' ')
+    arr2 = arr2.split(' ')
+    let arr = []
+    let sum = 0
+
+    for(let i = 0; i < arr1.length; i++){
+        arr.push(i)
+    }
+    for(let j = 0; j < arr2.length; j++){
+        arr.push(j)
+    }
+
+    for(let k = 0; k < arr.length; k++){
+        sum += k[i]
+    }
+    return sum
+}
+
+function arrayPlus(arr1, arr2){
+    return arr1.reduce((a, b) => a + b, 0) + arr2.reduce((a, b) => a + b, 0)
+}
+
+//move every letter in the string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    const arr = s.split('').map(x => x = str.indexOf(x) + 10)
+
+    return arr.map(x => x = str[x] ).join('')
+  }
+
+function wordsSmash(s){
+    return s.join(' ')
+}
+
+
+//return a new array with each value doubled
+
+
+function maps(x){
+    return x.map(n => n + n)
+}
+
+//bob the bus driver
+//cap is amount of ppl
+//on is ppl on the bus
+//wait is ppl getting on
+
+//if space -> return 0
+//else return remainder
+
+function bob (cap, on, wait){
+    if(cap < wait + on){
+        return 0
+    }else{
+        return ((wait + on) - cap)
+    }
+}
+
