@@ -22463,3 +22463,10 @@ function bob (cap, on, wait){
     }
 }
 
+//what is a test that requires you to understand the text, not just retrieve isolated facts?
+
+//a test that requires you to understand the text and not just retrieve isolated facts is the inference test
+
+//function greeting(name = 'stranger')
+//a function expression named greeting where the variable name has a value of 'stranger'
+
