@@ -22470,3 +22470,38 @@ function bob (cap, on, wait){
 //function greeting(name = 'stranger')
 //a function expression named greeting where the variable name has a value of 'stranger'
 
+//substring
+//works like slice but for strings
+
+//str.substring(0, 2)
+
+//hero man rolls the dice and moves the number of spaces indicated by the dice two times
+
+function move(position, roll){
+    return position + (roll * 2)
+}
+
+//find the sum of all multiples of n below m
+
+function sumMul(n, m){
+    let arr = []
+
+    for(let i = n; i < m; i+=n){
+        if(i % n === 0){
+            arr.push(i)
+        }
+    }
+    return arr.reduce((a, b) => a + b, 0)
+}
+
+//what is progressive rendering?
+//progressive rendering is when assets are rendered on the server side and served to the client in portions
+
+
+//offline and storage
+//offline and storage refers to when you are allowed to store data on the client side
+
+//script async
+//asynchronous script
+//scipt that will load asynchronously to each other
+//separately
