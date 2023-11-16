@@ -22505,3 +22505,35 @@ function sumMul(n, m){
 //asynchronous script
 //scipt that will load asynchronously to each other
 //separately
+
+
+//concat(...items)
+
+//how to concatenate items
+
+//write a function to get the first elements of a sequence
+//passing a param n will return the first n elements of the sequence
+
+function first(arr, n=1){
+    return arr.slice(0, n)
+}
+
+//square every digit of a number and concatenate them
+
+function concatDigits(n){
+    return n.split('').map(x => x + x).join('')
+}
+//count all occurring characyers in a string
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
