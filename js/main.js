@@ -22537,3 +22537,21 @@ function countChar(str){
     }
     return map
 }
+
+//create a function that removes the first and last characyers of a string
+
+function firstLast(str){
+    return str.slice(1, -1)
+}
+
+//make two funciton max and min that receive a list of integers as input and return the largest and lowest number in that list
+
+// let min = function(list){
+//     return Math.min(...list)
+// }
+
+// let max = function(list){
+//     return Math.max(...list)
+// }
+
+
