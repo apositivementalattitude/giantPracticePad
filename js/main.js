@@ -22555,3 +22555,58 @@ function firstLast(str){
 // }
 
 
+//what does a doctype do?
+//a doctype lets you know which version of HTML you are using
+
+//describe the difference between script, script async, and script defer
+
+//script is code to eb executed on the client side
+
+//script async is code that is executed asynchronously(separately) and is executed as it's downloaded
+
+//script defer is code that is downloaded, rendered, and then constructed to start the execution of code
+
+//what kind of things must you be wary of when designing or developing for multilingual sites?
+
+//you must be wary of content wrapping or warping
+//layout and overflow issues
+
+//you are to write a funciton that takes a string as it's first parameter
+//the string will be a string of words
+
+//second param is int
+//find the corresponding word in the given string
+
+//multiply it by the third parameter
+//hyphen between each word
+
+function strLoc(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+//what is the process of storing function with their associated data in an object?
+
+//the process of storing functions with their associated data in an obect is encapsulation
+
+//figure out the index of which vowel is missing from a given string
+
+function missingIndex(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] === -1)){
+            return i
+        }
+    }
+}
