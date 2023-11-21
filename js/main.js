@@ -22601,12 +22601,62 @@ function strLoc(str, loc, num){
 
 //figure out the index of which vowel is missing from a given string
 
+
+//figure out the index of which vowel is missing from a given string
+
 function missingIndex(str){
     let vowels = 'aeiou'
 
     for(let i = 0; i < vowels.length; i++){
-        if(str.indexOf(vowels[i] === -1)){
+        if(str.indexOf(vowels[i]) === -1){
             return i
         }
     }
 }
+
+//an object
+//an object is a collection of related data
+
+//what are characters wrapped in single or double quotes
+//strings
+
+//create a function that has a loop that printes '21' 21 times to the console and then calls that function
+
+function twentyOne(s){
+    for(let i = 1; i <= 21; i++){
+        console.log('21')
+    }
+}
+
+//bonus can you make it print '21' 21 times to the dom
+
+function twentyOne(s){
+    for(let i = 0; i < 21; i++){
+        document.querySelector('#savage').innerText += '21'
+    }
+}
+
+twentyOne();
+
+//create a functio nthat takes in a list of button inpuits and returns the final state
+
+function likeOrDislike(buttons){
+    let state = "Nothing"
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'Nothing'
+        }else{
+            state = buttons[i]
+        }
+    }
+    return state
+}
+
+//a cookie is data stored on the server
+//sessionStorage is data stored in the browser to be deleted when the browser is closed
+//localStorage is data stored in the browser
+
+//script
+//script is code to be executed on the client side
+
