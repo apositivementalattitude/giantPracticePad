@@ -22660,3 +22660,25 @@ function likeOrDislike(buttons){
 //script
 //script is code to be executed on the client side
 
+//what does scope refer to?
+//scope refers to where variables can be accessed throughout the program
+
+//string jewels represents the types of stones that are jewels, and stones representing the stones you have
+
+//how many of the stones are also jewels
+
+function jewelsStones(jewels, stones){
+    let map = {}
+    let count = 0
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+    for(const stone of stones){
+        if(map[stones]){
+            count++
+        }
+    }
+    return count
+}
+
