@@ -22638,7 +22638,7 @@ function twentyOne(s){
 
 twentyOne();
 
-//create a functio nthat takes in a list of button inpuits and returns the final state
+//create a function that takes in a list of button inpuits and returns the final state
 
 function likeOrDislike(buttons){
     let state = "Nothing"
@@ -22681,4 +22681,45 @@ function jewelsStones(jewels, stones){
     }
     return count
 }
+
+//your job is to figure out the index of which vowel is missing from a given string
+
+function findMissingIndex(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] === -1)){
+            return i
+        }
+    }
+}
+
+//recursion example
+
+//give me an example of recursion using a factorial
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//what are blocks?
+//blocks are statements that exist in curly braces
+
+//complete the method that takes a boolean value and return a "Yes" for true, or a "No" for false
+
+function boolToWord(bool){
+    if(bool === true){
+        return "Yes"
+    }else{
+        return "No"
+    }
+}
+
+//\t
+
+//tabbing inside single and doulbe quotes
 
