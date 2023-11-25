@@ -22723,3 +22723,14 @@ function boolToWord(bool){
 
 //tabbing inside single and doulbe quotes
 
+//what are data types that have properties with stored information?
+
+//objects
+
+//what can we use to access properties and methods
+//the dot operator
+//what is progressive rendering?
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server sdie and sending it to the client in portions.
+
+//tell me about your experience at 100devs
+//100devs is an agency with a training program where we built full stack web applications both alone and with colleagues
