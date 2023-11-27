@@ -22734,3 +22734,77 @@ function boolToWord(bool){
 
 //tell me about your experience at 100devs
 //100devs is an agency with a training program where we built full stack web applications both alone and with colleagues
+
+//what is the :wq command in git?
+//the :wq command gets you out of the one screen
+//:windowquit
+
+//split(), join()
+
+//meothds that split or join the array
+
+//return the correct string using the template string feature
+//you must output a string containing the two strings with th word ```'are'```
+
+var TempleStrings = function(obj, feature){
+    return `${obj} are ${feature}`
+}
+
+//..addEventListener
+//how the code listens for executions
+
+
+let numberOfApples = 9
+//the numberOfApples variable will have a value of 9
+//and is changeable
+
+//create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
+
+//if no occurrences can be found, a count of 0 should be returned
+
+function twoStr(s, str){
+    let count = 0
+    
+
+    for(let i = 0; i < s.length; i++){
+        if(s[i] == str){
+            count++
+        }
+    }
+    return count
+}
+
+//* will be multiplier
+
+//if one of the flowers has an even number of petals
+//and the other has an odd number of petals
+//they are in love
+
+//write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
+function lovely(flower1, flower2){
+    if(flower1 % 2 === 0 && flower2 % 2 !== 0){
+        return true
+    }else if(flower1 % 2 !== 0 && flower2 % 2 === 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+//if you are writing code that is processing information to and from the database before it gets to the view, where does it belong?
+
+//codde that is processing information to and from the database before it gets to the viwe is the controller
+
+//the controller in MVC is server side code
+
+//figure out the index of which vowel is missing 
+
+function missingVowels(str){
+    let vowels = 'aeiou'
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i
+        }
+    }
+}
