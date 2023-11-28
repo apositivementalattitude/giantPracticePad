@@ -22808,3 +22808,30 @@ function missingVowels(str){
         }
     }
 }
+
+//what is an object in javascript?
+//an object is data stored 
+
+//what are the limitations on variable names in javascript?
+//you cant use return, function, let
+//the name must contain only letters, digits, or symbols
+//the first character must not be a digit
+
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+
+    for(let i = 0; i < x.length; i++){
+        arr.push(x[i] * 2)
+    }
+    return arr
+}
+
+function maps(x){
+    return x.split(' ').map(n => n *2).join(' ')
+}
+
+//what does it mean to defer code?
+//to defer code is to execute code after the download and browser finished the DOM construction
+
