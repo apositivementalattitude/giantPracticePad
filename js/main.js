@@ -22835,3 +22835,9 @@ function maps(x){
 //what does it mean to defer code?
 //to defer code is to execute code after the download and browser finished the DOM construction
 
+//.querySelector
+//a way of finding elements
+
+//var
+//like let but older
+
