@@ -22841,3 +22841,16 @@ function maps(x){
 //var
 //like let but older
 
+//write a function that takes the speed of a cockroachin km per hour and returns it in cm per second round to the integer
+//s * 27.7778
+
+function cockroachSpeed(s){
+    return Math.floor(s*27.7778)
+}
+
+//double the integer and return it
+
+function doubleInt(int){
+    return int*2
+}
+
