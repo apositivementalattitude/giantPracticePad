@@ -22854,3 +22854,168 @@ function doubleInt(int){
     return int*2
 }
 
+//asynchronously
+//to not happen at the same time
+//what is progressive rendering?
+//progressive rendering is to render parts of the webpage on the server side and send it to the client in portions
+
+//the listen method in express
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+// function moveTen(s){
+//     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+//     let arr = s.split('').map(x => {
+//         const newIndex = str.indexOf(x) + 10
+//         return str[newIndex]
+//     });
+//     return arr.join('');
+// };
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndx(array){
+    let arr = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i])
+        };
+    }
+    return arr;
+
+};
+
+//move every letter in the provided string forward 10 letters
+
+// function moveTen(s){
+//     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+
+//     const arr = str.split('').map(x => {
+//         const newIndex = str.indexOf(x) + 10
+//         return str[newIndex]
+//     })
+//     return arr.join('')
+// }
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = s.split('').map(x => x = str.indexOf(x) + 10);
+    return arr.map(x => x = str[x]).join('')
+}
+
+//write a funciton that accepts two integers and retruns the remainder of dividing the larger value by the smaller value
+//accepts 2 int
+//return the remainder
+function remainder(n, m){
+    if(n > m){
+        n % m
+    }else if(m > n){
+        m % n
+    }else{
+        return NaN
+    }
+}
+
+//what is global scope?
+//global scope is variables that are accessible to every part of the program
+
+//write a function bmi that calculates body mass index
+
+function bmi(weight, height){
+    const massIndex = weight/height**2
+    if(massIndex <= 18.5){
+        return "Underweight"
+    }else if(massIndex <= 25){
+        return "Normal"
+    }else if(massIndex <= 30){
+        return "Overweight"
+    }else{
+        return Obese
+    }
+}
+
+//complete the solution so that it returns true if the first argument passed in ends with the second argument
+
+function solution(str, ending){
+    return str.endsWith(ending)
+}
+
+
+//figure out the index of which vowel is missing from a given string
+
+function missingIndex(str){
+    const vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i
+        }
+    }
+}
+
+//given a string of characters
+//return the character that appears the most often
+
+function maxChar(char){
+    let charMap = {}
+    let count = 0
+    let maxChar = null
+
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
+        }
+    }
+
+    return maxChar
+}
+
+//given nums and target
+//return the indices of the two numbers
+//a + b = target
+
+function twoSum(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; j++){
+            if(i !== j){
+                if(nums[i] + nums[j] === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+}
+
+//count all the occurring characters ina string
+//if you have a string like aba, then the result should be {'a':2, 'b':1}
+
+function countChars(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//move every letter in the provided string forward 10 letters
+
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
