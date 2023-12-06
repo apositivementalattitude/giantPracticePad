@@ -23019,3 +23019,53 @@ function moveTen(s){
     })
     return arr.join('')
 }
+
+//count the rings in each letter
+//divide the total number by 2
+//round the answer down
+
+//1>n not a medal
+//2>n bronze
+//3>n silver
+//n>3 gold
+
+function olympicRing(a){
+    let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+    let twoRings = ['B'];
+    let score = 0;
+
+    let a = a.split('').map(x => {
+        if(rings.includes(x)){
+            score++
+        }else if(twoRings.includes(x)){
+            score+=2
+        }
+    })
+    let result = Math.floor(score/2)
+
+    if(result > 3){
+        return "Gold!"
+    }else if(3 > result){
+        return "Silver!"
+    }else if(2 > result){
+        return "Bronze!"
+    }else{
+        return "Not a medal"
+    }
+}
+
+//if the text or char are empty, return an epty string
+function contamination(text, char){
+    return char.repeat(text.length)
+}
+//create a function isDivideBy to check if an integer number is divisible by both integers a and b
+
+function isDivideBy(number, a, b){
+    if(number % a === 0){
+        return true
+    }else if(number % b === 0){
+        return true
+    }else{
+        return false
+    }
+}
