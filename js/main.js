@@ -23069,3 +23069,44 @@ function isDivideBy(number, a, b){
         return false
     }
 }
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    //the variable for the alphabet
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    //split the alphabet into separate indexes and map it to loop through the array
+    const arr = str.split('').map(x => {
+        //create a new index for each iteration of the array ahead 10 letters
+        const newIndex = str.indexOf(x) + 10
+        //return the new string with indexes moved up 10 spaces
+        return str[newIndex]
+    })
+    //join the alphabet back together
+    return arr.join('')
+}
+
+//write a function that takes a string as its first parameter
+//first param -> str
+//second param -> location
+//third param -> number
+//first word = 0
+//locate the str and multiply it by the third param
+//hyphen between each word
+
+function wordSearch(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
