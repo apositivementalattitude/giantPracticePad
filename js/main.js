@@ -23126,3 +23126,190 @@ function getDivisorsCnt(n){
     return count
 }
 
+//ddefine a method hello that returns hello, name!
+
+function helloWorld(name){
+    if(name){
+        return `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`
+    }else{
+        return "Hello, world!"
+    }
+}
+
+//spread syntax
+//the spread syntax expands an array into its elements
+
+
+// *Variables*
+// Create a variable and console log the value
+let reallyCoolThing = 100
+console.log(reallyCoolThing);
+
+// Create a variable, add 10 to it, and alert the value
+let secondCoolThing = 100
+secondCoolThing += 10
+alert(secondCoolThing);
+
+// *Functions*
+// Create a function that subtracts 4 numbers and alerts the difference
+function minusFourNum(a1, a2, a3, a4){
+    alert(a1-a2-a3-a4)
+} 
+
+// Create a function that divides one number by another and returns the remainder
+function returnRemainder(b1, b2){
+    return b1 % b2
+}
+
+// *Conditionals*
+// Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
+function addTwo(c1, c2){
+    if(c1 + c2 > 50){
+        return "JUMANJI"
+    }
+}
+
+// Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
+function timesThree(n1, n2, n3){
+    if((n1 * n2 * n3) % 3 === 0){
+        return "ZEBRA"
+    }
+}
+//*Loops*
+//Create a function that takes in a word and a number. Console log the word x times where x was the number passed in
+
+function wordNum(word, num){
+    for(let i = 0; i < num; i++){
+        //console log the word everytime the number is passed in word
+        if(word[i] === num){
+            console.log(word[i])
+        }
+    }
+}
+
+//create a funciton that removes the first and last characters of a string
+
+function removeFirstLast(s){
+    return s.slice(1, -1)
+}
+
+
+//when provided a letter, return its position
+function position(letter){
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+    for(let i = 0; i < alphabet.length; i++){
+        if(alphabet[i] === letter){
+            return i+1
+        }
+    }
+}
+
+//case statement syntax
+
+let groceryItem = 'papaya';
+
+switch(groceryItem){
+    case 'tomato':
+        console.log('Tomatos are $0.49')
+        break;
+    case 'lime':
+        console.log('Limes are $1.49')
+        break;
+    case 'papaya':
+        console.log('Papayas are $1.29')
+        break;
+    default:
+}
+
+//what do we do to loop through each element in an array?
+//we use the .length property
+
+//move every letter in the provided string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    const arr = str.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+//figure out the index of which vowel is missing from the given string
+
+function missingStr(s){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        //check to see if the vowel is missing from the string
+        if(s.indexOf(vowels[i] === -1)){
+            //return the index
+            return i;
+        }
+    }
+};
+
+//fizzbuzz
+//if % 2 : fizz
+//if % 3 : buzz
+//if % 2 *3 : fizz buzz
+
+function fizzBuzz(num){
+    //loop from 1 to the number
+    for(let i = 1; i <= num; i++){
+        //check if it's divisible by 6
+        if(i % 6 === 0){
+            console.log('Fizz Buzz')
+        //check if it's divisible by 2
+        }else if(i % 2 === 0){
+            console.log('Fizz')
+        //check if it's divisible by 3
+        }else if(i % 3 === 0){
+            console.log('Buzz')
+        }else{
+        //if it isn't divisible by either, return the number
+            return i
+        }
+    }
+}
+
+//having a simpler interface in OOP
+//Abstraction
+
+//connectivity
+//allows you to communicate with the server in new and innovative ways
+
+//semantics
+//how to more accurately describe your code
+
+//create a method all which takes two params
+//a sequence
+//a function
+
+//return true if the function in the params returns true for every element in the sequence
+
+function everyElement(arr, fun){
+    //array to determine if it returns true
+    let array = []
+    //loop through the elements in arr
+    for(let i = 0; i < arr.length; i++){
+        //must return true for every element
+        if(arr[i] === fun){
+            array.push('true')
+        }else{
+            array.push('false')
+        }
+    }
+    //check if the array contains any falses andd return false if so
+    if(array.count('false') > 1){
+        return false
+    }else{
+        return true
+    }
+};
+
+function all(arr, fun){
+    return arr.every(fun)
+}
