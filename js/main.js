@@ -23313,3 +23313,34 @@ function everyElement(arr, fun){
 function all(arr, fun){
     return arr.every(fun)
 }
+
+let bestColors = ['green', 'blue', 'yellow', 'black']
+
+for(let i = 0; i < bestColors.length; i++){
+    console.log(bestColors[i])
+}
+
+//what is the first element of an array
+//0
+
+//completet the funciton which converts a binary number to a decimal number
+
+function binToDec(bin){
+    return parseInt(bin, 2)
+}
+
+//in the .sort() method, what are items sorted as?
+
+//in the .sort method, items are sorted as strings
+
+//create a funciton that accepts a list/array and a number n
+//return a list/array of the first n elements from the list/array
+
+function take(arr, n){
+    return arr.slice(0, n)
+}
+
+//object literal syntax
+// const circle = {}
+//the curly braces refer to an object literal
+
