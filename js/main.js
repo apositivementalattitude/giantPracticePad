@@ -23344,3 +23344,30 @@ function take(arr, n){
 // const circle = {}
 //the curly braces refer to an object literal
 
+//are primitives copied by value?
+//yes
+
+//functions
+//functions are sets of instructions
+
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    let arr = []
+
+    for(let i = 0; i <= x.length; i++){
+        arr.push(x[i] + x[i])
+    }
+    return arr
+}
+
+function maps(x){
+    return x.map(n => {
+        return n*2
+    })
+}
+
+//why is it a generally good idea to position CSS links between head and JS scripts before body
+
+//it is generally a good idea to position CSS links between head to make the page load more beautifully
+//js scripts should be before the body to load animations before the page is rendered
