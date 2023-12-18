@@ -23371,3 +23371,99 @@ function maps(x){
 
 //it is generally a good idea to position CSS links between head to make the page load more beautifully
 //js scripts should be before the body to load animations before the page is rendered
+
+//tell me about a situation when you were responsible for project planning. 
+//did everything go according to your plan
+//if not, then why and what kind of counter-actions did you have to take?
+
+//how to print or log data to the console and display messages?
+//console.log()
+
+//write a helper function to capitalize a string before they went on vacation
+
+function capitalizeWord(word) {
+    return `${word[0].toUpperCase()}${word.slice(1).toLowerCase()}`;
+}
+
+
+//given an array of integers your solution must find the smallest integer
+
+//const arr = []
+//console.log(Math.min(...arr))
+
+//find the nearest square number
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)), 2);
+}
+
+
+//dragons takes 2 bullets to kill
+// bullets > dragons = survive
+
+function hero (dragons, bullets){
+    if(bullets*2 / dragons > 0){
+        return 'survive!';
+    }else{
+        return 'dead';
+    }
+};
+
+//build a function that returns an array of integers from n to 1 where n > 0
+
+const reverseSq = n => {
+    let arr = []
+
+    for(let i = n; i > 0; i-=1){
+        arr.push(i)
+    }
+    return arr
+};
+
+//recursion example
+//using factorial
+
+function factorial(n){
+    if (n < 2 ){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//figure out the index of which vowel is missing from a given string
+
+function missingStr(s){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(s.indexOf(vowels[i] === -1)){
+            return i
+        }
+    }
+}
+
+function howMuchWater(water, load, clothes){
+    if(clothes * 2 > load){
+        return 'Too much clothes'
+    }else if(clothes < load){
+        return 'Not enough clothes'
+    }else{
+        return (water * 1.1 ^ (clothes - load)).toFixed(2)
+    }
+}
+
+//move every letter in the provided string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+//what is progressive rendering
+
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions 
