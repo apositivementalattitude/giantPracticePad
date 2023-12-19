@@ -23467,3 +23467,43 @@ function moveTen(s){
 //what is progressive rendering
 
 //progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions 
+
+//the best functions are those with no parameteres
+
+//the fewer the number of parameteres the easier it is to maintain the function
+//what is this referring to?
+
+//The fewer the number of parameters is referring to Encapsulation
+
+//write a function setAlarm
+//first param = employed
+//second param = vacation
+
+//return true if you are employed and not on vacation
+//false otherwise
+
+function setAlarm(employed, vacation){
+    if(employed === true && vacation === false){
+        return true
+    }else{
+        return false
+    }
+}
+
+//your function should return the 20 year estimate of the stairs climbed using the formula
+//20 year estimate = one year total * 20
+
+function stairsIn20(s){
+    //make the stairs climbed in a year
+    let count = 0
+
+    for(let i = 0; i < s.length; i++){
+        count+=s[i]
+    }
+    return count*20
+}
+
+function stairsIn20(s){
+    return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b, 0)
+}
+
