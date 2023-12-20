@@ -23507,3 +23507,17 @@ function stairsIn20(s){
     return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b, 0)
 }
 
+//your team is writing a fancy new editor and you've been tasked with implementing the line numbering
+
+//write a function that takes a list of strings and returns each line prepended byu the correct number
+
+const numbero = function(array){
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        arr.push(`${i+1}: ${array[i]}, `)
+    }
+    return arr
+}
+
+
