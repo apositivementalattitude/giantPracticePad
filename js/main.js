@@ -23521,3 +23521,18 @@ const numbero = function(array){
 }
 
 
+//given an array nums of size n
+//return the majority element
+
+function majElem(n){
+    let obj = {}
+
+    for(const n in obj){
+        if(n[obj] === 0){
+            n[obj]++
+        }else{
+            n[obj] === n[obj]
+        }
+    }
+    return obj
+}
