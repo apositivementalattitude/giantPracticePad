@@ -23536,3 +23536,21 @@ function majElem(n){
     }
     return obj
 }
+
+//The best functions are those with no parameters
+//The fewer the number of parameters, the easier it is to maintain that function
+//What is this referring to?
+//Encapsulation
+
+//write a function that always returns 5
+
+//you can not use numbers
+
+function five(s){
+    return 'fiver'.length()
+}
+
+//%
+//modulus
+//will return the remainder
+
