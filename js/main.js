@@ -23629,3 +23629,22 @@
 //     return table;
 // }
 
+//which vowel is missing from the given string
+
+function missingVowel(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] === -1)){
+            return i
+        }
+    }
+}
+
+//given an array of integers as strings and umbers
+//return the sum of the array values as if all were numbers
+
+function sumMix(x){
+    let x = Number(x.split(''))
+    return x.reduce((a, b) => a + b, 0)
+}
