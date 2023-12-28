@@ -23667,3 +23667,31 @@ function jewelsInStones(jewels, stones){
     }
     return count
 }
+
+//abstraction principle is to hide the details
+
+//what do arrow functions do?
+//arrow functions remove the need to type out funciton
+
+
+//write a function that takes a string as it's first parameter
+//the string is a string of words
+
+//second parameter is an integer to find the corresponding wor din the given string
+//first word is represented by 0
+//multiply by it the third provided parameter, which is an int
+
+function modifyMult(str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+        return arr.join('-')
+    }
+}
