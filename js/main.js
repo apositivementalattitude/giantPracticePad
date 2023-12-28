@@ -23648,3 +23648,22 @@ function sumMix(x){
     let x = Number(x.split(''))
     return x.reduce((a, b) => a + b, 0)
 }
+
+//you're given strings jewels
+//rep stones that are jewels
+//stones rep stones you have
+
+function jewelsInStones(jewels, stones){
+    let map = {}
+    let count = 0
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+    for(const stone of stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count
+}
