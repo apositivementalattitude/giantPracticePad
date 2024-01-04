@@ -23585,113 +23585,262 @@
 // //synchronous code processes one operation at a time
 
 
-// function add(a,b){
-//     return a + b
-// }
+// // function add(a,b){
+// //     return a + b
+// // }
 
-// function divide(a,b){
-//     return a / b 
-// }
+// // function divide(a,b){
+// //     return a / b 
+// // }
 
-// function multiply(a,b){
-//     return a * b
-// }
+// // function multiply(a,b){
+// //     return a * b
+// // }
 
-// function mod(a,b){
-//     return a%b
-// }
+// // function mod(a,b){
+// //     return a%b
+// // }
   
-// function exponent(a,b){
-//     return a**b
-// }
+// // function exponent(a,b){
+// //     return a**b
+// // }
    
-// function subt(a,b){
-//     return a-b
-// }
+// // function subt(a,b){
+// //     return a-b
+// // }
 
-// //move every letter in the provided string forward 10 letters through the alphabet
+// // //move every letter in the provided string forward 10 letters through the alphabet
 
-// function moveTen(s){
-//     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
-//     const arr = s.split('').map(x => {
-//         const newIndex = str.indexOf(x) + 10
-//         return str[newIndex]
-//     })
-//     return arr.join('')
-//   }
+// // function moveTen(s){
+// //     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+// //     const arr = s.split('').map(x => {
+// //         const newIndex = str.indexOf(x) + 10
+// //         return str[newIndex]
+// //     })
+// //     return arr.join('')
+// //   }
 
-// const multiTable = (number) => {
-//     let table = []
+// // const multiTable = (number) => {
+// //     let table = []
 
-//     for(let i = 1; i <= 10; i++){
-//         table.push(`${i} * ${number} = ${number * i}${i < 10 ? '\n' : ''}`);
+// //     for(let i = 1; i <= 10; i++){
+// //         table.push(`${i} * ${number} = ${number * i}${i < 10 ? '\n' : ''}`);
+// //     }
+// //     return table;
+// // }
+
+// //which vowel is missing from the given string
+
+// function missingVowel(str){
+//     let vowels = 'aeiou'
+
+//     for(let i = 0; i < vowels.length; i++){
+//         if(str.indexOf(vowels[i] === -1)){
+//             return i
+//         }
 //     }
-//     return table;
 // }
 
-//which vowel is missing from the given string
+// //given an array of integers as strings and umbers
+// //return the sum of the array values as if all were numbers
 
-function missingVowel(str){
-    let vowels = 'aeiou'
+// function sumMix(x){
+//     let x = Number(x.split(''))
+//     return x.reduce((a, b) => a + b, 0)
+// }
 
-    for(let i = 0; i < vowels.length; i++){
-        if(str.indexOf(vowels[i] === -1)){
-            return i
-        }
-    }
-}
+// //you're given strings jewels
+// //rep stones that are jewels
+// //stones rep stones you have
 
-//given an array of integers as strings and umbers
-//return the sum of the array values as if all were numbers
+// function jewelsInStones(jewels, stones){
+//     let map = {}
+//     let count = 0
 
-function sumMix(x){
-    let x = Number(x.split(''))
-    return x.reduce((a, b) => a + b, 0)
-}
+//     for(const jewel in jewels){
+//         map[jewel] = true
+//     }
+//     for(const stone of stones){
+//         if(map[stone]){
+//             count++
+//         }
+//     }
+//     return count
+// }
 
-//you're given strings jewels
-//rep stones that are jewels
-//stones rep stones you have
+// //abstraction principle is to hide the details
 
-function jewelsInStones(jewels, stones){
-    let map = {}
-    let count = 0
-
-    for(const jewel in jewels){
-        map[jewel] = true
-    }
-    for(const stone of stones){
-        if(map[stone]){
-            count++
-        }
-    }
-    return count
-}
-
-//abstraction principle is to hide the details
-
-//what do arrow functions do?
-//arrow functions remove the need to type out funciton
+// //what do arrow functions do?
+// //arrow functions remove the need to type out funciton
 
 
-//write a function that takes a string as it's first parameter
-//the string is a string of words
+// //write a function that takes a string as it's first parameter
+// //the string is a string of words
 
-//second parameter is an integer to find the corresponding wor din the given string
-//first word is represented by 0
-//multiply by it the third provided parameter, which is an int
+// //second parameter is an integer to find the corresponding wor din the given string
+// //first word is represented by 0
+// //multiply by it the third provided parameter, which is an int
 
-function modifyMult(str, loc, num){
+// function modifyMult(str, loc, num){
+//     let arr = []
+//     let count = 0
+//     let word = str.split(' ')
+//     let get = word[loc]
+
+//     for(let i = count; i < num; i++){
+//         if(i < num){
+//             arr.push(get)
+//             count++
+//         }
+//         return arr.join('-')
+//     }
+// }
+
+// //find the sum of all multiples of n below m
+// //n and m are natural numbers
+// //m is excluded from the multiples
+
+// function sumMul(n, m){
+//     let arr = [];
+//     // let count = 0
+
+//     for(let i = 0; i < m; i+=n){
+//         //find the multiple of n below m
+//         if(n % i === 0){
+//             arr.push(i);
+//         }
+//     }
+    
+//     // for(let j = 0; j <= arr.length; j++){
+//     //     count+=arr[i]
+//     // }
+//     // return count
+//     return arr.reduce((a, b) => a + b, 0)
+// }
+
+// // the first century spans from the year 1 up to and including the year 100
+// //2nd 101-20
+// //etc
+
+// //given a year, return the century it is in
+
+// // function century(year){
+// //     let centuries = 0
+
+// //     for(let i = 1; i <= year; i++){
+// //         //centuries goes up 1 for every 100years
+// //         if(i % 100 === 0){
+// //             centuries++
+// //         }
+// //     }
+// //     return centuries
+// // }
+
+// // console.log(century(2000), '21')
+
+// //write a funciton to split a string and convert it in to an array of words
+
+// // function splitStr(s){
+// //     return s.split(' ');
+// // }
+
+// // function spliteStr(s){
+// //     let arr = [];
+// //     for(let i = 0; i < s.length; i++){
+// //         arr.push(s[i])
+// //     };
+// //     return arr;
+// // }
+
+// function getDrinkByProfession(param){
+//     param = param.toLowerCase();
+
+//     switch(param){
+//         case 'jaroni' : return 'Patron Tequila'
+//         case 'school counselor' : return 'Anything with Alcohol'
+//         case 'programmer' : return 'Hipster craft beer'
+//         case 'bike gang member' : return 'moonshine'
+//         case 'politician' : return 'your tax dollars'
+//         case 'rapper' : return 'Cristal'
+//         default : return 'Beer'
+//     }
+// }
+
+// function mouthSize(animal) {
+//     if(animal === 'alligator'){
+//         return 'small'
+//     }else{
+//         return 'wide'
+//     }
+// }
+
+// function highAndLow(numbers){
+//     return Math.min(...numbers)
+// }
+
+// function highAndLow(numbers){
+//     return Math.max(...numbers)
+// }
+
+//concatenate
+//concatenate is to connect
+
+//return the nth even number
+
+// function nthEven(n){
+//     return (n-1)*2
+// }
+
+// console.log(nthEven('1'), '0')
+// console.log(nthEven('10'), '18')
+
+// // create a variable and assign it a number
+// let num = 10
+// // minus 10 from that number
+// num -= 10
+// // print that number to the console
+// console.log(num)
+// // create a variable that holds a value from the input
+// let newNum = Number(document.querySelector('input'))
+
+// // add 25 to that number
+// newNum+=25
+// // alert that number
+// alert(newNum)
+// // create a variable that holds the h1
+// let h1 = Number(document.querySelector('h1'))
+// // add an event listener to that element that console logs the sum of the two previous variables
+// h1.addEventListener('click', addTwo)
+// function addTwo(){
+//     console.log(num + newNum)
+// }
+
+//write a function that takes a single string as argument
+//the function must retun an ordered list containing the indexes of all capital letters in the string
+
+function capitals(word){
     let arr = []
-    let count = 0
-    let word = str.split(' ')
-    let get = word[loc]
 
-    for(let i = count; i < num; i++){
-        if(i < num){
-            arr.push(get)
-            count++
+    for(let i = 0; i < word.length; i++){
+        if(word[i] === word[i].toUpperCase()){
+            arr.push(word[i])
         }
-        return arr.join('-')
     }
+    return arr
 }
+
+//move every letter in the provided string forward 10 letters
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = str.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+//how many times should a variable be declared?
+//once
+
+//what is progressive rendering?
+//progressive rendering is when your code is downloaded and rendered as it's executed
