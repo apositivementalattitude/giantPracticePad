@@ -23844,3 +23844,8 @@ function moveTen(s){
 
 //what is progressive rendering?
 //progressive rendering is when your code is downloaded and rendered as it's executed
+
+//your goal is to create a function that removes the first and last characters of a string
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
