@@ -23849,3 +23849,9 @@ function moveTen(s){
 function removeFirstLast(str){
     return str.slice(1, -1)
 }
+
+//the best funcitons arew those with no parameters
+//what is this referring to?
+//encapsulation
+//filter method syntax
+//let arr = array.filter(x => x/2)
