@@ -23855,3 +23855,66 @@ function removeFirstLast(str){
 //encapsulation
 //filter method syntax
 //let arr = array.filter(x => x/2)
+
+//findIndex
+//will find the index of an array
+
+
+//write a funciton feastr that takes the animal's name and dish as argss and retursn true or false to indicate whether the beast is allowed to bring the dish to the feast
+//the dish must start and end witht he same letters as the animal's name
+
+function feast(beast, dish){
+    if((beast[0].toLowerCase() === dish[0].toLowerCase()) && (beast.slice(-1).toLowerCase() === dish.slice(-1).toLowerCase())){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+//given an array of ints
+//return a new array with each value doubled
+
+function maps(x){
+    return x.map(n => n*2)
+}
+
+//calculate the average and compare
+//return true if better
+
+function amIBetter(myScore, scores){
+    const avg = (scores.reduce((a, b) => a + b, 0))/scores.length
+
+    if(myScore > avg){
+        return 'True'
+    }else{
+        return 'False'
+    }
+}
+
+//square every digit and then concatenate them
+
+function willItConcat(n){
+    let arr = []
+
+    for(let i = 0; i < n.length; i++){
+        //square every digit
+        arr.push(n[i]*2)
+    }
+    return arr.join('')
+}
+
+function willItConcat(n){
+    return n.concat(n.map(x => x*2))
+}
+
+//figure out the indx of which vowel is missing from a given string
+
+function missingVowel(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] === -1)){
+            return i
+        }
+    }
+}
