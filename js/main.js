@@ -23918,3 +23918,29 @@ function missingVowel(str){
         }
     }
 }
+
+//given a string of characters
+//return the character that appears the most often
+
+function appearMost(str){
+    let map = {}
+    let count = 0
+    let maxChar = null
+
+    for(const c of str){
+        map[c] = map[c] + 1 || 1
+    }
+    for(const c in map){
+        if(map[c] > count){
+            count = map[c]
+            maxChar = c
+        }
+    }
+    return maxChar
+}
+
+//create a function that takes 2 integers in form of a string as an input and output the sum as a string
+
+function takeTwo(str){
+    return ((Number(str[0])) + (Number(str[1]))).toString()
+}
