@@ -23944,3 +23944,46 @@ function appearMost(str){
 function takeTwo(str){
     return ((Number(str[0])) + (Number(str[1]))).toString()
 }
+
+//what is a return statement?
+//a return statement is used when passing back information from the function call
+
+//declare a variable, assign it a string of mutltiple words
+//check to see if one of the words is 'apple'
+
+// const isItApple = 'a string of words apple'
+// console.log(isItApple.search('apple'))
+
+//given astring
+//return a string in which each character is repeated once
+
+function letterRepeat(str){
+    return str.split('').map(x => {
+        return x + x
+    }).join('')
+}
+
+//move every letter in the string forward 10 letters
+
+// function moveTen(s){
+//     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+//     const arr = str.split('').map(x => {
+//         const newIndex = str.indexOf(x) + 10
+//         return str[newIndex]
+//     })
+//     return arr.join('')
+// }
+
+//write a funciton to get thefirst elements of a sequence
+function first(arr, n = 1){
+    return arr.slice(0, n)
+}
+
+// function moveTen(s){
+//     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+//     const arr = str.split('').map(xx => {
+//         const newIndex = str.indexOf(x) + 10
+//         return str[newIndex]
+//     })
+//     return arr.join('')
+// }
