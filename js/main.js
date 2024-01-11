@@ -23987,3 +23987,41 @@ function first(arr, n = 1){
 //     })
 //     return arr.join('')
 // }
+
+//create a fucntion factorial that receives n and return n!
+//you must use recursion
+
+//the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//the best function are those with no parameters
+//the fewer the number of parameters the easier it is to maintain that function
+//what is this referring to
+
+//encapsulation
+
+//make a program that filters a list of strings and returns a list with onoly your friends names in it
+
+//if a name has exactly 4 leters, it's your friend
+
+function names(friends){
+    return friends.filter((x) => x.length == 4)
+}
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = str.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
