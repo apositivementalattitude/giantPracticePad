@@ -24025,3 +24025,47 @@ function moveTen(s){
     })
     return arr.join('')
 }
+
+//given an array of integers nums and an integer target
+//return the indices of the two numbers such that they add up to target
+
+function sumTwo(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; j++){
+            if(i !== j){
+                if(nums[i] + nums[j] === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+}
+
+function twoSum(nums, target){
+    let obj = {}
+    for(let i = 0; i < nums.length; i++){
+        if(target - nums[i] in obj){
+            return [obj[target - nums[i]], i]
+        }else{
+            obj[nums[i]] = i
+        }
+    }
+}
+
+function multipleOfIndex(array) {
+    let arr = []
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i])
+        }
+    }
+    return arr
+}
+
+//calculate the averagges
+function getAverage(marks){
+    return Math.floor(marks.reduce((a, b) => a + b, 0)/marks.length)
+}
+
+console.log(getAverage(1,2,3,4,5), '3')
