@@ -24069,3 +24069,54 @@ function getAverage(marks){
 }
 
 console.log(getAverage(1,2,3,4,5), '3')
+
+//find the needle in the haystack
+
+//write a function findNeedle()
+//takes an array containing on "needle"
+//should return "found the needle at position "
+//plus the index it found he needle
+
+function findNeedle(arr){
+    let arr = arr.split(' ')
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === "needle"){
+            return `found the needle at position ${arr[i] + 1}`
+        }
+    }
+}
+
+function findNeedle(haystack){
+    return `foundt he needle at position ${haystack.split(' ').indexOf("needle")}`
+}
+
+//make a function that will return a greeting statement that uses an input
+//"Hello, <name> how are you doing today?"
+
+function greeting(name){
+    return `Hello, ${name} how are you doing today?`
+}
+
+//create a package.json
+//const configuration = {
+    //"name" : "friendly-amazing-pack"
+    //"version" : "1.2.5"
+    //"description" : "this is my amazing datapack"
+//}
+
+//object
+//objects are collections of related data
+
+//connectivity
+//connectivity allows you to communicate with the server in new and innovative ways
+
+//move every letter in the provided string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
