@@ -24120,3 +24120,24 @@ function moveTen(s){
     })
     return arr.join('')
 }
+
+//what are data-attributes good for?
+//data-attributes are good for storing extra information on HTML elements
+
+//write a method, an integer array as a parameter
+//process every numbber from this array
+
+//if the number has an integer square root
+//take this
+//otherwise square the number
+
+function squareOrSquareRoot(array){
+
+    for(let i = 0; i < array.length; i++){
+        if(Math.sqrt(array[i]) % i === 0){
+            return i
+        }else{
+            return i**2
+        }
+    }
+}
