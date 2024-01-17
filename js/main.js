@@ -24141,3 +24141,60 @@ function squareOrSquareRoot(array){
         }
     }
 }
+
+//given an array, return an array where each value is the product of the next two items
+
+function productOfNextTwo(array){
+    let arr = []
+
+    //roll over values
+
+    const newArr = array.split(' ').map(x => {
+        const newIndex = array.indexOf(x) + 2
+        return array[newIndex]
+    })
+    
+    //push the product of the next two items
+    for(let i = 0; i < array.length; i++){
+        if(i < array.length - 2){
+            arr.push(array[i+1]*array[i+2])
+        }else{
+            arr.push(newArr[i+1]*newArr[i+2])
+        }
+    }
+    return arr
+}
+
+//implement Array.prototype(flat, map, reduce, concat)
+function prototype(array){
+    //to return the sum of all numbers in an array
+    return array.reduce((a, b) => a + b, 0)
+}
+
+function prototypeOne(arr){
+    return arr.map(x => {
+        return x*2
+    })
+}
+
+
+function prototypeTwo(arr){
+    return arr.concat()
+}
+
+//how to concatenate strings?
+//str.concat(newStr)
+
+//given a string flat road(_) or bumps(n) 
+//return Woohoo! for 15 bumps or less
+//otherwise return car dead
+
+function willISurvive(bumpyRoad){
+    if(bumpyRoad.split('n').length > 15){
+        return 'Car Dead'
+    }else{
+        return 'Woohoo!'
+    }
+}
+//screen in css
+//screen is used in responsive css for media queries(all)
