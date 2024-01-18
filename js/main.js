@@ -24198,3 +24198,25 @@ function willISurvive(bumpyRoad){
 }
 //screen in css
 //screen is used in responsive css for media queries(all)
+
+//assignment is ==
+//comparison is ===
+//asignment is perfect match
+//comparison is compare the two
+
+//symbol
+//symbols are unique identifiers
+
+//find/filter(func)
+//filter elemnts through the function, return first/all values hat make it return true
+
+//if x squared is more than 1000
+//return "it's hotter than the sun!!"
+
+function apple(x){
+    if(x**2 > 1000){
+        return "it's hotter than the sun!!"
+    }else{
+        return "Help yourself to a honeycomb Yorkie for the glovebox"
+    }
+}
