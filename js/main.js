@@ -24220,3 +24220,22 @@ function apple(x){
         return "Help yourself to a honeycomb Yorkie for the glovebox"
     }
 }
+
+//move every letter in the provided string forward 10 letters thorugh the alphabet
+
+function moveTen(s){
+ 
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = str.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+//Array.isArray(value)
+//will evaluate whether the value is an array or not
+
+//$ git init
+//will initialize git
+
