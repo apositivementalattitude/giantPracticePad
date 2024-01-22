@@ -24213,25 +24213,25 @@ function willISurvive(bumpyRoad){
 //if x squared is more than 1000
 //return "it's hotter than the sun!!"
 
-function apple(x){
-    if(x**2 > 1000){
-        return "it's hotter than the sun!!"
-    }else{
-        return "Help yourself to a honeycomb Yorkie for the glovebox"
-    }
-}
+// function apple(x){
+//     if(x**2 > 1000){
+//         return "it's hotter than the sun!!"
+//     }else{
+//         return "Help yourself to a honeycomb Yorkie for the glovebox"
+//     }
+// }
 
 //move every letter in the provided string forward 10 letters thorugh the alphabet
 
-function moveTen(s){
+// function moveTen(s){
  
-    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
-    const arr = str.split('').map(x => {
-        const newIndex = str.indexOf(x) + 10
-        return str[newIndex]
-    })
-    return arr.join('')
-}
+//     const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+//     const arr = str.split('').map(x => {
+//         const newIndex = str.indexOf(x) + 10
+//         return str[newIndex]
+//     })
+//     return arr.join('')
+// }
 
 //Array.isArray(value)
 //will evaluate whether the value is an array or not
@@ -24239,3 +24239,8 @@ function moveTen(s){
 //$ git init
 //will initialize git
 
+//mode of thinking that has tight spacing for rubber bumpers that help keep your thought concentrated
+//focused thinking
+
+//e.g., :link
+//pseudo class link
