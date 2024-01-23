@@ -24244,3 +24244,34 @@ function willISurvive(bumpyRoad){
 
 //e.g., :link
 //pseudo class link
+
+//given 2 strings 
+//a and b
+//return a string of the form 
+//short+long+short
+//with the shorter string on the outside and the londer string on the inside
+
+//the strings will not be the same length
+//but they may be empty
+
+function solution(a, b){
+    //evaluate which is shorter
+    if(a.length > b.length){
+        //return short+long+short
+        return b+a+b
+    }else{
+        return a+b+a
+    }
+}
+
+//complete the function that takes two integers a, b where a < b and return an array of all integers between the input parameters including them
+
+function twoInt(a, b){
+    let arr = []
+
+    for(let i = a+1; i < b; i++){
+        arr.push(i)
+    }
+    return arr
+}
+
