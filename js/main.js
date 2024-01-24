@@ -24275,3 +24275,21 @@ function twoInt(a, b){
     return arr
 }
 
+//give me an example dof the project or initiative that you started on your own
+//it can be a non-business one
+//what prompted you to get started?
+
+//at my previous opportunity, i noticed that we didnt have a good system for keeping track of our container contents
+//it was a very outdated system; where we basically hand counted everything
+//so i saw that we received the container packing slips through excel and i just googled how to convert cells into a table and i took a task that used to take 30 minutes into 10 seconds
+
+
+//what is progressive rendering?
+
+//progressive rendering is code that is rendered on the server side and sent to the client in portions
+
+//offline and storage
+//offline and storage is to allow webpages to store data on the client side
+
+//script async
+//script async is script is downloaded asynchronously and executed after the download
