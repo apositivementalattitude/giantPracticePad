@@ -24293,3 +24293,8 @@ function twoInt(a, b){
 
 //script async
 //script async is script is downloaded asynchronously and executed after the download
+
+//what is a repetition in a loop?
+//an iteration
+//a repetition in a loop is an iteration
+
