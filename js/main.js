@@ -24298,3 +24298,14 @@ function twoInt(a, b){
 //an iteration
 //a repetition in a loop is an iteration
 
+//an array is a set of elements
+//write a funciton isReallyNaN that returns true only if passed in an  argument that evaulates to NaN and returns false otherwise
+
+// const isReallyNaN = (val) => {
+//     if(Number.isNaN(val)){
+//         return 'true'
+//     }else{
+//         return 'false'
+//     }
+// }
+
