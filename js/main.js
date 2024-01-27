@@ -24314,3 +24314,18 @@ function twoInt(a, b){
 
 //when is a function expression used?
 //a function expression is used when it's encountered
+
+//you are going to be given a word
+//your job is to return the middle character of the word
+//if the word's length is odd, return the middle character
+//if the word's length is even, return the middle 2 characters
+
+function giveWord(word){
+    if(word.length % 2 === 0){
+        //split the word in half and return the final character of the first half and the first character of the final half
+        return word.substring(0, word.length/2 - 1) + word.substring(word.length/2 + 1, word.length/2)
+    }else{
+        //return the middle character
+        return word.substring(word.length, word.length/2 + 1)
+    }
+}
