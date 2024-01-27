@@ -24309,3 +24309,8 @@ function twoInt(a, b){
 //     }
 // }
 
+//call
+//a call is to use methods
+
+//when is a function expression used?
+//a function expression is used when it's encountered
