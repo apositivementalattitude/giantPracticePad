@@ -24329,3 +24329,14 @@ function giveWord(word){
         return word.substring(word.length, word.length/2 + 1)
     }
 }
+
+//create a function that takes an integer as an argument and return "Even" for even numbers
+//or "Odd" for odd numbers
+
+function evenOrOdd(n){
+    if(n % 2 === 0){
+        return "Even"
+    }else if(n % 2 !== 0){
+        return "Odd"
+    }
+}
