@@ -24340,3 +24340,7 @@ function evenOrOdd(n){
         return "Odd"
     }
 }
+
+//===
+//comparison of two values without converting
+
