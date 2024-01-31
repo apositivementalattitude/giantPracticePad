@@ -24344,3 +24344,8 @@ function evenOrOdd(n){
 //===
 //comparison of two values without converting
 
+//crate a funciton that removes the first and last characters of a string
+
+function firstLast(str){
+    return str.slice(1, -1)
+}
