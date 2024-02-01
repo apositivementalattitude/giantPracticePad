@@ -24349,3 +24349,17 @@ function evenOrOdd(n){
 function firstLast(str){
     return str.slice(1, -1)
 }
+
+//if the text or the character are empty return empty string
+//the text is now fully mutated to the character
+//text before = 'abc'
+//charcter = 'z'
+//text after = 'zzz'
+
+function contamination(text, char){
+    let arr = []
+    for(let i = 0; i < text.length; i++){
+        arr.push(char)
+    }
+    return arr.join('')
+}
