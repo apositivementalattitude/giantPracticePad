@@ -24382,3 +24382,10 @@ function solution(str, ending){
     return str.endswith(ending)
 }
 
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    return x.map(n => {
+        n*2
+    })
+}
