@@ -24363,3 +24363,12 @@ function contamination(text, char){
     }
     return arr.join('')
 }
+
+//complete the function that accepts a string parameter and reverses the letters in each word in the string
+//all spaces in the string should be retained
+
+function reversal(str){
+    return str.split(' ').map(x => {
+        return x.split('').reverse().join('')
+    }).join(' ')
+}
