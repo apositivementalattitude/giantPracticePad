@@ -24372,3 +24372,13 @@ function reversal(str){
         return x.split('').reverse().join('')
     }).join(' ')
 }
+
+//a funciton that is created as part of an expression
+//a function expression
+
+//complete the solution so that ir returns true if the first argument passed in ends with the 2nd argument
+
+function solution(str, ending){
+    return str.endswith(ending)
+}
+
