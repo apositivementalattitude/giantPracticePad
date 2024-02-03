@@ -24389,3 +24389,15 @@ function maps(x){
         n*2
     })
 }
+
+//a player beings with a score of 0 in  class E5
+//A1 is the highest level a  player can achieve
+//you need 100 points to rank up
+
+function playerRankUp(points){
+    if(points >= 100){
+        return "Well done!"
+    }else{
+        return "false"
+    }
+}
