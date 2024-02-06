@@ -24401,3 +24401,41 @@ function playerRankUp(points){
         return "false"
     }
 }
+
+
+//given a set of numbers
+//return the additive inverse of each
+
+function invert(array){
+    return array.map(x => {
+        Math.sign(-x)
+    })
+}
+
+//how to handle a get request
+
+//app.get('/endpoint', callbackFunction)
+
+//write a funcciton that takes a string as its first parameter
+
+//this string will be a string of words
+
+//use the second parameter which will be an integer to find the corresponding word in the given sytring
+//the first word would be represented by 0
+//multiply by it the third provided parameter
+
+function stuff (str, loc, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get  = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+    }
+    return arr.join(' ')
+}
+
