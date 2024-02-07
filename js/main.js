@@ -24439,3 +24439,24 @@ function stuff (str, loc, num){
     return arr.join(' ')
 }
 
+//get the sum of two arrays
+//the sum of their elements
+
+function arrayPlus(arr1, arr2){
+    return arr1.concat(arr2).reduce((a, b) => a + b, 0)
+}
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
+
+function take(arr, n) {
+    return arr.slice(0, n)
+}
