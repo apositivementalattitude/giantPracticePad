@@ -24472,3 +24472,67 @@ for(let i = 0; i < seriesOfNums.length; i++){
 }
 alert(count)
 
+//count all the occurrring characters in a string
+// function countChars(str){
+//     //should return 'a': 2, 'b': 1
+//     let arr = []
+//     //loop through the string
+//     let s = str.split('')
+//     for(let i = 0; i < str.length; i++){
+//         arr.push(`${s[i]}`+=1)
+//     }
+//     return arr
+// }
+
+function countChars(str){
+    //create an object
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//figure out the index of which vowel is  missing
+
+function findMissingVowel(str){
+    let vowels = "aeiou"
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] === -1)){
+            return i
+        }
+    }
+}
+
+//given a number as an input
+//print out every integer from 1 
+//to that number
+
+//if int is divisible by 2
+//print "Fizz"
+
+//divisible by 3
+//print "Buzz"
+
+//divisible by both
+//print "Fizz Buzz"
+
+function fizzBuzz(int){
+    for(let i = 1; i <= int.length; i++){
+        if(i % 6 === 0){
+            console.log('Fizz Buzz')
+        }else if(i % 2 === 0){
+            console.log('Fizz')
+        }else if(i % 3 === 0){
+            console.log('Buzz')
+        }else{
+            console.log(i)
+        }
+    }    
+}
