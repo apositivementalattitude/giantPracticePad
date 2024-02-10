@@ -24536,3 +24536,42 @@ function fizzBuzz(int){
         }
     }    
 }
+
+//in mathematiccs, the factorial of a non-negative integer denoted by n!
+//the product of all positive integers less than or equal to n
+
+//create the function factorial that receives n and returns n!
+//you have to use recursion
+
+function factorial(n){
+    //recursion
+    if(n < 2){
+        return n * factorial(n - 1)
+    }
+
+}
+
+//the best functions are those with no parameters
+//the fewer the number of parameters the easier it is to maintain that function 
+//what is this referring to
+
+//the fewer the number of parameters refers to encapsulation
+//to eliminate redundant code is inheritance
+
+//what are objects copied by?
+//objects are copied by its reference type
+
+//constructor
+//a constructor  is a function that was used to create or construct the object
+
+//the model is database code
+
+//scripts are client side scripts
+//script async is sccript that gets downloaded separately and exxecuted as it's downloaded
+//defer means everything downloads, then renders, and then gets constructed to start exxecution of code
+
+//describe the difference between a cookie, sessionStorage, and localStorage
+
+//localStorage is data on the browser, cookies are data on the server, and sessionStorage is when we want to delete the data when wee close the browser
+
+//what kind of things must you be wary of when designing or developing for multilingual sites?
