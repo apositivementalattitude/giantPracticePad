@@ -24575,3 +24575,46 @@ function factorial(n){
 //localStorage is data on the browser, cookies are data on the server, and sessionStorage is when we want to delete the data when wee close the browser
 
 //what kind of things must you be wary of when designing or developing for multilingual sites?
+
+//value types; primitives
+//the value types that  are primitive are 
+//strings, numbers, boolean values, symbols, undefined, and null
+//the model is the controller code that adds and retrieves items from the database
+
+//eventlistener is the ability to click
+
+//write a funciton that reverses the words  in a given string
+//a word can also fit an empty  string
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ')
+}
+
+//concat(...items)
+
+//the concat method used to add all the values together
+
+//create a method all which takes two params
+//returns true if the funciton in the params returns true for every element in the sequence
+//otherwise, return false
+function all(arr, fun){
+    return arr.every(fun)
+}
+
+//create a function that takes in a list of button inputs and returns the final state
+
+function likeOrDislike(buttons){
+    let finalState = 'nothing'
+    //dislike => dislike
+    //like, like => nothing
+    //dislike, like => like
+    //like, dislike, dislike => nothing
+    if(buttons.length == 1 && buttons[0] === 'dislike'){
+        finalState === 'dislike'
+    }else if(buttons.length == 1 && buttons[0] === 'like'){
+        finalState === 'like'
+    }else if(buttons.length == 2 && buttons[1] === 'dislike'){
+        finalState === 'dislike'
+    }else if(buttons.length == 2 && buttons[1] === 'like'){
+        finalState === 'like'
+    }
+}
