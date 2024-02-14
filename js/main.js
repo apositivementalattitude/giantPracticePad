@@ -24653,3 +24653,6 @@ function switcheroo(x){
     })
     return arr.join('')
 }
+
+//what is a situation where i made a mistake at work
+//what happened exactly and how did you deal with it?
