@@ -24618,3 +24618,38 @@ function likeOrDislike(buttons){
         finalState === 'like'
     }
 }
+
+function likeOrDislike(buttons){
+    let state = 'nothing'
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state[i]
+        }
+    }
+}
+
+//make a function that receives age and returns what they drink
+
+function drinkingAge(age){
+    return age < 14 ? "Toddy" 
+    : age < 18 ? "Coke"
+    : age < 21 ? "Beer"
+    : "Whisky";
+}
+
+//given a string made up of letters a, b, c
+//switch the position of letters a and b
+//leave any incidence of c untouched
+
+function switcheroo(x){
+    let arr = x.split('')
+    let newArr = arr.map(n => {
+        if(n === 'a'){
+            return 'b'
+        }else if(n === 'b'){
+            return 'a'
+        }
+    })
+    return arr.join('')
+}
