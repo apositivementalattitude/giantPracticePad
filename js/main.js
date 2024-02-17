@@ -24680,3 +24680,12 @@ function getGrade(s1, s2, s3){
         return "lol"
     }
 }
+
+//syntax for arrow functions
+// () => {})
+//what is a number without quotes?
+//a number?
+
+//if you are ggoing to write front end code
+//where does it belong?
+//in the view
