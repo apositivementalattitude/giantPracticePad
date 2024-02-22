@@ -24705,3 +24705,15 @@ class EspressoMachine {
 }
 
 let coolEspressoMachine = new EspressoMachine('black', "Make", "Pro", "$15,000")
+
+//console.log(data.drinks[0])
+//the number between the brackets indicates the index
+
+//.map object
+//the map object creates a new array remembering the original insertion order of the keys
+
+//we need a function that can transform a number into a string
+
+function numToStr(n){
+    return n.toString()
+}
