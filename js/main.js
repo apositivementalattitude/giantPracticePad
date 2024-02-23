@@ -24717,3 +24717,10 @@ let coolEspressoMachine = new EspressoMachine('black', "Make", "Pro", "$15,000")
 function numToStr(n){
     return n.toString()
 }
+
+//a function, declared as a separate statement in the main code flow
+//a function declared as a separate statement in the main code flow is a function declaration
+
+function sum(a, b){
+    return a + b;
+}
