@@ -24724,3 +24724,37 @@ function numToStr(n){
 function sum(a, b){
     return a + b;
 }
+
+//name the data types in javascript
+//the data types in javascript are 
+//strings, objects, numbers, symbols, null, NaN, boolean
+
+//create a method that takes as an input a name, city, and state to welcome a person.
+function sayHello(name, city, state){
+    return `Hello ${name}, welcome to ${city}, ${state}!`
+}
+
+//const nums = [3, 11, 7, 2, 9, 10]
+//console.log(Math.max(...nums))
+
+//will return the highest number in the array
+
+//create a function that converts US dollars into Chinese Yuan
+//the conversion rate is 6.75 CNY to 1 USD
+//with 2 decimal places
+
+function usdcny(usd){
+    return ((usd * 6.75).toFixed(2));
+}
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+
+    const arr  = str.split('').map(x  => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return arr.join('')
+}
