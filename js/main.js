@@ -24758,3 +24758,18 @@ function moveTen(s){
     })
     return arr.join('')
 }
+
+//what is used for selecting multiple elements?
+//classes are used for selecting multiple elemenets
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i
+        }
+    }
+}
