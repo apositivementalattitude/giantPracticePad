@@ -24760,7 +24760,7 @@ function moveTen(s){
 }
 
 //what is used for selecting multiple elements?
-//classes are used for selecting multiple elemenets
+//classes are used for selecting multiple elements
 
 //figure out the index of which vowel is missing from a given string
 
@@ -24773,3 +24773,11 @@ function missingVowel(str){
         }
     }
 }
+
+//given a data structure representing the stairs Suzuki logged in a year
+//your function should  return the 20  year estimate of the stairs cliimbed using the fformula above 20yearestimate  = one year total * 20
+
+function stairsIn20(s){
+    return s.reduce((a, b)  => a.concat(b)).reduce((a, b) => a + b ) * 20
+}
+
