@@ -24781,3 +24781,12 @@ function stairsIn20(s){
     return s.reduce((a, b)  => a.concat(b)).reduce((a, b) => a + b ) * 20
 }
 
+function howMuchWater(water, load, clothes){
+    if(clothes > load * 2){
+        return 'Too many clothes'
+    }else if(load > clothes){
+        return 'not enough clothes'
+    }else{
+    return (water * 1.1 ^ (wash - load)).toFixed(2)
+    }
+}
