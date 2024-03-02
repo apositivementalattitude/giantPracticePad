@@ -24790,3 +24790,17 @@ function howMuchWater(water, load, clothes){
     return (water * 1.1 ^ (wash - load)).toFixed(2)
     }
 }
+
+//find the sum of all multiples of n below m
+
+function sumMul(n, m){
+    let sum = 0
+
+    for(let i = 0; i < m; i+=n){
+        if(i % n === 0){
+            sum+=n[i]
+        }
+    }
+    return sum
+}
+
