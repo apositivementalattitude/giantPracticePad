@@ -24814,3 +24814,34 @@ function twentyOne(){
 twentyOne();
 //can you make it print '21' 21 times to the DOM?
 
+//the best functions are those with no parameters
+//the fewer the number of parameters
+//the easier it is to maintain that function
+//what is this referring to?
+
+//the functions without parameters refers to encapsulation
+
+//3 needs to become $3.00
+
+function formatMoney(amount){   
+    return `$${amount.toFixed(2)}`
+}
+
+//the process of storing funcitons with their associated data in an object
+//the process of storing functions with their associated data in an object is encapsulation
+
+//complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false
+
+function boolToWord(bool){
+    if (bool === true){
+        return 'Yes'
+    }else{
+        return 'No'
+    }
+}
+
+//write a function that takes an array of words and smashes them together in to a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence.
+
+function wordSmash(word){
+    return word.join(' ')
+}
