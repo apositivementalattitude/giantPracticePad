@@ -24845,3 +24845,73 @@ function boolToWord(bool){
 function wordSmash(word){
     return word.join(' ')
 }
+
+function functionName(parameter1, parameter2, parameter3){
+//code to be executed    
+}
+
+//given an arary nums of size n
+//return the majority leement
+
+function majorityElem(arr){
+    let elem = {},
+    count = 0,
+    majElem = arr[0]
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+    }
+    for(const n in elem){
+        if(elem[n] > count){
+        count = elem[n]
+        majElem = n
+        }
+    }
+    return majElem
+}
+
+
+
+//given a string of charactyers, return the character that appears the most often
+
+function majChar(arr){
+    let charMap = {},
+    count = 0,
+    maxChar = null
+
+    for(const char of str){
+        charMap[charr] = charMap[char] + 1 || 1
+    }
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
+        }
+    }
+    return maxChar
+}
+
+//given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+function addTwo(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; j++){
+            if(i !== j){
+                if(nums[i] + nums[j] === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+};
+
+var twoSum = function(nums, target){
+    let obj = {}
+    for(let i = 0; i < nums.length; i++){
+        if(target - nums[i] in obj){
+            return [obj[target - nums[i]], is]
+        }else{
+            obj[nums[i]] = i
+        }
+    }
+};
