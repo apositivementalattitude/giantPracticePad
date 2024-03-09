@@ -24933,5 +24933,79 @@ var twoSum = function(nums, target){
             majElem = n
         }
     }
-    return majElem;
+    return majElem
  }
+
+ //.length
+ //will find the size of an array
+
+ //when are function declarations processed?
+ //function declarations are processed as it is encountered in the DOM
+
+ //what is undefined?
+//undefined is the unintentional absense of value
+
+//s is misinterpereted as 5
+//o is 0
+//I is i
+
+function correct(string){
+    let str = string.split(''),
+    arr = []
+
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === "5"){
+            arr.push("S")
+        }else if(str[i] === "0"){
+            arr.push("O")
+        }else if(str[i] === "1"){
+            arr.push(I)
+        }else{
+            arr.push(str[i])
+        }
+    }
+    return arr.join('')
+}
+
+function correct(text){
+    let correctedText = "";
+
+    for(let i = 0; i < text.length; i++){
+        switch(text[i]) {
+            case "5":
+                correctedText +="S"
+                break;
+            case "0":
+                correctedText +="O"
+                break;
+            case "1":
+                correctedText +="I"
+                break;
+            default:
+                correctedText += text[i]
+                break;
+        }
+    }
+    return correctedText;
+}
+
+//you are to write a function that takes a string as it's first parameter
+//this string will be a string of words
+//use the second parameter, which will be an integer, to find the coresponding word in the given string
+//the first word would be represented by 0
+//multiply by it the third provided parameter
+
+function modifyMult(str, loc, num){
+    let arr = [],
+    count = 0,
+    word = str.split(' '),
+    get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+    }
+    return arr.join('-')
+}
