@@ -25009,3 +25009,44 @@ function modifyMult(str, loc, num){
     }
     return arr.join('-')
 }
+
+//bob needs a fast way to calculate the volume of a cuboid with three values:
+//length, width, and height of the cuboid. Write a funciton to help Bob with this calculation
+
+class Kata {
+    static getVolumeOfCuboid(l, w, h){
+        return l*w*h
+    }
+}
+
+//square every digit of a number and concatenate them
+
+function concatDigits(num){
+    num = num.split('')
+    let arr = []
+
+    for(let i = 0; i < num.length; i++){
+        arr.push(num[i] * num[i])
+    }
+    return arr.join('')
+}
+
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    return x.map(n => n*2)
+}
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const arr = str.split('')
+
+    const newArr = arr.map(x => {
+        const newIndex = arr.indexOf(x) + 10
+        return arr[newIndex]
+    })
+    return arr.join('')
+  }
+  
