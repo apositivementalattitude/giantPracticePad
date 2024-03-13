@@ -25050,3 +25050,21 @@ function moveTen(s){
     return arr.join('')
   }
   
+
+  //given an array nums of size n, return the majority element
+
+  function majorityElement(arr){
+    let map = {},
+    count = 0,
+    majElem = arr[0]
+    for(const num of arr){
+        map[num] = map[num] + 1 || 1
+    }
+    for(const n in map){
+        if(map[n] > count){
+            count = map[n]
+            majElem = n
+        }
+    }
+    return majElem
+}
