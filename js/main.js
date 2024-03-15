@@ -25068,3 +25068,33 @@ function moveTen(s){
     }
     return majElem
 }
+
+function countChars(str){
+    let countObj = {}
+
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
+function removeFirstAndLast(str){
+    return str.slice(1, -1)
+}
+
+//count the number of divisors of a positive integerr n
+
+function getDivisorsCnt(n){
+    let divisors = 0
+    
+    for(let i = 0; i < n.length; i++){
+        if(n[i] %  i === 0){
+            divisors++
+        }
+    }
+    return divisors
+}
