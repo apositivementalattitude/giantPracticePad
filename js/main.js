@@ -25089,12 +25089,52 @@ function removeFirstAndLast(str){
 //count the number of divisors of a positive integerr n
 
 function getDivisorsCnt(n){
-    let divisors = 0
+    let divisors = 0;
     
     for(let i = 0; i < n.length; i++){
         if(n[i] %  i === 0){
-            divisors++
+            divisors++;
         }
     }
-    return divisors
+    return divisors;
+}
+//write a function to get the first elements of a sequence. 
+//passing a parameter n will return the first n elements of the sequence
+//if n == 0 return an empty sequence []
+
+function first(arr, n=1){
+    return arr.slice(0, n)
+}
+
+//split/join
+//splits or joins the array
+
+//complete the solution so that it reverses all of the words within the string passed in
+
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
+}
+
+//count the number of divisors of a positive integer n
+
+function getDivisorsCnt(n){
+    let count = 0;
+    
+    for(let i = 1; i <= n; i++){
+        if(n % i === 0){
+            count++;
+        }
+    }
+    return count;
+}
+
+//write a function that accepts two integers and 
+//returns the remainder of dividing the larger value by the smaller value
+
+function remainder(n, m){
+    if(n > m){
+        return n % m;
+    }else{
+        return m % n;
+    }
 }
