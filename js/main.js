@@ -25138,3 +25138,86 @@ function remainder(n, m){
         return m % n;
     }
 }
+
+//if you are writing code that is processing information to and from the datavbase before it gets to the view, where does it belong?
+
+//the controller
+
+
+//localStorage.clear
+//clears the localStorage in the console
+
+
+//give me an example of the project or initiative that you started on your own
+//it can be a non-business one
+//what prompted you to get started?
+
+//tell me about when you had to deal with conflict within your team.
+//How was the conflict solved?
+//How would you deal with it now?
+
+//tell me about a time you had to work on several projects at once
+//how did you handle this?
+
+//take a look at everything and try to figure out what is the best way to complete all my tasks as quickly and accurately as possible because I think if you just take everything as they come, you tend to hyperfocus on one thing
+//and that one thing might not be the most important thing to do at that given moment
+
+//semantics
+//allows you to describe more precisely what your content is 
+
+//connectivity
+//allows you to communicate with the server in new and innovative ways
+
+//what is progressive rendering?
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions
+
+//script
+//script is client side code
+
+//why is it generally a good idea to position CSS links between head and JS scripts just before body
+//do you know any exceptions
+//you want to position CSS links between head and JS scripts just before body because you want to 
+
+//to defer code
+//to defer code is to execute code after the download and browser finished the DOM construction and rendering
+
+//asynchronously
+//asynchroonously is to not happen at the same time
+
+//consider HTML5 as an open web platform. What are the building blocks of HTML5
+
+
+//the building blocks of HTML5 are Semantics, Connectivity, and Offline and Storage
+
+//why would you use a secset attribute in an image tage?
+//you would use a srcset attribute in an image tag to serve the client different images based on browser or device size
+
+//you are given a string of space separated numbers, and have to return the ighest and lowest number
+
+function returnHighLow(numbers){
+    let arr = numbers.split(' ')
+    return `${Math.max(...arr)} ${Math.min(...arr)}}`
+};
+
+
+//when provided with a letter
+//return its position in the alphabet
+function position(letter){
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    return `Position of alphabet: ${alphabet.indexOf(letter)}`;
+};
+
+//create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
+//if no occurrences can be found, a count of 0 should be returned
+
+function twoStr(arg, arg1){
+    let count = 0;
+
+    for(let i = 0; i < arg1; i++){
+        if(arg1[i] === arg){
+            count++;
+        }
+    }
+    return count;
+}
+
