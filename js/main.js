@@ -25221,3 +25221,64 @@ function twoStr(arg, arg1){
     return count;
 }
 
+//what repeats statements while a certain condition is true?
+//a while loop
+
+//alex just got a new hula hoop
+//write a program where Alex can input how many times the hoop goes round and it will return him an encouraging message
+
+//if alex gets 10 or more hoops, return the string "Great, now move on to tricks"
+//if he doesn't get 10 hoops, return the string "Keep at it until you get it"
+
+
+function alex(n){
+    if(n > 10){
+        return "Great, now move on to tricks"
+    }else{
+        return "Keep at it until you get it"
+    }
+}
+
+//given an array nums of size n
+//return the majorty element
+
+function majElement(n){
+    let elem = {}
+    let count = 0
+    let majElem = n[0]
+    
+    for(const num of n){
+        elem[num] = elem[num] + 1 || 1
+        }
+    for(const c in elem){
+        if(elem[c] > count){
+            count = elem[n]
+            majElem = n
+        }
+    }
+    return majElem
+}
+
+//do you know recursion?
+//create the function factorial that receives n and return n!
+//you must use recursion
+
+function factorial(n){
+    if (n < 2){
+        return 1;
+    }else{
+        return n * factorial(n - 1);
+    }
+}
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(s){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(s.indexOf(vowels[i] === -1)){
+            return i;
+        }
+    }
+}
