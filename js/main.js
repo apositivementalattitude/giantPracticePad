@@ -25282,3 +25282,42 @@ function missingVowel(s){
         }
     }
 }
+
+//.log
+//will log
+
+//complete the function which converts a binary number
+
+function binToDec(bin){
+    return parseInt(bin, 2)
+}
+
+//create a variable and assign it a number
+
+let assignMe = 100
+//minus 10 from that number
+assignMe = assignMe - 10
+//print that number to the console
+
+console.log(assignMe)
+
+//create a variable that holds a value from the input
+
+let variablize = Number(document.querySelector('input').value)
+
+//add 25 to that number
+
+variablize += 25
+
+//create a variable that holds the h1
+
+let h1 = document.querySelector("h1")
+
+//add an event listener to that element that console logs the sum of the two previous variables
+
+
+function addTwoVar(){
+    console.log(variablize + assignMe)
+}
+
+h1.addEventListener('click', addTwoVar)
