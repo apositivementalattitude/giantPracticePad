@@ -25330,18 +25330,60 @@ h1.addEventListener('click', addTwoVar)
 //return the majorirty element
 
 function majority(n){
-    let elem = {}
-    let count = 0
-    let majElem = arr[0]
+    let elem = {};
+    let count = 0;
+    let majElem = arr[0];
 
     for(const num of arr){
-        elem[num] = elem[num] + 1 || 1
+        elem[num] = elem[num] + 1 || 1;
     }
     for(const n in elem){
         if(elem[n] > count){
-            count = elem[n]
-            majElem = n
+            count = elem[n];
+            majElem = n;
         }
     }
-    return majElem
+    return majElem;
 }
+
+//case statement syntax
+
+let groceryItem = 'papaya';
+    switch(groceryItem){
+        case 'banana':
+            console.log('bananas');
+            break;
+        case 'tomato':
+            console.log('tomato');
+            break;
+        case 'apple':
+            console.log('apple');
+            break;
+        case 'vienna sausage':
+            console.log('vienna sausage');
+            break;
+        case 'beer':
+            console.log('beer');
+            break;
+    };
+
+//.add
+//adds something in javascript
+
+//your task is to make two functions (max and min) or maximum and minimum etc.
+//that receive a list of integers as input, and returns the largest and lowest number in that list, respectively.
+
+var min = function(list){
+    return Math.min(...list);
+};
+
+var max = function(list){
+    return Math.max(...list);
+};
+
+//in the .sort() method, what are items sorted as?
+//in the sort method, items are sorted as strings
+
+//give me an example of a time you had to take a creative and unusual approach to solve a coding problem. How did this idea come yo your mind? Why did you think it was unusual?
+
+//a time i had to take a cretive and unusual approach to solve a coding problem 
