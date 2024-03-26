@@ -25411,3 +25411,11 @@ function nearestSq(n){
     return Math.pow(Math.round(Math.sqrt(n)), 2);
 };
 
+//find the nearest square number of a positive integer n
+
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+//properties
+//properties determine the styles that will be applied to that element
+
