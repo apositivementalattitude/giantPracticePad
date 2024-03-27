@@ -25387,3 +25387,27 @@ var max = function(list){
 //give me an example of a time you had to take a creative and unusual approach to solve a coding problem. How did this idea come yo your mind? Why did you think it was unusual?
 
 //a time i had to take a cretive and unusual approach to solve a coding problem 
+
+//given an array nums of size n
+//return the majority element
+
+
+//build a function that returns an array of integers from n to 1 where n > 0
+
+const reverseSq = n => {
+    let arr = [];
+    for(let i = n; i <= 1; i-=1){
+        arr.push(i);
+    }
+    return arr;
+};
+
+//substring
+//substring will create a new array and return elements of the string within the represented parameters
+
+//find the nearest square number of a positive integer n
+
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)), 2);
+};
+
