@@ -25419,3 +25419,35 @@ function nearestSq(n){
 //properties
 //properties determine the styles that will be applied to that element
 
+//give me an example of a time you had to take a creative and unusual approach to solve a coding problem. How did this idea come to your mind?
+//why did you think it was unusual
+
+//a time when i had to to take a creative and unusual approach to solve a coding problem was when my internet had gone, and i had a project coming up. The solution i came up with to fix my problem was the code out the todo react app on my phone using an IDE that supported react. I tihnk it was unusual because most people would just simply use their laptops, but as I didnt' hav ea laptop I had to use my phone.
+
+//given an array nums of size n, return the majority element
+
+function majorityElement(n){
+    let elem = {},
+    count = 0,
+    majElem = arr[0]
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1;
+    };
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n];
+            majElem = n;
+        };
+    };
+    return majElem;
+};
+
+//what is an object in javascript?
+//an object in javascript is a collection of related data
+
+//find the nearest square number of a positive integer n
+
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)), 2);
+};
