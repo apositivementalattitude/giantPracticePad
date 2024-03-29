@@ -25451,3 +25451,25 @@ function majorityElement(n){
 function nearestSq(n){
     return Math.pow(Math.round(Math.sqrt(n)), 2);
 };
+
+//the preferred way to declare a variable that won't be reassigned
+//the preferred way to declare a variable that won't be reassigned is to use the const declaration
+
+//what is a <fieldset>
+//a fieldset or type of table
+
+//properties used to provide additional information about an element
+//the properties used to provide additional information about an element are attributes
+
+//your task is to find the nearest square number, nearest sq(n) of a positive integer n
+function nearestSq(n){
+    //sqrt -> round -> square 
+    return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+//what is an object
+//an object is a collection of related data
+
+//what can we use to access properties and methods?
+//the dot operator
+
