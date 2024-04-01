@@ -25473,3 +25473,25 @@ function nearestSq(n){
 //what can we use to access properties and methods?
 //the dot operator
 
+//scope
+//what is the <scope>?
+//<scope> identifies what content a <th> refers to
+
+//what is a call option?
+//a call option is the right but not obligation to buy a stock at a predetermined price
+
+//what is a put option?
+//a put option is the right but not obligation to sell a stock at a predetermined price
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    const newArr = str.split('').map(x => {
+        const newIndex =  str.indexOf(x) + 10;
+        return str[newIndex];
+    })
+    return newArr.join('');
+}
+
