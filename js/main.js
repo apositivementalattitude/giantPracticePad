@@ -25495,3 +25495,15 @@ function moveTen(s){
     return newArr.join('');
 }
 
+//what is the most common attribute?
+//the most common attribute is id
+
+//find the nearest square number
+
+function nearestSq(n){
+    //square -> round -> sqrt
+    return Math.pow(Math.round(Math.sqrt(n)),2);
+};
+
+console.log(nearestSq(10), "3")
+console.log(nearestSq(5), "2")
