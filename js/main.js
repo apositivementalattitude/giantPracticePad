@@ -25507,3 +25507,32 @@ function nearestSq(n){
 
 console.log(nearestSq(10), "3")
 console.log(nearestSq(5), "2")
+
+
+//given an aray nums of size n
+//return the majority element
+
+//a simple interface ofr some complex action is an API
+
+//tell me about your experience at 100DEVS
+//100DEVS is an agency with a training program, where we built full stack web applications both alone and with colleagues to better flesh out our skills
+//The main stack we used was the MERN stack
+
+//return a multiplication table for number that is always an integer from 1 to 10
+
+const multiTable = (number) => {
+    let table = ''
+
+    for(let i = 1; i <= 10; i++){
+        table+=(`${i} * ${number} = ${i * 10}${i < 10 ? '/n' : ''}`)
+    }
+    return table
+}
+
+//given an array of integers as strings and numbers, return the sum of the array values as if all were numbers
+
+//return your answer as a number
+
+function sumMix(x){
+    return x.reduce((a, b) => a + b, 0)
+}
