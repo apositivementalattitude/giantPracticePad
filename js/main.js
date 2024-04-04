@@ -25536,3 +25536,12 @@ const multiTable = (number) => {
 function sumMix(x){
     return x.reduce((a, b) => a + b, 0)
 }
+//tell me about a situation when you were responsible for project planning.
+//Did everything go acording to your plan?
+//If not, then why and what kind of counter actions did you have to take?
+//fat arrow notation
+//() => {}
+
+//synchronous
+//happening at the same time
+
