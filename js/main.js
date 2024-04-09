@@ -25545,3 +25545,55 @@ function sumMix(x){
 //synchronous
 //happening at the same time
 
+
+//fix this code
+
+function capitalizeWord(word) {
+    return `${word[0].toUppercase()}${word.slice(1).toLowerCase()}`;
+}
+
+//implement a functiono which multiplies two numbers
+
+function multTwo(n, m){
+    return n*m
+}
+
+//are function expressions hoisted so they can be called before they are defined?
+
+//noo, funciton expressions must be called so they can be defined
+
+//slice(start, end)
+
+//slice syntax
+
+function uefaEuro2016(teams, scores){
+    if(scores[0] > scores[1]){
+        return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`
+    }else if(scores[1] > scores[0]){
+        return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+    }else{
+        return `At match ${teams[0]} - ${teams[1]}, teams played draw.`
+    }
+}
+
+//complete the function 
+
+function getDrink(param){
+    param = param.toLowerCase();
+    
+    switch(param){
+        case 'Jabroni' : return "Patron Tequila";
+            break;
+        case 'School Coounselor' : return "Anything with Alcohol";
+            break;
+        case 'Programmer' : return "Hipster Craft Beer";
+            break;
+        case 'Bike Gang Member' : return "Mooonshine";
+            break;
+        case 'Politician' : return "Your tax dollars";
+            break;
+        case 'Rapper' : return "Cristal";
+            break;
+        default : return "Beer";
+    }
+}
