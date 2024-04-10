@@ -25597,3 +25597,19 @@ function getDrink(param){
         default : return "Beer";
     }
 }
+//write a functiono which takes its speed in km per hour and returns it in cm per second rounded down too the integer
+
+function cockroachSpeed(s){
+    return Math.floor(s*27.7778)
+}
+
+//if your car goes over 15 or more bumps, return dead
+
+function bump(x){
+    if(x.split('n').length() >= 15){
+        return "dead"
+    }else{
+        return 'wooo'
+    }
+}
+
