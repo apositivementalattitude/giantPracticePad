@@ -25613,3 +25613,44 @@ function bump(x){
     }
 }
 
+//what is progressive rendering?
+//progressive rendering is the techniwque of sequentially rendering parts of the webpage on the server side and sending it to the client in portions
+
+//what are data-attributes god for?
+//data- attributes are good for storing extra information on the HTML elements
+
+//create a function that accepts a list/array and a number n
+//return a list/array of the first n elements from the list/array
+function take (arr, n){
+    return arr.slice(0, n)
+}
+
+
+//return the nearest square number
+//of a positive integer n
+
+function nearestSq(n){
+    //nearest square should be sqrt -> round -> square
+    //return backwards  
+    return Math.pow(Math.round(Math.sqrt(n)),2)
+}
+
+//do you need curly braces for a single-line block
+//no you do not need curly braces fro a single line block
+
+//having a simpler interface to reduce the impact of change
+//abstraction is to have a simpler interface to reduce the impact of change
+
+//figure out the index of which vowel is missing from a given string
+
+function missingIndex(str){
+    let vowels = 'aeiou';
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i;
+        }
+    }
+};
+
+//given an array nums of size n return the majority element
