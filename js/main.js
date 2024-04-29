@@ -25654,3 +25654,301 @@ function missingIndex(str){
 };
 
 //given an array nums of size n return the majority element
+
+//fetch()
+
+//how do you serve a page with content in multiple languages?
+//the lang atttibute
+
+//indexOf/lastIndexOf(item, pos)
+//this will look for the item starting from position pos, return the index of -1 if not found
+
+//what must the condition of a while loop become
+//eventually false
+
+//tell me about yourself
+
+//im a software engineer at 100devs where we work independently or with colleagues to deliver projects to clients, one of my recent projects was to deliver a full stack web apploication to a parternered twitch streamer using the mern stack
+
+//ive previously working in the fashin industry from modelling as a child to the warehouse, and finally as a production managewr, my intrerest in software develoment started as a kid when i started making startcraft broodwar custom mals in my freetime, a few of my collleagues have mentioned to me that since i like to build things and since im good with computers, i should look into software development as a career, which is when i started to study for it, and found and agency with a training programs
+
+//what do you read on a regular basis
+//i like to read the learn javascript subreddit.
+//it gives me a chance to look at code that i maybe havent seen before and some of the comments will present new ways to solve those problems, i keep up with tech news on hackernews and lobsters. and in my freetime my favortite genre of bvook is ghiustorial fiction like memoirs of a geisha, pachinko, and the shogun series
+
+//give me an example of a time you had to take a creative and usual approach to solve a coding problem, Hgow did this idea come to your mind
+//why did you think it was unusual?
+
+//an example of a time i had to take a creative and unusual approacj to solve a coding problem was when I actually had a project due in a bit, but my mother had gone to the emergency room with an issue, if you know anything about emergency rooms, theres a lot of waiting around and my mother wasn't awake for much of her stay, so i ran a terminal emulator on my phone with an ide and started coding the react project that i needed while my mother was asleep, i think it was unusual because most coding on your cellphone seems like a bit of a foreign concept, but those small devices are actually very powerful computing devices
+
+//give me an example of the projject or initiative that you started on your own
+//it can be a non-business one what propmpted you to get started
+
+//at my previous opportunity, early on in my career as a warehouse manager, i ntced that we didnt have a good system for keeping track of container contents the packing slip for a container would ocme in spreadsheets and the previous method for taking inventory of the contents of the container was to manuall count out the inventory in excel
+//it didnt take long to google how to convert cells in a spreadsheet int oa table, once i implemented this system, my team emmbers were thrilled that comething that took 430 mintuees, now took about 120 seconds
+
+//list-style
+//the liust-style is the dots and line styling
+
+//inpuit type="file"
+//file input
+
+//what is a call option?
+//a call option is the right but not obligation to buy a stock at a predetermined price
+
+//what is a put option
+//a put option is the right but not the obligation to sell a stock at a predetermined price
+
+//return a new array consisting of elements which are multiple of their own index in input array length
+
+function multipleOfIndex(array){
+    let arr = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i]);
+        }
+    }
+    return arr;
+};
+
+//define a method hello that returns "Hello, name!"
+
+function hello(name){
+    if(name.length >= 1){
+        return `${name[0].toUpperCase()}${name.slice(1).toLowerCase()}`;
+    }else{
+        return "Hello, World!";
+    };
+};
+
+//copy paperwork of n classmates and m pages
+//how many blank pages you need
+
+function paperwork(n, m){
+    if(n < 0 || m < 0){
+        return 0;
+    }else{
+        return n * m;
+    }
+};
+
+//check whether the priovded array contains the value
+
+function check(a, x){
+    
+}
+
+//you will be given an array a and a value x. All you need to do is check whether the provided array contains the value
+
+//Array can contain numbers or strings. X can be either
+//return true if the array contains the value
+//false if not
+
+function check (a, x){
+    return a.includes(x);
+};
+
+//let charMap = {}
+//this is an example of an object
+
+//what are the reserved words?
+//the reserved words are 
+//function
+//return
+//let
+//class
+
+//a function created inside an expression or inside another syntax construct
+
+//the function is crewated at the right sidef of the assignment expression
+
+//let sum = function(a, b){
+    //return a + b;
+//};
+//this is an example of a function expression
+
+//given an array of integers solution must find the smallest integer
+
+function smallestInteger(n){
+    return Math.min(...n);
+};
+
+//create a variable and console log the value
+let reallyCool = 20;
+console.log(reallyCool);
+//create a VARIABLE, add 10 to it, and alert the value
+reallyCool += 10;
+//create a function that subtracts 4 numbers and alerts the difference
+
+function subFour(a,b,c,d){
+    alert(a-b-c-d);
+};
+
+function giveRemainder(x,y){
+    return x % y;
+};
+
+//create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
+function addTwo(n,m){
+    if(n + m > 50){
+        alert("JUMANJI");
+    };
+};
+
+//create a function that muliplies three numbers and if the product is divisibnle by 3 alert ZEBRA
+
+function multiThree(j,k,l){
+    let product = j*k*l;
+    if(product % 3 === 0){
+        alert("ZEBRA");
+    };
+};
+
+function takeWordNum(word,num){
+    for(let i = 0; i < number.length; i++){
+        console.log(word);
+    };
+};
+
+//the text is now fully mutated to this character
+
+function contamination(text, char){
+    if(text.length === 0 || char.length === 0){
+        return "";
+    }else{
+        return char.repeat(text.length);
+    };
+};
+
+//console
+
+//how to add an element to the beginning of an array
+//unshift
+
+//calculateArea(10, 6);
+//arguments as values
+
+//if there is enough space, return 0, if there isnt, return the number of passengers he cant take
+//cap is the cap of people
+//on is people on the bus already
+//wait is people waiting for the bus
+
+function canBobDoIt(cap, on, wait){
+    if(wait + on > cap){
+        return "(wait + on) - cap";
+    }else{
+        return 0;
+    };
+};
+
+//find the nearest square number
+function nearestSq(n){  
+    //square rootnum
+    //round 
+    //square num
+    return Math.pow(Math.round(Math.sqrt(n)), 2);
+};
+
+//What is filter method syntax
+
+//complete the soluition so that it returns true if the first argument passed in ends with the 2nd argument
+
+function solution(str, ending){
+    return str.endswith(ending);
+};
+
+
+//what are methods?
+//methods are actions that we can perform
+
+//write a method that will get an integer array as parameter and will process every number from this array
+//return a new array with processing every number of the input array like this
+//if the number has an integer square root
+//take this
+//otherwise square the number
+
+function squareOrSquareRoot(array){
+    if(Math.floor(Math.sqrt(array)) === Math.sqrt(array)){
+        return array;
+    }else{
+        return array**2;
+    };
+};
+
+//declare a variable, assign it a string of multiple words, and check to see if one of the words is "apple"
+
+let declarationVariable = "a string of multiple words, maybe apple";
+console.log(declarationVariable.filter("apple" >= 1));
+
+//are parameters treated like variables within a function?
+//yes
+
+//how can you write single line comments?
+//i literally just wrote one
+
+//make a program that filters a list of strings and returns a list with only your friends names in it
+//the name has exactly 4 letters
+
+function filteredList(str){
+    let arr = [];
+
+    for(let i = 0; i < str.length; i++){
+        if(str[i].filter(str => str.length === 4)){
+            arr.push(str[i]);
+        };
+    };
+    return arr;
+};
+
+//write a function bmi that calculates body mass index 
+
+function bodyMassIndex(weight, height){
+    const bmi = weight / (height**2);
+
+    if(bmi <= 18.5){
+        return "Underweight";
+    }else if(bmi <= 25){
+        return "Normal";
+    }else if(bmi <= 30){
+        return "Overweight";
+    }else{
+        return "Obese";
+    };
+};
+
+//return the Nth even number
+
+function nthEvenNum(n){
+    return n*2-2;
+};
+
+
+//another way to iterate an array
+//write a function that returns a string in which firstName is swapped with last name
+
+function nameShuffler(str){
+    return str.split(' ').reverse().join(' ');
+};
+
+//create a funciton that removes the first and last characters of a string
+
+function removeFirstLast(str){
+    return str.slice(1, -1);
+};
+
+//the first century spans from the year 1 up to and including the year 100
+//the second century from the year 1-1 up to and including the year 200
+
+function century(year){
+    let century = 0;
+
+    for(let i = 1; i <= year; i++){
+        if(year % 100 === 0){
+            century++;
+        };
+    };
+    return century;
+};
+
+console.log(century('1962'), "20")
