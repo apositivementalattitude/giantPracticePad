@@ -25952,3 +25952,112 @@ function century(year){
 };
 
 console.log(century('1962'), "20")
+
+//write a function that takes a string as it's first parameter
+//this string will be a string of words
+//you are expected to then use the second parameter, which will be an integer, to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have the located string you are finally going to multiple by it the third provided parameter
+//which will also be an integer
+//you are additionally required to add a hyphen in between each word
+
+function modifyMultiply(str, loc, num){
+    let arr = [];
+    let count = 0;
+    let word = str.split(' ');
+    let get = word[loc];
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            arr.push(get);
+            count++;
+        };
+    };
+    return arr.join('-');
+};
+
+
+
+//write a function that takes a single string(word) as argument
+//the function must return an ordered list containing the indexes of all capital letters in the string
+
+function capLetters(word){
+    let arr = [];
+
+    for(let i = 0; i < word.length; i++){
+        if(word[i] === word[i].toUpperCase()){
+            arr.push(i);
+        };
+    };
+    return arr;
+};
+
+//create a merthod all which takes two parameters
+//a sequence
+//a function
+
+//return true if the function i nthe params returns true for every element in the sequence
+
+function all(arr, fun){
+    return arr.every(fun)
+}
+
+function all(arr, fun){
+    let array = [];
+
+    for(let i = 0; i < arr.length; i++){
+        if(fun(arr[i])){
+            array.push(arr[i]);
+        }if(arr.length === array.length){
+            return true;
+        }else{
+            return false;
+        };
+    };
+};
+
+function mouthSize(animal){
+    if(animal.toLowerCase() === 'alligator'){
+        return 'small';
+    }else{
+        return 'wide';
+    };
+};
+
+//get the sum of two arrays
+
+function arrayPlusArray(arr1, arr2){
+    return arr1.reduce((a, b) => a + b, 0) + arr2.reduce((a, b) => a + b, 0)
+}
+
+//move every letter in the provided string forward 10 letters
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    const newArr = s.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10;
+        return str[newIndex];
+    });
+    return newArr.join('');
+};
+
+//given a string of characyers return the character that appears the most often
+
+function maxCharacter(str){
+    let charMap = {};
+    let count = 0;
+    let maxChar = null;
+
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1;
+    };
+
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char];
+            maxChar = char;
+        };
+    };
+    return maxChar;
+};
+
