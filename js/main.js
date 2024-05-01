@@ -26061,3 +26061,9 @@ function maxCharacter(str){
     return maxChar;
 };
 
+//describe the difference between a cookie
+//sessionStorage
+//and localStorage
+//a cookie is data stored on the server
+//localStoragee is data stored on the browser
+//sessionStorage is data to be deleted when the browser is closed
