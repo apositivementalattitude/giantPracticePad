@@ -26067,3 +26067,16 @@ function maxCharacter(str){
 //a cookie is data stored on the server
 //localStoragee is data stored on the browser
 //sessionStorage is data to be deleted when the browser is closed
+
+//write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast
+
+//the dish must start and end with the ssame letters as the animal's name
+
+function feast(beast, dish){
+    //last and first letters need to match
+    if(beast.slice(-1).toLowerCase === dish.slice(-1).toLowerCase && beast[0] === dish[0]){
+        return "true"
+    }else{
+        return "false"
+    }
+}
