@@ -26080,3 +26080,20 @@ function feast(beast, dish){
         return "false"
     }
 }
+
+//return the average the given array rounded down 
+
+function getAverage(marks){
+    return Math.floor(marks.reduce((a, b) => a + b, 0));
+}
+
+function getAverage(marks){
+    let grades = marks.split(' ');
+    let sum = 0;
+    let avg = (sum / marks.length);
+
+    for(let i = 0; i < grades.length; i++){
+        sum+=marks[i];
+    }
+    return Math.floor(avg)
+}
