@@ -26097,3 +26097,67 @@ function getAverage(marks){
     }
     return Math.floor(avg)
 }
+
+//given an array of integers return a new array with each value doubled
+
+function maps(x){
+    return x.map(n => n*2)
+}
+
+//what is globabl scope?
+
+//global scope is the variables that are accessible to every part of the program
+
+//things inside a set of curly braces{}
+//a code block
+
+//dragon taskes 2 bullets to be defeated
+
+function hero(dragons, bullets){
+    if(bullets*2 >= dragons){
+        return "true";
+    }else{
+        return "false";
+    };
+};
+
+//create a function isDivideBy to check if an integer number is divisible by both integers a and b
+
+function isDivideBy(int, a, b){
+    if(int % a === 0 && int % b === 0){
+        return "true";
+    }else{
+        return "false";
+    };
+};
+
+//write a function that will take the number of petals of each flower and return true if they are in love false if they are not
+//one flower is even
+//the other is odd
+//means love
+
+function love(petals){
+    let countA = 0
+    let countB = 0
+
+    for(let i = 1; i <= petals; i++){
+
+    }
+}
+
+//given an array of integers nums 
+//and an integer target
+//return indices of the two numbers such that they add up to target
+
+function addStuff(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; j++){
+            if(i !== j){
+                if(nums[i] + nums[j] === target){
+                    return [i, j];
+                };
+            };
+        };
+    };
+};
+
