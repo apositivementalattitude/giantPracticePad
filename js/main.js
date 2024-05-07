@@ -26161,3 +26161,5 @@ function addStuff(nums, target){
     };
 };
 
+//git ignore
+//git will ignore files in git ignore
