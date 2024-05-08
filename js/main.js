@@ -26163,3 +26163,27 @@ function addStuff(nums, target){
 
 //git ignore
 //git will ignore files in git ignore
+
+//write a function that always returns 5
+
+//you can't use any of the following characters: 0123456789*+-/
+
+function makeFive(){
+    let brick = 'brick'
+    return brick.length
+}
+//pop()
+//pop will remove the last element in an array
+
+//do you know recursion?
+//create the function factorial that receives n and returns n!
+//you have to use recursion
+
+function factorial(n){
+    if(n < 2){
+        return 1;
+    }else{
+        return n * factorial(n - 1);
+    };
+};
+
