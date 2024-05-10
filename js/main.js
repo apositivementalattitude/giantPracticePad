@@ -26137,13 +26137,13 @@ function isDivideBy(int, a, b){
 //means love
 
 function love(petals){
-    let countA = 0
-    let countB = 0
+    let countA = 0;
+    let countB = 0;
 
     for(let i = 1; i <= petals; i++){
 
-    }
-}
+    };
+};
 
 //given an array of integers nums 
 //and an integer target
@@ -26169,9 +26169,9 @@ function addStuff(nums, target){
 //you can't use any of the following characters: 0123456789*+-/
 
 function makeFive(){
-    let brick = 'brick'
-    return brick.length
-}
+    let brick = 'brick';
+    return brick.length;
+};
 //pop()
 //pop will remove the last element in an array
 
@@ -26186,4 +26186,10 @@ function factorial(n){
         return n * factorial(n - 1);
     };
 };
+
+//your task is to find the nearest square number 
+
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)), 2);
+}
 
