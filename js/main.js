@@ -26193,3 +26193,24 @@ function nearestSq(n){
     return Math.pow(Math.round(Math.sqrt(n)), 2);
 }
 
+//when you see a function with a capital letter at the beginning, what is it?
+//a function with a capital letter at the beginning is a constructor
+
+//what is a code block associated with a loop?
+//the code block associated with a loop is its body
+
+//create a function that takes 2 integers in the form of a string as an input and outputs the sum(also as a string)
+
+function takeTwo(a, b){
+    return (+a + +b) + "";
+};
+//+ "" will turn things into a string
+
+//given a string you have to return a string in which each character is repeated once
+
+function repeatOnce(str){
+    return str.split('').map(x => {
+        return x + x;
+    }).join('');
+};
+
