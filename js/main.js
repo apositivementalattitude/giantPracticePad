@@ -26214,3 +26214,28 @@ function repeatOnce(str){
     }).join('');
 };
 
+//figure out the index of which vowel is missing from a given string
+
+function missingIndex(str){
+    let vowels = "aeiou";
+    str = str.split('');
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i;
+        };
+    };
+};
+
+//given an array nums of size n
+//return the majority element
+
+function majElement(n){
+    let elem = {}
+    let count = 0
+    let majElem = arr[0]
+
+    for(const num of arr){
+        
+    }
+}
