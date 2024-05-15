@@ -26231,11 +26231,24 @@ function missingIndex(str){
 //return the majority element
 
 function majElement(n){
-    let elem = {}
-    let count = 0
-    let majElem = arr[0]
+    let elem = {};
+    let count = 0;
+    let majElem = arr[0];
 
     for(const num of arr){
-        
-    }
-}
+        elem[num] = elem[num] + 1 || 1;
+    };
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n];
+            majElem = n;
+        };
+    };
+    return majElem;
+};
+
+//remove the spaces from the string, thrn return the resultant string
+
+function removeSpaces(s){
+    return s.split(' ').join('');
+};
