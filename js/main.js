@@ -26252,3 +26252,21 @@ function majElement(n){
 function removeSpaces(s){
     return s.split(' ').join('');
 };
+//what are blocks
+//blocks are the things between the {}
+
+const isReallyNaN = (val) => {
+    if(val === NaN){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+function isSquare(length, width){
+    if(length === width){
+        return length * width
+    }else{
+        return (length * 2) + (width * 2)
+    }
+}
