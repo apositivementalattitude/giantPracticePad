@@ -26270,3 +26270,42 @@ function isSquare(length, width){
         return (length * 2) + (width * 2)
     }
 }
+
+//what is script?
+//script is client side code
+
+//describe the difference between script
+//script async
+//and script defer
+//script is client side script
+//script async is code that gets downloaded asynchronously and then executed
+//script defer is code that gets downloaded, then rednered, and finally constructed to start the execution of code
+
+//flex-direction:row-reverse
+//flex-firection is the direction you want your boxes to go
+//row-reverse will set your boxes to be in a reverse row
+
+//what is a put option?
+//a put option is the right to sell at a predetermined price
+
+//find the sum of all multiples of n below m
+
+function sumMul(n,m){
+    let sum = 0
+
+    for(let i = n; i < m; i+=n){
+       if(i % n === 0){
+        sum+=i
+       } 
+    }
+}
+
+function sumMul(n, m){
+    let sum = 0
+
+    for(let i = n; i < m; i++){
+        if(i % n === 0){
+            sum += i
+        }
+    }
+}
