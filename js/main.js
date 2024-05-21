@@ -26309,3 +26309,15 @@ function sumMul(n, m){
         }
     }
 }
+
+//the sum of all the stairs logged in a year will be used for estimating thee nnumber he might climb in 20
+
+//your function shouldd return the 20 year estimate of the stairs clim bed using the formula below
+//twentyYearEstimate = oneYearTotal * 20
+
+
+function suzukiStairs(s){
+//find the one year total
+//ds is sorted by days of the week
+    return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
+}
