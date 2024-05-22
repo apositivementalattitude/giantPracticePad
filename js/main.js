@@ -26319,5 +26319,22 @@ function sumMul(n, m){
 function suzukiStairs(s){
 //find the one year total
 //ds is sorted by days of the week
-    return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
-}
+    return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20;
+};
+
+//write a fancy new text editor and implement line numberingg
+
+const number = function(array){
+    let arr = [];
+    for(let i = 0; i < array.length; i++){
+        arr.push(`${i + 1}: ${array[i]}, `);
+    };
+    return arr;
+};
+
+//sshould variables hold reusable data in a program and associate it with a name?
+
+//yes
+
+//that is exactly what they are
+
