@@ -26338,3 +26338,30 @@ const number = function(array){
 
 //that is exactly what they are
 
+//quare every digit of a number and concatenate them
+
+function sqEveryDigit(n){
+
+    numbers = n.split('')
+    let arr = []
+
+    for(let i = 0; i < numbers.length; i++){
+        arr.push(numbers[i]*numbers[i])
+    }
+    return arr.join('')
+}
+
+function sqDg(num){
+    return num.concat(num);
+}
+
+//find the needle in the haystack
+
+//write a function findNeedle()
+//takes an array full of junk but containing one needle
+
+//found the needle at position plus the index it found the needle
+
+function findNeedle(haystack){
+    return `found the needle at position ${haystack.indexOf('needle')}`
+}
