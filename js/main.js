@@ -26365,3 +26365,71 @@ function sqDg(num){
 function findNeedle(haystack){
     return `found the needle at position ${haystack.indexOf('needle')}`
 }
+
+//what identifies the sizing and grid styles of differennt elements
+//in css, the layout identifiesa the sizing and grid styles of different elements
+
+//what is used to augment or override other styles in the event that a module includes an alternate state
+
+
+//the state is used to augment or override other styles in the evennt that a module includes an alternate state
+
+//set up a dislike button
+
+//create a function that takes in a list of button inputs and returns the final state
+
+function likeOrDislike(buttons){
+    let state = "Nothing";
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = "Nothing";
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+//washing machine uses water to wash load
+
+function howMuchWater(water, load, clothes){
+    let maxLoad = water * 1.1**(clothes - load);
+
+    if(maxLoad > 2*clothes){
+        return "Too much clothes";
+    }else{
+        return "Not enough clothes";
+    };
+};
+
+//code a like and dislike button
+
+function likeOrDislike(buttons){
+    let state = "Nothing"
+
+    for(let i = 0; i < buttons.length; i++){
+        if(state === buttons[i]){
+            state = "Nothing"
+        }else{
+            state = buttons[i]
+        };
+    };
+    return state;
+};
+
+//the hero moves from the left to the right
+//player rolls the dice and moves the number of spaces indicated by the dice two times
+
+//create a function for the terminal game that takes the current position of the hero and the roll 1-6 and return the new position
+
+function move(position, roll){
+    const roll = Math.floor(Math.random() * (6 - 1) + 1);
+    return position + (2 * roll);
+};
+
+//given ann array nums of size n, return the majority element
+
+function majElem(n){
+    
+}
