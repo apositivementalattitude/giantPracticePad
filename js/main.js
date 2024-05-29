@@ -26433,3 +26433,91 @@ function move(position, roll){
 function majElem(n){
     
 }
+
+//given an array nums of size n
+//return t he majority element
+
+function majorityElem(arr){
+    let map = {};
+    let count = 0;
+    let majElem = arr[0];
+
+    for(const num of arr){
+        map[num] = map[num] + 1 || 1;
+    };
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n];
+            majElem = n;
+        };
+    };
+    return majElem;
+};
+
+//array of test sscores
+//calculate the average
+
+function averageScores(yourScore, classScores){
+    let classAverage = classScores.reduce((a, b) => a + b, 0)/classScores.length
+
+    if(yourScore > classAverage){
+        return "True"
+    }else{
+        return "False"
+    }
+}
+
+//find the nearest square number
+
+function nearesetSq(n){
+    // sqrt -> round -> ^2
+    return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+//what is the difference between a for of loop and a for in loop
+
+//a for of loop is [a, b, c]
+//a for in loop is [1, 2, 3]
+
+//for of interates over the values of an iterable object(arrays, stringns, maps, sets)
+//for in iterates over the keys/properties of an object
+//for in is the count, index, etc.
+
+
+//youtube had a like and a dislike button
+//code it
+
+function likeOrDislike(buttons){
+    //set a default state of nothing
+    let state = "Nothing"
+    //loop through the buttons to get the final state
+    for(let i = 0; i < buttons.length; i++){
+        //if the state and the index of the array is the same
+        //set it to Nothing
+        if(buttons[i] === state){
+            state = "Nothing"
+            //if the state is different
+            //set it to the index of the button
+        }else{
+            state = buttons[i]
+        }
+    }
+    return state;
+}
+
+//yes, are there training programs available?
+//what learning opportunities are there?
+//what is the interview process like?
+//what are some of the challenges for the person in the position?
+//what is the onboarding process?
+//what are the immediate projects i would take on?
+//what are the current goals for the person in this position?
+
+//what is the difference between a for..of loop and a for..in loop
+
+// a for of loop iterates over the values of the array, string, object
+// a for in loop iterates over the properties
+//for of is [a, b, c]
+//for in is [1, 2, 3]
+
+//for in is the count, index, etc.
