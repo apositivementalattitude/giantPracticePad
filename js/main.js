@@ -26555,3 +26555,46 @@ const config = {
     //console.log("listening on 3000")
 //})
 
+//tell me about when you had to deal with conflict within your team
+//how was the conflict solvbed?
+//how did you handloe that?
+//how would you deal with it now?
+
+//a time i had a conflict within my team was at a previous opprtunity, where i was assigned to work on a javascript project with a few colelagues. two of my colleagues were disagreeing whether they wanted to use a library or vavanilla css.
+
+//i messaged the two of them privately to get their take on the situation, and i wroked to resolve the issue by poiting out that the person aghainst usinag a css library was the person doing most of the css. now, i would deal with this all beforehand by planmning more thoroughly, or byu Aapplying AGILE methodologies such as SCRUM, so we could discuss issues that might come up beforehand
+
+//tell me about a situation when you were responsible fopr prject planning, did everything go according to your plan?
+//if not, then why and what kind of counter-actions did you have to take?
+//projects never go exactly as they're planned./ we were expecting about 30 containers over the course of 2 months; however, due to dcongestion at the port of long beach,we received those 30 containers in a 2 week window
+//the rolls of fabric that were already portioned off for oreders were immediately pulled from the containers and put in trucks to be delivered, i had to get really creative with where we stored the rolls. 
+
+//margin: 0 auto;
+//will reset the box to the center
+
+//.tagline
+//class of tagline
+
+//what is a call option?
+//a call option is the right, but not the obligation to buy shares at a predetermined price
+
+//code a like dislike button
+
+//create a functio nthat takes in a list of button inputs and returns the final state
+
+function likeOrDislike(buttons){
+    let state = "Nothing";
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = "Nothing";
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+//math floor
+//rounds down to the nearest whole integer
+
