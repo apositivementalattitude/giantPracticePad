@@ -26520,4 +26520,38 @@ function likeOrDislike(buttons){
 //for of is [a, b, c]
 //for in is [1, 2, 3]
 
-//for in is the count, index, etc.
+//what is the difference between a for.. of loop and a for... in loop?
+
+//a for of loop iterates over the values of the array, string, or object
+//for of is [a, b, c]
+
+//a for in movie iterates over the properties of the values
+//for in is [1, 2, 3]
+
+//create a package.json config and assign it to the configuration constant so it can be tested
+
+const config = {
+    name: "cool-package",
+    description: "this is a package of really cool stuff",
+    version: "1.0.1",
+
+}
+
+
+//reduce
+//((a, b) => a + b, 0)
+
+//tell me about yourself
+
+//im eric, im a freelance software developer who has delivered nujmerous projects to clients
+
+//one of my recent projects was to deliver a full stack web application to a partnered twitch streamer
+
+//ive previously worked i nthe fashion industry as a production manager, my interest in software developement started as a kid when i started making starcraft broodwar custom maps in my freetime
+//a few of my colleagues have mentioned to me that since i liket o build things, and since im fgood with computers, i should look into software development as a career path. which is when i started studying for it, and found an agency with a training program, 100DEVS
+
+//the listen method in express
+//app.listen(3000, function() {
+    //console.log("listening on 3000")
+//})
+
