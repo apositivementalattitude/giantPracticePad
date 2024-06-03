@@ -26595,6 +26595,116 @@ function likeOrDislike(buttons){
     return state;
 };
 
-//math floor
-//rounds down to the nearest whole integer
+//[rel~="tag"]
+//attribute spaced selector
+
+//what do you read on a regular basis
+//i like to read hackernews and lobsters to stay up to date on tech related news
+//i like to read r/learnprogramming and r/learnjavascript subreddits to see if i can help others or to see if i can learn anything new
+//sometimes i read fantasy books or historical fiction like asoiaf and pachinko
+
+//give me an example of a time you had to take a creative and unusual approack to solve a coding problem. how did this idea come to youir mind?
+//why did you think it was unusual
+
+//a time i had to take a creative and unusual approach to solve a codign problem was at a previous opportunity where i had to complete a few projects, but my parents were both in the hospital. i had to be at the hospital all day to translate, but there was a lot of downtime and i didn't bring my laptop so i started googling which ide to use, and which terminal emulator to run on my phone. the idea just came naturally, phones are very powerful these days, and you can do a surprising amount of things on them. i think it's unusual because most people work on their laptops, and dont really think to use their phones to do things like that.
+
+//node server.js
+//runs the server.js file
+
+//move every letter in the provided string forward 10 letters thorugh the alphabet
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    const arr = str.split('').map(x => {
+        const newIndex = str.indexOf(x) + 10;
+        return str[newIndex];
+    });
+    return arr.join('');
+};
+
+//count the rings in each letter and dividde the total number by 2
+//round the answer down
+
+function olympicRings(a){
+    let rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+    let twoRings = ['B'];
+    let score = 0;
+
+    a.split('').map(x => {
+        if(rings.includes(x)){
+            score++
+        }else if(twoRings.includes(x)){
+            score+=2
+        }
+    })
+      // Calculate the final score as the total number of rings divided by 2 (since each ring is counted twice)
+  score = Math.floor(score / 2);
+
+  // Return a message based on the score
+  if (score > 3) {
+    return "Gold!";
+  } else if (score > 2) {
+    return "Silver!";
+  } else if (score > 1) {
+    return "Bronze!";
+  } else {
+    return "You stink";
+  }
+}
+
+//write a function to get the first elements of a sequence
+function first(arr, n=1){
+    return arr.slice(0, n)
+}
+
+//code a like and dislike button
+
+function likeOrDislike(buttons){
+    let state = "Nothing";
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = "Nothing";
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+//what is the difference betweena for...of loop and a for...in loop?
+//a for of loop iterates over the values of an array/string/map/object
+//a for in loop iterates over the indices(keys) of the array
+
+//a for of loop is the [a,b,c]
+//a for in loop is the [1,2,3]
+
+
+//ex.
+let array = ["a", "b", "c"];
+
+// for...of loop
+for (let value of array) {
+    console.log(value);
+}
+// Output:
+// a
+// b
+// c
+
+// for...in loop
+for (let index in array) {
+    console.log(index);
+}
+// Output:
+// 0
+// 1
+// 2
+
+//how to remove an element from an array
+
+//you can remove an element from the beginning of an array with unshift
+//you can remove an element from the end of an array with pop
+
+//do not mess with things that are underscored in OOP
 
