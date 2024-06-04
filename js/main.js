@@ -26708,3 +26708,9 @@ for (let index in array) {
 
 //do not mess with things that are underscored in OOP
 
+//assignment vs comparison
+//assignment is ==
+//comparison is ===
+//comaprison will compare the two value to see if they match
+//assignment will check to see if the two values are exactly the same
+
