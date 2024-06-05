@@ -26714,3 +26714,6 @@ for (let index in array) {
 //comaprison will compare the two value to see if they match
 //assignment will check to see if the two values are exactly the same
 
+//what is the abstraction principle?
+//the abstraction principle is to hide the details
+
