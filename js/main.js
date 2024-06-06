@@ -26717,3 +26717,19 @@ for (let index in array) {
 //what is the abstraction principle?
 //the abstraction principle is to hide the details
 
+//includes
+//variableName.includes(x)
+
+//if you are writing code related to the database, where does it belong?
+//code related to the database belongs to the model
+
+//given 2 strings a, and b
+//return a tstring of the form short+long+short
+
+function solution(a, b){
+    if(a > b){
+        return +b + +a + +b
+    }else{
+        return +a + +b + +a
+    }
+}
