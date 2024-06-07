@@ -26733,3 +26733,17 @@ function solution(a, b){
         return +a + +b + +a
     }
 }
+
+//semantics
+//what is semantics?
+//semantics is code you can describe
+//semantics allows you to more describe more precisley hat your content is 
+
+//const calculateArea = function(width, height)
+//what is the difference between a for...of loop and a for...in loop
+//a for of loop is used to iterate the values of the array
+//a for in loop is used to iterates over the indices of the array
+//a for of loop is for [a,b,c]
+//a for in loop is for [1,2,3]
+
+
