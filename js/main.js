@@ -26747,3 +26747,63 @@ function solution(a, b){
 //a for in loop is for [1,2,3]
 
 
+//! bang not, 
+
+//what is the selector unit at the end furthest to the right
+//the key selector
+
+//do you ahve any questions?
+//yes
+//what is the interview timeline like?
+//how would you describe the workplace culture?
+//are there any training programs available?
+//what is a typical day in this position?
+//what is the onboarding process after the offer?
+
+//tell me about a time you had to work on several projects at once, how did you handle this?
+
+//handling several projects at once was a daily part of my life as a production manager. I would oversee lots of different projects and orders ranging from projects that needed to be dyed and be at a different location on different days, figuring out the budget for all my projects, and the budget in total
+//the way i try to handle this is by looking at the macro of events, and figure out the best way to complete all my tasks at once
+
+//what are the buolding blocks of html
+//semantics
+//offline and storage
+//connectivity
+
+//map(func)
+//creates a new array from results of calling function for every element
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndex(array){
+    let arr = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i]);
+        };
+    };
+    return arr;
+};
+
+//program a like or dislike button
+
+function likeOrDislike(buttons){
+    let state = 'nothing';
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'nothing';
+        }else{
+            state = buttons[i];
+        };
+    };
+};
+
+//complete the function that accepts a string parameter, and reverses the letters in each word in the string
+//all spaces in the string should be retained
+
+function strParam(s){
+    return s.split('').reverse().join('')
+}
+
