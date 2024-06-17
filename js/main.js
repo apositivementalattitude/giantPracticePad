@@ -26807,3 +26807,74 @@ function strParam(s){
     return s.split('').reverse().join('')
 }
 
+//\t
+//tabbing
+
+//do strings sort of work like arrays?
+//yes, strings sort of work like arrays
+
+//you are given a number and have to make it negative
+//but what if the number is already negative?
+
+function makeNeg(n){
+    if(n > 0){
+        return -1 * n
+    }else{
+        return n
+    }
+}
+
+//what is a return statement
+//a return statement is used to pass back information to the function call
+
+//what is the difference between a for...of loop and a for...in loop
+//a for of loop iterates the values of the object
+//a for in loop iterates the matrices and indices of the object
+
+//.querySelector
+//selects in javascript
+
+//given a set of numbers
+//return the additive inverse of each
+//each positive becomes negatives, and the negatives become positive
+
+function additiveInverse(nums){
+    let arr = []
+
+    for(let i = 0; i < nums.length; i++){
+        arr.push(nums[i] * -1)
+    }
+    return arr;
+}
+//return the middle character of the word
+
+function midChar(str){
+    if(str.length % 2 === 0){
+        return str.substring((s.length/2) - 1, (s.length/2) + 1)
+    }else{
+        return str.substring((s.length/2) + 1, (s.length/2))
+    }
+}
+
+//create a variable and assign it a number
+let newNum = 100
+//minus 10 from that number
+newNum -= 10
+console.log(newNum)
+//create a variable that holds a value from the input
+let coolStuff = Number(document.querySelector("#input").value)
+
+//add 25 to that number
+coolStuff += 25
+
+//create a variable that holds the h1
+
+h1 = h1.document.querySelector('h1')
+
+//add an event listener to that element that console logs the sum of the two previous variables
+
+h1.addEventListener('click', addTwo)
+function addTwo(){
+    console.log(newNum + coolStuff)
+}
+
