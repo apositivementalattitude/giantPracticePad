@@ -26878,3 +26878,39 @@ function addTwo(){
     console.log(newNum + coolStuff)
 }
 
+//write a funciton that takes a string as it's first parameter. This string will be a string of words
+//use the second parameter, which will be an integer to find the corresponding word in the given string
+//the first word would be represented by 0
+//once you have located the string you are finally going to muiltiple by it the third provided parameter, which will also be an integer
+//you are additionally required to add a hyphen in between each word
+
+function modifyMult(str, num, loc){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[loc]
+
+    for(let i = count; i < num; i++){
+        if(i < num){
+            count++
+            arr.push(get)
+        }
+    }
+    return arr.join('-')
+}
+
+//given a string made up of letters a, b, and or c, switch the position of letters a and b
+
+//code a dislike button
+function likeOrDislike(buttons){
+    let state = 'nothing';
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'nothing';
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
