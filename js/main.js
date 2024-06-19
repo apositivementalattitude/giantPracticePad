@@ -26914,3 +26914,4 @@ function likeOrDislike(buttons){
     return state;
 };
 
+//ctrl+c stops the current server in node
