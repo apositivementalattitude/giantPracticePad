@@ -26915,3 +26915,7 @@ function likeOrDislike(buttons){
 };
 
 //ctrl+c stops the current server in node
+//specific styles targeting individual parts of the page
+//modules
+//what is substring()
+//substring() is a method like slice, but for strings
