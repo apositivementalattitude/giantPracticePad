@@ -26919,3 +26919,46 @@ function likeOrDislike(buttons){
 //modules
 //what is substring()
 //substring() is a method like slice, but for strings
+
+//complete the function that takes two integers and returns an array of all integers between the input parameters, including them.
+
+function takeTwo(a, b){
+    let arr = [];
+
+    for(let i = a; i <= b; i++){
+        arr.push(i);
+    };
+    return arr;
+};
+
+//localStorage.setItem('books', data.title)
+
+
+function highAndLow(numbers){
+    return `${Math.max(...numbers.split(''))} ${Math.min(...numbers.split(''))}`
+}
+
+function highAndLow(numbers){
+    return Math.min(...numbers)
+}
+
+function highAndLow(numbers){
+
+}
+
+//unshift(...items)
+//will add items into the front of the array
+
+//ad a + to make it a number
+
+//the model
+//adds and retrieves from the database, only talks to the controller
+
+//the best functios are those with no parameters
+
+//the fewer the number of paramters the easier it is to maintain that funciton what is this referring to?
+
+//encapsulation
+
+//to eliminate redundant code is inheritance
+
