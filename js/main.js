@@ -26962,3 +26962,47 @@ function highAndLow(numbers){
 
 //to eliminate redundant code is inheritance
 
+//write a function to split a string and convert it into an array of words
+function splitStr(s){
+    return s.split(' ')
+}
+
+//list of falsy values
+//falsy values are as follows
+//0
+//undefined
+//NaN
+//""
+//null
+
+//object
+//object in javascript is defined as a collection of related data
+
+//what is the difference between a for ..of loop and a for ...in loop
+
+//a for of loop iterates over the values of the array
+//a for in loop iterated over the indices of the array
+
+//find the nearest square number
+function nearestSq(n){
+    //nearest square number formula round -> sqrt -> square
+    return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+//return the first n elements from the list/array
+
+function take(arr, n){
+    return arr.slice(0, n)
+}
+
+//do you have any question
+
+//what is the interview process like?
+//what is the timeline
+//what are some of the challenges for the person in the position
+//what is a typical day in this position
+//are there training programs available
+//what are the current goals of the company
+//what learning or development opportunities are there for a person in this role
+//what ist he most important thing for me to accomplish in 90 days
+
