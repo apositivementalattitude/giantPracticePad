@@ -27006,3 +27006,49 @@ function take(arr, n){
 //what learning or development opportunities are there for a person in this role
 //what ist he most important thing for me to accomplish in 90 days
 
+//asyunchronously
+//to not happen at the same time
+
+//why would you use a srcset aattribute in an image tag?
+//explain the process the browser uses twhen evaluating the content of this attribute
+//you would use a srcset attribute in an image tage when you want to serve different images to users depending on their device display width
+
+//have you used different HTML templating languages before?
+//yes, react, 
+
+//code a like or dislike button
+
+function likeOrDislike(buttons){
+    let state = "nothing";
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'nothing';
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+console.log(likeOrDislike('like', 'dislike', 'like'), 'like')
+
+//your goal is to create a function that removes the first and last characters of a string
+
+function removeFirstLast(s){
+    return s.slice(1, -1)
+}
+
+function removeFirstLast(s){
+    //how to remove the first letter of a string with a loop
+    let string = []
+
+    for(let i = 0; i < s.length; i++){
+        if(s[i] !== s[0] && s[i] !== s[s.length]){
+            string.push(s[i])
+        }
+    }
+    return string.join('')
+}
+
+//can you change the contents of a const array?
