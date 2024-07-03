@@ -27052,3 +27052,37 @@ function removeFirstLast(s){
 }
 
 //can you change the contents of a const array?
+
+//create a function that has a loop that prints '21', 21 times to the console and then call that function 
+
+function twentyOne(){
+    for(let i = 0; i < 21; i++){
+        document.querySelector('twentyOne').innerText += "21"
+    }
+}
+
+twentyOne();
+
+//complete the method that takes a booelan value and return a Yes string for true or a No string for false
+
+function boolToWord(bool){
+    if(bool == true){
+        return 'Yes'
+    }else{
+        return 'No'
+    }
+}
+
+//create an array of numbers
+//sum all of the numbers
+//alert the sum
+
+function numbers(){
+    let arr = [1,2,3,4,5]
+    alert(arr.reduce(a,b) => a + b, 0)
+}
+
+//the process of storing functions with their associated data - in an object
+
+//encapsulation
+
