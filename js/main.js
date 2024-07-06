@@ -27079,10 +27079,13 @@ function boolToWord(bool){
 
 function numbers(){
     let arr = [1,2,3,4,5]
-    alert(arr.reduce(a,b) => a + b, 0)
+    alert(arr.reduce((a,b) => a + b, 0))
 }
 
 //the process of storing functions with their associated data - in an object
 
 //encapsulation
+
+//is the function name usually ommitted in a function expression?
+//yes
 
