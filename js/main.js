@@ -27089,3 +27089,10 @@ function numbers(){
 //is the function name usually ommitted in a function expression?
 //yes
 
+//what is a constructor?
+//a constructor is used to make an object
+
+//what is the controller
+//the controller is server side code that tells what the view what to do
+//it gets its information from the model
+
