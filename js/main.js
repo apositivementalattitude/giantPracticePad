@@ -27096,3 +27096,6 @@ function numbers(){
 //the controller is server side code that tells what the view what to do
 //it gets its information from the model
 
+//to defer code
+//execute code after the download and browser finished the DOM construction and rendering
+
