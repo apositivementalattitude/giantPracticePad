@@ -27099,3 +27099,8 @@ function numbers(){
 //to defer code
 //execute code after the download and browser finished the DOM construction and rendering
 
+//given an array of integers, return a new array with each value doubled
+
+function maps(x){
+    return x.map(n => n*2)
+}
