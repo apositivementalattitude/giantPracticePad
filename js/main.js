@@ -27104,3 +27104,44 @@ function numbers(){
 function maps(x){
     return x.map(n => n*2)
 }
+
+//tell me about a situation when you were responsible for project planning
+//did everything go accorsding to your plan
+//if not then why and what kind of counter-actions did you have to take
+
+//projects never go exactly as planned
+//we were expecting 30 containers over the course of 2 months
+//there was a strike at the port of long beach
+//had to plan and make space for it to come all at once
+//it came all at once
+
+//tell me about yoruself
+//im eric, im a freelance software engineer making website and web applications for clients both alone and with collleagues mainly through the MERN stack
+//i worked in the fashion industry for the majority of my life from modeling, to the warehouse, and then as a production manager
+//ive always liked the make things out of legos, in video games, etc and people would tell me to go into software developement as a career path and i just taught myself how to code
+
+//give me an example of the project or initiative that you started on your own
+//it can be a non-business one
+//what prompted you to get started
+
+//my first day on the job as a warehouse manager 
+//i noticed the previous method to tracking container contents was very inefficient
+//the previous staff would count rolls 
+
+//spread syntax
+//expands an array into its elements
+
+//basically adds it up
+
+//write a function named setAlarm which receives two parameters
+//the first parameters employed is true whenever you are employed and the second parameter
+//vacation is true whenever you are on vacation
+//the funciton should return true if you are employed and not on vacation
+
+function setAlarm(employed, vacation){
+    if(employed === true && vacation === false){
+        return true
+    }else{
+        return false
+    }
+}
