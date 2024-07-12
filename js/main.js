@@ -27145,3 +27145,142 @@ function setAlarm(employed, vacation){
         return false
     }
 }
+
+//code a like and dislike button
+
+function likeOrDislike(buttons){
+    let state = 'nothing';
+
+    for (let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'nothing';
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+//create a functio nthat converts US dollars to Chinese Yuan
+
+function usdcny(usd){
+    return `${6.75*usd.toFixed(2)} Chinese Yuan`
+}
+
+//what is a callback?
+//a callback is the function that gets called when something else happens
+
+//given an array nums of size n 
+//return the majority element
+
+//hash maps
+//key value
+//n -> count
+//0(n)
+
+//big o event
+
+function majorityElement(nums){
+    let map = {};
+    let count = 0;
+    let maxCount = map[0];
+
+    for (const num of nums){
+        map[num] = map[num] + 1 || 1;
+    }
+    for(const n in map){
+        if(map[n] > count){
+            count = map[n];
+            maxCount = n;
+        };
+    };
+    return maxCount;
+};
+
+//jewels represents the types of stones that are jewels
+//stones represents the stones you have
+//each character in stones is a type of stone you have
+//you want to know how many of the stones you have are also jewels
+
+//letters are case sensitive
+
+function rockMe(jewels, stones){
+    let pouch = {}
+    let count = 0
+
+    for(const jewel in jewels){
+        pouch[jewel] = true
+    }
+    for(const stone of stones){
+        if(pouch[stone]){
+            count++
+        }
+    }
+    return count
+}
+
+//coutn all the occurring characters in a string
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            count++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(str){
+    let vowels = 'aeiou';
+
+    for(let i = 0; i < vowels.length; i++){
+        //find which vowel is missing
+        if(str.indexOf(vowels[i] === -1)){
+            return i;
+        };
+    };
+};
+
+//do you know recursion
+
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//given a string of characters
+//return the character that appears the most often
+
+function recurringCharacter(s){
+    let map = {}
+    let count = 0
+    let maxChar = null
+
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+}
+
+//count all occurring characters ina string
+
+function countChar(str){
+    let map = {}
+    
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
