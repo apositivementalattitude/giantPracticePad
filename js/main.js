@@ -27284,3 +27284,134 @@ function countChar(str){
     }
     return map
 }
+
+//tell me about a time when you had to deal with conflict within your team
+//how was the conflict solved?
+//how did you handle that
+//how would you deal with it now?
+
+//a time when i had a conflict in my team was when i was working on a project with some colleagues and there was a disagreement on whether or not to bootstrap a theme or create a custom theme
+//one of my colleagues was a great designer and wanted to create a custom theme for our app
+//and one of our colleagues wanted to bootstrap a theme
+//i sent some images of our designer colleagues work to the colleague that wanted to bootstrap a theme and he finally agreed to do a custom theme for our app and it turned out amazing
+
+//tell me about a time you had to work on several projects at once
+//how did you handle this
+
+//handling several projects at once is pretty common in production management, which i did for 7 years.
+//everyday was something different and putting out several fires at once
+//the best way that ive seen to handle multiple projects is to take a step back and view things from the macro perspective to see how efficiently you can separate tasks, and then work on the micro, to iron out the details
+
+//give me an example of a time you had to take a createive and unusual approach to solve a coding problem
+//how did this idea come to your mind
+
+//why did you think it was unusual?
+
+//when my parents were both hospitalized for different reasons, i was running around two different hospitals, while trying to keep my mom's business running, as well as working with my own clients.
+//one of the approaches i took to working with my clients in between translating things for the nurses for my parents was to code everything on my phone
+//i researched a terminal emulator and IDE for my phone and got node working 
+//and i coded out a site for my client while at the hospital on my phone
+
+
+//what is a callback?
+//a callback is used to return a value through the function when something else happens
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+
+    //split the str
+    const arr = str.split('');
+    //map -> add 10
+    const newArr = arr.map(x => {
+        const newIndex = str.indexOf(x) + 10;
+        return str[newIndex];
+    });
+    //join the str
+    return arr.join('');
+};
+
+//write a function that takes an array of words and smashes them together
+
+function wordSmash(words){
+    return words.join(' ')
+}
+
+//you need a rental car 
+//day-$40
+//>7 -$50
+//>3 -$20
+
+//d is days
+
+function rentalCar(d){
+    if(d > 7){
+        return d*40-50;
+    }else if(d > 3){
+        return d*40-20;
+    }else{
+        return d*40;
+    };
+};
+
+function rentalCar(d){
+    return (d > 7) ? d * 40 - 50 : (d > 3) ? d * 40 - 20 : d * 40;
+};
+
+//write a fucntion which converts the input string to uppercase
+
+function inputStrUpper(str){
+    let s = str.split('')
+    let arr = []
+    for(let i = 0; i < s.length; i++){
+        arr.push(s[i].toUpperCase())
+    }
+    return arr.join('')
+}
+
+//count all the occurring characters in a string
+
+function countChar(s){
+    let map = {}
+    let count = 0
+
+    for(const str of s){
+        if(map[c]){
+        map[c]++
+        }else{
+        map[c] = 1
+    }
+    }
+    return map
+}
+
+//given an array of integers nums and an integer target
+
+//return the indices of the two numbers such that they add up to target
+
+function addTwo(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 0; j < nums.length; i++){
+            if(i !== j){
+                if(i + j === target){
+                    return [i, j]
+                }
+            }
+        }
+    }
+
+}
+
+function twoSum(nums, target){
+    let obj = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(target - nums[i] in obj){
+            return [obj[target - nums[i]], i]
+        }else{
+            obj[nums[i]] = i
+        }
+    }
+}
+
