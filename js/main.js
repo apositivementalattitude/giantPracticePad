@@ -27415,3 +27415,74 @@ function twoSum(nums, target){
     }
 }
 
+//what is the difference between a for...of loop and a for...in loop
+
+//a for of loop iterates the values of the array
+//a for in loop iterates the indices of the array
+
+//let numberOfApples = 9
+//the 9 is the value or assignment
+
+
+
+//count the number of divisors of a positive integer n
+
+function getDivisorsCnt(n){
+    let count = 0
+
+    for(let i = 0; i <= n; i++){
+        if(n % i === 0){
+            count++
+        }
+    }
+    return count
+}
+//what is the difference between a for of loop and a for in loop?
+//a for of loop iterates the values in the array
+//a for in loop iterates the idices
+
+//promise syntax
+//fetch("#")
+//.then(res => res.json())
+//.then(data => {
+//console.log(data)
+//})
+//.catch(error => {
+    //console.log(`error ${error}`)})
+
+
+//what is a callback?
+//a callback is a function that is called when something else happens\
+
+//what are data-attributes good for?
+//data-attributes are good for storing extra information on html elements
+
+//write a functio nthat accepts two integers and returns the remainder of dividing the larger value by the smaller value
+
+function remainder(n,m){
+    if(n > m){
+        return n % m
+    }else{
+        return m % n
+    }
+}
+
+//what is the difference between a for of loop and a for in loop?
+//a for of loop iterates through the values of the array
+//a for in loop iterates through its indices
+
+
+//count all occurring chars
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
