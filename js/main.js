@@ -27486,3 +27486,21 @@ function countChar(str){
     }
     return map
 }
+
+//do you have any questions
+//yes
+//what is the interview process like?
+//what is the timeline
+//what are some challenges for the person in this position
+//what is the onboarding process after the offer
+//are there training programs available?
+//what are the current goals of the company
+//what learning or development opportunities are there for a person in this role
+//what ist he most important thing for me to accomplish in 90 days
+
+//what do you add to the beginning of a function to make it an async function/
+
+//async
+
+//what does scope refer to?
+//scope refers to where variables can bve accessed throughout the program
