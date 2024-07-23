@@ -27566,3 +27566,17 @@ function countChar(s){
     }
     return map;
 };
+
+//arrow functions remove the need to use the function keywrod
+
+//case statement syntax
+let groveryItem = 'papaya'
+
+switch(groveryItem){
+    case 'tomato':
+    console.log('Tomatos are $0.49')
+    break;
+    case 'lime':
+    console.log('Limes are $1.49')
+    break;
+}
