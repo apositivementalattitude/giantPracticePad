@@ -27580,3 +27580,16 @@ switch(groveryItem){
     console.log('Limes are $1.49')
     break;
 }
+
+//i++
+//increment
+
+//how to concatenate strings?
+//+
+
+//what is script?
+//script is client side code
+
+//what is progressive rendering?
+//progressive rendering is to sequentially render parts of the webpage on the server side and send it to the client in portions
+
