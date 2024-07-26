@@ -27605,3 +27605,12 @@ switch(groveryItem){
 
 //create a todo list
 
+//npm audit fix --force
+//will update node
+
+//in the .sort() method, what are items sorted as?
+//in the .sort() method, the items are sorted as strings
+
+//what is the difference betwee na for...of loop and a for... in loop?
+//the difference between a for...of loop and a for...in loop is what it iterates through. The for...of loop iterates the values of the array, and the for...in loop iterates through the indices
+
