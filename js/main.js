@@ -27593,3 +27593,15 @@ switch(groveryItem){
 //what is progressive rendering?
 //progressive rendering is to sequentially render parts of the webpage on the server side and send it to the client in portions
 
+//script async
+//script async will make the client side code asynchronous(to not happen at the same time)
+
+//e.g., movies.splice(0, 1)
+
+//splice the movies array from first element starting from index of 0
+
+//ternary operator syntax
+// : ?
+
+//create a todo list
+
