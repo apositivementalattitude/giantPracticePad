@@ -27614,3 +27614,60 @@ switch(groveryItem){
 //what is the difference betwee na for...of loop and a for... in loop?
 //the difference between a for...of loop and a for...in loop is what it iterates through. The for...of loop iterates the values of the array, and the for...in loop iterates through the indices
 
+// if you are writing code that is processing information to and from the database before it gets to the view, where does it belong?
+//if you are writing code hat is processing information to and from the database before it gets to the view, you are writing controller code,
+
+//count all the occurring characters in a string
+//if you have a string like aba, then the restult should be {'a':2, 'b':1}
+//what if the string is empty?
+//then the result should be an empty object
+
+function countChars(str){
+    let map = {}
+
+    //of iterates through the values you idiot
+    for(const c of str){
+        if(map[c]){
+            map[c]++            
+        }else{
+            map[c]
+        }
+    }
+    return map
+}
+
+//build a function that returns an aray of integers from n to 1 where n > 0
+
+const reverseSeq = n => {
+    let arr = []
+
+    for(i = n; i <= 1; i-=1){
+        arr.push(i)
+    }
+    return arr
+}
+
+//complete the fucniton which converts a binary number to a decimal number
+
+function binToDec(bin){
+    return parseInt(bin, 2)
+}
+
+//code a like and dislike button
+
+function likeOrDislike(buttons){
+    let state = 'nothing'
+    
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === buttons[i]){
+            state = 'nothing'
+        }else{
+            state = buttons[i]
+        }
+    }
+    return state
+}
+
+//what is a callback?
+//a callback is a function that is called when something else happens
+
