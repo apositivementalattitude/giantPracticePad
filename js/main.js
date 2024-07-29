@@ -27671,3 +27671,45 @@ function likeOrDislike(buttons){
 //what is a callback?
 //a callback is a function that is called when something else happens
 
+//tel lme about yourself
+
+//im currently a freelance software engineer working for various agencies. Where I work independentyly or with colleagues to deliver projects to clients
+
+//one of my recent projects was to deliver a full stack web application to a partnered twitch streamer using the MERN stack I've previously worked in the fashion industry from modeling childresnc lothes as a toddler to the wareghouse and finally as a production manager
+
+//my interst in software development started as a kid when i started making stardcraft broodwawr custom maps in my freetime
+//a few of my colleageus have mentioned to me that since i l;iket o build things, and since im good with computers i should look into software developement as a career path which ios when i started studying for it and found an agency wityh a training program, 100DEVS
+
+//given a string showing either flat road(_) or bumps(n) you are able to reach home safely by encountering 15 numps or less, return Woohoo!
+
+function bump(x){
+    let bumps = x.split('n')
+
+    if(bumps > 15){
+        return 'Car Dead'
+    }else{
+        return 'Woohoo!'
+    }
+}
+
+//when provided with a letter, return its position in the alphabet
+
+function position(letter){
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+    //letter = position of alphabet
+    let indexOfLetter = alphabet.split('');
+    //find the index
+    for(let i = 0; i < alphabet.length; i++){
+        if(indexOfLetter[i] == letter){
+                //add 1 to the index and return it
+            return (i + 1);
+        };
+    };
+};
+console.log(position)
+
+    //map -> find the index in the map
+    //return map
+
+    //indexOf(letter)
