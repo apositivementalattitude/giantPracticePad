@@ -27713,3 +27713,23 @@ console.log(position)
     //return map
 
     //indexOf(letter)
+
+//given an array nums of size n
+//return the majority element
+
+function majorityElement(n){
+    let map = {}
+    let count = 0
+    let majElem = n[0]
+
+    for(const c of n){
+        map[c] = map[c] + 1 || 1
+    }
+    for(const num in map){
+        if(map[num] > count){
+            count = map[num]
+            majElem = n
+        }
+    }
+    return majElem
+}
