@@ -27733,3 +27733,22 @@ function majorityElement(n){
     }
     return majElem
 }
+
+//find the nearest square number of a positive integer n
+
+function nearestSq(n){
+    //sq->floor->sqrt
+
+    return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+//what is the difference betwee na for...of loop and a for...in loop
+
+//a for of loop is a loop that iterates through the values of an array
+//a for in loop is a loop that iterates through its indices
+
+//what do we do to loop through each element in an array?
+//we use the .length property in its condition
+
+//(req, res) isa request and response object used in CRUD apps
+
