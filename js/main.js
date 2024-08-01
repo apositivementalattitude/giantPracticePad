@@ -27752,3 +27752,12 @@ function nearestSq(n){
 
 //(req, res) isa request and response object used in CRUD apps
 
+//create a method all which takes two params
+//a sequence
+//a function
+
+//returns tru if the function in the params returns true for every element in the sequence
+
+function all(arr, fun){
+    return arr.every(fun)
+}
