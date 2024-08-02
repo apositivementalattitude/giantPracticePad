@@ -27761,3 +27761,55 @@ function nearestSq(n){
 function all(arr, fun){
     return arr.every(fun)
 }
+
+//how do you serve a page with content in multiple languages?
+//you serve a page with content in multiple languages by the lang attribute
+
+//the text is now mutated
+
+//'abc' => 'zzz
+function contamination(text, char){
+    let arr = [];
+
+    for(let i = 0; i < text.length; i++){
+        arr.push(char);
+    };
+    return arr.join('');
+};
+
+//given an array of integers as strings and numbers, return the sum of the array values as if all were numbers
+
+function sumMix(x){
+    return x.reduce((a, b) => +a + +b, 0)
+}
+
+//name the data types in javascript
+//strings
+//numbers
+//boolean
+//NaN
+//0
+//null
+//symbol
+//object
+//undefined
+
+//do fizzbuzz
+//1 -> number
+//% 2 -> fizz
+//% 3 -> buzz
+//% 2 * 3 -> fizzbuzz
+
+function fizzBuzz(n){
+    for(let i = 1; i <= n; i++){
+        if(i % 2 === 0){
+            console.log('Fizz')
+        }else if(i % 3 === 0){
+            console.log('Buzz')
+        }else if(i % 6 === 0){
+            console.log('Fizz Buzz')
+        }else{
+            console.log(i)
+        }
+    }
+}
