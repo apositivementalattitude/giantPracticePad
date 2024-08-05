@@ -27812,4 +27812,59 @@ function fizzBuzz(n){
             console.log(i)
         }
     }
+}//indeterminate
+//pseudoclass indeterminate
+
+//given three integers a,b,c return the largest number obtained after inserting the following operators and brackets:+,*,()
+
+function largestNum(a,b,c){
+    //add abc with paranthesis
+    return Math.max(
+        a + b + c,
+        a + b * c,
+        a * b + c,
+        a * b * c,
+        (a + b) * c,
+        a * (b * c)
+
+    );
+
+};
+
+//what is a callback?
+
+//a callback is a function that is called when something else happens
+
+//complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade
+
+function getGrade(s1, s2, s3){
+    let avg = (s1+s2+s3)/3
+
+    if(avg >= 90){
+        return 'A'
+    }else if(avg >= 80 && avg < 90){
+        return 'B'
+    }else if(avg >= 70 && avg < 80){
+        return 'C'
+    }else if(avg >= 60 && avg < 70){
+        return 'D'
+    }else if(avg < 60){
+        return 'FAIL'
+    }
+}
+
+//count all occurring characyers in a string
+
+//if you have a string like aba the n the result should be a:2, b:1
+
+function countChars(str){
+    let map = {}
+    for(const c in str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
 }
