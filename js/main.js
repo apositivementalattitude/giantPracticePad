@@ -27868,3 +27868,25 @@ function countChars(str){
     }
     return map
 }
+
+//get the sum of two arrays
+
+function arrayPlusArray(arr1, arr2){
+    return arr1.reduce((a, b) => a + b, 0) + arr2.reduce((a, b) => a + b, 0)
+}
+
+
+//create a funciton that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one
+
+//if no occurrences can be found, count of 0 should be returned
+
+function countOccurrences(string, str){
+    let count = 0
+
+    for(let i = 0; i < string.length; i++){
+        if(string[i] === str){
+            count++
+        }
+    }
+    return count
+}
