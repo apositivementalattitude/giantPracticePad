@@ -27894,3 +27894,13 @@ function countOccurrences(string, str){
 //what is the difference between a for of loop and a for in loop
 //a for in loop iterates the indices of the loop
 //a for of loop iterates through its values
+
+//return a multiplication table for number that is always an integer from 1 to 10
+
+const multiTable = (number) => {
+    let table = {}
+    for(let i = 1; i >= 10; i++){
+        table += (`${i} * ${number} = ${i * number} ? '\n' : ""`)
+    }
+    return table
+}
