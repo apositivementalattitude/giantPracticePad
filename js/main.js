@@ -27904,3 +27904,31 @@ const multiTable = (number) => {
     }
     return table
 }
+
+//complete the function that receives as inpuit a string
+//produces outputs according to the following table:
+
+function getDrink(param){
+    switch(param){
+        case "Jabroni" : return "Patron tequila";
+        case "School Counselor" : return 'Anything with alcohol';
+        case "Programmer" : 'Hipster craft beer';
+        case"Bike gang member" : 'Moonshine';
+        case "Politician" : 'Your tax dollars';
+        case "Rapper" : 'Cristal';
+        default: 'Beer'
+    }
+}
+
+//fix the function 
+
+function capitalizeWord(word){
+    return `${word[0].toUpperCase()}${word.slice(1).toLowerCase()}`;
+}
+
+//what is a repetition in a loop?
+//a repetition in a loop is an iteration
+
+//how can you write multi line comments?
+/* */
+
