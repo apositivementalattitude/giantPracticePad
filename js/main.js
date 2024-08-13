@@ -27932,3 +27932,27 @@ function capitalizeWord(word){
 //how can you write multi line comments?
 /* */
 
+//do you have any questions?
+//yes
+//what is a typical day for the person in this position?
+//are there any learning opportunities?
+//what is the interview process like?
+//what is the onboarding process after the offer
+//are there training programs available?
+//what are the immediate projects i would take on
+
+//square every digit of a number and concatenate them
+
+function concatSq(n){
+    n = n.split('')
+    let newArr = n.map(x => {
+        return x*x
+    })
+    return newArr.join('')
+}
+
+//complete the solution so that it returns true if the first argument passed in ends with the 2nd argument
+
+function solution(str, ending){
+    return str.endswith(ending)
+}
