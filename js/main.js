@@ -27956,3 +27956,80 @@ function concatSq(n){
 function solution(str, ending){
     return str.endswith(ending)
 }
+
+//write a method that will get an integer array as parameter and will process every number from this array
+//return a new array with procesing every number of the input array like this
+//if the number has an integer square root,m takle this, otherwise square this number
+
+// if sqrt % === 0 -> return
+// else **2
+
+function squareOrSquareRoot(array){
+
+    for(let i = 0; i < array.length; i++){
+        if(Math.sqrt(array[i]) % 1 === 0){
+            return array[i];
+        }else{
+            return array[i]**2;
+        };
+    };
+};
+
+//what is connectivity?
+//connectivity allows you to communicate with the server in new and innovative ways
+
+//properties used to provide additinoal information about an element
+//attributes
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+function multipleOfIndex(array){
+    let arr = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i]);
+        };
+    };
+    return arr;
+};
+
+//write a func that takes a string as it's first parameter
+//this string will be a string of words
+
+//use the second paramter
+//which will be an integer
+//find the corresponding word i nthe given string
+//mulitply by it the third provided parameter
+//which is an integer
+//hyphen between each word
+
+function modifyMultiply(str, int, num){
+    let arr = []
+    let count = 0
+    let word = str.split(' ')
+    let get = word[int]
+
+    for(let i = 0; i < num; i++){
+        if(i < num){
+            arr.push(get)
+            count++
+        }
+    }
+    return arr.join('-')
+}
+
+//code a dislike button
+
+function likeOrDislike(buttons){
+    let state = 'nothing'
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'nothing'
+        }else{
+            state = buttons[i]
+        }
+    }
+    return state;
+}
