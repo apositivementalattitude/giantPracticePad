@@ -28022,14 +28022,49 @@ function modifyMultiply(str, int, num){
 //code a dislike button
 
 function likeOrDislike(buttons){
-    let state = 'nothing'
+    let state = 'nothing';
 
     for(let i = 0; i < buttons.length; i++){
         if(buttons[i] === state){
-            state = 'nothing'
+            state = 'nothing';
         }else{
-            state = buttons[i]
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+//what is the difference between a for of loop and a for in loop?
+
+//a for of loop is for iterating the values
+//a for in loop is for iterating the indices
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(str){
+    let vowels = "aeiou"
+
+    for(let i = 0; i < vowels.length; i++){
+        //find the MISSING vowel
+        if(str.indexOf(vowels[i] === -1)){
+            console.log(i)
         }
     }
-    return state;
+}
+
+missingVowel();
+
+//count all the occurring characters in a string
+function missingChar(str){
+    let map = {}
+    
+    //for in loop iterates the indices
+    for(const c of str){
+        if(str[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
 }
