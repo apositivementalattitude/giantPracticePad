@@ -28079,3 +28079,11 @@ function sumMul(n,m){
     }
     return sum
 }
+
+//record daily progress
+//20 year estimate
+//concat for years-> reduce for days in year
+
+function starisin20(s){
+    
+}
