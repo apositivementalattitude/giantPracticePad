@@ -28085,5 +28085,13 @@ function sumMul(n,m){
 //concat for years-> reduce for days in year
 
 function starisin20(s){
-    
+    return s.concat.map( x=> {
+        x.reduce((a, b) => a + b, 0)
+    })
+    return 
 }
+
+
+//given an array nums of size n return the majority element
+
+// {} creates an empty object
