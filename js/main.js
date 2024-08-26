@@ -28095,3 +28095,7 @@ function starisin20(s){
 //given an array nums of size n return the majority element
 
 // {} creates an empty object
+
+//endpoint
+//&&
+//and
