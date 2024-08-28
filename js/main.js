@@ -28099,3 +28099,12 @@ function starisin20(s){
 //endpoint
 //&&
 //and
+
+//typeof
+//the typeof operator checks the value to its right and returns or passes back a string of the data type
+
+//implement a function that adds two numbers together and returns their sum in binary
+
+function sumTwoBin(a,b){
+    return (a + b >>> 0).toString(2)
+}
