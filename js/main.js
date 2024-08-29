@@ -28108,3 +28108,27 @@ function starisin20(s){
 function sumTwoBin(a,b){
     return (a + b >>> 0).toString(2)
 }
+
+//move every letter in the provided string forward 10 letters through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+
+    const newStr = s.split("").map( x => {
+        const newIndex = str.indexOf(x) + 10
+        return str[newIndex]
+    })
+    return newStr.join('')
+}
+
+//you will be given an array a and a value x 
+
+//check whether the provided array contains the value
+
+function check(a, x){
+    if(a.includes(x)){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
