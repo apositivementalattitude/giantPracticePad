@@ -28132,3 +28132,20 @@ function check(a, x){
         return 'false'
     }
 }
+
+//you will be given an array and a value x
+//check whether the provided array contains the value
+function check(a, x){
+    if(a.includes(x)){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+//what is a callback?
+
+//a callback is a functio nthat is calle when something else happens
+
+//core element styles, covering the general defaults
+//base
