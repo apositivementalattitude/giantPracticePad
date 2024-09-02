@@ -28141,6 +28141,7 @@ function check(a, x){
     }else{
         return 'false'
     }
+
 }
 
 //what is a callback?
@@ -28149,3 +28150,21 @@ function check(a, x){
 
 //core element styles, covering the general defaults
 //base
+//pop()
+//removes items from the back of the array
+
+//destructuring in javascript
+//[a,b,c]
+//[1,2,3]
+
+//make a program that filters a list of strings and returns a list with only your friends name in it
+
+function friendsNames(str){
+    return str.filter(str => str.length == 4)
+}
+
+//check whether the provided array contains the value
+
+function check(a, x){
+    return a.includes(x)
+}
