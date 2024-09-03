@@ -28168,3 +28168,24 @@ function friendsNames(str){
 function check(a, x){
     return a.includes(x)
 }
+
+//tags in html are literally just tags
+
+//what is the difference between a for...of loop and a for...in loop?
+//a for...of loop iterates the values
+//a for...in loop iterates its indicies
+
+//counta ll the occurring characters in a string
+
+function maxChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
