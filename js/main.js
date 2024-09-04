@@ -28188,4 +28188,10 @@ function maxChar(str){
         }
     }
     return map
+
 }
+
+//what is an object?
+//an object is a collection of related data
+//what is a method
+//a method is an action that we can perform
