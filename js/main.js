@@ -28197,3 +28197,10 @@ function maxChar(str){
 //a method is an action that we can perform
 //what is semantics
 //how to more accurately describne your code
+
+//check whether the porovided array contains the value
+
+function check(a, x){
+    return a.includes(x)
+}
+
