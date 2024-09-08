@@ -28204,3 +28204,31 @@ function check(a, x){
     return a.includes(x)
 }
 
+
+//write a function that takes a single string as argument
+//the function must return an ordered list containing the indexes of all capital letters in the string
+
+const capitals = function(word){
+    let arr = [];
+
+    for(let i = 0; i < word.length; i++){
+        if(word[i].slice(1) === word[i].slice(1).toUpperCase){
+            arr.push(i);
+        };
+    };
+    return arr;
+};
+
+//implement line  numbering
+
+const number = function(array){
+    let arr = []
+    if(array.length == 0){
+        return []
+    }else{
+        for(let i = 0; i < array.length; i++){
+            arr.push(i + 1) + ":" + array[i]
+        }
+    }
+    return arr;
+}
