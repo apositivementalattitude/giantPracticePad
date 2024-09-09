@@ -28232,3 +28232,34 @@ const number = function(array){
     }
     return arr;
 }
+
+//what is progressive rendering?
+//progressive rendering is the technique of sequentially rendering parts of the webpage on the server side and sending it to the client in portions
+
+//code a liek or dislike button
+
+function likeOrDislike(buttons){
+    let state = 'nothing';
+
+    for(let i = 0; i < buttons.length; i++){
+        if(buttons[i] === state){
+            state = 'nothing';
+        }else{
+            state = buttons[i];
+        };
+    };
+    return state;
+};
+
+//make two function max and min
+
+// receive a list of integers as input and return the largest and lowest number in that list
+
+var min = function(list){
+    return Math.min(...list)
+}
+
+var max = function(list){
+    return Math.max(...list)
+}
+
