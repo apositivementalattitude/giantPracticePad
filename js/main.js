@@ -28263,3 +28263,8 @@ var max = function(list){
     return Math.max(...list)
 }
 
+//find the nearest square number
+function nearestSq(n){
+    // sqrt -> round -> pow
+    return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
