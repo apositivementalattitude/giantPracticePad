@@ -28268,3 +28268,19 @@ function nearestSq(n){
     // sqrt -> round -> pow
     return Math.pow(Math.round(Math.sqrt(n)), 2)
 }
+
+//write a function to get the first lements of a sequence
+
+function first(arr, n=1){
+    if(n < 1){
+        return []
+    }else{
+        return arr.slice(0, n)
+    }
+}
+
+//check whether the provided array contains the value
+
+function check(a, x){
+    return a.includes(x)
+}
