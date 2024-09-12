@@ -28284,3 +28284,12 @@ function first(arr, n=1){
 function check(a, x){
     return a.includes(x)
 }
+
+//write a function that reverses the words in a given string
+function revWords(str){
+    return str.split(' ').reverse().join(' ');
+};
+
+//when are fucntion declarations processed?
+//function declarationsa re processed as it is encountered
+
