@@ -28293,3 +28293,17 @@ function revWords(str){
 //when are fucntion declarations processed?
 //function declarationsa re processed as it is encountered
 
+//write a function isReallyNaN that returns true ionly if passed in an argument that evaluiates to NaN and returns false otherwise
+
+const isReallyNaN = (val) => {
+    if(val === NaN){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+//declare a variable, assign it a string of multiple words and check to see if one of the words is apple
+
+const thisNewThing = 'a string of words perhaps containing the word apple' 
+console.log(thisNewThing.search('apple'))
