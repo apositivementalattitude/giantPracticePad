@@ -28307,3 +28307,30 @@ const isReallyNaN = (val) => {
 
 const thisNewThing = 'a string of words perhaps containing the word apple' 
 console.log(thisNewThing.search('apple'))
+
+//what is a callback?
+//a callback function is a function that is called when something else happens
+
+//describe the difference between script, script async, and script defer
+
+//scripts are client side, script async gets downloaded separately and executed as its downloaded, defer means everything downloads, then renders, and thgen gets constructed to start execution of code
+
+//what is the recommended max0-width for an email template?
+
+//the recommended max-width for an email template is 600px
+
+//washing machine formula is water * 1.1 ** (clothes - load)
+
+function waterUse(water, load, clothes){
+    if(load * 2 < clothes){
+        return 'Too much clothes';
+    }else{
+        return water * 1.1 ** (clothes - load);
+    };
+};
+
+//write a funciton that takes its speed in km per hour and retursn it in cm per second
+
+function cockroachSpeed(s){
+    return Math.floor(s * 27.7778)
+}
