@@ -28334,3 +28334,17 @@ function waterUse(water, load, clothes){
 function cockroachSpeed(s){
     return Math.floor(s * 27.7778)
 }
+
+//filter method syntax
+
+let app = ""
+app.filter(x => x.length > 4)
+
+//how to add an element to an array
+//with push or unshift
+
+//create a functio nthat removes the first and last characters of a string
+
+function removeFirstLast(str){
+    return str.slice(1, -1)
+}
