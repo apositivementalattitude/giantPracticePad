@@ -28348,3 +28348,12 @@ app.filter(x => x.length > 4)
 function removeFirstLast(str){
     return str.slice(1, -1)
 }
+
+//the listen method in express
+//app.listen(3000, function(){if > catch > err})
+
+//make a function that will return a greeting statement that uses an input 
+
+function greetings(str){
+    return `Hello, ${str} how are you doing today?`
+}
