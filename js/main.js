@@ -28357,3 +28357,31 @@ function removeFirstLast(str){
 function greetings(str){
     return `Hello, ${str} how are you doing today?`
 }
+
+
+//you will be given an array a and a value x
+//check whether the provided array contains the value
+
+function check(a, x){
+    return a.includes(x)
+}
+
+//count all the occurring characters in a string
+
+//if you ahve a string like aba then the result should be a:2 b:1
+
+function occurringChar(str){
+    let countObj = {};
+
+    for(const c in str){
+        //for in iterates the indices
+        //for of iterates the value
+        if(str[c]){
+            countObj[c]++;
+        }else{
+            countObj[c] = 1;
+        };
+    };
+    return countObj;
+};
+
