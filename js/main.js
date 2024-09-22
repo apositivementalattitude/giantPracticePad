@@ -28385,3 +28385,18 @@ function occurringChar(str){
     return countObj;
 };
 
+//what is the difference between a for...of loop and a for ...in loop?
+
+//the difference between a for ...in loop and a for ...of loop is 
+//a for ...in loop iterates betwixt the indices 
+//and a for ...of loop iterates the values
+
+//return the nth even number
+
+function nthEven(b){
+    return b*2-2
+}
+
+//what do you need to set if you're in a list?
+//you need to set the key
+
