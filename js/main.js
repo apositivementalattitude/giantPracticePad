@@ -28400,3 +28400,57 @@ function nthEven(b){
 //what do you need to set if you're in a list?
 //you need to set the key
 
+//calculate the averages
+//round down to its nearest integer
+
+function getAverage(marks){
+    //adding all values with .reduce
+    //average with /.length
+    //rounding with Math.floor
+    return Math.floor(marks.reduce((a, b) => a + b, 0)/marks.length);
+};
+
+//efine a method hello that returns "Hello, name!"
+//hello world if name not given
+
+function hello(name){
+    if(name.length > 0){
+        return `Hello, ${name[0].toUpperCase + name.slice(1).toLowerCase}!`
+    }else{
+        return "Hello, World!"
+    }
+}
+
+//what is ?:
+//the optional data in constructors
+
+//create a todolist
+
+//given an array nums of size n
+//return the majority element
+
+function majElem(n){
+    let majorElem = {}
+    let count = 0
+
+    for(const num in n){
+        //iterate through the indices
+        if(n[num]){
+            majorElem[num]++
+            count++
+        }else{
+            majorElem[num]
+        }
+    }
+    return majorElem
+}
+
+//doyou know recursion?sion
+
+function factorial(n){
+    if(n > 1){
+        return n * factorial(n - 1)
+    }else{
+        return 1
+    }
+}
