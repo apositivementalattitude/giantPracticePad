@@ -28454,3 +28454,19 @@ function factorial(n){
         return 1
     }
 }
+
+//what are the building blocks of HTML?
+//semantics
+//offline and storage
+//connectivity
+
+//calculate the volume of a cuboid
+
+class Kata {
+    static getVolumeOfCuboid(l,w,h){
+        return l*w*h
+    }
+}
+
+//object literal syntax
+//object literal syntax is as follows const circle = {}
