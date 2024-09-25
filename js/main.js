@@ -28470,3 +28470,46 @@ class Kata {
 
 //object literal syntax
 //object literal syntax is as follows const circle = {}
+
+//let numberOfApples = 9
+//variable - declaration
+
+//alex got a hula hoop
+
+function alexHoops(n){
+    if(n >= 10){
+        "Great, now move on to tricks"
+    }else{
+        return "lmao"
+    }
+}
+
+//given a string of random letters
+//count the rings in each letter and divide the total number by 2
+//round the answer down
+
+function rioOlympics(a){
+    const rings = ['A','a','b','D','d','e','g','O','o','P','p','Q','q'];
+    const twoRings = ['B'];
+    let score = 0;
+
+    const newArr = a.split('').map(x => {
+        if(rings.includes(newArr[x])){
+            score++;
+        }else if(twoRings.includes(newArr[x])){
+            score+=2;
+        };
+        return newArr
+    });
+
+    let finalScore = Math.floor(score/2)
+
+    return finalScore > 3 ?
+        'Gold!' :
+        finalScore > 2 ? 
+        'Silver!' :
+        finalScore > 1 ?
+        'Bronze!' :
+        'Not a medal.'
+
+};
