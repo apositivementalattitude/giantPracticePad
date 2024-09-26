@@ -28513,3 +28513,18 @@ function rioOlympics(a){
         'Not a medal.'
 
 };
+
+//what is the practice technique that requires you to retrieve facts from your brain?
+
+//the practice technique that requires you to retrieve facts from your brain is active recall
+//why is it generally good idea to position CSS links between head and JS just before body
+//do you know any exceptions?
+//it is a good idea to position CSS links between head and JS before body to render the page beautifully
+//an exception to that is to put JS links at the end to render the page then execute slow javascript code
+
+
+//\n
+//new line
+//abstraction principle
+//the abstraction principle tell us to hide the details
+
