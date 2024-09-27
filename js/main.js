@@ -28528,3 +28528,16 @@ function rioOlympics(a){
 //abstraction principle
 //the abstraction principle tell us to hide the details
 
+//what does a doctype do?
+//doctype tell the browser what language the document is written in
+
+//what is the max recommended max-width for an email template?
+//600px
+
+//?: the optional data in constructors
+//what do you need to set if you're in a list
+//a key
+
+//?;
+//is optional data in constructors
+
