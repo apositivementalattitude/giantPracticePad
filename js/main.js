@@ -28541,3 +28541,20 @@ function rioOlympics(a){
 //?;
 //is optional data in constructors
 
+//?: 
+//optional data in constructors
+
+//create a variable and assign it a number
+let thingies = 10
+//minus 10 from that number
+thingies -= 10
+//print that number to the console
+console.log(thingies)
+//create a variable that holds ta value from the input
+const h1 = document.querySelector('h1')
+//add an event listener to that element that console logs the sum of the two previous variables
+
+h1.addEventListener('click', addTwo)
+function addTwo(){
+    console.log(thingies+h1)
+}
