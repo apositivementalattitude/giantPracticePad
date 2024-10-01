@@ -28558,3 +28558,59 @@ h1.addEventListener('click', addTwo)
 function addTwo(){
     console.log(thingies+h1)
 }
+
+
+//create a variable and console log the value
+let exacto = 100
+console.log(exacto);
+
+//create a variable, add 10 to it, and alert the value
+let prine = 123
+prine+=10
+alert(prine);
+//create a function that subtracts 4 numberrs and alerts the difference
+function fourN(a,b,c,d){
+    alert(a-b-c-d);
+};
+
+//create a function that divides one number by another number and returns the remainder
+function divideOne(x, x1){
+    return x % x1
+}
+
+//create a function that multiplies three numbers and if the product is divisible by 3 alert ZEBRA
+
+function multThree(z, z1, z2){
+    if(z * z1 * z2 % 3 === 0){
+        alert('ZEBRA')
+    }else{
+        return z * z1 * z2
+    }
+}
+
+function addTwo(n, n1){
+    if(n + n1 > 50){
+        alert('JUMANJI')
+    }else{
+        return n + n1
+    }
+}
+
+//create a fucntio nthat takes in a word and a number
+//console log the word x times where x was the number passed in
+
+function wordNum(word, num){
+    for(let i = 0; i < num; i++){
+        console.log(word)
+    }
+}
+
+//check whether the procided array contains the value
+
+function check(a, x){
+    if(a.includes(x)){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
