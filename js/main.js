@@ -28614,3 +28614,9 @@ function check(a, x){
         return 'false'
     }
 }
+
+//?:
+//the optional data in constructors
+//what do you need to set if you're in a list
+//you need to set a key
+
