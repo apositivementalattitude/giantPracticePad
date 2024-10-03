@@ -28620,3 +28620,29 @@ function check(a, x){
 //what do you need to set if you're in a list
 //you need to set a key
 
+//the first century spans from the year 1 up to and including the year 100
+//the second century from the year 101 up to and including the year 200
+//given a year, return the century it is in
+
+function century(year){
+    let count = 0
+
+    for(let i = 1; i < year.length; i++){
+        if(i % 100 === 0){
+            count++;
+        };
+    };
+    return count;
+};
+
+//figure out the index of which vowel is missing from a given string
+
+function missingVowel(str){
+    let vowels = 'aeiou';
+
+    for(let i = 0; i < str.length; i++){
+        if(str.indexOf(vowels[i]) === -1){
+            return i;
+        };
+    };
+};
