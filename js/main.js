@@ -28646,3 +28646,42 @@ function missingVowel(str){
         };
     };
 };
+
+//code out a like and dislike button
+
+function likeOrDislike(button){
+    let state = 'nothing'
+
+    for(let i = 0; i < button.length; i++){
+        if(button[i] === button[i]){
+            state = 'nothing'
+        }else{
+            state = buttons[i]
+        }
+    }
+    return state
+}
+
+//given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target
+
+// find indices -> add to target
+// nested for loops -> iterate thru indices -> check if they add up to target
+//one solution
+//no duplicates
+
+function addTwo(nums, target){
+    for(let row = 0 ; row < nums.length; row++){
+        for(col = 0; col < nums.length; col++){
+            if(i !== j){
+                if(nums[row] + nums[col] == target){
+                    return [row, col];
+                };
+            };
+        };
+    };
+};
+
+console.log(addTwo([1,2,3,4,5], 8), [2,4])
+console.log(addTwo([6,7,8,9], 17), [2,3])
+console.log(addTwo([1,2,3,4,5,6,7,8], 15), [6,7])
+
