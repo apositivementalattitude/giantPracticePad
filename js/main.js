@@ -28685,3 +28685,37 @@ console.log(addTwo([1,2,3,4,5], 8), [2,4])
 console.log(addTwo([6,7,8,9], 17), [2,3])
 console.log(addTwo([1,2,3,4,5,6,7,8], 15), [6,7])
 
+//create a function that accepts a list/array and a number n
+//return a list/array of the first n elements from the list/array 
+
+function take(arr, n){
+    let array = [];
+
+    for(let i = 0; i < n; i++){
+        array.push(arr[i]);
+    };
+    return array;
+};
+
+//given a string of characters, return the character that appears the most often
+
+//
+function maxChar(n){
+    let map = {}
+    count = 0
+    //for ...in 
+    //loops through the indices
+    //for ...of
+    //loops through the values
+    for(const c in n){
+        if(map[c]){
+            map[c]++,
+            count++
+        }else{
+            map[c]
+        }
+    }
+    for(const num of c){
+        if()
+    }
+}
