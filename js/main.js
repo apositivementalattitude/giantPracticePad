@@ -28700,22 +28700,32 @@ function take(arr, n){
 //given a string of characters, return the character that appears the most often
 
 //
-function maxChar(n){
-    let map = {}
-    count = 0
-    //for ...in 
-    //loops through the indices
-    //for ...of
-    //loops through the values
-    for(const c in n){
-        if(map[c]){
-            map[c]++,
-            count++
-        }else{
-            map[c]
-        }
-    }
-    for(const num of c){
-        if()
-    }
-}
+//what is a callback?
+//a callback is a fucntion that is called when something else happens(function calls)
+
+//properties
+//determines the styles that will be applied to that element
+
+//what is the recommended max-width when making an email template
+//600px
+
+//reverse()
+//will reverse things
+
+//player needs to achieve 100 points to enter the qualifying stage
+
+//write a script that will check to see if the player has achieved at least 100 points in his class
+
+//begin with 0
+//check total points 100? -> level up
+
+//check if the player has 100 or more points
+
+function playerRankUp(points){
+    if(points > 100){
+        return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.";
+    }else{
+        return "False";
+    };
+};
+
