@@ -28722,10 +28722,155 @@ function take(arr, n){
 //check if the player has 100 or more points
 
 function playerRankUp(points){
-    if(points > 100){
+    if(points >= 100){
         return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.";
     }else{
         return "False";
     };
 };
 
+//what do you read on a regular basis?
+//I like to read the Tildes forum, which is a niche reddit clone for mostly engineers, where we collaborate on creative projects, I read the r/learnprogramming r/coding r/learnjavascript to either answer questions or take notes on a new method of tackling a problem.
+//I like to read fantasy books in my sparetime, I'm rereading the game of thrones series. 
+//Do you have any questions?
+//yes, what is the interview process like?
+//what is the timeline?
+//are there any development, learning opportunities, or training?
+//what would a typical day be like for someone in this position?
+//What are the current goals of the company?
+//What is the most important thing to accomplish in the first 90 days?
+
+//reduce(func, initial)
+//calculate a single value over the array by calling fun for each element and passing an intermediate result between the calls.
+
+//given an array of integers; your solution must find the smallest integer
+
+//arg -> array
+//solution needs to find the smallest integer
+
+//loop through the array 
+//set a variable as an integer
+//compare the results of every index
+//if it's smaller -> set the variable to the new index
+
+
+function coolArray(int){
+    let iceCube = 0;
+
+    for(let i = 0; i < int.length; i++){
+        //check to see if var is smaller than new index
+        //?true var as new small number
+        if(int[i] < iceCube){
+            iceCube == int[i];
+        }else{
+            iceCube == int[i];
+        };
+    };
+    return iceCube;
+};
+
+console.log(coolArray([1,2,3,4,5]), 1)
+console.log(coolArray([2,5,6,89,90]), 2)
+console.log(coolArray([6,54,1,98,3]), 1)
+
+
+
+//you are given strings jewels representing the types of stones that are jewels, and stones representing the stones you have
+//each character in stones is a type of stone you have
+//you want to know how many of the stones you have are also jewels
+
+//how many stones -> jewels
+
+//letters are stones
+//some of those stones are jewels
+
+//hash map -> store stones
+//count for checking value of jewels 
+//for in loop to check the indices
+//push the indices into the hash map
+
+
+//for of loop to check the values of the hash map
+//if the value is a jewel
+//increment the count
+//return the count as amount of jewel
+
+
+//the question is asking to count the jewels in the stones
+function runDaJewelz(jewels, stones){
+    let map = {}
+    let count = 0
+
+    //loop through each jewel and add it to the map
+    for(const jewel in jewels){
+        map[jewel] = true
+        //loop through each stones and check if it is a jewel
+    }for(const stone of stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count;
+}   
+
+//what is progressive rendering
+//progressive rendering is to render parts of the page so that it loads more beautifully
+//progressive rendering is the technique used to improve the performance of a webpage to render content for display as quickly as possible
+
+//to improve perceived load time
+
+//prioritizing visible
+
+//describe the difference between a cookie, sessionStorage, and localStorage
+
+//a cookie is server side code
+//sessionStorage is code to be deleted when the browser is closed
+//localStorage is code stored on the browser
+
+//what kind of things must you be wary of when designing or developeing for multilingual sites
+//you must be wary of layout issues like text overflow
+//currency formats
+//direction of reading
+//the ability to change the language of the page
+
+//what does DOCTYPE do?
+//DOCTYPE tells the browser what version of HTML the page is written in
+
+//consider HTML5 as an open web platform.
+//WHat are the building blocks of HTML5?
+//the building blocks of HTML5 are 
+// connectivity - how the user connects to the server
+// offline and storage - how to handle data
+//semantics - how to describe your code
+//style - style, layout, visuals
+//performance - speed
+//device access - various input and output devices
+
+//what are data-attributes good for?
+//data- attributes are good for storing extra information on HTML elements
+//data- attributes are generally frowned upon  these days, unless you'r using end to end testing frameworks like Selenium
+
+//why is it generally a good idea to position CSS links within <head> and JS <scripts> just before <./body>
+//it's a good idea to position CSS links within hjead elements for the page to load more beautifully
+//and JS scripts just before body beacuse scripts tags block HTML parsing which can slow load times
+//placing the scripts at the bottom will allow HTML to be parsed and displayed to the user first
+//excpetions are when your script contains document.write/
+//if you need scripts to run on page load, it may be beneficial to split them out from your main script and place them in the ehads
+
+//how weould you serve a page with content in multiple languages
+//i would set the <html lang attribute> and make a button or dropdown list to set this element to different languages
+//if i needed to: i would set the specific tags as a certain language instead
+
+//why would you use a srcset attribute in an image tag?
+//i would use srcset in an img tag to serve different images to users depending on their screen width
+//to impact performance
+//or even if i want a different design for mobile users and pc users
+
+//describe the difference between script, script async, and script defer
+
+//script is code that blocks HTML parsing, and fetches and is executed immediately
+//script async is fetched in parallel to HTML, parsing and executed as it is encountered
+//script defer is fetched in parallel to HTML, but parsing is executed when the page is finished parsing
+
+//asycn if for when the script is independent of any other scripts on the page
+//defer is useful for when you need to make sure the HTML is fully parsed before executing
