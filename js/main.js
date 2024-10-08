@@ -28874,3 +28874,42 @@ function runDaJewelz(jewels, stones){
 
 //asycn if for when the script is independent of any other scripts on the page
 //defer is useful for when you need to make sure the HTML is fully parsed before executing
+
+//you are given string jewels representing the types of stones that are jewles and stones representing the stones you have
+
+//given jewels and stones
+//find jewels in stones
+
+//jewels = x
+//stones will be a string presumably including x
+
+//parse through stones
+//validating with jewels
+
+//map -> put jewels in the map
+//validate stones with map
+//output -> counter
+
+//return
+
+function jewelsInStones(jewels, stones){
+    let map = {}
+    let count = 0
+//for in to iterate through indices
+//for of to iterate the values
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+    for(const stone in stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count
+}
+
+//create a function that takes 2 integers in form of a string as an input and outputs the sum(as a string)
+
+function takeTwo(int, num){
+    return (+int + +num).toString()
+}
