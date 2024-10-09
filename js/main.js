@@ -28913,3 +28913,80 @@ function jewelsInStones(jewels, stones){
 function takeTwo(int, num){
     return (+int + +num).toString()
 }
+
+//__dirname
+//directory name
+//with two undersscores
+
+//you ar given a string of space separated numbers
+//return the highest and lowest numbers
+
+//whole numbers
+//are there any negative numbers
+//output string is two numbers, separated by a single space, and the highest number is first
+
+//return math.max(...n) math.min(...n)
+
+//nested loop
+//first loop compares if i > j
+//second loop compared if i < j
+//output the highest and lowest
+
+//do i need to split the output string
+
+
+function highLow(numbers){
+    let arr = numbers.split(' ')
+    return `${Math.max(...arr)} ${Math.min(...arr)}`
+}
+
+//given an array of integers, return a new array with each value doubled
+//are all the numbers whole numbers?
+
+
+//split the arr 
+//map func -> return n*2
+
+function maps(x){
+    let newArr = x.split('').map(n => {
+        return n*2
+    })
+    return newArr;
+}
+
+//why would you use a srcset attribute in an image tag? explain the process the browser uses when evaluating the content of this attribute
+
+//describe the difference between script
+//script async
+//and script defer
+
+//script blocks HTML parsing, and script is executed immediately
+//script async is script that is fetched simultaneously with HTML parsing and executed immediately
+//script defer is script that is fetched simultaneously with HTML parsing and executed after
+
+//consider that HTML5 as an open web platform.
+//what are the building blocks of HTML5?
+
+//the building blocks of HTML5 are 
+//semantics - how to more accurately describe your code
+//offline and storage - how to store data
+//connectivity - how the server talks to the code
+//multimedia - video and pictures being first class citizens
+//design and layout - styling
+//device access - various input and output devices
+//performance and integration - speed optimization
+
+//what is progressive rendering?
+//progressive rendering is when the style is loaded as html is parsed to load more beautifully
+//lazy loading of images
+//prioritizing visible content
+
+//what are data- attributes good for?
+//data attributes are good for storing extra information on HTML elements
+//they're generally not used anymore unless it is for end to end testing frameworks
+
+//why is it generalyl a good idea to position CSS links within head and JS scripts just before body
+
+//it is a good idea to position CSS links within head and JS scripts just before body because you want CSS to be fetched as the page loads to make it look nice
+//Js scripts are just before the body to improve performance
+//you can put js links at the end for a better progressive rendering because scripts are slower
