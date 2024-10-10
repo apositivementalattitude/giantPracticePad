@@ -28990,3 +28990,116 @@ function maps(x){
 //it is a good idea to position CSS links within head and JS scripts just before body because you want CSS to be fetched as the page loads to make it look nice
 //Js scripts are just before the body to improve performance
 //you can put js links at the end for a better progressive rendering because scripts are slower
+
+
+//what kinds of things must you be wary of when designing or devveloping for multilingual sites?
+//you must be wary of 
+//layout issues and overflow
+//currency
+//date and time format
+//punctuation differences e.g., using commas instead of periods and vice versa
+//language reading direction
+
+//allowing users to change the language
+//what does DOCTYPE do?
+
+//doctype tells the browser what version of HTML the page is written in
+
+
+
+//animal potluck 
+
+//take the animal's name as args and return true or false to indicate whether the beast is allowed the bring the dish
+//the beast and dish are always lowercase
+//beast and dish may contain spaces and hyphens
+//the dish must start and end ith the same letters as the animal's name
+//start and end of entire animal name(including location)
+
+function feast(beast, dish){
+    //do i need to the split any of the strings?
+    //map -> push first and last letters to and array and then compare
+
+    //slice
+
+    if(beast[0]+beast.slice(-1) === dish[0]+dish.slice(-1)){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+//?: optional data in constructors
+//`I own a pet${my pet}`
+//template literal syntax
+
+//count all the occurring characters in a string
+
+//if you have a string like aba, then the result should be {'a':2, 'b':1}
+//if the string is empty the result should be empty object literal
+
+// create a hash map -> 
+// iterate through the values of arg
+//check if exists ?: add that value
+//else make value = 1
+//return map
+
+function occurringCharacters(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
+
+//you are given strings jewels representing the types of stones that are jewels, and stones representing the stones you have
+//each character in stones is a type of stone you have. you want to know how many of the stones you have are also jewels
+
+//define jewels 
+//search for jewels in stones
+
+//make a hash map + counter
+//loop through indices of jewels to define 
+//loop through values of stones to add to hash map
+
+//return count
+
+function maxJewels(jewels, stones){
+    let map = {};
+    let count = 0;
+
+    for(const jewel in jewels){
+        map[jewel] = 1;
+        count = 1;
+    }
+    for(const stone of stones){
+        if(map[stone]){
+            count++;
+        };
+    };
+    return count;
+};
+
+//count all occurring characters in a string
+
+//make a hash map
+//loop through the values of str
+//if it doesnt exist; make it exist
+//add to the hash map
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c] = 1
+        }
+    }
+    return map
+}
