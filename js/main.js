@@ -29103,3 +29103,31 @@ function countChar(str){
     }
     return map
 }
+
+//describe the difference between a cookie, sessionStorage, and localStorage
+
+//a cookie is data stored in the server
+//sessionStorage is data stored in the browser to be deleted when the browser is closed
+//localStorage is data stored in the browser
+
+//count all the occurring characters in a string
+
+//create map 
+//add indices of str into map with for in loop
+//check for map[c]
+//if exists -> ++
+//if not -> =1
+//return map
+
+function countChar(str){
+    let map = {}
+
+    for(const c in str){
+        if(map[c]){
+            map[c]++;
+        }else{
+            map[c] = 1;
+        };
+    };
+    return map;
+};
