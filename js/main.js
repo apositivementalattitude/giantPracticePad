@@ -29131,3 +29131,26 @@ function countChar(str){
     };
     return map;
 };
+
+//what is progressive rendering?
+//progressive rendering is when you load parts of the page to improve performance to display as quickly as possible
+//improving perceived load time
+
+//lazy loading of images, prioritizing visible content
+
+//consider html5 as an open web platform
+//what are the building blocks of HTML5?
+
+//semantics - how to describe what youyour code
+//offline and storage - how to store your code
+//connectivity - howt o connect with the server
+//style - layout and theme -- how it looks
+//multimedia - make audio and video first-class citizens
+//performance and integration - sopeed optimization
+//device acces - various input and output devices
+
+
+//script - html parsing is blocked, and the code is executed immediately
+//script async is - html parsing is not blocked, code is executed immediately
+//script defer - html parsing is not blocked, code is executed after html is parsed
+
