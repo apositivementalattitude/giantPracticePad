@@ -29154,3 +29154,16 @@ function countChar(str){
 //script async is - html parsing is not blocked, code is executed immediately
 //script defer - html parsing is not blocked, code is executed after html is parsed
 
+//count all occurrences
+
+function countAll(str){
+    let map = {}
+
+    for(const c in str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c]=1
+        }
+    }
+}
