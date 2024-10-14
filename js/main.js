@@ -29166,4 +29166,41 @@ function countAll(str){
             map[c]=1
         }
     }
+    return map[c]
 }
+
+
+//what does DOCTYPE do?
+//DOCTYPE tells the browser what version of HTML the site is written in
+
+//how would you serve a page with ocntent in multiple languages?
+//you would use the lang attribute 
+
+//you are given string jewels representing the types of stones that are jewels, and stoes representing the stones you have
+//each characyer in th stones is a type of stone youi have
+
+//you want to know how many of the stone you have are also jewels
+
+
+//create a map
+//create a counter
+// -> verify jewels in map
+//add jewels to map
+// loop through stones and add stones that are === jewels
+//add to counter
+//return counter
+
+function jewelStone(jewels, stones){
+    let map = {};
+    let count = 0;
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+    for(const stone of stones){
+        if(map[stone]){
+            count++;
+        };
+    };
+    return count;
+};
