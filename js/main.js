@@ -29204,3 +29204,24 @@ function jewelStone(jewels, stones){
     };
     return count;
 };
+
+
+//what is the difference between a for .. in loop and a for...of loop?
+//a for in loop loops through the indices of the array
+//a for of loop loops through the values of the array
+
+//write function bmi
+
+function bmi (weight, height){
+    let result = weight / height**2
+
+    if(result <= 18.5){
+        return 'underweight'
+    }else if(result <= 25){
+        return 'normal'
+    }else if(result <= 30){
+        return 'overweight'
+    }else{
+        return 'obese'
+    }
+}
