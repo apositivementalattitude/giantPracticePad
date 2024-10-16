@@ -29225,3 +29225,22 @@ function bmi (weight, height){
         return 'obese'
     }
 }
+
+//what is an object?
+//an object is a collection of related data
+
+//consider HTML5 as an open web platform. What are the building blocks of HTML5?
+//the building blocks of HTML5 are:
+//semantics - how to describe your content
+//connectivity - communication with the server
+//offline and storage - how to store client side data
+//multimedia - make audio and video first class citizens
+//performance and integration - speed optimization
+//styling - more sophisticated themes
+//device access - various input and output devices
+
+//what is progressive rendering?
+//progressive rendering is to load the page in parts so that it renders quickly
+
+//data- attributes are good for storing extra data on HTML elements
+
