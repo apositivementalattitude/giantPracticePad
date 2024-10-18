@@ -29244,3 +29244,59 @@ function bmi (weight, height){
 
 //data- attributes are good for storing extra data on HTML elements
 
+//what is the difference between 
+{/* <script></script> */}
+//script is a tag used for when you want to block HTML parsing, and execute code immediately as the tag is encountered
+{/* <script async></script> */}
+//script async is used to parse HTML alonside the script, and script is executed immediately
+{/* <script defer></scipt> */}
+//script defer is use to fethc HTML alongside script, but the script is executed after the HTML loads
+
+//script is a tag that is used to load code
+//it will block HTML fetching and execute code immediately as the tag is encountered
+
+//shift()
+//shift() will remove items from the beginning of an array
+
+//count all occurring characters in a string
+
+//hash map -> store str[i]: n
+//for(..in) to add indices of str[i]
+
+
+// function countChar(str){
+//     let map = {}
+
+//     for(const c of str){
+//         if(map[c]){
+//             map[c] = 1
+//         }else{
+//             map[c]++
+//         }
+//     }
+//     return map
+// }
+
+//arr will never be empty
+//will there ever be anything other than numbers
+//get avg -> rounded down
+//arr 
+function getAvg(scores){
+    let average = scores.reduce((a,b) => a + b, 0 )/scores.length
+
+    return Math.floor(average)
+    //returning a number
+}
+
+
+console.log(([2,2,2,2,2]), 2)
+console.log(([1,2,3,4,5]), 3)
+console.log(([6,7,8,9,10]), 8)
+
+//you will be given an array a and a value x
+//al lyou need to do is check whether the provided array contains the value
+
+function check(a, x){
+    return a.includes(x);
+};
+
