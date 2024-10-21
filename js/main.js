@@ -29300,3 +29300,65 @@ function check(a, x){
     return a.includes(x);
 };
 
+//when are function expressions used?
+//when they are reached 
+//what is a code block associated with a loop?
+//its body
+
+//given a string, you have to return a string in which each characyer is repeated once
+
+function repeatOnce(char){
+    return char.split('').map(n => {
+        return n + n
+    }).join('')
+}
+
+//you are given strings jewels representing the types of stones that are jewels, and stones representing the stones you hasve
+//each character in stones is a type of stone yo uhave
+//you want to know how many of the stones you have are also jewels
+
+//are these characters all going to be strings?
+//basically, the question is asking for jewels in the stones
+//define jewels
+//check for them in stones
+//solution outputs a number
+
+// -> hash map
+// counter for output
+
+//define jewels -> for in loop
+//output as map[]
+
+//for of loop stones
+//if stone[] === map[]
+//count++
+
+//output count
+
+
+function stonesJewels(stones, jewels){
+    let map = {};
+    let count = 0;
+
+    for(const jewel in jewels){
+        map[jewel] = true;
+    };
+    for(const stone in stones){
+        if(map[stone]){
+            count++;
+        };
+    };
+    return count;
+};
+
+//why is it generally a good idea to position CSS linkes within head and JS scripts just before body
+//it's a good idea to position CSS links within head to load the page with the styles on
+//and JS just
+
+//describe the difference between a cookie, sessionStorage, and localStorage
+
+//a cookie is information stored in a server
+//sessionStorage is information to be deleted when the browser is closed
+
+//localStorage is information stored in the browser
+
