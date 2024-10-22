@@ -29362,3 +29362,97 @@ function stonesJewels(stones, jewels){
 
 //localStorage is information stored in the browser
 
+/* 
+What if one loop found the min and other loop found the max
+what if we just made it simple
+foun the min
+found the max
+something that isnt quadratic
+
+moving through the bids
+
+LINEAR PATTERN
+cost findMaxBid = function(bids){
+let maxBid = bids[0]
+for(let i = 0; i < bids.length; i++){
+if(bids[i] > maxBid){
+maxBid = bids[i]
+}
+}
+return maxBid
+}
+
+const allBids = [1,2,3,4,5,6,7,8,9]
+console.log(findMaxBid(allBids))
+
+
+keep a variable that holds the new value
+
+//what if our data was already sorted?
+
+
+//constant time
+//linear time
+//quadratic time
+//logarithmic time
+
+//.length tell you the total number of elements in an array?
+//
+
+
+
+*/
+
+
+//return the number of unique arrays that can be formed by picking exactly one element from each subarray
+
+//For example: solve([[1,2],[4],[5,6]]) = 4, because it results in only 4 possibilites. They are [1,4,5],[1,4,6],[2,4,5],[2,4,6].
+
+
+//make sure you don't count duplicated
+//Make sure that you don't count duplicates; for example solve([[1,2],[4,4],[5,6,6]]) = 4, since the extra outcomes are just duplicates.
+
+//multiple arrays -> they need to go into a single counter
+//push indexes into a map -> add to counter
+
+//dont count duplicates
+//add if statement to check if duplicate
+
+
+//return count
+
+
+function uniqueArrays(array){
+    let map = {}
+    let count = 0
+
+    for(const c in array){
+        if(map[c]){
+            map[c] = 1,
+            count = 1
+        }
+    }
+    return count
+}
+
+console.log(uniqueArrays(([1,2],[2,3],[4])), 3)
+//124 134 234
+
+function solve(arr){
+    //get rid of dupes
+    //use a set to get rid of dupes
+
+    //multiply the length of the sub array
+    //use reduce to multiply the length
+
+    //return results of the multi
+    return arr.reduce( (a, b) => a * new Set(b), 1 )
+}
+
+//count all the occurring characyters in a string
+//if you have a string like aba, then the result should be {'a':2, 'b': 1}
+
+//make a hash map
+//loop through the string indices?
+//establish what needs to go into the hash map
+//loop through the values again ?: -> add to it
