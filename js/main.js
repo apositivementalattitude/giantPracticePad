@@ -29456,3 +29456,17 @@ function solve(arr){
 //loop through the string indices?
 //establish what needs to go into the hash map
 //loop through the values again ?: -> add to it
+
+
+function countChar(str){
+    let map = {}
+
+    for(const c of str){
+        if(map[c]){
+            map[c]++
+        }else{
+            map[c]=1
+        }
+    }
+    return map
+}
