@@ -29470,3 +29470,72 @@ function countChar(str){
     }
     return map
 }
+
+// The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+
+// Examples
+// "din"      =>  "((("
+// "recede"   =>  "()()()"
+// "Success"  =>  ")())())"
+// "(( @"     =>  "))((" 
+
+//str ->
+//str -> ( is only once  and ) is more than once
+//will i be replacing every character in this string?
+
+function encodeDupes( str ){
+    //toLowerCase()
+    //split
+    //change to ( or ) -> map()
+        //check for repeats
+        //indexOf -> lastIndexOf
+        //lastIndexOf searches the array backwards
+        return str.toLowerCase()
+            .split('')
+            .map((c, l, a) => a.indexOf(c) === a.lastIndexOf(c) ? '(' : ')')
+            .join('')
+    //join() -> str
+
+}
+
+//?:
+//optional data in constructors
+
+//your task is to find the nearest square number, nearest_sq
+
+
+//sqrt -> round -> sqr
+
+
+function nearestSq(n){
+    //pow -> round -> sqrt
+    return Math.pow(
+            Math.round(
+            Math.sqrt(n)),2);
+};
+
+console.log(nearestSq(10), 9)
+
+//
+
+function correct(string){
+    let correctedText = "";
+
+    for(let i = 0; i < text.length; i++){
+        switch(text[i]){
+            case "5":
+                correctedText += "S";
+                break;
+            case "0":
+                correctedText += "O";
+                break;
+            case "1":
+                correctedText += "I";
+                break;
+            default:
+                correctedText += text[i];
+                break;
+        };
+    };
+    return correctedText;
+};
