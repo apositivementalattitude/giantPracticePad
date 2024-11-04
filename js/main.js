@@ -29539,3 +29539,203 @@ function correct(string){
     };
     return correctedText;
 };
+
+//count all the occurring characters in a string
+//if you have a string like aba, then the result should be {'a': 2, 'b': 1}
+
+//if the string is empty, then the result should be empty object literal, {}
+
+function countStr(str){
+    let countObj = {}
+
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
+//you are given string jewels
+
+function jewelsInStone(jewels, stones){
+    let countObj = {}
+    let count = 0
+    
+    for(const jewel in jewels){
+        countObj[jewel] = true
+    }
+    for(const stone of stones){
+        if(countObj[stone]){
+            countObj[jewel]
+            count++
+        }
+    }
+    return count
+}
+
+//return the majority element
+
+function majElem(array){
+    let map = {}
+    let count = 0
+    let majElem = array[0]
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+    }
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n]
+            majElem = n
+        }
+    }
+    return majElem
+}
+
+//given 2 strings
+//a and b
+//return the string of the form short+long+short
+
+function solution(a, b){
+    if(a.length > b.length){
+        return b + a + b
+    }else{
+        return a + b + a
+    }
+}
+
+//move every letter in the provided string forward 10 lettesr through the alphabet
+
+function moveTen(s){
+    const str = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  }
+
+//given a string of characters, return hte characyer that appears the most often
+
+//describe("Max Character", () => {
+    // it("Should return max character", () => {
+    //     assert.equal(max("Hello World!"), "l")
+    // })})
+
+//am i always taking in a string?
+//will there be any funny characters
+//spaces
+//capitalization?
+
+function maxCharacter(str){
+    //map + count + maxChar
+    let charMap = {},
+    count = 0,
+    maxChar = null;
+
+    //map for chars in str + freq
+    for(const char of str){
+        //setting a key in object
+        //the first time it runs -> H
+        //sets map to H when empty
+        //loops forever until it encounters a duplicate then adds 1 to duplicate
+        //ads one to the duplicate
+
+        charMap[char] = charMap[char] + 1 || 1 ;
+
+        }
+        //char is holding the values
+        for(const char in charMap){
+            if(charMap[char] > count){
+                count = charMap[char];
+                maxChar = char;
+            };
+
+        };
+        
+    
+    return maxChar;
+};
+
+console.log( maxCharacter('Hello World!'), 'l')
+console.log( maxCharacter('A Wonderful Lullaby.'), 'l')
+console.log( maxCharacter('Always prep'), 'p')
+
+//count all the occurring characters in a string
+
+
+
+//count all the occurring characters in a string
+//if you have a string like aba, then the result should be {'a':2, 'b':1}
+
+//push obj to map
+//"eric lee" -> {'e':3, 'r':1, 'i':1, 'l':1}
+//"morgan" -> {'m':1, 'o':1, 'r':1, 'g':1, 'a':1, 'n':1}
+
+
+function charChar(str){
+    //map to store chars
+    //count with for ...of loop
+    //return the map
+    let charMap = {};
+
+    for(const c of str){
+        if(charMap[c]){
+            charMap[c]++;
+        }else{
+            charMap[c] = 1;
+        };
+    };
+    return charMap[c];
+};
+
+
+
+console.log(countChar('aba'), {'a':2, 'b':1})
+console.log(countChar('eric lee'), {'e':3, 'r':1, 'i':1, 'l':1})
+console.log(countChar('morgan'), {'m':1, 'o':1, 'r':1, 'g':1, 'a':1, 'n':1})
+
+const configuration = {
+    "name": "cool-pack",
+    "description": "cool description",
+    "version": "1.0",
+    "date": "1"
+}
+
+//hero's journey
+
+//dragon = 2 bullets
+
+function heroJourney(dragons, bullets){
+    if(bullets/2 >= dragons){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
+
+//return a new array consisting of elements which are multiple of their own index in input array
+
+//make new array
+//loop through indexes
+//check if array[0] % i === 0 -> new array 
+
+//return new array
+
+function multipleOfIndex(array){
+    let arr = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % i === 0){
+            arr.push(array[i]);
+        };
+    };
+    return arr;
+};
+
+console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]), [-6, 32, 25])
+
+
+
+function indexMult(array){
+    return array.filter((a, b) => a % b == 0)
+}
+
