@@ -29739,3 +29739,41 @@ function indexMult(array){
     return array.filter((a, b) => a % b == 0)
 }
 
+//complete the function that accepts a string parameter, and reverses te letters in each word in the string
+//all spaces in the string should be retained
+
+function revStr(str){
+    return str.split(' ').map(n => {
+        return n.split('').reverse().join('')
+    }).join(' ')
+}
+
+function jewelsInStones(jewels, stones){
+    let map = {}
+    let count = 0
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+    for(const stone of stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count
+}
+
+//count all occurring charcters in a atring
+
+function countChar(str){
+    let countObj = {}
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
