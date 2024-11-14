@@ -29777,3 +29777,13 @@ function countChar(str){
     return countObj
 }
 
+//a hero is on his way to the castle
+//the dragon takes 2 bullets to die
+
+function magazine(bullets, dragon){
+    if(bullets/2 >= dragon){
+        return 'true'
+    }else{
+        return 'false'
+    }
+}
