@@ -29787,3 +29787,6 @@ function magazine(bullets, dragon){
         return 'false'
     }
 }
+
+//+=
+//increment
