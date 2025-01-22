@@ -29790,3 +29790,431 @@ function magazine(bullets, dragon){
 
 //+=
 //increment
+
+
+//describe a situation in which you worked diligently on a project and it did not produce the desired results, why didnt you get the desired restults? What did you elarn from the experience?
+
+//On of me earlier projects was an inventory management system with automatic stock updates; however, partway through development, i started noticing performace issues as the dataset grew
+//the system didn't meet my expectations when it came to performace because i didnt think about scalability
+//the expereince taught me the importance ofconsidering scalability and performance fro mthe very beginning phases of development
+
+//tell me about a time you had to work on several proejcts at once how did you handle this?
+
+//worknig on several proejcts at once was a dailty part of my life as a production maanger, i had to plan schedule, optimize oresource usuage, do quality control, deal withvendors, and lead the team in multiple projects at the same time
+//i handled this by takinga  step back and trying to look at things with a macro lens,in order to make plan, but i try to be flexible because things dont always go according to plan
+
+//tell me about a situation when you made a mistake at wokr
+//what happened exaclty and how did you deal with it
+//what steps did you take to improve the situation
+
+//at my previous opportunnity i was overseeing an order for a cvlient with a tight deadline, and i approced a batch of .braided cords that didnt meet the exact color specifications required by the client due to a miscommunication with the dyeing team
+
+// i immediately took responsibil;ity for the oversight and informed thec lient about the problem,  and orked tyo resolve the issue as fast as possible
+
+//i corrected the order with trhe dye team andw as still able to delivert hte product to the customer within their deadline
+
+//tell me about a situation when you were responsible for project planning
+//di everthing go according t oyour plan
+//if not, then why and what kind of counteractions did you have to take
+
+//at my previous opportunuity, we were expecting an unusually larrgwe amount of shipments in the span of two months, howver, due to a strike at the port of long beach , we ended up receving those shipments late and within ythe span o f two weeks,. in order to not incur a large amount of demurage fee,s i had planned ahead whukle the strike was happening as a  result, we didnt uincur any feed ad your customers got their orders as soon as possible
+
+//a hero is on his way to the castle to complete his mission
+//however, he has been told that the castle is surrounded with a couple of powerful dragons
+//each drtagon takes  2 bullets to be defeated
+//will he survive?
+//return true if yes false if no
+
+function hero (bullets, dragon){
+    //bullets * 2 = dragon?
+    if(bullets/2 >= dragon){
+        return "True"
+    }else{
+        return "False"
+    }
+}
+
+//square every digit of a number and concatenate them
+
+function concatNums(n){
+    //split n
+    //-> square
+    //join together
+    // map -> 
+    return n.split('').map(x => {
+        x * x
+    }).join('')
+}
+
+//create a functio nthat has a loop that prints '21' 21 times to the console and then call that function
+
+function savage(){
+    for(let i = 0; i < 21; i++){
+        document.querySelector('#savageSays').innerText += '21'
+    };
+};
+
+savage();
+
+//you are going to be given a word
+//your job is to return the middle cahracyer of the word
+//if the word's length is odd
+//return the middle character
+//if the word's length is even
+//return the middle 2 characters
+
+function oddOrEven(word){
+    if(word.length % 2 === 0){
+        return word.substring((word.length/2) -1, (word.length/2) + 1)
+    }else{
+        return word.substring((word.length/2) + 1, (word.length/2))
+    }
+}
+
+// the process of storing fucntion methods with their associated data in an object
+
+// ?:
+//optional data in constructors
+
+//a[lang|="en"]
+//:hover
+
+//complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them
+
+function takeTwo(a, b){
+
+    let arr = [];
+
+    if(a < b){
+        for(let i = a; i <= b; i++){
+            arr.push(i);
+        };
+    };
+    return arr;
+};
+
+//promise syntax
+
+//fetch("#")
+//.then(res => res.json())
+//.then(data => {
+   // })
+//.catch(error => {
+    //})
+    //console.log(`error ${error}`)
+    //})
+
+
+    //what are objects copied by?
+
+//their reference type
+
+//give me an example of a projet or initiative that you started on your own
+//what prompted you to get started
+
+//on my first day at a previous opportunity, i saw that there was an inefficient in the way we handled our incoming container inventory
+//so i automated the process isntead of doing the inventory manually
+//resulting in at least 8 hours of my time saved throughout the week
+
+//describe a situation in which you experienced difficulty in getting others to accept your ideas
+//what was the approach
+//how did this work
+//were you able to successfully persuade someone to see things your way
+
+//a situation in which i experienced difficulty in getting others to acceept my ideas was at a previous opportunity where most of the work was still done with pen and paper
+//my approach was the show how much time isaved by using tools i nthe computer
+
+//i believe im able to persuade people with quantifiable results
+//you haev to show people the math and outcomes, or they don't really believe you
+
+//give me an example of a time you had to take a creative and unusual approach to solve a coding problem
+//how did this idea come to your mind
+//why do you think it was unusual
+
+//describe the difference between script, script async, and script defer
+//script is client side code to be executed as it is encountered
+
+//script async is code that is fetched in parallel to HTML aprsing and executed when the page has finished parsing
+//script defer is fetched in parallel to HTML parsing and executed whe nthe page has finished parsing
+
+//async is for when the script is independant of any other scripts on the page
+//defer is useful for when you need to make sure the HTML is fully parsed before executing
+//async could be used for analytics scripts
+//a deferred script must not contain document.write
+
+//connectivity
+//connectivity is how the user connects to the code
+//connectivity allows you to communicate with ther servr in new and innovative ways
+
+//what does DOCTYPE do?
+//DOCTYPE tells the browswer what version of HTML is page is written in
+
+//why is it generally a good idea to position CSS links within head and HJS scripts just before body
+//do you kow any excpetions
+
+//putting links in the head allows for quicj first meaningful pant
+//whn a page first loads, HTML and CSS are being parsed simultaneously
+//conversly, script tags block HTML parsing while they are being downloaded and executed which can slow down your page.
+//placing the scipts at the bottom will allow the HTMl to be parsed and displayed to the user first
+
+//when your script contains document.write; hopwever; it isnt' considered good practice to use document.write
+//also if you ned scipts to run on page load, it may be beneficial; to split them out from your main script and place them in the head
+
+//how would yo userve a page with content in multiple languages
+//i would serve conent in multiple languages by adding a lang atribute to heading
+
+//i would also check for overflow and layout issues and any discrepencies in pictures, as well as checking the puicutres themselves for differences in language
+
+//have you used HTML templating languages before
+//yes, ive used react and next.js
+
+//consider HTML5 as an open we platform. what are the building blocks of HTML5
+
+//the building blocks of HTML56 are 
+//semantics
+
+//offline and storage
+//connectivity
+//multimedia
+//performance
+//accessibility
+
+
+//what are data attributes  good for
+//storing extra information on that element
+
+//data attributes are for storing data private to the page or application 
+//they were used for storing extra data in the DOM but are discouraged now
+//the exception is to add a hook for end to end testing frameworks like selenium
+
+//whjat is progressing rendering?/
+
+//progressive rendering is the technique used to improve the performance of a webpage to render content for display as quickly as possible
+
+//improving perceived load time
+//why woudl you sue a srcset attribute in an image tag?
+//explain the process the browser uses when evaluating the content of this attribute
+
+//the process the browser uses when evaluating the content of this attribute 
+//when you want to serve difference imagfes to uisers depending on their device display widrth
+//sending lower resolutino to limit data waste and increase performanace or sending larger imagers to a higher resolution display to enhance the UX
+
+//what is progressive rendering?
+//progressive rednering is the technique of seqeuentially rendering parts of the webpage on the server side and sending it to the client in portinos
+
+//what kinds of things must you be wary of when designing or developing for multilingual sites?
+//the things tyoyou 
+
+//the text is now fully mutates to this character
+//if the text or the character are empty, return an empty string
+
+function contamination(text, char){
+    return char.repeat(text)
+}
+
+//assignment vs comparison
+
+//the assignment is ==
+//the comparison is ===
+
+//+a add a '+' in front of a variable to make it a number
+
+//write a method, tyhat will get an integer array as parameter and will process every number from this array'
+
+//return a new array with processing every number of the input-array klike this: if the number ha an integer square root, take this, otherwise square the number
+
+
+
+function squareOrSquareRoot(array){
+
+    //loop array -> check if it can be sqrt -> return array : pow
+    let arr = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(Math.floor(Math.sqrt(array[i])) !== 0){
+            arr.push(array[i] * array[i])
+        }else{
+            arr.push(array[i]);
+        };
+    };
+    return arr;
+};
+
+//offline and storage
+
+
+//offline and storage allows webpages to store data on the client side
+
+//get the sum of two arrays
+//the sum of all their elements
+
+function arrayPlusArray(arr1, arr2){
+    //output is a number
+    return arr1.concat(arr2).reduce((a, b) => a + b, 0)
+}
+
+//create a method all which takes two params
+//a sequence
+//a function
+
+//return true f the function in the params returns true for every element in the sequence
+//otherwise return false
+//if empty == true
+
+function all(arr, fun){
+    return arr.every(fun)
+}
+
+//array/isArray(value)
+
+//your old ass cars needs new shocks
+//can only handle 15 bumps
+//
+function bump(x){
+    return x => x.split('n').length > 16 ? "Car Dead" : "Woohoo!"
+}
+
+//complete the method that takes a boolean value and return a yes string for true or a no string for false
+
+//mode of thinking that has tight spacing for rubber bumpers that help keep your thoughts concentrated
+
+//focused thinking
+
+//what is a test that requires you to understand the text, not just retrieve isolated facts?
+//inference testings
+
+
+//given a number as an input, print out every integer from 1 to that number; however, when the integer is divisible by 2, print out "Fizz", when it's divisible by 3, print out "Buzz"; when it's divisible by both 2 and 3, print out "Fizz Buzz"
+
+function fizzBussin(int){
+    // % 2 - > fizz % 3 - > buzz; %2 && 3 -> fizzbuzz; num
+    for(let i = 1; i <= num; i++){
+        if(i % 6 === 0){
+            console.log('Fizz Buzz')
+        }else if(i % 3 === 0){
+            console.log('Fizz')
+        }else if(i % 2 === 0){
+            console.log('Buzz')
+        }else{
+            console.log(i)
+        }
+    }
+
+}
+
+console.log(fizzBussin(6), '1,Fizz,Buzz,Fizz,5,Fizz Buzz')
+console.log(fizzBussin(8), '1,Fizz,Buzz,Fizz,5,Fizz Buzz,7,Fizz')
+
+
+//count all the occurring characters in astring
+//if you ahve a string like aba, then the result should be3 {'a':2, 'b': 1}
+
+//what if the string is empty? then the result should be empty object literal, {}
+
+function countChars(str){
+    let countObj = {}
+
+    for(const c of str){
+        if(countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+}
+
+//you're given strings jewels representing tyhe types of stones that are jewels, and stones representing tyhe stones you have each character ion stones is a type of stone you have. you want to know how many of the stones you have are also jewels
+//letters are case sensitive so a is considered a different type of stone from A
+
+function jewelsInStones(jewels, stones){
+    let map = {}
+    let count = 0
+
+    for(const jewel in jewels){
+        map[jewel] = true
+    }
+
+    for(const stone of stones){
+        if(map[stone]){
+            count++
+        }
+    }
+    return count;
+}
+
+//your job is to figure out the index of which vowel is missing from a hgiven string
+
+function findVowels(str){
+    let vowels = 'aeiou'
+
+    for(let i = 0; i < vowels.length; i++){
+        if(str.indexOf(vowels[i] === -1)){
+            return i;
+        }
+    }
+}
+
+//given an array nums of size n, return the majority element.
+function majorityElem(arr){
+    let elem = {}
+    let count = 0
+    let majElem = arr[0]
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+    }
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n]
+            majElem = n
+        }
+    }
+    return majElem
+}
+
+//do you know recursion
+
+//create athe function factorial that receives n and return n!
+function factorial(n){
+    if(n < 2){
+        return 1
+    }else{
+        return n * factorial(n - 1)
+    }
+}
+
+//given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target
+
+function twoSum(nums, target){
+    let obj = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(target - nums[i] in obj){
+            return [obj[target - nums[i]], i]
+
+        }else{
+            obj[nums[i]] = 1 
+        }
+    }
+    return obj
+}
+
+//given a string of characyers. return the characyer that appears the most often
+
+function maxCharacters(str){
+    let charMap = {}
+    let count = 0
+    let maxChar = null
+
+    for(const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+    for(const char in charMap){
+        if(charMap[char] > count){
+            count = charMap[char]
+            maxChar = char
+        }
+    }
+    return maxChar
+}
